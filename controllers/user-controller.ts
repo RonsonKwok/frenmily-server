@@ -12,6 +12,35 @@ import path from "path"
 export class UserController {
     constructor(private userService: UserService) { }
 
+    // ===================================== Testing Zone (START) ===================================== //
+    testLogin = async (req: express.Request, res: express.Response) => {
+        try {
+            const username = req.body.username
+            const password = req.body.password
+            console.log("Received req: ", { username, password })
+
+            if (username === "mike" && password === "1111") {
+                res.status(200).json({
+                    message: "correct username and password"
+                })
+            }
+            else {
+                res.status(400).json({
+                    message: "invalid username and password"
+                })
+            }
+        }
+        catch (err) {
+            console.log(err)
+        }
+
+
+
+    }
+    // ===================================== Testing Zone (END) ===================================== //
+
+
+
     me = async (req: express.Request, res: express.Response) => {
         res.json({
             message: 'Success retrieve user',
