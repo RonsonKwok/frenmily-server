@@ -16,7 +16,7 @@ import cors from "cors";
 // import path from 'path';
 // import fetch from 'cross-fetch';
 export const app = express();
-const PORT = 8080;
+const PORT = 8000;
 
 
 app.use(express.json());
