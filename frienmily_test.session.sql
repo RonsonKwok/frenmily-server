@@ -2,7 +2,7 @@ CREATE TABLE users (
   id SERIAL primary key,
   username text not null,
   password text not null,
-  mobileNumber text default null,
+  mobile text default null,
   firstName text default null,
   lastName text default null,
   email text default null,
@@ -11,5 +11,5 @@ CREATE TABLE users (
   updated_at timestamp with time zone default now()
 );
 --
-INSERT INTO users (username, password, mobileNumber)
+INSERT INTO users (username, password, mobile)
 VALUES('mike', '1111', '1111')
