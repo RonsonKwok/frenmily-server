@@ -10,6 +10,9 @@ import path from "path"
 import jwtSimple from 'jwt-simple'
 import jwt from "../token/jwt";
 
+export const blackListToken: string[] = []
+
+
 export class UserController {
     constructor(private userService: UserService) { }
 
