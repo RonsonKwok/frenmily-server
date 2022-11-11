@@ -7,36 +7,50 @@ import { User } from "../model/User"
 import { formParse } from "../utils/upload"
 import fs from "fs"
 import path from "path"
-
+import jwtSimple from 'jwt-simple'
+import jwt from "../token/jwt";
 
 export class UserController {
     constructor(private userService: UserService) { }
 
     // ===================================== Testing Zone (START) ===================================== //
-    testLogin = async (req: express.Request, res: express.Response) => {
-        try {
-            const username = req.body.username
-            const password = req.body.password
-            console.log("Received req: ", { username, password })
 
-            if (username === "mike" && password === "1111") {
-                res.status(200).json({
-                    message: "correct username and password"
-                })
-            }
-            else {
-                res.status(400).json({
-                    message: "invalid username and password"
-                })
-            }
-        }
-        catch (err) {
-            console.log(err)
-        }
+    // testLogin = async (req: express.Request, res: express.Response) => {
+    //     try {
+    //         const { username, password } = req.body
+    //         console.log("Received req: ", { username, password })
+    //         const users = userRecords.filter(user => {
+    //             return user.username === username && user.password === password
+    //         })
+
+    //         if (users.length === 1) {
+    //             const user = users[0]
+    //             ////////////////////////////////////////////////
+    //             const payload = {
+    //                 user_id: user.id,
+    //                 time: new Date().toLocaleTimeString()
+    //             }
+    //             const token = jwtSimple.encode(payload, jwt.jwtSecret);
+    //             ////////////////////////////////////////////////
 
 
+    //             res.json({
+    //                 status: "successful",
+    //                 token: token
+    //                 // displayName: `${user.firstName} ${user.lastName}`
+    //             });
 
-    }
+    //         } else {
+    //             res.status(400).json({
+    //                 status: "fail",
+    //                 msg: "Username or password is invalid"
+    //             })
+    //         }
+    //     }
+    //     catch (err) {
+    //         console.log(err)
+    //     }
+    // }
     // ===================================== Testing Zone (END) ===================================== //
 
 
@@ -58,16 +72,17 @@ export class UserController {
     }
 
     login = async (req: express.Request, res: express.Response) => {
-        const username = req.body.username
-        const password = req.body.password
+        const { username, password } = req.body
 
         // Check input
         if (!username || !password) {
             res.status(400).json({
-                message: 'Invalid username or password'
+                message: 'Empty input for username or password'
             })
             return
         }
+
+
 
         // Check DB
         let userResult = await this.userService.getUserByUsername(username)
@@ -85,20 +100,26 @@ export class UserController {
 
         if (isValid) {
             console.log('login successfully')
-            delete dbUser['password']
-            req.session['user'] = dbUser
+            // delete dbUser['password']
+
+            const payload = {
+                user_id: dbUser.id,
+                time: new Date().toLocaleTimeString()
+            }
+            const token = jwtSimple.encode(payload, jwt.jwtSecret);
 
             res.status(200).json({
-                message: 'login successfully'
-            })
+                status: "login successfully",
+                token: token,
+                userName: dbUser.username,
+                fullName: `${dbUser.firstName} ${dbUser.lastName}`
+            });
         }
         else {
             res.status(401).json({
-                message: 'wrong password'
+                message: "login failed"
             })
         }
-
-
     }
 
     location = async (req: express.Request, res: express.Response) => {
@@ -156,10 +177,16 @@ export class UserController {
     register = async (req: express.Request, res: express.Response) => {
         console.log("server side receives signal")
         console.log("request body: ", req.body)
-        const username = req.body.username
-        const password = req.body.password
+        const { username, password } = req.body
 
         console.log(username, password)
+
+        if (!username || !password || username.length > 12 || password.length > 12) {
+            res.status(400).json({
+                message: 'Missing or invalid information'
+            })
+            return
+        }
 
         let userResult = await this.userService.getUserByUsername(username)
         let dbUser: User = userResult.rows[0]
@@ -173,12 +200,6 @@ export class UserController {
             return
         }
 
-        if (!username || !password || username.length > 12 || password.length > 12) {
-            res.status(400).json({
-                message: 'Missing or invalid information'
-            })
-            return
-        }
         let result = await this.userService.createUser(username, password, null)
         let newDBuser: User = result[0]
 
