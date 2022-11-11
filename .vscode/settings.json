@@ -6,8 +6,8 @@
       "port": 5432,
       "askForPassword": true,
       "driver": "PostgreSQL",
-      "name": "frienmily_test",
-      "database": "frienmily_test",
+      "name": "frienmily",
+      "database": "frienmily",
       "username": "postgres"
     }
   ]
