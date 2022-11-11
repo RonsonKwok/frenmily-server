@@ -10,53 +10,11 @@ import path from "path"
 import jwtSimple from 'jwt-simple'
 import jwt from "../token/jwt";
 
-export const blackListToken: string[] = []
+export const outdatedTokens: string[] = []
 
 
 export class UserController {
     constructor(private userService: UserService) { }
-
-    // ===================================== Testing Zone (START) ===================================== //
-
-    // testLogin = async (req: express.Request, res: express.Response) => {
-    //     try {
-    //         const { username, password } = req.body
-    //         console.log("Received req: ", { username, password })
-    //         const users = userRecords.filter(user => {
-    //             return user.username === username && user.password === password
-    //         })
-
-    //         if (users.length === 1) {
-    //             const user = users[0]
-    //             ////////////////////////////////////////////////
-    //             const payload = {
-    //                 user_id: user.id,
-    //                 time: new Date().toLocaleTimeString()
-    //             }
-    //             const token = jwtSimple.encode(payload, jwt.jwtSecret);
-    //             ////////////////////////////////////////////////
-
-
-    //             res.json({
-    //                 status: "successful",
-    //                 token: token
-    //                 // displayName: `${user.firstName} ${user.lastName}`
-    //             });
-
-    //         } else {
-    //             res.status(400).json({
-    //                 status: "fail",
-    //                 msg: "Username or password is invalid"
-    //             })
-    //         }
-    //     }
-    //     catch (err) {
-    //         console.log(err)
-    //     }
-    // }
-    // ===================================== Testing Zone (END) ===================================== //
-
-
 
     me = async (req: express.Request, res: express.Response) => {
         res.json({
@@ -105,17 +63,17 @@ export class UserController {
             console.log('login successfully')
             // delete dbUser['password']
 
+            // 登入成功就生成一個token
             const payload = {
                 user_id: dbUser.id,
+                username: dbUser.username,
                 time: new Date().toLocaleTimeString()
             }
             const token = jwtSimple.encode(payload, jwt.jwtSecret);
 
             res.status(200).json({
                 status: "login successfully",
-                token: token,
-                userName: dbUser.username,
-                fullName: `${dbUser.firstName} ${dbUser.lastName}`
+                token: token
             });
         }
         else {
