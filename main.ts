@@ -6,7 +6,7 @@ import dotenv from 'dotenv';
 import { Client } from 'pg';
 import grant from 'grant';
 import { groceriesRoute } from "./routes/groceriesRoute";
-import { albumRoute } from "./routes/albumRoute";
+import { friendsRoute } from "./routes/friendsRoute";
 import fs from "fs";
 import { uploadDir } from './utils/upload'
 import cors from "cors";
@@ -80,7 +80,7 @@ fs.mkdirSync(uploadDir, { recursive: true })
 
 app.use('/user', userRoutes)
 app.use('/groceries', groceriesRoute);
-app.use('/album', albumRoute)
+app.use('/friends', friendsRoute)
 
 app.use(express.static('public'));
 app.use("/uploads", express.static('uploads'))

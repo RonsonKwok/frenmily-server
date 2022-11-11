@@ -22,4 +22,4 @@ userRoutes.get('/username', userController.username);
 // userRoutes.get('/favouriteCat', userController.getFavouriteCat);
 
 
-userRoutes.post('/test', userController.testLogin)  // Testing API by Mike
+// userRoutes.post('/test', userController.testLogin)  // Testing API by Mike
