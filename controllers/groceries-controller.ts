@@ -14,7 +14,7 @@ export class GroceriesController {
     //     let result = cardResults.rows
     //     res.json({ result })
     // }
-    
+
     getByLocation = async (req: express.Request, res: express.Response) => {
         // console.log(`getting rest by location... latitude: ${req.session['location'].x},longitude: ${req.session['location'].y}`)
         let result = await this.groceriesService.getTheNearestDistrict(req.session['location'].x, req.session['location'].y)
@@ -23,6 +23,15 @@ export class GroceriesController {
 
         let cardResults = await this.groceriesService.getGroceriesInfoByLocation(userDistrict)
         let finalResult = cardResults.rows
-        res.json( [finalResult] )
+        res.json([finalResult])
+    }
+
+    getGoodsByGoodsName = async (req: express.Request, res: express.Response) => {
+
+        //TODO: insert logic
+
+        res.json({
+            message: "Goods info is here"
+        })
     }
 }

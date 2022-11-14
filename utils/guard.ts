@@ -30,6 +30,7 @@ export async function isLoggedIn(req: Request, res: Response, next: NextFunction
         const payload = jwtSimple.decode(token, jwt.jwtSecret);
         const userId = payload.user_id
         console.log(userId)
+
         // Check DB
         // TODO: add DB checking logic
         const userResult = await UserService.getUserByUsername(payload.username)
