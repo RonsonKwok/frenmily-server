@@ -6,6 +6,8 @@ export class FriendsController {
 
     getUserFriends = async (req: Request, res: Response) => {
         try {
+            console.log("getUserFriends API");
+            
 
             //change userID
             const user_id = 1
