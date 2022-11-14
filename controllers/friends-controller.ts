@@ -10,12 +10,20 @@ export class FriendsController {
 
             //change userID
             const user_id = 1;
-            const albumResult = await this.friendsService.getUserFriends(
-                user_id
-            );
-            console.log(albumResult);
+            const result = await this.friendsService.getUserFriends(user_id);
+            console.log(result);
+            const uniqueIds: any = [];
 
-            res.json(albumResult);
+            const unique = result.filter((element: any) => {
+                const isDuplicate = uniqueIds.includes(element.id);
+                if (!isDuplicate) {
+                    uniqueIds.push(element.id);
+                    return true;
+                }
+                return false;
+            });
+
+            res.json(unique);
             return;
         } catch (e) {
             console.log(e);
