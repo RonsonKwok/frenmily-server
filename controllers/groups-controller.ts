@@ -32,8 +32,27 @@ export class GroupsController {
             res.json({
                 message: "Create group successfully",
             });
-        } catch (error) {
-            console.log(error);
+        } catch (e) {
+            console.log(e);
+            res.status(400).send("Create group failed");
+            return;
+        }
+    };
+
+    getGroups = async (req: express.Request, res: express.Response) => {
+        try {
+            console.log("getGroups API");
+
+            //change userID
+            const user_id = 1;
+            const result = await this.groupsService.getGroups(user_id);
+
+            res.json(result);
+            return;
+        } catch (e) {
+            console.log(e);
+            res.status(400).send("get group failed");
+            return;
         }
     };
 

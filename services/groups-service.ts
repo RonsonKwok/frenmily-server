@@ -63,6 +63,18 @@ export class GroupsService {
         }
     }
 
+    async getGroups(user_id: number): Promise<any> {
+        let result = await this.knex.raw(
+            `
+            select * from groups inner join group_member 
+            on group_member.group_id = groups.id 
+            where group_member.user_id = ?
+        `,
+            [user_id]
+        );
+        return result.rows;
+    }
+
     // async getGroceriesInfoByLocation(district_id: number): Promise<any> {
     //     let cardResults = (
     //         await this.knex.raw(/*sql*/`
