@@ -1,40 +1,41 @@
-import express from "express"
-import { GroupsService } from "../services/groups-service"
+import express from "express";
+import { GroupsService } from "../services/groups-service";
 
 export class GroupsController {
-    constructor(private groupsService: GroupsService) { }
+    constructor(private groupsService: GroupsService) {}
 
     createGroup = async (req: express.Request, res: express.Response) => {
         try {
             console.log("group-controller");
-            const groupName = req.body.groupName
-            const is_family_group = req.body.is_family_group
-            const profile_picture = req.body.profile_picture
-            const groupMemberId = req.body.groupMemberId
-            console.log(groupName)
+            const groupName = req.body.groupName;
+            const is_family_group = req.body.is_family_group;
+            const profile_picture = req.body.profile_picture;
+            const groupMemberId = req.body.groupMemberId;
+            console.log(groupName);
             console.log(is_family_group);
             console.log(profile_picture);
             console.log(groupMemberId);
-            
 
-            if (false) {
-                console.log(this.groupsService);
-            }
-            // also add members
-            // member's friend add tgt
+            // insert to table groups
+            let rowID = await this.groupsService.createGroup(
+                groupName,
+                is_family_group,
+                profile_picture
+            );
+
+            // insert to table group_member
+            await this.groupsService.insertGroupMember(rowID, groupMemberId);
+
+            // all members add friends together
+            await this.groupsService.addFriendsTogether(groupMemberId);
 
             res.json({
-                groupName: groupName,
-                is_family_group: is_family_group,
-                profile_picture: profile_picture,
-                groupMemberId: groupMemberId
-            })
+                message: "Create group successfully",
+            });
         } catch (error) {
             console.log(error);
-
         }
-
-    }
+    };
 
     // getByLocation = async (req: express.Request, res: express.Response) => {
     //     // console.log(`getting rest by location... latitude: ${req.session['location'].x},longitude: ${req.session['location'].y}`)

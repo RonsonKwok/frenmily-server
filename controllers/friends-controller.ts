@@ -1,33 +1,29 @@
-import { Request, Response } from "express"
-import { FriendsService } from "../services/friends-service"
+import { Request, Response } from "express";
+import { FriendsService } from "../services/friends-service";
 // import { formParse } from "../utils/upload"
 export class FriendsController {
-    constructor(private friendsService: FriendsService) { }
+    constructor(private friendsService: FriendsService) {}
 
     getUserFriends = async (req: Request, res: Response) => {
         try {
             console.log("getUserFriends API");
-            
 
             //change userID
-            const user_id = 1
-            const albumResult = await this.friendsService.getUserFriends(user_id);
-            console.log(albumResult)
+            const user_id = 1;
+            const albumResult = await this.friendsService.getUserFriends(
+                user_id
+            );
+            console.log(albumResult);
 
-            res.json(albumResult)
-            return
+            res.json(albumResult);
+            return;
         } catch (e) {
             console.log(e);
 
-            res.status(400).send("Upload Fail")
-            return
+            res.status(400).send("Upload Fail");
+            return;
         }
-    }
-
-
-
-
-
+    };
 
     //////////////////////////////////////// from BAD project
 
@@ -39,7 +35,6 @@ export class FriendsController {
     //         }
     //     })
     // }
-
 
     // //uploadToAlbum + pass photo to model
     // uploadToAlbum = async (req: Request, res: Response) => {
@@ -76,7 +71,6 @@ export class FriendsController {
     //         const photoName = req.body.index
     //         console.log(photoName)
 
-
     //         await this.albumService.deletePhoto(photoName)
 
     //         res.json({
@@ -89,5 +83,4 @@ export class FriendsController {
     //         })
     //     }
     // }
-
 }
