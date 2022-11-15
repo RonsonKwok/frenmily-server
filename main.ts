@@ -4,7 +4,7 @@ import expressSession from 'express-session'
 import { userRoutes } from './routes/userRoute'
 import dotenv from 'dotenv';
 import grant from 'grant';
-import { groceriesRoute } from "./routes/groceriesRoute";
+import { groupsRoute } from "./routes/groupsRoute";
 import { friendsRoute } from "./routes/friendsRoute";
 import fs from "fs";
 import { uploadDir } from './utils/upload'
@@ -70,7 +70,7 @@ app.use(grantExpress as express.RequestHandler);
 fs.mkdirSync(uploadDir, { recursive: true })
 
 app.use('/user', userRoutes)
-app.use('/groceries', groceriesRoute);
+app.use('/groups', groupsRoute);
 app.use('/friends', friendsRoute)
 
 app.use(express.static('public'));
