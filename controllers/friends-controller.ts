@@ -33,6 +33,85 @@ export class FriendsController {
         }
     };
 
+    checkFriend = async (req: Request, res: Response) => {
+        try {
+            console.log("checkFriend API");
+            let searchBar = req.body.searchBar;
+            let userID = req.body.userID;
+            console.log(searchBar);
+            console.log(userID);
+
+            // check if user exists in table 'users'
+            const result = await this.friendsService.searchFriend(searchBar);
+            console.log(result);
+            if (result.length == 0) {
+                res.status(400).json({
+                    type: 1,
+                    message: "No such user",
+                });
+                return;
+            }
+
+            if (result[0].id == userID) {
+                res.status(400).json({
+                    type: 2,
+                    message: "cannot add yourself",
+                });
+                return;
+            }
+
+            // check if they are already friend or not
+            const result1 = await this.friendsService.friendOrNot(
+                result[0].id,
+                userID
+            );
+            console.log("result1 :", result1);
+            if (result1.length > 0) {
+                res.status(400).json({
+                    type: 3,
+                    message: "they are friend already",
+                });
+                return;
+            }
+
+            console.log("targetID :", result[0].id);
+            console.log("userID :", userID);
+
+            res.status(200).json({
+                type: 4,
+                message: "ready to add",
+                userDetails: result[0],
+            });
+            return;
+        } catch (e) {
+            console.log(e);
+
+            res.status(400).send("Upload Fail");
+            return;
+        }
+    };
+
+    addFriend = async (req: Request, res: Response) => {
+        try {
+            console.log("addFriend API");
+            let targetID = req.body.targetID;
+            let userID = req.body.userID;
+            console.log(targetID);
+            console.log(userID);
+
+            // add friend each other
+            await this.friendsService.addFriend(targetID, userID);
+
+            res.json({ message: "add success" });
+            return;
+        } catch (e) {
+            console.log(e);
+
+            res.status(400).send("add friend Fail");
+            return;
+        }
+    };
+
     //////////////////////////////////////// from BAD project
 
     // me = async (req: Request, res: Response) => {
