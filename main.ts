@@ -34,16 +34,16 @@ app.use(
 )
 
 
-declare module 'express-session' {
-    interface SessionData {
-        name?: String,
-        user: any,
-        grant: any,
-        location?: any,
-        // food_category: any,
-        profile_pic?: String,
-    }
-}
+// declare module 'express-session' {
+//     interface SessionData {
+//         name?: String,
+//         user: any,
+//         grant: any,
+//         location?: any,
+//         // food_category: any,
+//         profile_pic?: String,
+//     }
+// }
 
 // connect DB 
 
