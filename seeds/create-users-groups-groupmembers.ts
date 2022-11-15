@@ -84,7 +84,6 @@ export async function seed(knex: Knex): Promise<void> {
         }
     ]).into('users');
 
-
     await knex.insert([
         {
             group_name: "singK",

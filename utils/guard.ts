@@ -26,14 +26,14 @@ export async function isLoggedIn(req: Request, res: Response, next: NextFunction
             return res.status(401).json({ msg: "Your token is outdated. Please login again." });
         }
 
-        // 拆Token，取得 payload中的 userId
+        // 拆 Token，取得 payload中的 username
         const payload = jwtSimple.decode(token, jwt.jwtSecret);
-        const userId = payload.user_id
-        console.log(userId)
+        const username = payload.username
+        console.log(username)
 
         // Check DB
         // TODO: add DB checking logic
-        const userResult = await UserService.getUserByUsername(payload.username)
+        const userResult = await userService.getUserByUsername(username)
 
         const users = userRecords.filter(user => user.id == userId)
         if (users.length == 1) {

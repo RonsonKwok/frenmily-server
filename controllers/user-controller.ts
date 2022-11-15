@@ -60,19 +60,24 @@ export class UserController {
         let isValid = await checkPassword(password, dbUser["password"]!)
 
         if (isValid) {
-            console.log('login successfully')
+            console.log('correct password')
+            console.log(username, 'has logged in')
+
             // delete dbUser['password']
 
             // 登入成功就生成一個token
             const payload = {
-                user_id: dbUser.id,
+                userId: dbUser.id,
                 username: dbUser.username,
+                isMale: dbUser.isMale,
+                mobile: dbUser.mobile,
+                email: dbUser.email,
                 time: new Date().toLocaleTimeString()
             }
             const token = jwtSimple.encode(payload, jwt.jwtSecret);
 
             res.status(200).json({
-                status: "login successfully",
+                message: "login successfully",
                 token: token
             });
         }
@@ -136,37 +141,63 @@ export class UserController {
     }
 
     register = async (req: express.Request, res: express.Response) => {
-        console.log("server side receives signal")
-        console.log("request body: ", req.body)
-        const { username, password } = req.body
+        try {
+            const normalMobileNumberLength = 8
+            console.log("server side receives signal")
+            console.log("request body: ", req.body)
+            const { username, password, mobile } = req.body
 
-        console.log(username, password)
+            console.log(username, password, mobile)
 
-        if (!username || !password || username.length > 12 || password.length > 12) {
-            res.status(400).json({
-                message: 'Missing or invalid information'
-            })
-            return
+            if (!username || !password || username.length > 12 || password.length > 12) {
+                res.status(400).json({
+                    message: 'Invalid username or password.'
+                })
+                return
+            }
+
+            if (!mobile || mobile.length != normalMobileNumberLength) {
+                res.status(400).json({
+                    message: 'Invalid mobile number format.'
+                })
+                return
+            }
+
+            let usernameResult = await this.userService.getUserByUsername(username)
+            let dbUserByUsername: User = usernameResult.rows[0]
+            if (dbUserByUsername) {
+                console.log("user found in DB")
+                console.log(dbUserByUsername)
+                res.status(400).json({
+                    message: 'User already exists.'
+                })
+                return
+            }
+
+            let mobileResult = await this.userService.getUserByMobileNumber(mobile)
+            let dbUserByMobile: User = mobileResult.rows[0]
+            if (dbUserByMobile) {
+                console.log("user found in DB")
+                console.log(dbUserByMobile)
+                res.status(400).json({
+                    message: 'This mobile number is already in use.'
+                })
+                return
+            }
+
+
+
+            let result = await this.userService.createUser(username, password, mobile)
+            let newDBuser: User = result[0]
+
+            req.session['user'] = newDBuser
+
+            res.status(200).json({ message: 'Create successfully' })
+
         }
-
-        let userResult = await this.userService.getUserByUsername(username)
-        let dbUser: User = userResult.rows[0]
-
-        if (dbUser) {
-            console.log("user found in DB")
-            console.log(dbUser)
-            res.status(400).json({
-                message: 'User already exists'
-            })
-            return
+        catch (err) {
+            console.log(err)
         }
-
-        let result = await this.userService.createUser(username, password, null)
-        let newDBuser: User = result[0]
-
-        req.session['user'] = newDBuser
-
-        res.json({ message: 'Create successfully' })
     }
 
     //logout

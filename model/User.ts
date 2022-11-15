@@ -2,9 +2,8 @@ export class User {
     id: number;
     username: string;
     password?: string;
-    firstName: string;
-    lastName: string;
-    mobile: string
+    isMale: boolean | null;
+    mobile: string | null;
     email: string | null;
     created_at: Date;
     updated_at: Date
