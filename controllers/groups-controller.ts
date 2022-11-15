@@ -1,0 +1,69 @@
+import express from "express";
+import { GroupsService } from "../services/groups-service";
+
+export class GroupsController {
+    constructor(private groupsService: GroupsService) {}
+
+    createGroup = async (req: express.Request, res: express.Response) => {
+        try {
+            console.log("group-controller");
+            const groupName = req.body.groupName;
+            const is_family_group = req.body.is_family_group;
+            const profile_picture = req.body.profile_picture;
+            const groupMemberId = req.body.groupMemberId;
+            console.log(groupName);
+            console.log(is_family_group);
+            console.log(profile_picture);
+            console.log(groupMemberId);
+
+            // insert to table groups
+            let rowID = await this.groupsService.createGroup(
+                groupName,
+                is_family_group,
+                profile_picture
+            );
+
+            // insert to table group_member
+            await this.groupsService.insertGroupMember(rowID, groupMemberId);
+
+            // all members add friends together
+            await this.groupsService.addFriendsTogether(groupMemberId);
+
+            res.json({
+                message: "Create group successfully",
+            });
+        } catch (e) {
+            console.log(e);
+            res.status(400).send("Create group failed");
+            return;
+        }
+    };
+
+    getGroups = async (req: express.Request, res: express.Response) => {
+        try {
+            console.log("getGroups API");
+
+            //change userID
+            const user_id = 1;
+            const result = await this.groupsService.getGroups(user_id);
+
+            res.json(result);
+            return;
+        } catch (e) {
+            console.log(e);
+            res.status(400).send("get group failed");
+            return;
+        }
+    };
+
+    // getByLocation = async (req: express.Request, res: express.Response) => {
+    //     // console.log(`getting rest by location... latitude: ${req.session['location'].x},longitude: ${req.session['location'].y}`)
+    //     let result = await this.groceriesService.getTheNearestDistrict(req.session['location'].x, req.session['location'].y)
+    //     let userDistrict = result.rows[0].district_id
+    //     console.log(`getting rest by district_id ${userDistrict}`)
+
+    //     let cardResults = await this.groceriesService.getGroceriesInfoByLocation(userDistrict)
+    //     let finalResult = cardResults.rows
+    //     res.json( [finalResult] )
+    // }
+}

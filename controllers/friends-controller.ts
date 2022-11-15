@@ -1,31 +1,37 @@
-import { Request, Response } from "express"
-import { FriendsService } from "../services/friends-service"
+import { Request, Response } from "express";
+import { FriendsService } from "../services/friends-service";
 // import { formParse } from "../utils/upload"
 export class FriendsController {
-    constructor(private friendsService: FriendsService) { }
+    constructor(private friendsService: FriendsService) {}
 
     getUserFriends = async (req: Request, res: Response) => {
         try {
+            console.log("getUserFriends API");
 
             //change userID
-            const user_id = 1
-            const albumResult = await this.friendsService.getUserFriends(user_id);
-            console.log(albumResult)
+            const user_id = 1;
+            const result = await this.friendsService.getUserFriends(user_id);
+            console.log(result);
+            const uniqueIds: any = [];
 
-            res.json(albumResult)
-            return
+            const unique = result.filter((element: any) => {
+                const isDuplicate = uniqueIds.includes(element.id);
+                if (!isDuplicate) {
+                    uniqueIds.push(element.id);
+                    return true;
+                }
+                return false;
+            });
+
+            res.json(unique);
+            return;
         } catch (e) {
             console.log(e);
 
-            res.status(400).send("Upload Fail")
-            return
+            res.status(400).send("Upload Fail");
+            return;
         }
-    }
-
-
-
-
-
+    };
 
     //////////////////////////////////////// from BAD project
 
@@ -37,7 +43,6 @@ export class FriendsController {
     //         }
     //     })
     // }
-
 
     // //uploadToAlbum + pass photo to model
     // uploadToAlbum = async (req: Request, res: Response) => {
@@ -74,7 +79,6 @@ export class FriendsController {
     //         const photoName = req.body.index
     //         console.log(photoName)
 
-
     //         await this.albumService.deletePhoto(photoName)
 
     //         res.json({
@@ -87,5 +91,4 @@ export class FriendsController {
     //         })
     //     }
     // }
-
 }
