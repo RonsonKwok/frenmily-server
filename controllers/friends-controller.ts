@@ -8,8 +8,9 @@ export class FriendsController {
         try {
             console.log("getUserFriends API");
 
-            //change userID
-            const user_id = 1;
+            let user_id = req.body.userID;
+            console.log("user_id :", user_id);
+
             const result = await this.friendsService.getUserFriends(user_id);
             console.log(result);
             const uniqueIds: any = [];
@@ -74,7 +75,7 @@ export class FriendsController {
                 return;
             }
 
-            console.log("targetID :", result[0].id);
+            console.log("targetID :", result[0]);
             console.log("userID :", userID);
 
             res.status(200).json({

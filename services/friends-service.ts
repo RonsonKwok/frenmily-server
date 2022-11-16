@@ -16,6 +16,30 @@ export class FriendsService {
             "select * from users where mobile = ?",
             [searchBar]
         );
+        console.log("results.rows :", results.rows);
+        // [
+        //     {
+        //       id: 8,
+        //       username: '888',
+        //       is_male: false,
+        //       email: '888',
+        //       mobile: '888',
+        //       password: '888',
+        //       profile_picture: '888',
+        //       created_at: 2022-11-15T13:55:53.704Z,
+        //       updated_at: 2022-11-15T13:55:53.704Z
+        //     }
+        //   ]
+
+        const emailResult = await this.knex.raw(
+            "select * from users where email = ?",
+            [searchBar]
+        );
+        // console.log("results.rowsEmail :", emailResult.rows);
+
+        results.rows.push(emailResult.rows[0]);
+        console.log("combineResult :", results.rows);
+
         return results.rows;
     }
 

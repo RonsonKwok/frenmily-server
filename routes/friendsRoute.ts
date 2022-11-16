@@ -9,7 +9,7 @@ export const friendsRoute = express.Router();
 let friendsService = new FriendsService(knex);
 let friendsController = new FriendsController(friendsService);
 
-friendsRoute.get(
+friendsRoute.post(
     "/",
     // isLoggedIn,
     friendsController.getUserFriends

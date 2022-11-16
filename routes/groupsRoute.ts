@@ -9,6 +9,6 @@ let groupsService = new GroupsService(knex);
 let groupsController = new GroupsController(groupsService);
 
 groupsRoute.post("/", groupsController.createGroup);
-groupsRoute.get("/", groupsController.getGroups);
+groupsRoute.post("/getGroups", groupsController.getGroups);
 // groceriesRoute.get('/category', groceriesController.getByCategory);
 // groceriesRoute.get('/location', groceriesController.getByLocation);

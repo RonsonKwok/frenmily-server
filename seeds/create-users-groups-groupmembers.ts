@@ -22,7 +22,7 @@ export async function seed(knex: Knex): Promise<void> {
     await knex.insert([
         {
             username: 111,
-            is_male: true,
+            gender: "Male",
             email: 111,
             mobile: 111,
             password: 111,
@@ -30,7 +30,7 @@ export async function seed(knex: Knex): Promise<void> {
         },
         {
             username: 222,
-            is_male: false,
+            gender: "Female",
             email: 222,
             mobile: 222,
             password: 222,
@@ -38,7 +38,7 @@ export async function seed(knex: Knex): Promise<void> {
         },
         {
             username: 333,
-            is_male: true,
+            gender: "Female",
             email: 333,
             mobile: 333,
             password: 333,
@@ -46,7 +46,7 @@ export async function seed(knex: Knex): Promise<void> {
         },
         {
             username: 444,
-            is_male: false,
+            gender: "Male",
             email: 444,
             mobile: 444,
             password: 444,
@@ -54,7 +54,7 @@ export async function seed(knex: Knex): Promise<void> {
         },
         {
             username: 555,
-            is_male: true,
+            gender: "Male",
             email: 555,
             mobile: 555,
             password: 555,
@@ -62,7 +62,7 @@ export async function seed(knex: Knex): Promise<void> {
         },
         {
             username: 666,
-            is_male: false,
+            gender: "Female",
             email: 666,
             mobile: 666,
             password: 666,
@@ -70,7 +70,7 @@ export async function seed(knex: Knex): Promise<void> {
         },
         {
             username: 777,
-            is_male: true,
+            gender: "Female",
             email: 777,
             mobile: 777,
             password: 777,
@@ -78,7 +78,7 @@ export async function seed(knex: Knex): Promise<void> {
         },
         {
             username: 888,
-            is_male: false,
+            gender: "Male",
             email: 888,
             mobile: 888,
             password: 888,
@@ -86,7 +86,7 @@ export async function seed(knex: Knex): Promise<void> {
         },
         {
             username: 999,
-            is_male: true,
+            gender: "Female",
             email: 999,
             mobile: 999,
             password: 999,
