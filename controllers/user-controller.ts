@@ -48,6 +48,7 @@ export class UserController {
         // Check DB
         let userResult = await this.userService.getUserByUsername(username)
         let dbUser: User = userResult.rows[0]
+        console.log("dbUser: ", dbUser)
 
         if (!dbUser) {
             res.status(400).json({
@@ -72,10 +73,11 @@ export class UserController {
                 isMale: dbUser.isMale,
                 mobile: dbUser.mobile,
                 email: dbUser.email,
-                time: new Date().toLocaleTimeString()
+                // time: new Date().toLocaleTimeString()
             }
             const token = jwtSimple.encode(payload, jwt.jwtSecret);
-
+            console.log("payload: ", payload)
+            console.log("token: ", token)
             res.status(200).json({
                 message: "login successfully",
                 token: token
