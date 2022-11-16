@@ -6,18 +6,17 @@ export class GroupsController {
 
     createGroup = async (req: express.Request, res: express.Response) => {
         try {
-            //change userID
-            const user_id = 1;
-
             console.log("group-controller");
             const groupName = req.body.groupName;
             const is_family_group = req.body.is_family_group;
             const profile_picture = req.body.profile_picture;
             const groupMemberId = req.body.groupMemberId;
+            const user_id = req.body.userID;
             console.log(groupName);
             console.log(is_family_group);
             console.log(profile_picture);
             console.log(groupMemberId);
+            console.log(user_id);
 
             // insert to table groups
             let rowID = await this.groupsService.createGroup(
@@ -49,9 +48,9 @@ export class GroupsController {
     getGroups = async (req: express.Request, res: express.Response) => {
         try {
             console.log("getGroups API");
+            const user_id = req.body.userID;
+            console.log(user_id);
 
-            //change userID
-            const user_id = 1;
             const result = await this.groupsService.getGroups(user_id);
 
             res.json(result);
