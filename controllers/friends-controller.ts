@@ -75,7 +75,7 @@ export class FriendsController {
                 return;
             }
 
-            console.log("targetID :", result[0].id);
+            console.log("targetID :", result[0]);
             console.log("userID :", userID);
 
             res.status(200).json({
