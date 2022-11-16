@@ -8,8 +8,8 @@ export async function up(knex: Knex): Promise<void> {
         table.foreign("supermarkets_id").references("supermarkets.id");
         table.integer("goods_id").notNullable();
         table.foreign("goods_id").references("goods.id");
-        table.integer("goods_price");
-        table.integer("report_lower_price");
+        table.string("goods_price");
+        table.string("report_lower_price");
         table.string("evidence_image");
         table.timestamps(false, true);
         //SET "evidence-image" NULL FOR TESTING STAGE
