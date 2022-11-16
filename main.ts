@@ -3,7 +3,6 @@ import express from "express";
 import expressSession from 'express-session'
 import { userRoutes } from './routes/userRoute'
 import dotenv from 'dotenv';
-import { Client } from 'pg';
 import grant from 'grant';
 import { groupsRoute } from "./routes/groupsRoute";
 import { friendsRoute } from "./routes/friendsRoute";
@@ -49,14 +48,6 @@ app.use(
 
 
 dotenv.config();
-
-export const client = new Client({
-    database: process.env.DB_NAME,
-    user: process.env.DB_USERNAME,
-    password: process.env.DB_PASSWORD
-});
-
-client.connect();
 
 // Google Login
 const grantExpress = grant.express({

@@ -22,8 +22,12 @@ export class GroupsService {
 
     async insertGroupMember(
         rowID: number,
-        groupMemberIdArray: number[]
+        groupMemberIdArray: number[],
+        user_id: number
     ): Promise<any> {
+        groupMemberIdArray.push(user_id);
+        console.log(groupMemberIdArray);
+
         for (let i = 0; i < groupMemberIdArray.length; i++) {
             console.log(groupMemberIdArray[i]);
             await this.knex.raw(
@@ -39,6 +43,8 @@ export class GroupsService {
 
     async addFriendsTogether(groupMemberIdArray: number[]): Promise<any> {
         let tempArray = [];
+        console.log(groupMemberIdArray);
+
         for (let i = 0; i < groupMemberIdArray.length; i++) {
             console.log(groupMemberIdArray[i]);
             for (let y = 0; y < groupMemberIdArray.length; y++) {

@@ -6,6 +6,9 @@ export class GroupsController {
 
     createGroup = async (req: express.Request, res: express.Response) => {
         try {
+            //change userID
+            const user_id = 1;
+
             console.log("group-controller");
             const groupName = req.body.groupName;
             const is_family_group = req.body.is_family_group;
@@ -24,7 +27,11 @@ export class GroupsController {
             );
 
             // insert to table group_member
-            await this.groupsService.insertGroupMember(rowID, groupMemberId);
+            await this.groupsService.insertGroupMember(
+                rowID,
+                groupMemberId,
+                user_id
+            );
 
             // all members add friends together
             await this.groupsService.addFriendsTogether(groupMemberId);
