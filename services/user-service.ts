@@ -45,42 +45,107 @@ export class UserService {
     constructor(private knex: Knex) { }
 
     async getUserByUsername(username: string): Promise<any> {
-        let userResult = (
-            await this.knex.raw(/*sql*/`
+        try {
+            let userResult = (
+                await this.knex.raw(/*sql*/`
             SELECT * 
             FROM users 
             WHERE username = ?
         `,
-                [username])
-        )
-        return userResult
+                    [username])
+            )
+            return userResult
+        } catch (error) {
+            console.log(error)
+        }
+
     }
 
     async getUserByMobileNumber(mobile: string): Promise<any> {
-        let userResult = (
-            await this.knex.raw(/*sql*/`
-            SELECT * 
-            FROM users 
-            WHERE mobile = ?
+        try {
+            let userResult = (
+                await this.knex.raw(/*sql*/`
+                SELECT * 
+                FROM users 
+                WHERE mobile = ?
+            `,
+                    [mobile])
+            )
+            return userResult
+
+        } catch (error) {
+            console.log(error)
+        }
+    }
+
+    async updateGender(username: string, gender: string) {
+        try {
+            let userResult = (
+                await this.knex.raw(/*sql*/`
+                UPDATE users 
+                SET gender = ? 
+                WHERE username = ?
+            `,
+                    [gender, username])
+            )
+            return userResult
+
+        } catch (error) {
+            console.log(error)
+        }
+    }
+
+    async updateUserMobileNumber(username: string, mobile: string) {
+        try {
+            let userResult = (
+                await this.knex.raw(/*sql*/`
+            UPDATE users 
+            SET mobile = ? 
+            WHERE username = ?
         `,
-                [mobile])
-        )
-        return userResult
+                    [mobile, username])
+            )
+            return userResult
+        } catch (error) {
+            console.log(error)
+        }
+
+    }
+
+    async updateEmail(username: string, email: string) {
+        try {
+            let userResult = (
+                await this.knex.raw(/*sql*/`
+                UPDATE users 
+                SET email = ? 
+                WHERE username = ?
+            `,
+                    [email, username])
+            )
+            return userResult
+
+        } catch (error) {
+            console.log(error)
+        }
     }
 
 
     async createUser(username: string, password: string, mobile: string): Promise<any> {
+        try {
+            let hashedPassword = await hashPassword(password)
 
-        let hashedPassword = await hashPassword(password)
 
+            let result = await this.knex.insert({
+                username: username,
+                password: hashedPassword,
+                mobile: mobile
+            }).into("users").returning('*');
 
-        let result = await this.knex.insert({
-            username: username,
-            password: hashedPassword,
-            mobile: mobile
-        }).into("users").returning('*');
+            return result;
 
-        return result;
+        } catch (error) {
+            console.log(error)
+        }
     }
 
 
