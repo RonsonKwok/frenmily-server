@@ -235,6 +235,9 @@ export async function seed(knex: Knex): Promise<void> {
         {
             name: "DCH Foods7",
         },
+        {
+            name: "Ztore8",
+        },
 
     ]).into('supermarkets');
 
