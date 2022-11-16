@@ -2,7 +2,7 @@ export class User {
     id: number;
     username: string;
     password?: string;
-    isMale: boolean | null;
+    gender: string | null;
     mobile: string | null;
     email: string | null;
     created_at: Date;

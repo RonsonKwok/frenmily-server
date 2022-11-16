@@ -17,77 +17,92 @@ export class UserController {
     constructor(private userService: UserService) { }
 
     me = async (req: express.Request, res: express.Response) => {
-        res.json({
-            message: 'Success retrieve user',
-            data: {
-                user: req.session['user'] ? req.session['user'] : null
-            }
-        })
+        try {
+            res.json({
+                message: 'Success retrieve user',
+                data: {
+                    user: req.session['user'] ? req.session['user'] : null
+                }
+            })
+        } catch (e) {
+            console.log(e)
+        }
+
     }
 
     username = async (req: express.Request, res: express.Response) => {
-        let currentUsername = req.session['user']['username']
-        res.json({
-            username: currentUsername
-        })
+        try {
+            let currentUsername = req.session['user']['username']
+            res.json({
+                username: currentUsername
+            })
+        } catch (e) {
+            console.log(e)
+        }
+
     }
 
     login = async (req: express.Request, res: express.Response) => {
-        const { username, password } = req.body
+        try {
+            const { username, password } = req.body
 
-        // Check input
-        if (!username || !password) {
-            res.status(400).json({
-                message: 'Empty input for username or password'
-            })
-            return
-        }
-
-
-
-        // Check DB
-        let userResult = await this.userService.getUserByUsername(username)
-        let dbUser: User = userResult.rows[0]
-        console.log("dbUser: ", dbUser)
-
-        if (!dbUser) {
-            res.status(400).json({
-                message: 'No such user'
-            })
-            return
-        }
-
-        // If such username exists, and the password matches with the hashedPassword
-        let isValid = await checkPassword(password, dbUser["password"]!)
-
-        if (isValid) {
-            console.log('correct password')
-            console.log(username, 'has logged in')
-
-            // delete dbUser['password']
-
-            // 登入成功就生成一個token
-            const payload = {
-                userId: dbUser.id,
-                username: dbUser.username,
-                isMale: dbUser.isMale,
-                mobile: dbUser.mobile,
-                email: dbUser.email,
-                // time: new Date().toLocaleTimeString()
+            // Check input
+            if (!username || !password) {
+                res.status(400).json({
+                    message: 'Empty input for username or password'
+                })
+                return
             }
-            const token = jwtSimple.encode(payload, jwt.jwtSecret);
-            console.log("payload: ", payload)
-            console.log("token: ", token)
-            res.status(200).json({
-                message: "login successfully",
-                token: token
-            });
+
+
+
+            // Check DB
+            let userResult = await this.userService.getUserByUsername(username)
+            let dbUser: User = userResult.rows[0]
+            console.log("dbUser: ", dbUser)
+
+            if (!dbUser) {
+                res.status(400).json({
+                    message: 'No such user'
+                })
+                return
+            }
+
+            // If such username exists, and the password matches with the hashedPassword
+            let isValid = await checkPassword(password, dbUser["password"]!)
+
+            if (isValid) {
+                console.log('correct password')
+                console.log(username, 'has logged in')
+
+                // delete dbUser['password']
+
+                // 登入成功就生成一個token
+                const payload = {
+                    userId: dbUser.id,
+                    username: dbUser.username,
+                    gender: dbUser.gender,
+                    mobile: dbUser.mobile,
+                    email: dbUser.email,
+                    // time: new Date().toLocaleTimeString()
+                }
+                const token = jwtSimple.encode(payload, jwt.jwtSecret);
+                console.log("payload: ", payload)
+                console.log("token: ", token)
+                res.status(200).json({
+                    message: "login successfully",
+                    token: token
+                });
+            }
+            else {
+                res.status(401).json({
+                    message: "login failed"
+                })
+            }
+        } catch (e) {
+            console.log(e)
         }
-        else {
-            res.status(401).json({
-                message: "login failed"
-            })
-        }
+
     }
 
     location = async (req: express.Request, res: express.Response) => {
@@ -112,33 +127,38 @@ export class UserController {
     // }
 
     loginGoogle = async (req: express.Request, res: express.Response) => {
-        const accessToken = req.session?.['grant'].response.access_token;
-        console.log("accessToken: ", accessToken)
-        const fetchRes = await fetch('https://www.googleapis.com/oauth2/v2/userinfo', {
-            method: "get",
-            headers: {
-                "Authorization": `Bearer ${accessToken}`
+        try {
+            const accessToken = req.session?.['grant'].response.access_token;
+            console.log("accessToken: ", accessToken)
+            const fetchRes = await fetch('https://www.googleapis.com/oauth2/v2/userinfo', {
+                method: "get",
+                headers: {
+                    "Authorization": `Bearer ${accessToken}`
+                }
+            });
+            const result = await fetchRes.json();
+            console.log("google result:", result)
+
+            // Create a random password for Google users
+            const randomString = crypto.randomBytes(32).toString("hex")
+
+            const username = result.email
+            const password = randomString
+            const email = result.email
+
+            let userResult = await this.userService.getUserByUsername(username)
+            let dbUser: User = userResult.rows[0]
+            req.session['user'] = dbUser
+            if (dbUser) {
+                res.redirect('/homepage.html')
+                return
             }
-        });
-        const result = await fetchRes.json();
-        console.log("google result:", result)
-
-        // Create a random password for Google users
-        const randomString = crypto.randomBytes(32).toString("hex")
-
-        const username = result.email
-        const password = randomString
-        const email = result.email
-
-        let userResult = await this.userService.getUserByUsername(username)
-        let dbUser: User = userResult.rows[0]
-        req.session['user'] = dbUser
-        if (dbUser) {
+            await this.userService.createUser(username, password, email)
             res.redirect('/homepage.html')
-            return
+        } catch (e) {
+            console.log(e)
         }
-        await this.userService.createUser(username, password, email)
-        res.redirect('/homepage.html')
+
 
     }
 
@@ -202,40 +222,152 @@ export class UserController {
         }
     }
 
-    //logout
-    logout = async (req: express.Request, res: express.Response) => {
-        req.session.destroy(() => {
-            console.log('user logged out')
-        })
-        res.redirect('/index.html')
+
+
+    updateGender = async (req: express.Request, res: express.Response) => {
+        try {
+            const { username, gender } = req.body
+            console.log(username, gender)
+
+            await this.userService.updateGender(username, gender)
+
+            // 改資料成功就重新生成一個token
+            let userResult = await this.userService.getUserByUsername(username)
+            let dbUser: User = userResult.rows[0]
+
+            console.log("dbUser get after successfully changing gender setting: ", dbUser)
+
+
+            const payload = {
+                userId: dbUser.id,
+                username: dbUser.username,
+                gender: dbUser.gender,
+                mobile: dbUser.mobile,
+                email: dbUser.email,
+                // time: new Date().toLocaleTimeString()
+            }
+            const token = jwtSimple.encode(payload, jwt.jwtSecret);
+            console.log("payload: ", payload)
+            console.log("token: ", token)
+
+
+            res.status(200).json({
+                message: 'Update gender successfully',
+                token: token
+            })
+
+        } catch (e) {
+            console.log(e)
+        }
     }
+
+    updateMobileNumber = async (req: express.Request, res: express.Response) => {
+        try {
+            const { username, mobile } = req.body
+            console.log(username, mobile)
+
+            await this.userService.updateUserMobileNumber(username, mobile)
+
+            // 改資料成功就重新生成一個token
+            let userResult = await this.userService.getUserByUsername(username)
+            let dbUser: User = userResult.rows[0]
+
+            console.log("dbUser get after successfully changing gender setting: ", dbUser)
+
+
+            const payload = {
+                userId: dbUser.id,
+                username: dbUser.username,
+                gender: dbUser.gender,
+                mobile: dbUser.mobile,
+                email: dbUser.email,
+                // time: new Date().toLocaleTimeString()
+            }
+            const token = jwtSimple.encode(payload, jwt.jwtSecret);
+            console.log("payload: ", payload)
+            console.log("token: ", token)
+
+            res.status(200).json({
+                message: 'Update mobile number successfully',
+            })
+
+        } catch (e) {
+            console.log(e)
+        }
+    }
+
+    updateEmail = async (req: express.Request, res: express.Response) => {
+        try {
+            const { username, email } = req.body
+            console.log(username, email)
+            await this.userService.updateEmail(username, email)
+
+            // 改資料成功就重新生成一個token
+            let userResult = await this.userService.getUserByUsername(username)
+            let dbUser: User = userResult.rows[0]
+
+            console.log("dbUser get after successfully changing gender setting: ", dbUser)
+
+
+            const payload = {
+                userId: dbUser.id,
+                username: dbUser.username,
+                gender: dbUser.gender,
+                mobile: dbUser.mobile,
+                email: dbUser.email,
+                // time: new Date().toLocaleTimeString()
+            }
+            const token = jwtSimple.encode(payload, jwt.jwtSecret);
+            console.log("payload: ", payload)
+            console.log("token: ", token)
+
+            res.status(200).json({
+                message: 'Update email address successfully',
+            })
+
+        } catch (e) {
+            console.log(e)
+        }
+    }
+
+    // // logout
+    // logout = async (req: express.Request, res: express.Response) => {
+    //     req.session.destroy(() => {
+    //         console.log('user logged out')
+    //     })
+    //     res.redirect('/index.html')
+    // }
 
     // Update profile picture
     changeProfilePicture = async (req: express.Request, res: express.Response) => {
-
-        let { files } = await formParse(req)
-        console.log("files: ", files)
-
-
-
-        // get username to use it as filename
-        const OLD_FILE_NAME = files["image"]["newFilename"]
-        const NEW_FILE_NAME = req.session['user']['username'] + ".png"
-
-        let oldFilePath = path.join(__dirname, `../uploads/${OLD_FILE_NAME}`)
-        console.log({ oldFilePath });
-        let newFilePath = path.join(__dirname, `../uploads/${NEW_FILE_NAME}`)
-        console.log({ newFilePath });
-
-        fs.rename(oldFilePath, newFilePath, function (err) {
-            if (err) throw err;
-            console.log('File Renamed.');
-        })
+        try {
+            let { files } = await formParse(req)
+            console.log("files: ", files)
 
 
-        res.status(200).json({
-            message: "received profile picture"
-        })
+
+            // get username to use it as filename
+            const OLD_FILE_NAME = files["image"]["newFilename"]
+            const NEW_FILE_NAME = req.session['user']['username'] + ".png"
+
+            let oldFilePath = path.join(__dirname, `../uploads/${OLD_FILE_NAME}`)
+            console.log({ oldFilePath });
+            let newFilePath = path.join(__dirname, `../uploads/${NEW_FILE_NAME}`)
+            console.log({ newFilePath });
+
+            fs.rename(oldFilePath, newFilePath, function (err) {
+                if (err) throw err;
+                console.log('File Renamed.');
+            })
+
+
+            res.status(200).json({
+                message: "received profile picture"
+            })
+        } catch (e) {
+            console.log(e)
+        }
+
     }
 
 
