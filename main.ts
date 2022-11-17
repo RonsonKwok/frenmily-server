@@ -6,6 +6,7 @@ import dotenv from 'dotenv';
 import grant from 'grant';
 import { groupsRoute } from "./routes/groupsRoute";
 import { friendsRoute } from "./routes/friendsRoute";
+import { goodsRoute } from "./routes/goodsRoute";
 import fs from "fs";
 import { uploadDir } from './utils/upload'
 import cors from "cors";
@@ -15,7 +16,7 @@ import cors from "cors";
 // import path from 'path';
 // import fetch from 'cross-fetch';
 export const app = express();
-const PORT = 8080;
+const PORT = 8000;
 
 
 app.use(express.json());
@@ -52,7 +53,7 @@ dotenv.config();
 // Google Login
 const grantExpress = grant.express({
     "defaults": {
-        "origin": "http://localhost:8080", // To be changed to the elastic IP if not working on AWS server
+        "origin": "http://localhost:8000", // To be changed to the elastic IP if not working on AWS server
         "transport": "session",
         "state": true,
     },
@@ -72,6 +73,7 @@ fs.mkdirSync(uploadDir, { recursive: true })
 app.use('/user', userRoutes)
 app.use('/groups', groupsRoute);
 app.use('/friends', friendsRoute)
+app.use('/goods', goodsRoute)
 
 app.use(express.static('public'));
 app.use("/uploads", express.static('uploads'))

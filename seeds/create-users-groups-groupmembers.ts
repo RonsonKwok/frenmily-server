@@ -11,6 +11,7 @@ export async function seed(knex: Knex): Promise<void> {
     await knex.raw(`TRUNCATE  carts  RESTART IDENTITY CASCADE`)
     await knex.raw(`TRUNCATE  goods  RESTART IDENTITY CASCADE`)
     await knex.raw(`TRUNCATE  supermarket_goods  RESTART IDENTITY CASCADE`)
+    await knex.raw(`TRUNCATE  user_liked  RESTART IDENTITY CASCADE`)
     // await knex.raw(`TRUNCATE  user_friends  RESTART IDENTITY CASCADE`)
     // await knex.raw(`TRUNCATE  user_friends  RESTART IDENTITY CASCADE`)
     // await knex.raw(`TRUNCATE  user_friends  RESTART IDENTITY CASCADE`)
@@ -181,6 +182,7 @@ export async function seed(knex: Knex): Promise<void> {
     await knex.insert([
         {
             name: "Bakery and Breakfast1",
+            goods_categories_picture: "https://img.myloview.com/posters/bread-color-line-icon-bakery-and-breakfast-loaf-sign-vector-graphics-editable-stroke-filled-outline-icon-eps-10-700-231214360.jpg"
         },
         {
             name: "Diary Products2",
@@ -509,6 +511,66 @@ export async function seed(knex: Knex): Promise<void> {
 
     ]).into('supermarket_goods');
 
+    await knex.insert([
+        // 桂格 Quaker - 即食燕麥片 - 袋裝 800克
+        {
+            user_id: "1",
+            goods_id: "5",
+        },
+        {
+            user_id: "1",
+            goods_id: "5",
+        },        {
+            user_id: "1",
+            goods_id: "5",
+        },        {
+            user_id: "1",
+            goods_id: "5",
+        },        {
+            user_id: "1",
+            goods_id: "5",
+        },
+        {
+            user_id: "1",
+            goods_id: "4",
+        },
+        {
+            user_id: "1",
+            goods_id: "4",
+        },
+        {
+            user_id: "1",
+            goods_id: "4",
+        },
+        {
+            user_id: "1",
+            goods_id: "4",
+        },
+        {
+            user_id: "1",
+            goods_id: "3",
+        },
+        {
+            user_id: "1",
+            goods_id: "3",
+        },
+        {
+            user_id: "1",
+            goods_id: "3",
+        },
+        {
+            user_id: "1",
+            goods_id: "2",
+        },
+        {
+            user_id: "1",
+            goods_id: "2",
+        },
+        {
+            user_id: "1",
+            goods_id: "1",
+        },
 
+    ]).into('user_liked');
 
 };
