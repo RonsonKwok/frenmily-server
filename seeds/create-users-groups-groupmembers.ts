@@ -516,59 +516,77 @@ export async function seed(knex: Knex): Promise<void> {
         {
             user_id: "1",
             goods_id: "5",
+            category_id: 8
         },
         {
             user_id: "1",
             goods_id: "5",
-        },        {
+            category_id: 8
+        }, 
+        {
             user_id: "1",
             goods_id: "5",
-        },        {
+            category_id: 8
+        }, 
+        {
             user_id: "1",
             goods_id: "5",
-        },        {
+            category_id: 8
+        }, 
+        {
             user_id: "1",
             goods_id: "5",
+            category_id: 8
         },
         {
             user_id: "1",
             goods_id: "4",
+            category_id: 9
         },
         {
             user_id: "1",
             goods_id: "4",
+            category_id: 9
         },
         {
             user_id: "1",
             goods_id: "4",
+            category_id: 9
         },
         {
             user_id: "1",
             goods_id: "4",
+            category_id: 7
         },
         {
             user_id: "1",
             goods_id: "3",
+            category_id: 7
         },
         {
             user_id: "1",
             goods_id: "3",
+            category_id: 7
         },
         {
             user_id: "1",
             goods_id: "3",
+            category_id: 7
         },
         {
             user_id: "1",
             goods_id: "2",
+            category_id: 7
         },
         {
             user_id: "1",
             goods_id: "2",
+            category_id: 7
         },
         {
             user_id: "1",
             goods_id: "1",
+            category_id: 7
         },
 
     ]).into('user_liked');
