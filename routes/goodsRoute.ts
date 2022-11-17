@@ -9,15 +9,8 @@ export const goodsRoute = express.Router();
 let goodsService = new GoodsService(knex);
 let goodsController = new GoodsController(goodsService);
 
-goodsRoute.get(
-    "/categories",
-    goodsController.getAllGoodsCategories
-);
-// goodsRoute.post(
-//     "/newFriend",
-//     // isLoggedIn,
-//     goodsController.checkFriend
-// );
+goodsRoute.get("/categories", goodsController.getAllGoodsCategories);
+goodsRoute.post("/getGoods", goodsController.getGoodsByCat);
 // goodsRoute.post(
 //     "/addFriend",
 //     // isLoggedIn,
