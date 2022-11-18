@@ -223,7 +223,6 @@ export class UserController {
     }
 
 
-
     updateGender = async (req: express.Request, res: express.Response) => {
         try {
             const { username, gender } = req.body
@@ -289,6 +288,7 @@ export class UserController {
 
             res.status(200).json({
                 message: 'Update mobile number successfully',
+                token: token
             })
 
         } catch (e) {
@@ -323,6 +323,7 @@ export class UserController {
 
             res.status(200).json({
                 message: 'Update email address successfully',
+                token: token
             })
 
         } catch (e) {
@@ -330,13 +331,7 @@ export class UserController {
         }
     }
 
-    // // logout
-    // logout = async (req: express.Request, res: express.Response) => {
-    //     req.session.destroy(() => {
-    //         console.log('user logged out')
-    //     })
-    //     res.redirect('/index.html')
-    // }
+
 
     // Update profile picture
     changeProfilePicture = async (req: express.Request, res: express.Response) => {
