@@ -1,15 +1,19 @@
 // console.log(`A`)
 import express from "express";
-import expressSession from 'express-session'
-import { userRoutes } from './routes/userRoute'
-import dotenv from 'dotenv';
-import grant from 'grant';
+import expressSession from "express-session";
+import { userRoutes } from "./routes/userRoute";
+import { Request, Response } from "express";
+import dotenv from "dotenv";
+import grant from "grant";
 import { groupsRoute } from "./routes/groupsRoute";
 import { friendsRoute } from "./routes/friendsRoute";
 import { goodsRoute } from "./routes/goodsRoute";
 import fs from "fs";
-import { uploadDir } from './utils/upload'
+import { initFormidable, uploadDir } from "./utils/upload";
 import cors from "cors";
+import IncomingForm from "formidable/Formidable";
+import { uploadToS3 } from "./utils/aws-s3-upload";
+import { File } from "formidable";
 
 // import formidable from 'formidable'
 // import jsonfile from 'jsonfile';
@@ -18,21 +22,19 @@ import cors from "cors";
 export const app = express();
 const PORT = 8000;
 
-
 app.use(express.json());
 
-let bodyParser = require('body-parser')
-app.use(bodyParser.text({ limit: '50mb' }));
-app.use(bodyParser.json({ limit: '50mb' }));
-app.use(cors())
+let bodyParser = require("body-parser");
+app.use(bodyParser.text({ limit: "50mb" }));
+app.use(bodyParser.json({ limit: "50mb" }));
+app.use(cors());
 app.use(
     expressSession({
-        secret: 'what to buy',
+        secret: "what to buy",
         resave: true,
         saveUninitialized: true,
-    }),
-)
-
+    })
+);
 
 // declare module 'express-session' {
 //     interface SessionData {
@@ -45,43 +47,68 @@ app.use(
 //     }
 // }
 
-// connect DB 
+// connect DB
 
+// upload to S3
+app.post("/file", async function (req: Request, res: Response) {
+    const form: IncomingForm = initFormidable();
+    form.parse(req, async (err, fields, files) => {
+        req.body = fields;
+        // console.log({fields})
+        console.log({ files });
+
+        let file: File = Array.isArray(files.image)
+            ? files.image[0]
+            : files.image;
+        let fileName = file ? file.newFilename : undefined;
+
+        // Upload file to AWS S3
+        const accessPath = await uploadToS3({
+            Bucket: "iconandreceipt",
+            Key: `${fileName}`,
+            Body: fs.readFileSync(file.filepath!),
+        });
+
+        // Insert accessPath to your table
+
+        console.log(accessPath);
+        res.json({ accessPath: accessPath });
+    });
+});
 
 dotenv.config();
 
 // Google Login
 const grantExpress = grant.express({
-    "defaults": {
-        "origin": "http://localhost:8000", // To be changed to the elastic IP if not working on AWS server
-        "transport": "session",
-        "state": true,
+    defaults: {
+        origin: "http://localhost:8000", // To be changed to the elastic IP if not working on AWS server
+        transport: "session",
+        state: true,
     },
-    "google": {
-        "key": process.env.GOOGLE_CLIENT_ID || "",
-        "secret": process.env.GOOGLE_CLIENT_SECRET || "",
-        "scope": ["profile", "email"],
-        "callback": "/user/login/google"
-    }
+    google: {
+        key: process.env.GOOGLE_CLIENT_ID || "",
+        secret: process.env.GOOGLE_CLIENT_SECRET || "",
+        scope: ["profile", "email"],
+        callback: "/user/login/google",
+    },
 });
-
 
 app.use(grantExpress as express.RequestHandler);
 
-fs.mkdirSync(uploadDir, { recursive: true })
+fs.mkdirSync(uploadDir, { recursive: true });
 
-app.use('/user', userRoutes)
-app.use('/groups', groupsRoute);
-app.use('/friends', friendsRoute)
-app.use('/goods', goodsRoute)
+app.use("/user", userRoutes);
+app.use("/groups", groupsRoute);
+app.use("/friends", friendsRoute);
+app.use("/goods", goodsRoute);
 
-app.use(express.static('public'));
-app.use("/uploads", express.static('uploads'))
+app.use(express.static("public"));
+app.use("/uploads", express.static("uploads"));
 
 app.use((req, res) => {
-    res.redirect('/404.html')
-})
+    res.redirect("/404.html");
+});
 // console.log(`B`)
 app.listen(PORT, () => {
-    console.log(`Listening on http://localhost:${PORT}`)
-})
+    console.log(`Listening on http://localhost:${PORT}`);
+});
