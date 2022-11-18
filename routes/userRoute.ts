@@ -13,12 +13,12 @@ userRoutes.post("/login", userController.login);
 userRoutes.post("/location", userController.location);
 userRoutes.get("/login/google", userController.loginGoogle);
 userRoutes.post("/register", userController.register);
-// userRoutes.post('/profilePicture', userController.changeProfilePicture);
+userRoutes.post("/profilePicture", userController.changeProfilePicture);
 userRoutes.get("/username", userController.username);
 userRoutes.post("/updateGender", userController.updateGender);
 userRoutes.post("/updateMobileNumber", userController.updateMobileNumber);
 userRoutes.post("/updateEmail", userController.updateEmail);
+// userRoutes.post("/logout", userController.logout)
 
-// userRoutes.post('/logout', userController.logout);
 // userRoutes.get('/location', userController.getDistrict);
 // userRoutes.get('/favouriteCat', userController.getFavouriteCat);

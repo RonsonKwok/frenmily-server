@@ -4,6 +4,7 @@ import { outdatedTokens } from "../controllers/user-controller";
 import jwtSimple from 'jwt-simple';
 import jwt from "../token/jwt";
 import { UserService } from "../services/user-service";
+import { knex } from "./db";
 
 
 const permit = new Bearer({
@@ -11,7 +12,7 @@ const permit = new Bearer({
 })
 
 export async function isLoggedIn(req: Request, res: Response, next: NextFunction) {
-
+    const userService = new UserService(knex)
     try {
         // Check request中有沒有帶著token(前面Login成功的時候server派給了browser)
         const token = permit.check(req)
@@ -35,12 +36,10 @@ export async function isLoggedIn(req: Request, res: Response, next: NextFunction
         // TODO: add DB checking logic
         const userResult = await userService.getUserByUsername(username)
 
-        const users = userRecords.filter(user => user.id == userId)
+        const users = userResult.filter((user: { username: any; }) => user.username == username)
         if (users.length == 1) {
-            req.user = users[0]
-            req.token = token
-
-
+            // req.user = users[0]
+            // req.token = token
             return next();
         } else {
             return res.status(401).json({ msg: "Permission Denied" });
