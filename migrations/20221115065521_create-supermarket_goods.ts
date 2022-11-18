@@ -9,7 +9,7 @@ export async function up(knex: Knex): Promise<void> {
         table.integer("goods_id").notNullable();
         table.foreign("goods_id").references("goods.id");
         table.string("goods_price");
-        table.string("report_lower_price");
+        table.string("report_lower_price").unsigned();
         table.string("evidence_image");
         table.timestamps(false, true);
         //SET "evidence-image" NULL FOR TESTING STAGE
