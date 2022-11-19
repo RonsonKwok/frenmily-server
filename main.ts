@@ -14,6 +14,7 @@ import cors from "cors";
 import IncomingForm from "formidable/Formidable";
 import { uploadToS3 } from "./utils/aws-s3-upload";
 import { File } from "formidable";
+import { receiptsRoute } from "./routes/receiptsRoute";
 
 // import formidable from 'formidable'
 // import jsonfile from 'jsonfile';
@@ -106,6 +107,7 @@ app.use("/user", userRoutes);
 app.use("/groups", groupsRoute);
 app.use("/friends", friendsRoute);
 app.use("/goods", goodsRoute);
+app.use("/receipts", receiptsRoute);
 
 app.use(express.static("public"));
 app.use("/uploads", express.static("uploads"));
