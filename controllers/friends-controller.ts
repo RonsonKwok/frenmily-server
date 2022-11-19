@@ -44,8 +44,9 @@ export class FriendsController {
 
             // check if user exists in table 'users'
             const result = await this.friendsService.searchFriend(searchBar);
-            console.log(result);
-            if (result.length == 0) {
+            console.log("CP1 :", result);
+            if (result.length == 0 || result[0] == undefined) {
+                console.log("No such user");
                 res.status(400).json({
                     type: 1,
                     message: "No such user",

@@ -51,11 +51,16 @@ app.use(
 
 // upload to S3
 app.post("/file", async function (req: Request, res: Response) {
+    console.log("upload to S3");
+
     const form: IncomingForm = initFormidable();
+
     form.parse(req, async (err, fields, files) => {
+        console.log("CP3");
         req.body = fields;
+
         // console.log({fields})
-        console.log({ files });
+        // console.log({ files });
 
         let file: File = Array.isArray(files.image)
             ? files.image[0]
@@ -71,7 +76,7 @@ app.post("/file", async function (req: Request, res: Response) {
 
         // Insert accessPath to your table
 
-        console.log(accessPath);
+        console.log("accessPath :", accessPath);
         res.json({ accessPath: accessPath });
     });
 });
