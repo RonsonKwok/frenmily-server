@@ -9,7 +9,7 @@ import { groupsRoute } from "./routes/groupsRoute";
 import { friendsRoute } from "./routes/friendsRoute";
 import { goodsRoute } from "./routes/goodsRoute";
 import fs from "fs";
-import { initFormidable, uploadDir } from "./utils/upload";
+import initFormidable, { uploadDir } from "./utils/upload";
 import cors from "cors";
 import IncomingForm from "formidable/Formidable";
 import { uploadToS3 } from "./utils/aws-s3-upload";
