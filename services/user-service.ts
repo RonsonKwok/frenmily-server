@@ -148,6 +148,36 @@ export class UserService {
         }
     }
 
+    async changeProfilePicture(userID: number, accessPath: string): Promise<any> {
+        console.log("DATABASE: Received new profile picture");
+
+
+        //     await this.knex.raw(
+        //         `
+        //     INSERT INTO users
+        //     (user_id, group_id, receipt_image, amount) 
+        //     VALUES (?,?,?,?)
+        // `,
+        //         [userID, groupID, accessPath, amount]
+        //     );
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
     //     async getDistrict(x: any, y: any): Promise<any> {
