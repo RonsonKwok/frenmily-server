@@ -8,6 +8,7 @@ export async function up(knex: Knex): Promise<void> {
         table.integer("creditor_id").notNullable();
         table.foreign("creditor_id").references("users.id");
         table.float("transcations_amount").notNullable();
+        table.boolean("is_paid");
         table.boolean("is_settled");
         table.timestamps(false, true);
     });

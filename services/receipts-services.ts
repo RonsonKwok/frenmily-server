@@ -49,10 +49,10 @@ export class ReceiptsService {
             await this.knex.raw(
                 `
                 INSERT INTO transcations
-                (debitor_id, creditor_id, transcations_amount, is_settled)
-                VALUES (?,?,?,?)
+                (debitor_id, creditor_id, transcations_amount, is_settled, is_paid)
+                VALUES (?,?,?,?,?)
             `,
-                [otherMember, userID, eachPersonShouldPay, false]
+                [otherMember, userID, eachPersonShouldPay, false, false]
             );
         }
         console.log(
