@@ -52,7 +52,7 @@ export class GroupsController {
             console.log(user_id);
 
             const result = await this.groupsService.getGroups(user_id);
-
+            console.log(result);
             res.json(result);
             return;
         } catch (e) {

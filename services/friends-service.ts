@@ -80,6 +80,7 @@ export class FriendsService {
             AND creditor_id = ?`,
             [user_id, user_friend_id]
         );
+        console.log("HERERERER: ", result.rows);
         return result.rows;
     }
 }

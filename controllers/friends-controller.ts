@@ -141,7 +141,7 @@ export class FriendsController {
             );
             let userShouldPay = 0;
             for (let result2 of results2) {
-                userCanGet += result2.transcations_amount;
+                userShouldPay += result2.transcations_amount;
             }
             console.log(
                 `user should pay $${userShouldPay} to ${user_friend_id}`
