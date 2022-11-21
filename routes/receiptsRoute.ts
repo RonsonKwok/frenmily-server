@@ -11,15 +11,4 @@ let receiptsController = new ReceiptsController(receiptsService);
 
 receiptsRoute.post("/", receiptsController.uploadReceipt);
 receiptsRoute.post("/settle", receiptsController.settle);
-
-// goodsRoute.post(
-//     "/addFriend",
-//     // isLoggedIn,
-//     goodsController.addFriend
-// );
-
-// from BAD project
-
-// friendsRoute.post('/me', albumController.me);
-// friendsRoute.get('/', albumController.getAlbum);
-// friendsRoute.delete('/', isLoggedIn, albumController.deletePhotoFromAlbum);
+receiptsRoute.post("/getAllReceipts", receiptsController.getAllReceipts);

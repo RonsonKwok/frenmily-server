@@ -80,4 +80,22 @@ export class ReceiptsController {
             return;
         }
     };
+
+    getAllReceipts = async (req: Request, res: Response) => {
+        try {
+            console.log("getAllReceipts API");
+
+            let groupID = req.body.groupID;
+            console.log("groupID :", groupID);
+
+            // get all receipts image and info
+            const result = await this.receiptsService.getAllReceipts(groupID);
+            res.json(result);
+        } catch (e) {
+            console.log(e);
+
+            res.status(400).send("getAllReceipts Fail");
+            return;
+        }
+    };
 }

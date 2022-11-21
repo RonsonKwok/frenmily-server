@@ -83,4 +83,16 @@ export class ReceiptsService {
             [payerUserID, targetUserID]
         );
     }
+
+    async getAllReceipts(groupID: number): Promise<any> {
+        console.log("DATABASE: getAllReceipts");
+
+        let result = await this.knex.raw(
+            `
+            select * from paid_records where group_id = ?
+        `,
+            [groupID]
+        );
+        return result.rows
+    }
 }
