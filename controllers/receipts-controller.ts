@@ -57,4 +57,27 @@ export class ReceiptsController {
             return;
         }
     };
+
+    settle = async (req: Request, res: Response) => {
+        try {
+            console.log("settle API");
+
+            let targetID = req.body.targetID;
+            let payerID = req.body.payerID;
+            console.log("targetID :", targetID);
+            console.log("payerID :", payerID);
+
+            // settle payment(s)
+            const result = await this.receiptsService.moneySettle(
+                targetID,
+                payerID
+            );
+            res.json({ result: result });
+        } catch (e) {
+            console.log(e);
+
+            res.status(400).send("Upload Fail");
+            return;
+        }
+    };
 }

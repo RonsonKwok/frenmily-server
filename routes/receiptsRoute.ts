@@ -10,6 +10,7 @@ let receiptsService = new ReceiptsService(knex);
 let receiptsController = new ReceiptsController(receiptsService);
 
 receiptsRoute.post("/", receiptsController.uploadReceipt);
+receiptsRoute.post("/settle", receiptsController.settle);
 
 // goodsRoute.post(
 //     "/addFriend",

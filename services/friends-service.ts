@@ -65,6 +65,10 @@ export class FriendsService {
             AND debitor_id = ?`,
             [user_id, user_friend_id]
         );
+        if (user_friend_id == 5) {
+            console.log("result5 :", result.rows);
+        }
+
         return result.rows;
     }
 

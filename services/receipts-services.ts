@@ -59,4 +59,28 @@ export class ReceiptsService {
             `Divided $${eachPersonShouldPay} to all other group members... user_id: ${otherMembers}`
         );
     }
+
+    async moneySettle(targetUserID: number, payerUserID: number): Promise<any> {
+        console.log("DATABASE: moneySettle");
+
+        await this.knex.raw(
+            `
+                UPDATE transcations 
+                SET is_settled  = true
+                WHERE creditor_id = ?
+                and debitor_id = ?;
+        `,
+            [targetUserID, payerUserID]
+        );
+
+        await this.knex.raw(
+            `
+                UPDATE transcations 
+                SET is_settled  = true
+                WHERE creditor_id = ?
+                and debitor_id = ?;
+        `,
+            [payerUserID, targetUserID]
+        );
+    }
 }
