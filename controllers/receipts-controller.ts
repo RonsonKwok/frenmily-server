@@ -20,6 +20,7 @@ export class ReceiptsController {
                 let userID = req.body.userID;
                 let groupID = req.body.groupID;
                 let amount = req.body.amount;
+                let remarks = req.body.remarks;
 
                 let file: File = Array.isArray(files.image)
                     ? files.image[0]
@@ -38,7 +39,8 @@ export class ReceiptsController {
                     userID,
                     groupID,
                     accessPath,
-                    amount
+                    amount,
+                    remarks
                 );
 
                 // Divide the amount to all others group members

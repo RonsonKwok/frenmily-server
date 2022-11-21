@@ -7,17 +7,18 @@ export class ReceiptsService {
         userID: number,
         groupID: number,
         accessPath: string,
-        amount: number
+        amount: number,
+        remarks: string
     ): Promise<any> {
         console.log("DATABASE: UPLOAD RECEIPT");
 
         await this.knex.raw(
             `
         INSERT INTO paid_records
-        (user_id, group_id, receipt_image, amount) 
-        VALUES (?,?,?,?)
+        (user_id, group_id, receipt_image, amount, remarks) 
+        VALUES (?,?,?,?,?)
     `,
-            [userID, groupID, accessPath, amount]
+            [userID, groupID, accessPath, amount, remarks]
         );
     }
 

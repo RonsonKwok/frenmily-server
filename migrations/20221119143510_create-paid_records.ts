@@ -9,6 +9,7 @@ export async function up(knex: Knex): Promise<void> {
         table.foreign("group_id").references("groups.id");
         table.string("receipt_image").notNullable();
         table.integer("amount").notNullable();
+        table.string("remarks");
         table.timestamps(false, true);
     });
 }
