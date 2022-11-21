@@ -7,7 +7,7 @@ import { File } from "formidable";
 import fs from "fs";
 
 export class ReceiptsController {
-    constructor(private receiptsService: ReceiptsService) {}
+    constructor(private receiptsService: ReceiptsService) { }
 
     uploadReceipt = async (req: Request, res: Response) => {
         try {

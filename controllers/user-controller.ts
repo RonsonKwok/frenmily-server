@@ -89,6 +89,7 @@ export class UserController {
                     gender: dbUser.gender,
                     mobile: dbUser.mobile,
                     email: dbUser.email,
+                    profilePicture: dbUser.profile_picture
                     // time: new Date().toLocaleTimeString()
                 };
                 const token = jwtSimple.encode(payload, jwt.jwtSecret);
@@ -321,7 +322,7 @@ export class UserController {
             // 改資料成功就重新生成一個token
             let userResult = await this.userService.getUserByUsername(username);
             let dbUser: User = userResult.rows[0];
-
+            console.log("userResult: ", userResult)
             console.log(
                 "dbUser get after successfully changing gender setting: ",
                 dbUser
@@ -351,20 +352,15 @@ export class UserController {
     updateProfilePicture = async (req: express.Request, res: express.Response) => {
         try {
             // TODO: complete the backend logic
-            console.log("req: ", req.body)
-            res.json({
-                message: "received new profile picture"
-            });
-
+            console.log("received request")
             const form: IncomingForm = initFormidable();
 
             form.parse(req, async (err, fields, files) => {
                 req.body = fields;
                 let userID = req.body.userID;
 
-                let file: File = Array.isArray(files.image)
-                    ? files.image[0]
-                    : files.image;
+                let file: File = Array.isArray(files.image) ? files.image[0] : files.image;
+
                 let fileName = file ? file.newFilename : undefined;
 
                 // Upload file to AWS S3
@@ -375,10 +371,34 @@ export class UserController {
                 });
 
                 // Insert accessPath to database
-                await this.userService.changeProfilePicture(
+                let userResult = await this.userService.changeProfilePicture(
                     userID,
                     accessPath,
                 );
+                console.log("userResult: ", userResult)
+                let dbUser: User = userResult.rows[0];
+
+                console.log(
+                    "dbUser get after successfully changing profile picture: ",
+                    dbUser
+                );
+
+                const payload = {
+                    userId: dbUser.id,
+                    username: dbUser.username,
+                    gender: dbUser.gender,
+                    mobile: dbUser.mobile,
+                    email: dbUser.email,
+                    profilePicture: dbUser.profile_picture
+                };
+                const token = jwtSimple.encode(payload, jwt.jwtSecret);
+                console.log("payload: ", payload);
+                console.log("token: ", token);
+
+                res.status(200).json({
+                    message: "Update profile picture successfully",
+                    token: token,
+                });
 
             });
 

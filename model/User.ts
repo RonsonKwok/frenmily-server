@@ -5,6 +5,7 @@ export class User {
     gender: string | null;
     mobile: string | null;
     email: string | null;
+    profile_picture: string | null;
     created_at: Date;
     updated_at: Date
 }
