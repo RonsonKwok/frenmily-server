@@ -62,6 +62,26 @@ export class GroupsController {
         }
     };
 
+    getGroupMembers = async (req: express.Request, res: express.Response) => {
+        try {
+            console.log("getUserFriends API");
+
+            let groupID = req.body.groupID;
+            console.log("groupID :", groupID);
+
+            // get group members with paid amount
+            let result = await this.groupsService.getGroupMembers(groupID);
+
+            res.json(result);
+            return;
+        } catch (e) {
+            console.log(e);
+
+            res.status(400).send("get group members failed");
+            return;
+        }
+    };
+
     // getByLocation = async (req: express.Request, res: express.Response) => {
     //     // console.log(`getting rest by location... latitude: ${req.session['location'].x},longitude: ${req.session['location'].y}`)
     //     let result = await this.groceriesService.getTheNearestDistrict(req.session['location'].x, req.session['location'].y)

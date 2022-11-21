@@ -81,6 +81,45 @@ export class GroupsService {
         return result.rows;
     }
 
+    async getGroupMembers(groupID: number): Promise<any> {
+        let results = await this.knex.raw(
+            `
+            select * from group_member where group_id = ?
+        `,
+            [groupID]
+        );
+        let tempUserIDArray = []
+        for (let result of results.rows) {
+            tempUserIDArray.push(result.user_id)
+        }
+        let tempUserInfoArray = []
+
+        for (let userID of tempUserIDArray) {
+            let memberResult = await this.knex.raw(
+                `
+                select id,username,profile_picture from users where id = ?
+            `,
+                [userID]
+            );
+            tempUserInfoArray.push(memberResult.rows[0])
+        }
+        for (let tempUserInfo of tempUserInfoArray) {
+            let result = await this.knex.raw(
+                `
+                select SUM(amount) from paid_records where group_id = ? and user_id = ?
+            `,
+                [groupID, tempUserInfo.id]
+            );
+            tempUserInfo['paid'] = result.rows[0].sum
+        }
+        
+        
+        
+
+
+        return tempUserInfoArray;
+    }
+
     // async getGroceriesInfoByLocation(district_id: number): Promise<any> {
     //     let cardResults = (
     //         await this.knex.raw(/*sql*/`
