@@ -10,5 +10,7 @@ let groupsController = new GroupsController(groupsService);
 
 groupsRoute.post("/", groupsController.createGroup);
 groupsRoute.post("/getGroups", groupsController.getGroups);
+groupsRoute.post("/getGroupMembers", groupsController.getGroupMembers);
+groupsRoute.post("/getGroupName", groupsController.getGroupName);
 // groceriesRoute.get('/category', groceriesController.getByCategory);
 // groceriesRoute.get('/location', groceriesController.getByLocation);

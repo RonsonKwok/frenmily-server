@@ -81,44 +81,51 @@ export class GroupsService {
         return result.rows;
     }
 
-    // async getGroceriesInfoByLocation(district_id: number): Promise<any> {
-    //     let cardResults = (
-    //         await this.knex.raw(/*sql*/`
-    //         SELECT *
-    //         FROM groceries
-    //         WHERE district_id  = ${district_id}
-    //     `,
-    //         ))
-    //     return cardResults
-    // }
+    async getGroupMembers(groupID: number): Promise<any> {
+        let results = await this.knex.raw(
+            `
+            select * from group_member where group_id = ?
+        `,
+            [groupID]
+        );
+        let tempUserIDArray = []
+        for (let result of results.rows) {
+            tempUserIDArray.push(result.user_id)
+        }
+        let tempUserInfoArray = []
 
-    // async getTheNearestDistrict(x: any, y: any): Promise<any> {
-    //     let locationResult = (
-    //         await this.knex.raw(/*sql*/`
-    //         with
-    //         distinct_district as (
-    //             select
-    //             distinct (district_id)as  district_id
-    //             from groceries r order by district_id
-    //         ),
-    //         distriect_rand_resto as (
-    //           select district_id,
-    //           (select id from groceries where groceries.district_id  = distinct_district.district_id limit 1 ) as groceries_id
-    //           from distinct_district
-    //         )
-    //         select * from distriect_rand_resto join groceries r on r.id = distriect_rand_resto.groceries_id
-    //         ORDER BY coordinates <-> point '(${x}, ${y})' LIMIT 1
-    //     `,
-    //         ))
-    //     return locationResult
-    // }
+        for (let userID of tempUserIDArray) {
+            let memberResult = await this.knex.raw(
+                `
+                select id,username,profile_picture from users where id = ?
+            `,
+                [userID]
+            );
+            tempUserInfoArray.push(memberResult.rows[0])
+        }
+        for (let tempUserInfo of tempUserInfoArray) {
+            let result = await this.knex.raw(
+                `
+                select SUM(amount) from paid_records where group_id = ? and user_id = ?
+            `,
+                [groupID, tempUserInfo.id]
+            );
+            tempUserInfo['paid'] = result.rows[0].sum
+        }
+        
+        return tempUserInfoArray;
+    }
 
-    // async getUserCategory(user_id: any): Promise<any> {
-    //     let result = (
-    //         await this.knex.raw(`
-    //         select * from user_food_category where user_id = ${user_id};
-    //     `
-    //         ))
-    //     return result
-    // }
+    async getGroupName(groupID: number): Promise<any> {
+        let result = await this.knex.raw(
+            `
+            select group_name from "groups" where id = ?
+        `,
+            [groupID]
+        );
+        
+        return result.rows[0].group_name;
+    }
+
+
 }
