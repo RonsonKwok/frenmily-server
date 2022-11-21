@@ -9,11 +9,21 @@ import { User } from "../model/User";
 // import path from "path";
 import jwtSimple from "jwt-simple";
 import jwt from "../token/jwt";
+import IncomingForm from "formidable/Formidable";
+import initFormidable from "../utils/upload";
+import { File } from "formidable";
+import { uploadToS3 } from "../utils/aws-s3-upload";
+import fs from "fs";
+
+
+
+
+
 
 export const outdatedTokens: string[] = [];
 
 export class UserController {
-    constructor(private userService: UserService) {}
+    constructor(private userService: UserService) { }
 
     me = async (req: express.Request, res: express.Response) => {
         try {
@@ -337,6 +347,49 @@ export class UserController {
             console.log(e);
         }
     };
+
+    updateProfilePicture = async (req: express.Request, res: express.Response) => {
+        try {
+            // TODO: complete the backend logic
+            console.log("req: ", req.body)
+            res.json({
+                message: "received new profile picture"
+            });
+
+            const form: IncomingForm = initFormidable();
+
+            form.parse(req, async (err, fields, files) => {
+                req.body = fields;
+                let userID = req.body.userID;
+
+                let file: File = Array.isArray(files.image)
+                    ? files.image[0]
+                    : files.image;
+                let fileName = file ? file.newFilename : undefined;
+
+                // Upload file to AWS S3
+                const accessPath = await uploadToS3({
+                    Bucket: "iconandreceipt",
+                    Key: `${fileName}`,
+                    Body: fs.readFileSync(file.filepath!),
+                });
+
+                // Insert accessPath to database
+                await this.userService.changeProfilePicture(
+                    userID,
+                    accessPath,
+                );
+
+            });
+
+        } catch (e) {
+            console.log(e);
+            res.json({
+                message: "failed to receive new profile picture"
+            });
+        }
+    };
+
 
     // Update profile picture
     //     changeProfilePicture = async (
