@@ -21,6 +21,8 @@ export class ReceiptsController {
                 let groupID = req.body.groupID;
                 let amount = req.body.amount;
                 let remarks = req.body.remarks;
+                console.log("groupID :", groupID)
+
 
                 let file: File = Array.isArray(files.image)
                     ? files.image[0]

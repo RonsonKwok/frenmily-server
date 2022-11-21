@@ -88,12 +88,23 @@ export class ReceiptsService {
     async getAllReceipts(groupID: number): Promise<any> {
         console.log("DATABASE: getAllReceipts");
 
-        let result = await this.knex.raw(
+        let results = await this.knex.raw(
             `
             select * from paid_records where group_id = ?
         `,
             [groupID]
         );
-        return result.rows
+        for (let result of results.rows) {
+            result.user_id
+
+            let name = await this.knex.raw(
+                `
+                select * from users where id = ?
+            `,
+                [result.user_id]
+            );
+            result['userName'] = name.rows[0].username
+        }
+        return results.rows
     }
 }
