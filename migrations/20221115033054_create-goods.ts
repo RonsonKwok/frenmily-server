@@ -8,7 +8,7 @@ export async function up(knex: Knex): Promise<void> {
         table.string("barcode")
         table.integer("category_id").notNullable();
         table.foreign("category_id").references("goods_categories.id");
-        table.string("goods_picture");
+        table.text("goods_picture");
     });
 }
 

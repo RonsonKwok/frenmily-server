@@ -3,16 +3,16 @@ import { Knex } from "knex";
 export class GoodsService {
     constructor(private knex: Knex) { }
 
-    async getAllGoodsCategories(): Promise<any> {
-        console.log("getAllGoodsCategories")
-        const results = await this.knex.raw(
+    // async getAllGoodsCategories(): Promise<any> {
+    //     console.log("getAllGoodsCategories")
+    //     const results = await this.knex.raw(
 
-            "select * from goods_categories",
-        );
-        console.log("results :", results.rows);
+    //         "select * from goods_categories",
+    //     );
+    //     console.log("results :", results.rows);
 
-        return results.rows;
-    }
+    //     return results.rows;
+    // }
 
 
     async getTop5(): Promise<any> {

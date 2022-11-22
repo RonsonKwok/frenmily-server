@@ -248,51 +248,61 @@ export async function seed(knex: Knex): Promise<void> {
             name: "桂格 Quaker - 即食燕麥片 - 袋裝 800克",
             barcode: "9556174902219",
             category_id: "1",
+            goods_picture:"https://api.parknshop.com/medias/Quaker-Instant-Oatmeal-Foil-800g-114013.jpg?context=bWFzdGVyfHBuc2hrL2ltYWdlc3wxMDQ5MjJ8aW1hZ2UvanBlZ3xoZmIvaDFjLzkzMTg3OTYxNjUxNTAvUXVha2VyIEluc3RhbnQgT2F0bWVhbCBGb2lsIDgwMGctMTE0MDEzLmpwZ3wyY2FmYThhMTcwNzUzMjRhOGViNzgwNTg5MTc5ZTQ0ZWE2ZTNlMzYxNzAzOTJiM2EyZjQyZGZmNWRkODA2ZmE1"
         },
         {
             name: "維記 Kowloon Dairy - 鮮牛奶 946毫升",
             barcode: "4893318633116",
             category_id: "2",
+            goods_picture:"https://api.parknshop.com/medias/FRESH-MILK-120648.jpg?context=bWFzdGVyfHBuc2hrL2ltYWdlc3w0NzYzNzd8aW1hZ2UvanBlZ3xoOGQvaDE5LzkzMTk0NjE1ODQ5MjYvRlJFU0ggTUlMSy0xMjA2NDguanBnfDVjMmVhNDk1ZGRiNGQ4MjhlNmEyODJjZGZhY2E5MjZhZTE4NTQyN2Y0ODljN2Q3N2ZmNDllMDMxNDQzNmRjNGI"
         },
         {
             name: "健達 Kinder - 繽紛樂 Bueno 朱古力 (T2) 43克",
             barcode: "8000500066027",
             category_id: "3",
+            goods_picture:"https://api.parknshop.com/medias/BUENO-CHOCOLATE-BAR-114929.jpg?context=bWFzdGVyfHBuc2hrL2ltYWdlc3w3NTcwMHxpbWFnZS9qcGVnfGg4Ni9oMzYvOTMxODU3NjQ1NTcxMC9CVUVOTyBDSE9DT0xBVEUgQkFSLTExNDkyOS5qcGd8NTU4YjdkMTkzNzhmOGFmMjczN2JhMWI5NDAyNzBhMzM4ZTg0NjZmNTZhMTZlMDQ1MzFmODZjODI2M2JmZjdlYQ"
         },
         {
             name: "金象牌 Golden Elephant Brand - 頂上茉莉香米 5公斤",
             barcode: "4899668101053",
             category_id: "4",
+            goods_picture:"https://api.parknshop.com/medias/PREMIUM-JASMINE-RICE-150007.jpg?context=bWFzdGVyfHBuc2hrL2ltYWdlc3w1NDU1Njl8aW1hZ2UvanBlZ3xoN2QvaDBkLzkzMTg5MjQzMjA3OTgvUFJFTUlVTSBKQVNNSU5FIFJJQ0UtMTUwMDA3LmpwZ3w5YjI2ZWIzZmJhMmE3NWU1NmIzY2YzZDE4NGQ3MjhiZDA0M2IwZTI3NzMyOTYzM2FhMzdjY2FkOGE5ZTM0MWI0"
         },
         {
             name: "公仔 Doll - 公仔麵 - 雞蓉味 103克 x 5",
             barcode: "4892333100528",
             category_id: "5",
+            goods_picture:"https://api.parknshop.com/medias/Doll-Instant-Noodle-Chicken-Flavour-105612.jpg?context=bWFzdGVyfHBuc2hrL2ltYWdlc3w0MDgyNjB8aW1hZ2UvanBlZ3xoOWUvaGNkLzkzMTg4MjQ0NDM5MzQvRG9sbCBJbnN0YW50IE5vb2RsZSBDaGlja2VuIEZsYXZvdXItMTA1NjEyLmpwZ3w1MTU3MjcxN2JkNDRlZGVlMDA2OWU4ZTk3YmZiMDQyZjRlZjI2ODQxYmQ0ZmRkNDlmYTgyNGIzNTE1MTc2NDNi"
         },
         {
             name: "可口可樂 Coca Cola - 可樂 - 樽裝 500毫升",
             barcode: "4890008100231",
             category_id: "6",
+            goods_picture:"https://api.parknshop.com/medias/zoom-front-119341.jpg?context=bWFzdGVyfHBuc2hrL2ltYWdlc3wxMDUzMzN8aW1hZ2UvanBlZ3xoZDkvaGExLzk0NDE3NDI0NTQ4MTQvUE5TSEstMTE5MzQxLWZyb250LmpwZ3wwMjgzYjMxMTQ2ZjkyZDUyMDdmM2E5ZWRiZWJlNGE3NjcxZTFjMmNiMmU2OGFhZmVlZDc5NjA5MDVjZDdlNTkw"
         },
         {
             name: "朝日 Asahi - 啤酒 - 罐裝 330毫升 x 12",
             barcode: "4901004021137",
             category_id: "7",
+            goods_picture:"https://api.parknshop.com/medias/Beer-Can-12S-388705.jpg?context=bWFzdGVyfHBuc2hrL2ltYWdlc3wxNTEzODB8aW1hZ2UvanBlZ3xoMzgvaGE1LzkzMTg0MzA2MzgxMTAvQmVlciBDYW4gMTJTLTM4ODcwNS5qcGd8Y2JjZGJmOTNjMjI0NmM3ODZlM2Q2MGVjNzQwNjgzYzE2NWUzZjk0MjI1ZmM1YjNmMzU2N2ZhNjRhZTJkMWU2Nw"
         },
         {
             name: "花王潔霸 Kao Attack - 超濃縮洗衣粉 - (全能5合1) 2.25公斤",
             barcode: "4898888546101",
             category_id: "8",
+            goods_picture:"https://api.parknshop.com/medias/Attack-5in1-Conc-Powder-Laundry-Detergent-225kg-177567.jpg?context=bWFzdGVyfHBuc2hrL2ltYWdlc3w2NDk4MzZ8aW1hZ2UvanBlZ3xoZTEvaDViLzkzMTg4NTIwNjczNTgvQXR0YWNrIDVpbjEgQ29uYyBQb3dkZXIgTGF1bmRyeSBEZXRlcmdlbnQgMjI1a2ctMTc3NTY3LmpwZ3xmMDM0ODUxY2E4MjY4NjhhMzc4NDhlNDQ1ZDc5MGI5ZGQ1NzY5MDQyODBlMjk4NzlhZjliZTk3MTAzZmJlOGQw"
         },
         {
             name: "Nonio - 無口氣牙膏 - 清涼薄荷味 130克",
             barcode: "4895149207214",
             category_id: "9",
+            goods_picture:"https://api.parknshop.com/medias/TOOTHPASTE-CLEAR-HERB-MINT-449368.jpg?context=bWFzdGVyfHBuc2hrL2ltYWdlc3wxNzU5NTN8aW1hZ2UvanBlZ3xoNjYvaDFmLzkzMjMyMTcyODkyNDYvVE9PVEhQQVNURSBDTEVBUiBIRVJCIE1JTlQtNDQ5MzY4LmpwZ3w1MDc0NjJlZjc1MTJkNzA0MTVlMzg3YzUxNmEzZDBhNjY4YjI0MjZkNmFiYTMxNzM0OWRiMDM3ZjQ3NTIwYWQ2"
         },
         {
             name: "淘大 Amoy - 蝦肉燒賣 130克",
             barcode: "078024954098",
             category_id: "10",
+            goods_picture:"https://api.parknshop.com/medias/SHRIMP-SHOAMAI-Packaging-random-delivery-190637.jpg?context=bWFzdGVyfHBuc2hrL2ltYWdlc3w4NzAzM3xpbWFnZS9qcGVnfGhjYS9oZmYvOTMxODU4NjI4NjExMC9TSFJJTVAgU0hPQU1BSSBQYWNrYWdpbmcgcmFuZG9tIGRlbGl2ZXJ5IC0xOTA2MzcuanBnfDBlZWFhNTJkNTE4N2RiZjZmZmNiNzBiMzBiN2JiOTA3ZWY2NjZiZTQxNjkyZWVlOGI4YzRjY2U4NmM1YmVhNjY"
         },
 
 
