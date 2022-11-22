@@ -17,19 +17,6 @@ export class FriendsService {
             [searchBar]
         );
         console.log("results.rows :", results.rows);
-        // [
-        //     {
-        //       id: 8,
-        //       username: '888',
-        //       is_male: false,
-        //       email: '888',
-        //       mobile: '888',
-        //       password: '888',
-        //       profile_picture: '888',
-        //       created_at: 2022-11-15T13:55:53.704Z,
-        //       updated_at: 2022-11-15T13:55:53.704Z
-        //     }
-        //   ]
 
         const emailResult = await this.knex.raw(
             "select * from users where email = ?",
@@ -66,35 +53,38 @@ export class FriendsService {
         );
     }
 
-    //////////////////////////////////////// from BAD project
+    async calculateMoney1(
+        user_id: number,
+        user_friend_id: number
+    ): Promise<any> {
+        // check有冇人差呢個user錢
+        const result = await this.knex.raw(
+            `select * from transcations 
+            where is_settled = false 
+            AND creditor_id = ? 
+            AND debitor_id = ?`,
+            [user_id, user_friend_id]
+        );
+        if (user_friend_id == 5) {
+            console.log("result5 :", result.rows);
+        }
 
-    // async uploadToAlbum(image_source: string, user_id: number): Promise<any> {
-    //     return (await this.knex.insert({ image_source, user_id}).into("user_album_images"))
-    // }
+        return result.rows;
+    }
 
-    // async getAlbum(user_id: number): Promise<any> {
-
-    //     const results = await this.knex.select("*").from("user_album_images").where("user_id", "=", user_id);
-
-    //     return results;
-    // }
-
-    // async deletePhoto(image_source:string){
-    //     await this.knex.raw('delete from user_album_images where image_source = ?', [image_source])
-    // }
-
-    // async updateCategory(user_id: number, category_id: number): Promise<any> {
-    //     console.log("into service")
-
-    //     await this.knex.raw(`
-    //     DELETE from user_food_category where user_id = ${user_id}
-    //     `)
-
-    //     await this.knex.raw(`
-    //         INSERT INTO user_food_category
-    //         (user_id, category_id)
-    //         VALUES (?,?)
-    //     `,
-    //         [user_id, category_id])
-    // }
+    async calculateMoney2(
+        user_id: number,
+        user_friend_id: number
+    ): Promise<any> {
+        // check有冇人差呢個user錢
+        const result = await this.knex.raw(
+            `select * from transcations 
+            where is_settled = false 
+            AND debitor_id = ?
+            AND creditor_id = ?`,
+            [user_id, user_friend_id]
+        );
+        console.log("HERERERER: ", result.rows);
+        return result.rows;
+    }
 }

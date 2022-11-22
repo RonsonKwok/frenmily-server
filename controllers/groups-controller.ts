@@ -52,12 +52,52 @@ export class GroupsController {
             console.log(user_id);
 
             const result = await this.groupsService.getGroups(user_id);
-
+            console.log(result);
             res.json(result);
             return;
         } catch (e) {
             console.log(e);
             res.status(400).send("get group failed");
+            return;
+        }
+    };
+
+    getGroupMembers = async (req: express.Request, res: express.Response) => {
+        try {
+            console.log("getUserFriends API");
+
+            let groupID = req.body.groupID;
+            console.log("groupID :", groupID);
+
+            // get group members with paid amount
+            let result = await this.groupsService.getGroupMembers(groupID);
+
+            res.json(result);
+            return;
+        } catch (e) {
+            console.log(e);
+
+            res.status(400).send("get group members failed");
+            return;
+        }
+    };
+
+    getGroupName = async (req: express.Request, res: express.Response) => {
+        try {
+            console.log("getGroupName API");
+
+            let groupID = req.body.groupID;
+            console.log("groupID :", groupID);
+
+            // get group members with paid amount
+            let result = await this.groupsService.getGroupName(groupID);
+
+            res.json(result);
+            return;
+        } catch (e) {
+            console.log(e);
+
+            res.status(400).send("get group members failed");
             return;
         }
     };

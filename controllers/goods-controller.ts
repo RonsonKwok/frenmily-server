@@ -30,6 +30,36 @@ export class GoodsController {
         }
     };
 
+    getGoodsByCat = async (req: Request, res: Response) => {
+        try {
+            console.log("getGoodsByCat...");
+
+            // TODO: let catId = req.body.catId;
+            let catId = 7;
+            console.log(catId);
+
+            const resultsByCat = await this.goodsService.getGoodsByCat(catId);
+            console.log(resultsByCat);
+
+            const topResultsByCat = await this.goodsService.getTopGoodsByCat(
+                catId
+            );
+            console.log(topResultsByCat);
+
+            res.json({
+                resultsByCat: resultsByCat,
+                topResultsByCat: topResultsByCat,
+            });
+
+            return;
+        } catch (e) {
+            console.log(e);
+
+            res.status(400).send("getGoodsByCat Fail");
+            return;
+        }
+    };
+
     // addFriend = async (req: Request, res: Response) => {
     //     try {
     //         console.log("addFriend API");

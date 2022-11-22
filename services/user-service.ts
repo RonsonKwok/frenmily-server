@@ -122,6 +122,7 @@ export class UserService {
             `,
                     [email, username])
             )
+            console.log("userResult:", userResult)
             return userResult
 
         } catch (error) {
@@ -147,6 +148,47 @@ export class UserService {
             console.log(error)
         }
     }
+
+    async changeProfilePicture(userID: number, accessPath: string) {
+        try {
+            console.log("DATABASE: Received new profile picture");
+
+            console.log("userID:", userID)
+            console.log("accessPath:", accessPath)
+
+            let userResult = (
+                await this.knex.raw(/*sql*/`
+                    UPDATE users 
+                    SET profile_picture  = ? 
+                    WHERE id = ?
+                    returning *
+                `,
+                    [accessPath, userID])
+            )
+            console.log("userResult:", userResult)
+            return userResult
+
+        }
+        catch (e) {
+            console.log(e)
+        }
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

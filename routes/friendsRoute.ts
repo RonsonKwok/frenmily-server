@@ -24,6 +24,7 @@ friendsRoute.post(
     // isLoggedIn,
     friendsController.addFriend
 );
+friendsRoute.post("/calculateMoney", friendsController.calculateMoney);
 
 // from BAD project
 
