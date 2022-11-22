@@ -65,7 +65,7 @@ export class GoodsController {
         try {
             console.log("Receipt Request of getProductByBatch");
             const { qtyInOneBatch, ItemsToBeSkipped } = req.body
-            // FIXME: ItemsToBeSkipped 的意思是： 
+            // FIXME: Frontend 要比兩個param
             // qtyInOneBatch 一直為 10
             // ItemsToBeSkipped 是 [0, 10, 20, 30 ...90] 
 
