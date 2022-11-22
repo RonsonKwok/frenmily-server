@@ -6,17 +6,20 @@ export class GoodsController {
 
     getAllGoodsCategories = async (req: Request, res: Response) => {
         try {
-            console.log("getting all category...");
+            console.log("getting all goods...");
 
-            const results = await this.goodsService.getAllGoodsCategories();
-            const topResults = await this.goodsService.getTop5();
-            const randomResults = await this.goodsService.getRandom();
+            // const results = await this.goodsService.getAllGoodsCategories();
+            const top5Listing = await this.goodsService.getTop5();
+            const randomListing = await this.goodsService.getRandom();
 
-            res.json({
-                results: results,
-                topResults: topResults,
-                randomResults: randomResults,
-            });
+            res.json({ 
+                // results :results, 
+                data: {
+                    top5:top5Listing,
+                    random:randomListing
+                }
+                // randomResults: randomResults,
+             });
 
             return;
         } catch (e) {
