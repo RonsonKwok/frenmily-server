@@ -128,18 +128,29 @@ export class GoodsService {
             // let catIdString = catIds.join(",")
             // console.log("catIdString: ", catIdString)
 
-            const results = await this.knex.raw(/*sql*/
-                `SELECT goods.id, goods.name, barcode, category_id, goods_categories.name, goods_picture
-                FROM goods 
-                INNER JOIN goods_categories
-                ON goods.category_id = goods_categories.id
-                WHERE category_id IN ?
-                LIMIT ? OFFSET ?`,
-                [catIds, qtyInOneBatch, ItemsToBeSkipped]
-            );
-            console.log("results :", results.rows);
+            // const results = await this.knex.raw(/*sql*/
+            //     `SELECT goods.id, goods.name, barcode, category_id, goods_categories.name, goods_picture
+            //     FROM goods 
+            //     INNER JOIN goods_categories
+            //     ON goods.category_id = goods_categories.id
+            //     WHERE category_id IN (?)
+            //     LIMIT ? OFFSET ?`,
+            //     [catIdString, qtyInOneBatch, ItemsToBeSkipped]
+            // );
 
-            return results.rows;
+            const results = await this.knex
+                .select("goods.id", "goods.name", "barcode", "category_id", "goods_categories.name", "goods_picture",)
+                .from("goods")
+                .innerJoin('goods_categories', 'goods.category_id', 'goods_categories.id')
+                .whereIn("category_id", catIds)
+                .limit(qtyInOneBatch, { skipBinding: true })
+                .offset(ItemsToBeSkipped)
+                .returning("*")
+
+
+            console.log("DB results :", results);
+
+            return results;
         }
         catch (e) {
             console.log(e);

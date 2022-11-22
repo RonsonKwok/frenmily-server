@@ -67,7 +67,7 @@ export class GoodsController {
             const { qtyInOneBatch, ItemsToBeSkipped } = req.body
             // FIXME: Frontend 要比兩個param
             // qtyInOneBatch 一直為 10
-            // ItemsToBeSkipped 是 [0, 10, 20, 30 ...90] 
+            // ItemsToBeSkipped 是 0, 10, 20, 30 ...90
 
             const result = await this.goodsService.getProductByBatch(qtyInOneBatch, ItemsToBeSkipped);
 
@@ -90,6 +90,11 @@ export class GoodsController {
         try {
             console.log("Receipt Request of getProductByBatch");
             const { catIds, qtyInOneBatch, ItemsToBeSkipped } = req.body
+            // FIXME: Frontend 要比三個param
+            // carIds 是number array，例如 [1,2,3]
+            // qtyInOneBatch 一直為 10
+            // ItemsToBeSkipped 是 0, 10, 20, 30 ...90
+
             console.log({ catIds, qtyInOneBatch, ItemsToBeSkipped })
             const result = await this.goodsService.getProductByBatchAndCatId(catIds, qtyInOneBatch, ItemsToBeSkipped);
 
