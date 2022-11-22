@@ -2,7 +2,7 @@ import { Request, Response } from "express";
 import { FriendsService } from "../services/friends-service";
 // import { formParse } from "../utils/upload"
 export class FriendsController {
-    constructor(private friendsService: FriendsService) {}
+    constructor(private friendsService: FriendsService) { }
 
     getUserFriends = async (req: Request, res: Response) => {
         try {
