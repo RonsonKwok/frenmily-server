@@ -2,7 +2,7 @@ import { Request, Response } from "express";
 import { GoodsService } from "../services/goods-service";
 // import { formParse } from "../utils/upload"
 export class GoodsController {
-    constructor(private goodsService: GoodsService) {}
+    constructor(private goodsService: GoodsService) { }
 
     getAllGoodsCategories = async (req: Request, res: Response) => {
         try {
@@ -12,14 +12,14 @@ export class GoodsController {
             const top5Listing = await this.goodsService.getTop5();
             const randomListing = await this.goodsService.getRandom();
 
-            res.json({ 
+            res.json({
                 // results :results, 
                 data: {
-                    top5:top5Listing,
-                    random:randomListing
+                    top5: top5Listing,
+                    random: randomListing
                 }
                 // randomResults: randomResults,
-             });
+            });
 
             return;
         } catch (e) {
@@ -56,6 +56,54 @@ export class GoodsController {
             console.log(e);
 
             res.status(400).send("getGoodsByCat Fail");
+            return;
+        }
+    };
+
+    // TODO: HAPPY CASE: 分10次fetch 
+    getProductByBatch = async (req: Request, res: Response) => {
+        try {
+            console.log("Receipt Request of getProductByBatch");
+            const { qtyInOneBatch, ItemsToBeSkipped } = req.body
+            // FIXME: ItemsToBeSkipped 的意思是： 
+            // qtyInOneBatch 一直為 10
+            // ItemsToBeSkipped 是 [0, 10, 20, 30 ...90] 
+
+            const result = await this.goodsService.getProductByBatch(qtyInOneBatch, ItemsToBeSkipped);
+
+
+            res.status(200).json({
+                message: `successfully get ${qtyInOneBatch} products from DB`,
+                result: result
+            });
+
+            return;
+
+        } catch (e) {
+            console.log(e);
+            res.status(400).send("getProductByBatch Fail");
+            return;
+        }
+    };
+
+    getProductByBatchAndCatId = async (req: Request, res: Response) => {
+        try {
+            console.log("Receipt Request of getProductByBatch");
+            const { catIds, qtyInOneBatch, ItemsToBeSkipped } = req.body
+            console.log({ catIds, qtyInOneBatch, ItemsToBeSkipped })
+            const result = await this.goodsService.getProductByBatchAndCatId(catIds, qtyInOneBatch, ItemsToBeSkipped);
+
+
+            res.status(200).json({
+                message: `successfully get ${qtyInOneBatch} products from DB`,
+                result: result
+            });
+
+            return;
+
+        } catch (e) {
+            console.log(e);
+            res.status(400).send("getProductByBatchAndCatId Fail");
             return;
         }
     };

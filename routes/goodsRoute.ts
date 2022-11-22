@@ -11,6 +11,8 @@ let goodsController = new GoodsController(goodsService);
 
 goodsRoute.get("/categories", goodsController.getAllGoodsCategories);
 goodsRoute.post("/getGoods", goodsController.getGoodsByCat);
+goodsRoute.post("/productByBatch", goodsController.getProductByBatch);
+goodsRoute.post("/productByBatchAndCatId", goodsController.getProductByBatchAndCatId);
 // goodsRoute.post(
 //     "/addFriend",
 //     // isLoggedIn,
