@@ -242,17 +242,6 @@ export async function seed(knex: Knex): Promise<void> {
         wellcome_price: "9"
     },
         {
-            name: "公仔 Doll - 公仔麵 - 雞蓉味 103克 x 5",
-            barcode: "4892333100528",
-            category_id: "7",
-            goods_picture:"https://api.parknshop.com/medias/Doll-Instant-Noodle-Chicken-Flavour-105612.jpg?context=bWFzdGVyfHBuc2hrL2ltYWdlc3w0MDgyNjB8aW1hZ2UvanBlZ3xoOWUvaGNkLzkzMTg4MjQ0NDM5MzQvRG9sbCBJbnN0YW50IE5vb2RsZSBDaGlja2VuIEZsYXZvdXItMTA1NjEyLmpwZ3w1MTU3MjcxN2JkNDRlZGVlMDA2OWU4ZTk3YmZiMDQyZjRlZjI2ODQxYmQ0ZmRkNDlmYTgyNGIzNTE1MTc2NDNi",
-        aeon_price: "4.5",
-        dch_price: "6.9",
-        jasons_price: "8",
-        parknshop_price: "7.8",
-        wellcome_price: "9"
-    },
-        {
             name: "可口可樂 Coca Cola - 可樂 - 樽裝 500毫升",
             barcode: "4890008100231",
             category_id: "6",
@@ -2417,428 +2406,428 @@ export async function seed(knex: Knex): Promise<void> {
     await knex.insert([
         {
             user_id: "1",
-            goods_id: "5",
+            goods_id: "195",
             category_id: 10
         },
         {
             user_id: "2",
-            goods_id: "5",
+            goods_id: "195",
             category_id: 10
         }, 
         {
             user_id: "3",
-            goods_id: "5",
+            goods_id: "195",
             category_id: 10
         }, 
         {
             user_id: "4",
-            goods_id: "5",
+            goods_id: "195",
             category_id: 10
         }, 
         {
             user_id: "5",
-            goods_id: "5",
+            goods_id: "195",
             category_id: 10
         },
         {
             user_id: "6",
-            goods_id: "4",
+            goods_id: "194",
             category_id: 10
         },
         {
             user_id: "7",
-            goods_id: "4",
+            goods_id: "194",
             category_id: 10
         },
         {
             user_id: "8",
-            goods_id: "4",
+            goods_id: "194",
             category_id: 10
         },
         {
             user_id: "9",
-            goods_id: "4",
+            goods_id: "194",
             category_id: 10
         },
         {
             user_id: "1",
-            goods_id: "3",
+            goods_id: "203",
             category_id: 10
         },
         {
             user_id: "2",
-            goods_id: "3",
+            goods_id: "203",
             category_id: 10
         },
         {
             user_id: "3",
-            goods_id: "3",
+            goods_id: "203",
             category_id: 10
         },
         {
             user_id: "4",
-            goods_id: "2",
+            goods_id: "202",
             category_id: 10
         },
         {
             user_id: "5",
-            goods_id: "2",
+            goods_id: "202",
             category_id: 10
         },
         {
             user_id: "6",
-            goods_id: "1",
+            goods_id: "201",
             category_id: 10
         },
 // Cat 9
 {
     user_id: "1",
-    goods_id: "5",
+    goods_id: "185",
     category_id: 9
 },
 {
     user_id: "2",
-    goods_id: "5",
+    goods_id: "185",
     category_id: 9
 }, 
 {
     user_id: "3",
-    goods_id: "5",
+    goods_id: "185",
     category_id: 9
 }, 
 {
     user_id: "4",
-    goods_id: "5",
+    goods_id: "185",
     category_id: 9
 }, 
 {
     user_id: "5",
-    goods_id: "5",
+    goods_id: "185",
     category_id: 9
 },
 {
     user_id: "6",
-    goods_id: "4",
+    goods_id: "184",
     category_id: 9
 },
 {
     user_id: "7",
-    goods_id: "4",
+    goods_id: "184",
     category_id: 9
 },
 {
     user_id: "8",
-    goods_id: "4",
+    goods_id: "184",
     category_id: 9
 },
 {
     user_id: "9",
-    goods_id: "4",
+    goods_id: "184",
     category_id: 9
 },
 {
     user_id: "1",
-    goods_id: "3",
+    goods_id: "183",
     category_id: 9
 },
 {
     user_id: "2",
-    goods_id: "3",
+    goods_id: "183",
     category_id: 9
 },
 {
     user_id: "3",
-    goods_id: "3",
+    goods_id: "183",
     category_id: 9
 },
 {
     user_id: "4",
-    goods_id: "2",
+    goods_id: "182",
     category_id: 9
 },
 {
     user_id: "5",
-    goods_id: "2",
+    goods_id: "182",
     category_id: 9
 },
 {
     user_id: "6",
-    goods_id: "1",
+    goods_id: "193",
     category_id: 9
 },
 
 // Cat 8
 {
     user_id: "1",
-    goods_id: "5",
+    goods_id: "175",
     category_id: 8
 },
 {
     user_id: "2",
-    goods_id: "5",
+    goods_id: "175",
     category_id: 8
 }, 
 {
     user_id: "3",
-    goods_id: "5",
+    goods_id: "175",
     category_id: 8
 }, 
 {
     user_id: "4",
-    goods_id: "5",
+    goods_id: "175",
     category_id: 8
 }, 
 {
     user_id: "5",
-    goods_id: "5",
+    goods_id: "175",
     category_id: 8
 },
 {
     user_id: "6",
-    goods_id: "4",
+    goods_id: "174",
     category_id: 8
 },
 {
     user_id: "7",
-    goods_id: "4",
+    goods_id: "174",
     category_id: 8
 },
 {
     user_id: "8",
-    goods_id: "4",
+    goods_id: "174",
     category_id: 8
 },
 {
     user_id: "9",
-    goods_id: "4",
+    goods_id: "174",
     category_id: 8
 },
 {
     user_id: "1",
-    goods_id: "3",
+    goods_id: "173",
     category_id: 8
 },
 {
     user_id: "2",
-    goods_id: "3",
+    goods_id: "173",
     category_id: 8
 },
 {
     user_id: "3",
-    goods_id: "3",
+    goods_id: "173",
     category_id: 8
 },
 {
     user_id: "4",
-    goods_id: "2",
+    goods_id: "172",
     category_id: 8
 },
 {
     user_id: "5",
-    goods_id: "2",
+    goods_id: "172",
     category_id: 8
 },
 {
     user_id: "6",
-    goods_id: "1",
+    goods_id: "171",
     category_id: 8
 },
 // Cat 7
 {
     user_id: "1",
-    goods_id: "5",
+    goods_id: "165",
     category_id: 7
 },
 {
     user_id: "2",
-    goods_id: "5",
+    goods_id: "165",
     category_id: 7
 }, 
 {
     user_id: "3",
-    goods_id: "5",
+    goods_id: "165",
     category_id: 7
 }, 
 {
     user_id: "4",
-    goods_id: "5",
+    goods_id: "165",
     category_id: 7
 }, 
 {
     user_id: "5",
-    goods_id: "5",
+    goods_id: "165",
     category_id: 7
 },
 {
     user_id: "6",
-    goods_id: "4",
+    goods_id: "164",
     category_id: 7
 },
 {
     user_id: "7",
-    goods_id: "4",
+    goods_id: "164",
     category_id: 7
 },
 {
     user_id: "8",
-    goods_id: "4",
+    goods_id: "164",
     category_id: 7
 },
 {
     user_id: "9",
-    goods_id: "4",
+    goods_id: "164",
     category_id: 7
 },
 {
     user_id: "1",
-    goods_id: "3",
+    goods_id: "163",
     category_id: 7
 },
 {
     user_id: "2",
-    goods_id: "3",
+    goods_id: "163",
     category_id: 7
 },
 {
     user_id: "3",
-    goods_id: "3",
+    goods_id: "163",
     category_id: 7
 },
 {
     user_id: "4",
-    goods_id: "2",
+    goods_id: "162",
     category_id: 7
 },
 {
     user_id: "5",
-    goods_id: "2",
+    goods_id: "162",
     category_id: 7
 },
 {
     user_id: "6",
-    goods_id: "1",
+    goods_id: "161",
     category_id: 7
 },
 // Cat 6
 {
     user_id: "1",
-    goods_id: "5",
+    goods_id: "145",
     category_id: 6
 },
 {
     user_id: "2",
-    goods_id: "5",
+    goods_id: "145",
     category_id: 6
 }, 
 {
     user_id: "3",
-    goods_id: "5",
+    goods_id: "145",
     category_id: 6
 }, 
 {
     user_id: "4",
-    goods_id: "5",
+    goods_id: "145",
     category_id: 6
 }, 
 {
     user_id: "5",
-    goods_id: "5",
+    goods_id: "145",
     category_id: 6
 },
 {
     user_id: "6",
-    goods_id: "4",
+    goods_id: "144",
     category_id: 6
 },
 {
     user_id: "7",
-    goods_id: "4",
+    goods_id: "144",
     category_id: 6
 },
 {
     user_id: "8",
-    goods_id: "4",
+    goods_id: "144",
     category_id: 6
 },
 {
     user_id: "9",
-    goods_id: "4",
+    goods_id: "144",
     category_id: 6
 },
 {
     user_id: "1",
-    goods_id: "3",
+    goods_id: "143",
     category_id: 6
 },
 {
     user_id: "2",
-    goods_id: "3",
+    goods_id: "143",
     category_id: 6
 },
 {
     user_id: "3",
-    goods_id: "3",
+    goods_id: "143",
     category_id: 6
 },
 {
     user_id: "4",
-    goods_id: "2",
+    goods_id: "148",
     category_id: 6
 },
 {
     user_id: "5",
-    goods_id: "2",
+    goods_id: "148",
     category_id: 6
 },
 {
     user_id: "6",
-    goods_id: "1",
+    goods_id: "149",
     category_id: 6
 },
 // Cat 5
 {
     user_id: "1",
-    goods_id: "5",
+    goods_id: "135",
     category_id: 5
 },
 {
     user_id: "2",
-    goods_id: "5",
+    goods_id: "135",
     category_id: 5
 }, 
 {
     user_id: "3",
-    goods_id: "5",
+    goods_id: "135",
     category_id: 5
 }, 
 {
     user_id: "4",
-    goods_id: "5",
+    goods_id: "135",
     category_id: 5
 }, 
 {
     user_id: "5",
-    goods_id: "5",
+    goods_id: "135",
     category_id: 5
 },
 {
     user_id: "6",
-    goods_id: "4",
+    goods_id: "134",
     category_id: 5
 },
 {
     user_id: "7",
-    goods_id: "4",
+    goods_id: "134",
     category_id: 5
 },
 {
     user_id: "8",
-    goods_id: "4",
+    goods_id: "134",
     category_id: 5
 },
 {
     user_id: "9",
-    goods_id: "4",
+    goods_id: "134",
     category_id: 5
 },
 {
@@ -2848,12 +2837,12 @@ export async function seed(knex: Knex): Promise<void> {
 },
 {
     user_id: "2",
-    goods_id: "3",
+    goods_id: "133",
     category_id: 5
 },
 {
     user_id: "3",
-    goods_id: "3",
+    goods_id: "133",
     category_id: 5
 },
 {
@@ -2863,316 +2852,316 @@ export async function seed(knex: Knex): Promise<void> {
 },
 {
     user_id: "5",
-    goods_id: "2",
+    goods_id: "132",
     category_id: 5
 },
 {
     user_id: "6",
-    goods_id: "1",
+    goods_id: "131",
     category_id: 5
 },
 // Cat 4
 {
     user_id: "1",
-    goods_id: "5",
+    goods_id: "125",
     category_id: 4
 },
 {
     user_id: "2",
-    goods_id: "5",
+    goods_id: "125",
     category_id: 4
 }, 
 {
     user_id: "3",
-    goods_id: "5",
+    goods_id: "125",
     category_id: 4
 }, 
 {
     user_id: "4",
-    goods_id: "5",
+    goods_id: "125",
     category_id: 4
 }, 
 {
     user_id: "5",
-    goods_id: "5",
+    goods_id: "125",
     category_id: 4
 },
 {
     user_id: "6",
-    goods_id: "4",
+    goods_id: "124",
     category_id: 4
 },
 {
     user_id: "7",
-    goods_id: "4",
+    goods_id: "124",
     category_id: 4
 },
 {
     user_id: "8",
-    goods_id: "4",
+    goods_id: "124",
     category_id: 4
 },
 {
     user_id: "9",
-    goods_id: "4",
+    goods_id: "124",
     category_id: 4
 },
 {
     user_id: "1",
-    goods_id: "3",
+    goods_id: "123",
     category_id: 4
 },
 {
     user_id: "2",
-    goods_id: "3",
+    goods_id: "123",
     category_id: 4
 },
 {
     user_id: "3",
-    goods_id: "3",
+    goods_id: "123",
     category_id: 4
 },
 {
     user_id: "4",
-    goods_id: "2",
+    goods_id: "122",
     category_id: 4
 },
 {
     user_id: "5",
-    goods_id: "2",
+    goods_id: "122",
     category_id: 4
 },
 {
     user_id: "6",
-    goods_id: "1",
+    goods_id: "121",
     category_id: 4
 },
 // Cat 3
 {
     user_id: "1",
-    goods_id: "5",
+    goods_id: "115",
     category_id: 3
 },
 {
     user_id: "2",
-    goods_id: "5",
+    goods_id: "115",
     category_id: 3
 }, 
 {
     user_id: "3",
-    goods_id: "5",
+    goods_id: "115",
     category_id: 3
 }, 
 {
     user_id: "4",
-    goods_id: "5",
+    goods_id: "115",
     category_id: 3
 }, 
 {
     user_id: "5",
-    goods_id: "5",
+    goods_id: "115",
     category_id: 3
 },
 {
     user_id: "6",
-    goods_id: "4",
+    goods_id: "114",
     category_id: 3
 },
 {
     user_id: "7",
-    goods_id: "4",
+    goods_id: "114",
     category_id: 3
 },
 {
     user_id: "8",
-    goods_id: "4",
+    goods_id: "114",
     category_id: 3
 },
 {
     user_id: "9",
-    goods_id: "4",
+    goods_id: "114",
     category_id: 3
 },
 {
     user_id: "1",
-    goods_id: "3",
+    goods_id: "113",
     category_id: 3
 },
 {
     user_id: "2",
-    goods_id: "3",
+    goods_id: "113",
     category_id: 3
 },
 {
     user_id: "3",
-    goods_id: "3",
+    goods_id: "113",
     category_id: 3
 },
 {
     user_id: "4",
-    goods_id: "2",
+    goods_id: "112",
     category_id: 3
 },
 {
     user_id: "5",
-    goods_id: "2",
+    goods_id: "112",
     category_id: 3
 },
 {
     user_id: "6",
-    goods_id: "1",
+    goods_id: "111",
     category_id: 3
 },
 // Cat 2
 {
     user_id: "1",
-    goods_id: "5",
+    goods_id: "85",
     category_id: 2
 },
 {
     user_id: "2",
-    goods_id: "5",
+    goods_id: "85",
     category_id: 2
 }, 
 {
     user_id: "3",
-    goods_id: "5",
+    goods_id: "85",
     category_id: 2
 }, 
 {
     user_id: "4",
-    goods_id: "5",
+    goods_id: "85",
     category_id: 2
 }, 
 {
     user_id: "5",
-    goods_id: "5",
+    goods_id: "85",
     category_id: 2
 },
 {
     user_id: "6",
-    goods_id: "4",
+    goods_id: "84",
     category_id: 2
 },
 {
     user_id: "7",
-    goods_id: "4",
+    goods_id: "84",
     category_id: 2
 },
 {
     user_id: "8",
-    goods_id: "4",
+    goods_id: "84",
     category_id: 2
 },
 {
     user_id: "9",
-    goods_id: "4",
+    goods_id: "84",
     category_id: 2
 },
 {
     user_id: "1",
-    goods_id: "3",
+    goods_id: "73",
     category_id: 2
 },
 {
     user_id: "2",
-    goods_id: "3",
+    goods_id: "73",
     category_id: 2
 },
 {
     user_id: "3",
-    goods_id: "3",
+    goods_id: "73",
     category_id: 2
 },
 {
     user_id: "4",
-    goods_id: "2",
+    goods_id: "62",
     category_id: 2
 },
 {
     user_id: "5",
-    goods_id: "2",
+    goods_id: "62",
     category_id: 2
 },
 {
     user_id: "6",
-    goods_id: "1",
+    goods_id: "51",
     category_id: 2
 },
 // Cat 1
 {
     user_id: "1",
-    goods_id: "5",
+    goods_id: "36",
     category_id: 1
 },
 {
     user_id: "2",
-    goods_id: "5",
+    goods_id: "36",
     category_id: 1
 }, 
 {
     user_id: "3",
-    goods_id: "5",
+    goods_id: "36",
     category_id: 1
 }, 
 {
     user_id: "4",
-    goods_id: "5",
+    goods_id: "36",
     category_id: 1
 }, 
 {
     user_id: "5",
-    goods_id: "5",
+    goods_id: "36",
     category_id: 1
 },
 {
     user_id: "6",
-    goods_id: "4",
+    goods_id: "44",
     category_id: 1
 },
 {
     user_id: "7",
-    goods_id: "4",
+    goods_id: "44",
     category_id: 1
 },
 {
     user_id: "8",
-    goods_id: "4",
+    goods_id: "44",
     category_id: 1
 },
 {
     user_id: "9",
-    goods_id: "4",
+    goods_id: "44",
     category_id: 1
 },
 {
     user_id: "1",
-    goods_id: "3",
+    goods_id: "23",
     category_id: 1
 },
 {
     user_id: "2",
-    goods_id: "3",
+    goods_id: "23",
     category_id: 1
 },
 {
     user_id: "3",
-    goods_id: "3",
+    goods_id: "23",
     category_id: 1
 },
 {
     user_id: "4",
-    goods_id: "2",
+    goods_id: "12",
     category_id: 1
 },
 {
     user_id: "5",
-    goods_id: "2",
+    goods_id: "12",
     category_id: 1
 },
 {
     user_id: "6",
-    goods_id: "1",
+    goods_id: "11",
     category_id: 1
 },
 
