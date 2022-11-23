@@ -125,21 +125,8 @@ export class GoodsService {
     async getProductByBatchAndCatId(catIds: number[], qtyInOneBatch: number, ItemsToBeSkipped: number): Promise<any> {
         try {
             console.log("DATABASE: getProductByBatchAndCatId");
-            // let catIdString = catIds.join(",")
-            // console.log("catIdString: ", catIdString)
-
-            // const results = await this.knex.raw(/*sql*/
-            //     `SELECT goods.id, goods.name, barcode, category_id, goods_categories.name, goods_picture
-            //     FROM goods 
-            //     INNER JOIN goods_categories
-            //     ON goods.category_id = goods_categories.id
-            //     WHERE category_id IN (?)
-            //     LIMIT ? OFFSET ?`,
-            //     [catIdString, qtyInOneBatch, ItemsToBeSkipped]
-            // );
-
-            const results = await this.knex
-                .select("goods.id", "goods.name", "barcode", "category_id", "goods_categories.name", "goods_picture",)
+            const exploreResults = await this.knex
+                .select("goods.id", "goods.name as goods_name", "barcode", "category_id", "goods_categories.name as category_name", "goods_picture",)
                 .from("goods")
                 .innerJoin('goods_categories', 'goods.category_id', 'goods_categories.id')
                 .whereIn("category_id", catIds)
@@ -147,9 +134,22 @@ export class GoodsService {
                 .offset(ItemsToBeSkipped)
                 .returning("*")
 
+            console.log("DB explore results :", exploreResults);
 
-            console.log("DB results :", results);
+            const top5Results = await this.knex
+                .select("goods.id", "goods.name as goods_name", "barcode", "category_id", "goods_categories.name as category_name", "goods_picture",)
+                .from("goods")
+                .innerJoin('goods_categories', 'goods.category_id', 'goods_categories.id')
+                .whereIn("category_id", catIds)
+                .limit(qtyInOneBatch, { skipBinding: true })
+                .offset(ItemsToBeSkipped)
+                .returning("*")
 
+            console.log("DB explore results :", top5Results);
+
+
+
+            const results = { exploreResults, top5Results }
             return results;
         }
         catch (e) {
