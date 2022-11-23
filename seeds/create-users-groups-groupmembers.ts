@@ -242,17 +242,6 @@ export async function seed(knex: Knex): Promise<void> {
         wellcome_price: "9"
     },
         {
-            name: "金象牌 Golden Elephant Brand - 頂上茉莉香米 5公斤",
-            barcode: "4899668101053",
-            category_id: "4",
-            goods_picture:"https://api.parknshop.com/medias/PREMIUM-JASMINE-RICE-150007.jpg?context=bWFzdGVyfHBuc2hrL2ltYWdlc3w1NDU1Njl8aW1hZ2UvanBlZ3xoN2QvaDBkLzkzMTg5MjQzMjA3OTgvUFJFTUlVTSBKQVNNSU5FIFJJQ0UtMTUwMDA3LmpwZ3w5YjI2ZWIzZmJhMmE3NWU1NmIzY2YzZDE4NGQ3MjhiZDA0M2IwZTI3NzMyOTYzM2FhMzdjY2FkOGE5ZTM0MWI0",
-        aeon_price: "4.5",
-        dch_price: "6.9",
-        jasons_price: "8",
-        parknshop_price: "7.8",
-        wellcome_price: "9"
-    },
-        {
             name: "公仔 Doll - 公仔麵 - 雞蓉味 103克 x 5",
             barcode: "4892333100528",
             category_id: "7",
@@ -325,7 +314,7 @@ export async function seed(knex: Knex): Promise<void> {
             category_id: "1",
             goods_picture: "https://api.parknshop.com/medias/MARBO-CAKE-CHERRY-RAISIN-BP-120010.jpg?context=bWFzdGVyfHBuc2hrL2ltYWdlc3w0OTM1NXxpbWFnZS9qcGVnfGgyYS9oZWUvOTMzNzIyMTcwOTg1NC9NQVJCTyBDQUtFIC0gQ0hFUlJZICBSQUlTSU4tQlBfMTIwMDEwLmpwZ3w5ZjBlMDRlZTE0NjMzZWVkYjM3N2IzZThiZDI0MmRmNGJlYjNmMjEwNDhiMDUxOTA5NTEzMWM2MmM4OTY0MmVl",
         aeon_price: "9.5",
-        dch_price: "79",
+        dch_price: "7.9",
         jasons_price: "5",
         parknshop_price: "3.8",
         wellcome_price: "4"
@@ -711,8 +700,12 @@ export async function seed(knex: Knex): Promise<void> {
             name: "雀巢 Nestle 可可脆片 Koko Krunch 170克",
             barcode: "4800361346429",
             category_id: "1",
-            goods_picture: "https://api.parknshop.com/medias/KOKO-KRUNCH-BP-119148.jpg?context=bWFzdGVyfHBuc2hrL2ltYWdlc3w1NDI0N3xpbWFnZS9qcGVnfGhkMC9oNTYvOTMzNjQ1MjgwODczNC9LT0tPIEtSVU5DSC1CUF8xMTkxNDguanBnfGFjY2ZjYzM1MDg0YWQ4ZmQ4MWY3MGU1MzlkM2M4ODNlZGQxODkxZGQ3M2QxZDhlMjUwZjgwOWFhNmZlYjBkMzE"
-    
+            goods_picture: "https://api.parknshop.com/medias/KOKO-KRUNCH-BP-119148.jpg?context=bWFzdGVyfHBuc2hrL2ltYWdlc3w1NDI0N3xpbWFnZS9qcGVnfGhkMC9oNTYvOTMzNjQ1MjgwODczNC9LT0tPIEtSVU5DSC1CUF8xMTkxNDguanBnfGFjY2ZjYzM1MDg0YWQ4ZmQ4MWY3MGU1MzlkM2M4ODNlZGQxODkxZGQ3M2QxZDhlMjUwZjgwOWFhNmZlYjBkMzE",
+            aeon_price: "3.5",
+            dch_price: "6.9",
+            jasons_price: "8",
+            parknshop_price: "7.8",
+            wellcome_price: "9"
             
         },
         {
@@ -1242,215 +1235,393 @@ export async function seed(knex: Knex): Promise<void> {
     {
         name: "日本樂天朱古力小熊餅４連包",
         category_id: "3",
-        goods_picture: "https://api.parknshop.com/medias/KOALAS-MARCH-CHOCOLATE-BISCUIT-4-PACK-BP-460757.jpg?context=bWFzdGVyfHBuc2hrL2ltYWdlc3wzNzExNHxpbWFnZS9qcGVnfGgzYi9oNmEvOTMzOTM0MzExMDE3NC9LT0FMQVMgTUFSQ0ggQ0hPQ09MQVRFIEJJU0NVSVQgNCBQQUNLLUJQXzQ2MDc1Ny5qcGd8YzgwNWJhMWJmODhhNTg0YTA3ZWYxNzAwYzQ3YTYxMmI4MTQyNTkzNzQ4YTEzMjU5ZjQ5OWRkODA5NjIzN2E4Nw"
+        goods_picture: "https://api.parknshop.com/medias/KOALAS-MARCH-CHOCOLATE-BISCUIT-4-PACK-BP-460757.jpg?context=bWFzdGVyfHBuc2hrL2ltYWdlc3wzNzExNHxpbWFnZS9qcGVnfGgzYi9oNmEvOTMzOTM0MzExMDE3NC9LT0FMQVMgTUFSQ0ggQ0hPQ09MQVRFIEJJU0NVSVQgNCBQQUNLLUJQXzQ2MDc1Ny5qcGd8YzgwNWJhMWJmODhhNTg0YTA3ZWYxNzAwYzQ3YTYxMmI4MTQyNTkzNzQ4YTEzMjU5ZjQ5OWRkODA5NjIzN2E4Nw",
+        aeon_price: "8.3",
+        dch_price: "7.5",
+        jasons_price: "5.5",
+        parknshop_price: "7.8",
+        wellcome_price: "7"
+        
     },
     {
         name: "樂天杏仁朱古力餅棒",
         category_id: "3",
-        goods_picture: "https://api.parknshop.com/medias/cat-front-BP-105651.jpg?context=bWFzdGVyfHBuc2hrL2ltYWdlc3wxMDMwODF8aW1hZ2UvanBlZ3xoMDcvaDBjLzk2MjUwOTcyMDc4MzgvUE5TSEstQlBfMTA1NjUxLWZyb250LmpwZ3w1NjdmMGJhOTQxNmM5ZGQ1YzcyMjdhNzlkYzRkMWFiZTI1N2I5MDdkMmU3YzllZTAwNjRlMTdlYzJkMWU5YWNk"
+        goods_picture: "https://api.parknshop.com/medias/cat-front-BP-105651.jpg?context=bWFzdGVyfHBuc2hrL2ltYWdlc3wxMDMwODF8aW1hZ2UvanBlZ3xoMDcvaDBjLzk2MjUwOTcyMDc4MzgvUE5TSEstQlBfMTA1NjUxLWZyb250LmpwZ3w1NjdmMGJhOTQxNmM5ZGQ1YzcyMjdhNzlkYzRkMWFiZTI1N2I5MDdkMmU3YzllZTAwNjRlMTdlYzJkMWU5YWNk",
+        aeon_price: "8.3",
+        dch_price: "7.5",
+        jasons_price: "5.5",
+        parknshop_price: "7.8",
+        wellcome_price: "7"
     },
 
     {
 
         name: "樂天白朱古力曲奇餅棒",
         category_id: "3",
-        goods_picture: "https://api.parknshop.com/medias/PEPERO-WHITE-COOKIE-BP-436159.jpg?context=bWFzdGVyfHBuc2hrL2ltYWdlc3w0NDYyNHxpbWFnZS9qcGVnfGhkYi9oMzIvOTMzNzQ5MzAyODg5NC9QRVBFUk8tV0hJVEUgQ09PS0lFLUJQXzQzNjE1OS5qcGd8ZmY5NGM4MDMyOTBmNDNmNjU3ODI0YmRkOWU2OWUxYWExOWFjYTYwMDcwZjVmZjBkNmRiNTIwNTZiMzYxYTMyZg"
+        goods_picture: "https://api.parknshop.com/medias/PEPERO-WHITE-COOKIE-BP-436159.jpg?context=bWFzdGVyfHBuc2hrL2ltYWdlc3w0NDYyNHxpbWFnZS9qcGVnfGhkYi9oMzIvOTMzNzQ5MzAyODg5NC9QRVBFUk8tV0hJVEUgQ09PS0lFLUJQXzQzNjE1OS5qcGd8ZmY5NGM4MDMyOTBmNDNmNjU3ODI0YmRkOWU2OWUxYWExOWFjYTYwMDcwZjVmZjBkNmRiNTIwNTZiMzYxYTMyZg",
+        aeon_price: "8.3",
+        dch_price: "7.5",
+        jasons_price: "5.5",
+        parknshop_price: "7.8",
+        wellcome_price: "7"
     },
 
     {
         name: "日本樂天鬆脆批朱古力",
         category_id: "3",
-        goods_picture: "https://api.parknshop.com/medias/PIE-NO-MI-RICH-CHOCOLATE-BP-393827.jpg?context=bWFzdGVyfHBuc2hrL2ltYWdlc3w0NzI0MnxpbWFnZS9qcGVnfGg3OS9oYjUvOTM0MTIxOTgzMTgzOC9QSUUgTk8gTUkgUklDSCBDSE9DT0xBVEUtQlBfMzkzODI3LmpwZ3w2OWNiYzRiODFlNjRkY2JlN2JmMTYwZjcxMzdkOTZlMzBkZTI1YmQxYjY5NGJjNjZiOTgwNjdlODdhMGYzODgz"
+        goods_picture: "https://api.parknshop.com/medias/PIE-NO-MI-RICH-CHOCOLATE-BP-393827.jpg?context=bWFzdGVyfHBuc2hrL2ltYWdlc3w0NzI0MnxpbWFnZS9qcGVnfGg3OS9oYjUvOTM0MTIxOTgzMTgzOC9QSUUgTk8gTUkgUklDSCBDSE9DT0xBVEUtQlBfMzkzODI3LmpwZ3w2OWNiYzRiODFlNjRkY2JlN2JmMTYwZjcxMzdkOTZlMzBkZTI1YmQxYjY5NGJjNjZiOTgwNjdlODdhMGYzODgz",
+        aeon_price: "8.3",
+        dch_price: "7.5",
+        jasons_price: "5.5",
+        parknshop_price: "7.8",
+        wellcome_price: "7"
     },
     {
         name: "能得利 果汁軟糖 3\u0027S",
         category_id: "3",
-        goods_picture: "https://api.parknshop.com/medias/FRUIT-PASTILLES-BP-119503.jpg?context=bWFzdGVyfHBuc2hrL2ltYWdlc3wzODY2MXxpbWFnZS9qcGVnfGhhYi9oYjIvOTMzNjgwMzYyMjk0Mi9GUlVJVCBQQVNUSUxMRVMtQlBfMTE5NTAzLmpwZ3w5MzI0Mzk5NzVhZDQ5YzNjMTU5YjQ1MThlNWM0Y2RjMDFiZTZiNGY2MTYzZTNlYjVkYmU1NzNlNzQzMzAxNjVh"
+        goods_picture: "https://api.parknshop.com/medias/FRUIT-PASTILLES-BP-119503.jpg?context=bWFzdGVyfHBuc2hrL2ltYWdlc3wzODY2MXxpbWFnZS9qcGVnfGhhYi9oYjIvOTMzNjgwMzYyMjk0Mi9GUlVJVCBQQVNUSUxMRVMtQlBfMTE5NTAzLmpwZ3w5MzI0Mzk5NzVhZDQ5YzNjMTU5YjQ1MThlNWM0Y2RjMDFiZTZiNGY2MTYzZTNlYjVkYmU1NzNlNzQzMzAxNjVh",
+        aeon_price: "8.3",
+        dch_price: "7.5",
+        jasons_price: "5.5",
+        parknshop_price: "7.8",
+        wellcome_price: "7"
     },
     {
         name: "樂天脆米朱古力餅棒",
         category_id: "3",
-        goods_picture: "https://api.parknshop.com/medias/CRUNKY-PEPERO-BP-420576.jpg?context=bWFzdGVyfHBuc2hrL2ltYWdlc3wzOTQxN3xpbWFnZS9qcGVnfGhkZi9oODQvOTM0MDk3NzQ0Njk0Mi9DUlVOS1kgUEVQRVJPLUJQXzQyMDU3Ni5qcGd8ODZlNjkwMjRjMjJiOTA0ZTk0ZTk0M2E3NjZkMjEwMDZiNzBmZDRlZTBlM2U2OTZkYTA1YWM3ZmU0NDUwNDY0NA"
+        goods_picture: "https://api.parknshop.com/medias/CRUNKY-PEPERO-BP-420576.jpg?context=bWFzdGVyfHBuc2hrL2ltYWdlc3wzOTQxN3xpbWFnZS9qcGVnfGhkZi9oODQvOTM0MDk3NzQ0Njk0Mi9DUlVOS1kgUEVQRVJPLUJQXzQyMDU3Ni5qcGd8ODZlNjkwMjRjMjJiOTA0ZTk0ZTk0M2E3NjZkMjEwMDZiNzBmZDRlZTBlM2U2OTZkYTA1YWM3ZmU0NDUwNDY0NA",
+        aeon_price: "8.3",
+        dch_price: "7.5",
+        jasons_price: "5.5",
+        parknshop_price: "7.8",
+        wellcome_price: "7"
     },
     {
         name: "樂天白朱古力杏仁餅棒",
         category_id: "3",
-        goods_picture: "https://api.parknshop.com/medias/SNOWY-ALMOND-PEPERO-BP-420578.jpg?context=bWFzdGVyfHBuc2hrL2ltYWdlc3wzNTg5NHxpbWFnZS9qcGVnfGhjNC9oOTIvOTM0MDk3NzAyMDk1OC9TTk9XWSBBTE1PTkQgUEVQRVJPLUJQXzQyMDU3OC5qcGd8NTRmNjdmMzllYzc0YjkwY2M3MmJiYWJmZjg0ZTI3MmFhOTU1YjYwYTU3YmViMzg0OWViZDk4ZTljYTZmYmQ5YQ"
+        goods_picture: "https://api.parknshop.com/medias/SNOWY-ALMOND-PEPERO-BP-420578.jpg?context=bWFzdGVyfHBuc2hrL2ltYWdlc3wzNTg5NHxpbWFnZS9qcGVnfGhjNC9oOTIvOTM0MDk3NzAyMDk1OC9TTk9XWSBBTE1PTkQgUEVQRVJPLUJQXzQyMDU3OC5qcGd8NTRmNjdmMzllYzc0YjkwY2M3MmJiYWJmZjg0ZTI3MmFhOTU1YjYwYTU3YmViMzg0OWViZDk4ZTljYTZmYmQ5YQ",
+        aeon_price: "8.3",
+        dch_price: "7.5",
+        jasons_price: "5.5",
+        parknshop_price: "7.8",
+        wellcome_price: "7"
     },
 
     {
         name: "樂天朱古力曲奇餅棒",
         category_id: "3",
-        goods_picture: "https://api.parknshop.com/medias/cat-front-BP-333789.jpg?context=bWFzdGVyfHBuc2hrL2ltYWdlc3wxMzE4MTF8aW1hZ2UvanBlZ3xoMWQvaDljLzkzNjk3MzU1OTQwMTQvUE5TSEstQlBfMzMzNzg5LWZyb250LmpwZ3wyNzE1ZTFiZTA5MjQ1MTk2NTJiZTM4YzFmNjE1NTdiYTdlNTQzNjMwNzQxNTBiODNmNTBjZmRmNjEyZjg1MzAy"
+        goods_picture: "https://api.parknshop.com/medias/cat-front-BP-333789.jpg?context=bWFzdGVyfHBuc2hrL2ltYWdlc3wxMzE4MTF8aW1hZ2UvanBlZ3xoMWQvaDljLzkzNjk3MzU1OTQwMTQvUE5TSEstQlBfMzMzNzg5LWZyb250LmpwZ3wyNzE1ZTFiZTA5MjQ1MTk2NTJiZTM4YzFmNjE1NTdiYTdlNTQzNjMwNzQxNTBiODNmNTBjZmRmNjEyZjg1MzAy",
+        aeon_price: "8.3",
+        dch_price: "7.5",
+        jasons_price: "5.5",
+        parknshop_price: "7.8",
+        wellcome_price: "7"
     },
     {
         name: "奧利奧朱古力味迷你夾心曲奇餅杯裝",
         category_id: "3",
-        goods_picture: "https://api.parknshop.com/medias/MINI-OREO-CHOCOLATE-BP-413697.jpg?context=bWFzdGVyfHBuc2hrL2ltYWdlc3w2NDM5MnxpbWFnZS9qcGVnfGhkZS9oYWUvOTMzNzg4MjgzNzAyMi9NSU5JIE9SRU8gQ0hPQ09MQVRFLUJQXzQxMzY5Ny5qcGd8MDc4MmYzYmU2NWZhNjFlMjUwMmI2Nzg5ODQwNGY3ZDcyYTcwN2YyNzQ3YTcxODA1ZDIxOWUwNzc5OTQ5NjViNA"
+        goods_picture: "https://api.parknshop.com/medias/MINI-OREO-CHOCOLATE-BP-413697.jpg?context=bWFzdGVyfHBuc2hrL2ltYWdlc3w2NDM5MnxpbWFnZS9qcGVnfGhkZS9oYWUvOTMzNzg4MjgzNzAyMi9NSU5JIE9SRU8gQ0hPQ09MQVRFLUJQXzQxMzY5Ny5qcGd8MDc4MmYzYmU2NWZhNjFlMjUwMmI2Nzg5ODQwNGY3ZDcyYTcwN2YyNzQ3YTcxODA1ZDIxOWUwNzc5OTQ5NjViNA",
+        aeon_price: "8.3",
+        dch_price: "7.5",
+        jasons_price: "5.5",
+        parknshop_price: "7.8",
+        wellcome_price: "7"
     },
     {
         name: "樂天花生朱古力餅棒",
         category_id: "3",
-        goods_picture: "https://api.parknshop.com/medias/cat-front-BP-332252.jpg?context=bWFzdGVyfHBuc2hrL2ltYWdlc3wxMTg3MzF8aW1hZ2UvanBlZ3xoMzUvaDI3LzkzNjk3MzQyMTc3NTgvUE5TSEstQlBfMzMyMjUyLWZyb250LmpwZ3xlNmZlYTBiNjVmZDMxOTc4ZDQ0NWE1NThkODg1ZTExZjQzNGFkNDEwZjQyZDdlM2M3NDRiODAyNzIxMDE1Nzg2"
+        goods_picture: "https://api.parknshop.com/medias/cat-front-BP-332252.jpg?context=bWFzdGVyfHBuc2hrL2ltYWdlc3wxMTg3MzF8aW1hZ2UvanBlZ3xoMzUvaDI3LzkzNjk3MzQyMTc3NTgvUE5TSEstQlBfMzMyMjUyLWZyb250LmpwZ3xlNmZlYTBiNjVmZDMxOTc4ZDQ0NWE1NThkODg1ZTExZjQzNGFkNDEwZjQyZDdlM2M3NDRiODAyNzIxMDE1Nzg2",
+        aeon_price: "8.3",
+        dch_price: "7.5",
+        jasons_price: "5.5",
+        parknshop_price: "7.8",
+        wellcome_price: "7"
     },
 
     {
 
         name: "費列羅金莎朱古力48粒家庭裝",
         category_id: "3",
-        goods_picture: "https://api.parknshop.com/medias/ROCHER-T3-OUTER-BP-354903.jpg?context=bWFzdGVyfHBuc2hrL2ltYWdlc3w0MjE4NXxpbWFnZS9qcGVnfGhmOS9oMGIvOTMzNzIwNzkxNDUyNi9ST0NIRVIgVDMgT1VURVItQlBfMzU0OTAzLmpwZ3xiOGQyODY5ODdhODhlZjBlNTA4Y2RkNzQ5ODI3Y2M5YTliODc4NDgyOTExYjhjMjVkZGRkNmZmMDY1MzE0ZTYx"
+        goods_picture: "https://api.parknshop.com/medias/ROCHER-T3-OUTER-BP-354903.jpg?context=bWFzdGVyfHBuc2hrL2ltYWdlc3w0MjE4NXxpbWFnZS9qcGVnfGhmOS9oMGIvOTMzNzIwNzkxNDUyNi9ST0NIRVIgVDMgT1VURVItQlBfMzU0OTAzLmpwZ3xiOGQyODY5ODdhODhlZjBlNTA4Y2RkNzQ5ODI3Y2M5YTliODc4NDgyOTExYjhjMjVkZGRkNmZmMDY1MzE0ZTYx",
+        aeon_price: "8.3",
+        dch_price: "7.5",
+        jasons_price: "5.5",
+        parknshop_price: "7.8",
+        wellcome_price: "7"
     },
     {
         name: "金龜嘜印尼萬里脆花生",
         category_id: "3",
-        goods_picture: "https://api.parknshop.com/medias/ROASTED-SALTED-PEANUT-BP-125936.jpg?context=bWFzdGVyfHBuc2hrL2ltYWdlc3w0MjU4OXxpbWFnZS9qcGVnfGhkOS9oMGQvOTMzNjkzNjAwNTY2Mi9ST0FTVEVEICBTQUxURUQgUEVBTlVULUJQXzEyNTkzNi5qcGd8ZDhkZGUxZjE2NmI2YmFkZWFjOTczMWQyNTA5N2FmYjVkNDFkYjYzNWJiMDNjMjg2OTBkMjk5MDdkNmFmMmM4Yg"
+        goods_picture: "https://api.parknshop.com/medias/ROASTED-SALTED-PEANUT-BP-125936.jpg?context=bWFzdGVyfHBuc2hrL2ltYWdlc3w0MjU4OXxpbWFnZS9qcGVnfGhkOS9oMGQvOTMzNjkzNjAwNTY2Mi9ST0FTVEVEICBTQUxURUQgUEVBTlVULUJQXzEyNTkzNi5qcGd8ZDhkZGUxZjE2NmI2YmFkZWFjOTczMWQyNTA5N2FmYjVkNDFkYjYzNWJiMDNjMjg2OTBkMjk5MDdkNmFmMmM4Yg",
+        aeon_price: "8.3",
+        dch_price: "7.5",
+        jasons_price: "5.5",
+        parknshop_price: "7.8",
+        wellcome_price: "7"
     },
     {
         name: "KIMNORI原味韓國紫菜",
         category_id: "3",
-        goods_picture: "https://api.parknshop.com/medias/SEASONED-SEAWEEDORIGINAL-FLV-BP-476755.jpg?context=bWFzdGVyfHBuc2hrL2ltYWdlc3w1ODUyN3xpbWFnZS9qcGVnfGg1ZS9oYjkvOTMzODYzODQwMTU2Ni9TRUFTT05FRCBTRUFXRUVET1JJR0lOQUwgRkxWLUJQXzQ3Njc1NS5qcGd8ZDU1MzJjYjgzYzU0MGE0NTRhMzE2ZDIyZWIxZTFkNzQ1YjI4ZjIyNjUyOTg0NjE0NjVlZDMzOTFlNDdlY2IyNw"
+        goods_picture: "https://api.parknshop.com/medias/SEASONED-SEAWEEDORIGINAL-FLV-BP-476755.jpg?context=bWFzdGVyfHBuc2hrL2ltYWdlc3w1ODUyN3xpbWFnZS9qcGVnfGg1ZS9oYjkvOTMzODYzODQwMTU2Ni9TRUFTT05FRCBTRUFXRUVET1JJR0lOQUwgRkxWLUJQXzQ3Njc1NS5qcGd8ZDU1MzJjYjgzYzU0MGE0NTRhMzE2ZDIyZWIxZTFkNzQ1YjI4ZjIyNjUyOTg0NjE0NjVlZDMzOTFlNDdlY2IyNw",
+        aeon_price: "8.3",
+        dch_price: "7.5",
+        jasons_price: "5.5",
+        parknshop_price: "7.8",
+        wellcome_price: "7"
     },
     {
         name: "奧利安魚仔餅紫菜味",
         category_id: "3",
-        goods_picture: "https://api.parknshop.com/medias/KOREPAD-SNACKSEAWEED-FLAVOUR-BP-189179.jpg?context=bWFzdGVyfHBuc2hrL2ltYWdlc3wzOTcxOHxpbWFnZS9qcGVnfGhmZC9oOTkvOTMzNjc2MjY2Mjk0Mi9LT1JFUEFEIFNOQUNLU0VBV0VFRCBGTEFWT1VSLUJQXzE4OTE3OS5qcGd8YjcwNjMzN2Q1YTBlNzhiZjY1NDE1ZWY4YzgyNWM2NjAwYjczNmJmZGNiN2I3OWE0MjdhMWUyZDA4MDcyODcyMw"
+        goods_picture: "https://api.parknshop.com/medias/KOREPAD-SNACKSEAWEED-FLAVOUR-BP-189179.jpg?context=bWFzdGVyfHBuc2hrL2ltYWdlc3wzOTcxOHxpbWFnZS9qcGVnfGhmZC9oOTkvOTMzNjc2MjY2Mjk0Mi9LT1JFUEFEIFNOQUNLU0VBV0VFRCBGTEFWT1VSLUJQXzE4OTE3OS5qcGd8YjcwNjMzN2Q1YTBlNzhiZjY1NDE1ZWY4YzgyNWM2NjAwYjczNmJmZGNiN2I3OWE0MjdhMWUyZDA4MDcyODcyMw",
+        aeon_price: "8.3",
+        dch_price: "7.5",
+        jasons_price: "5.5",
+        parknshop_price: "7.8",
+        wellcome_price: "7"
     },
     {
         name: "費列羅金莎朱古力禮盒16粒裝",
         category_id: "3",
-        goods_picture: "https://api.parknshop.com/medias/ROCHER-T16-BP-111277.jpg?context=bWFzdGVyfHBuc2hrL2ltYWdlc3w2MDEzOHxpbWFnZS9qcGVnfGhlZi9oNjUvOTMzNjQyODkyMDg2Mi9ST0NIRVIgVDE2LUJQXzExMTI3Ny5qcGd8YWJmNWM3MmM4ZTYwN2U3NzE5YTkyNzEwMjQzNzkwNzE5MDNiNjEwM2ZkYzZmOTU3MjI5ODY5Zjc5MWIxODRlMw"
+        goods_picture: "https://api.parknshop.com/medias/ROCHER-T16-BP-111277.jpg?context=bWFzdGVyfHBuc2hrL2ltYWdlc3w2MDEzOHxpbWFnZS9qcGVnfGhlZi9oNjUvOTMzNjQyODkyMDg2Mi9ST0NIRVIgVDE2LUJQXzExMTI3Ny5qcGd8YWJmNWM3MmM4ZTYwN2U3NzE5YTkyNzEwMjQzNzkwNzE5MDNiNjEwM2ZkYzZmOTU3MjI5ODY5Zjc5MWIxODRlMw",
+        aeon_price: "8.3",
+        dch_price: "7.5",
+        jasons_price: "5.5",
+        parknshop_price: "7.8",
+        wellcome_price: "7"
     },
     {
 
         name: "費列羅金莎朱古力金鑽禮盒24粒",
         category_id: "3",
-        goods_picture: "https://api.parknshop.com/medias/cat-front-BP-154828.jpg?context=bWFzdGVyfHBuc2hrL2ltYWdlc3wyNTEzNzB8aW1hZ2UvanBlZ3xoZDEvaDg3Lzk0NjY1ODI3Mjg3MzQvUE5TSEstQlBfMTU0ODI4LWZyb250LmpwZ3w3ZDQ4NWExY2M3NjRmNTY4ZmRjMzdiZDk4OGRmYTlmZjk5NGQ1Mjk0NzU5MWUxNjlkYjJmN2YyYTU4Nzc4OWRk"
+        goods_picture: "https://api.parknshop.com/medias/cat-front-BP-154828.jpg?context=bWFzdGVyfHBuc2hrL2ltYWdlc3wyNTEzNzB8aW1hZ2UvanBlZ3xoZDEvaDg3Lzk0NjY1ODI3Mjg3MzQvUE5TSEstQlBfMTU0ODI4LWZyb250LmpwZ3w3ZDQ4NWExY2M3NjRmNTY4ZmRjMzdiZDk4OGRmYTlmZjk5NGQ1Mjk0NzU5MWUxNjlkYjJmN2YyYTU4Nzc4OWRk",
+        aeon_price: "8.3",
+        dch_price: "7.5",
+        jasons_price: "5.5",
+        parknshop_price: "7.8",
+        wellcome_price: "7"
     },
     {
         name: "金龜嘜印尼萬里脆花生",
         category_id: "3",
-        goods_picture: "https://api.parknshop.com/medias/ROASTED-SALTED-PEANUT-BP-125935.jpg?context=bWFzdGVyfHBuc2hrL2ltYWdlc3w0MTEwNXxpbWFnZS9qcGVnfGg3OC9oNzEvOTMzNjY4ODcwNTU2Ni9ST0FTVEVEICBTQUxURUQgUEVBTlVULUJQXzEyNTkzNS5qcGd8ZDgwMWE0Y2Q1MWNjZmVkNmY5OTU3ZGUwMDVmODk4ZWIwOTM0ODE1MmExNWM0YTg5MzJmYTI2NDg0Yjc0NjZmNg"
+        goods_picture: "https://api.parknshop.com/medias/ROASTED-SALTED-PEANUT-BP-125935.jpg?context=bWFzdGVyfHBuc2hrL2ltYWdlc3w0MTEwNXxpbWFnZS9qcGVnfGg3OC9oNzEvOTMzNjY4ODcwNTU2Ni9ST0FTVEVEICBTQUxURUQgUEVBTlVULUJQXzEyNTkzNS5qcGd8ZDgwMWE0Y2Q1MWNjZmVkNmY5OTU3ZGUwMDVmODk4ZWIwOTM0ODE1MmExNWM0YTg5MzJmYTI2NDg0Yjc0NjZmNg",
+        aeon_price: "8.3",
+        dch_price: "7.5",
+        jasons_price: "5.5",
+        parknshop_price: "7.8",
+        wellcome_price: "7"
     },
     {
         name: "珍珍醬燒豬仔骨味薯片",
         category_id: "3",
-        goods_picture: "https://api.parknshop.com/medias/cat-front-BP-465773.jpg?context=bWFzdGVyfHBuc2hrL2ltYWdlc3wxOTA2MDJ8aW1hZ2UvanBlZ3xoNWEvaDdmLzk0NjE1ODE2NzY1NzQvUE5TSEstQlBfNDY1NzczLWZyb250LmpwZ3xjOGY3NDVkOTEwZGM0NDM4OGRkZWZlNjI2MzRjMTNlYTg5MzU0ZjU1NjYwMjhhMDJmNzY2ZDVmYzZhNjExYjNj"
+        goods_picture: "https://api.parknshop.com/medias/cat-front-BP-465773.jpg?context=bWFzdGVyfHBuc2hrL2ltYWdlc3wxOTA2MDJ8aW1hZ2UvanBlZ3xoNWEvaDdmLzk0NjE1ODE2NzY1NzQvUE5TSEstQlBfNDY1NzczLWZyb250LmpwZ3xjOGY3NDVkOTEwZGM0NDM4OGRkZWZlNjI2MzRjMTNlYTg5MzU0ZjU1NjYwMjhhMDJmNzY2ZDVmYzZhNjExYjNj",
+        aeon_price: "8.3",
+        dch_price: "7.5",
+        jasons_price: "5.5",
+        parknshop_price: "7.8",
+        wellcome_price: "7"
     },
 
     {
 
         name: "益達無糖香口珠-薄荷口味超量裝75克",
         category_id: "3",
-        goods_picture: "https://api.parknshop.com/medias/Peppermint-Flavour-Gum-Mega-Bag-BP-248915.jpg?context=bWFzdGVyfHBuc2hrL2ltYWdlc3wzNjYzMXxpbWFnZS9qcGVnfGhkMi9oMjUvOTMzNjg2MzQ5MDA3OC9QZXBwZXJtaW50IEZsYXZvdXIgR3VtIE1lZ2EgQmFnLUJQXzI0ODkxNS5qcGd8NDUxNDA1MzQ1YTBiNzY0NTFlM2Y5NWY0N2U0NjczMTU2YThlYTQwYWE0MjBjZTRiYzNjZTBhMmVjOTZlOTRmYQ"
+        goods_picture: "https://api.parknshop.com/medias/Peppermint-Flavour-Gum-Mega-Bag-BP-248915.jpg?context=bWFzdGVyfHBuc2hrL2ltYWdlc3wzNjYzMXxpbWFnZS9qcGVnfGhkMi9oMjUvOTMzNjg2MzQ5MDA3OC9QZXBwZXJtaW50IEZsYXZvdXIgR3VtIE1lZ2EgQmFnLUJQXzI0ODkxNS5qcGd8NDUxNDA1MzQ1YTBiNzY0NTFlM2Y5NWY0N2U0NjczMTU2YThlYTQwYWE0MjBjZTRiYzNjZTBhMmVjOTZlOTRmYQ",
+        aeon_price: "8.3",
+        dch_price: "7.5",
+        jasons_price: "5.5",
+        parknshop_price: "7.8",
+        wellcome_price: "7"
     },
     {
         name: "珍珍燒烤味薯片優惠裝",
         category_id: "3",
-        goods_picture: "https://api.parknshop.com/medias/POTATO-CHIP-FUN-PACK-BP-113489.jpg?context=bWFzdGVyfHBuc2hrL2ltYWdlc3wzNjQxM3xpbWFnZS9qcGVnfGhmOS9oNjQvOTMzNzI5ODQ1MjUxMC9QT1RBVE8gQ0hJUCBGVU4gUEFDSy1CUF8xMTM0ODkuanBnfDgzYTliNmE0OGVmZTU1ZGVjZjhiZTBlMTZlNmI4NjVjODhlMjU4NzllODJhY2YzNzAyODUzODNhODk3NzEyZWY"
+        goods_picture: "https://api.parknshop.com/medias/POTATO-CHIP-FUN-PACK-BP-113489.jpg?context=bWFzdGVyfHBuc2hrL2ltYWdlc3wzNjQxM3xpbWFnZS9qcGVnfGhmOS9oNjQvOTMzNzI5ODQ1MjUxMC9QT1RBVE8gQ0hJUCBGVU4gUEFDSy1CUF8xMTM0ODkuanBnfDgzYTliNmE0OGVmZTU1ZGVjZjhiZTBlMTZlNmI4NjVjODhlMjU4NzllODJhY2YzNzAyODUzODNhODk3NzEyZWY",
+        aeon_price: "8.3",
+        dch_price: "7.5",
+        jasons_price: "5.5",
+        parknshop_price: "7.8",
+        wellcome_price: "7"
     },
     {
         name: "HARIBO 哈瑞寶快樂可樂橡皮糖",
         category_id: "3",
-        goods_picture: "https://api.parknshop.com/medias/cat-front-BP-469069.jpg?context=bWFzdGVyfHBuc2hrL2ltYWdlc3wxODQ0NTl8aW1hZ2UvanBlZ3xoMGMvaDNjLzk2Mjg4NzMyNjEwODYvUE5TSEstQlBfNDY5MDY5LWZyb250LmpwZ3w5MjdjN2NiN2QyN2VmZDk0MTg2ZTBlNDE2YTI2NGM4ZDUzZGNiMGRmN2JlNmU3NmJhMDEyNjcyYWM0M2UzZTk0"
+        goods_picture: "https://api.parknshop.com/medias/cat-front-BP-469069.jpg?context=bWFzdGVyfHBuc2hrL2ltYWdlc3wxODQ0NTl8aW1hZ2UvanBlZ3xoMGMvaDNjLzk2Mjg4NzMyNjEwODYvUE5TSEstQlBfNDY5MDY5LWZyb250LmpwZ3w5MjdjN2NiN2QyN2VmZDk0MTg2ZTBlNDE2YTI2NGM4ZDUzZGNiMGRmN2JlNmU3NmJhMDEyNjcyYWM0M2UzZTk0",
+        aeon_price: "8.3",
+        dch_price: "7.5",
+        jasons_price: "5.5",
+        parknshop_price: "7.8",
+        wellcome_price: "7"
     },
     
     {
         name: "益達無糖香口珠－檸檬薄荷味",
         category_id: "3",
-        goods_picture: "https://api.parknshop.com/medias/LEMON-MINT-FLAVOUR-CHEWING-GUM-BP-332974.jpg?context=bWFzdGVyfHBuc2hrL2ltYWdlc3wzMjU1M3xpbWFnZS9qcGVnfGgyNy9oODMvOTMzNjkxNjYzOTc3NC9MRU1PTiBNSU5UIMKgRkxBVk9VUiBDSEVXSU5HIEdVTS1CUF8zMzI5NzQuanBnfDJlYTM0NDM5NTMyZjY3MjQ3YTViMjI1NjRjZTBiZDI3ZjZlOWM1M2U0Y2FhNThkN2U3YmM4NGI4ZDM3OTQ5NDE"
+        goods_picture: "https://api.parknshop.com/medias/LEMON-MINT-FLAVOUR-CHEWING-GUM-BP-332974.jpg?context=bWFzdGVyfHBuc2hrL2ltYWdlc3wzMjU1M3xpbWFnZS9qcGVnfGgyNy9oODMvOTMzNjkxNjYzOTc3NC9MRU1PTiBNSU5UIMKgRkxBVk9VUiBDSEVXSU5HIEdVTS1CUF8zMzI5NzQuanBnfDJlYTM0NDM5NTMyZjY3MjQ3YTViMjI1NjRjZTBiZDI3ZjZlOWM1M2U0Y2FhNThkN2U3YmM4NGI4ZDM3OTQ5NDE",
+        aeon_price: "8.3",
+        dch_price: "7.5",
+        jasons_price: "5.5",
+        parknshop_price: "7.8",
+        wellcome_price: "7"
     },
     {
       
         name: "特醇海鹽朱古力100克",
         category_id: "3",
-        goods_picture: "https://api.parknshop.com/medias/EXCELLENCE-SEA-SALT-100G-BP-300805.jpg?context=bWFzdGVyfHBuc2hrL2ltYWdlc3w0MTQwNnxpbWFnZS9qcGVnfGg2Ny9oOGEvOTMzNjk5Nzk2OTk1MC9FWENFTExFTkNFIFNFQSBTQUxUIDEwMEctQlBfMzAwODA1LmpwZ3w5MTlhNmY3MTI2MmM1N2IwNzA1MjZiOGFkZTNkOGU5MzRmZjBmZjU3ODg1YTIyMTAyNDhkNjMxMGFjNjAyZGQ4"
+        goods_picture: "https://api.parknshop.com/medias/EXCELLENCE-SEA-SALT-100G-BP-300805.jpg?context=bWFzdGVyfHBuc2hrL2ltYWdlc3w0MTQwNnxpbWFnZS9qcGVnfGg2Ny9oOGEvOTMzNjk5Nzk2OTk1MC9FWENFTExFTkNFIFNFQSBTQUxUIDEwMEctQlBfMzAwODA1LmpwZ3w5MTlhNmY3MTI2MmM1N2IwNzA1MjZiOGFkZTNkOGU5MzRmZjBmZjU3ODg1YTIyMTAyNDhkNjMxMGFjNjAyZGQ4",
+        aeon_price: "8.3",
+        dch_price: "7.5",
+        jasons_price: "5.5",
+        parknshop_price: "7.8",
+        wellcome_price: "7"
     },
     
     {
   
         name: "味覺 Shigekix 超酸提子味橡皮糖",
         category_id: "3",
-        goods_picture: "https://api.parknshop.com/medias/SHIGEKIX-GUMMY-GRAPE-FLAVOR-BP-215685.jpg?context=bWFzdGVyfHBuc2hrL2ltYWdlc3wzMTUzOHxpbWFnZS9qcGVnfGgxNi9oMTkvOTMzNjU0NTY3MzI0Ni9TSElHRUtJWCBHVU1NWSAtIEdSQVBFIEZMQVZPUi1CUF8yMTU2ODUuanBnfDA3NWMxNDcyOTEwZDNhYzdiNWQ4ZTYzMDRkMmQ3ZGI0OTlkZDNkYTRkM2Q0YTNjNGVmMjI2N2NkZmU3OTYyMWY"
+        goods_picture: "https://api.parknshop.com/medias/SHIGEKIX-GUMMY-GRAPE-FLAVOR-BP-215685.jpg?context=bWFzdGVyfHBuc2hrL2ltYWdlc3wzMTUzOHxpbWFnZS9qcGVnfGgxNi9oMTkvOTMzNjU0NTY3MzI0Ni9TSElHRUtJWCBHVU1NWSAtIEdSQVBFIEZMQVZPUi1CUF8yMTU2ODUuanBnfDA3NWMxNDcyOTEwZDNhYzdiNWQ4ZTYzMDRkMmQ3ZGI0OTlkZDNkYTRkM2Q0YTNjNGVmMjI2N2NkZmU3OTYyMWY",
+        aeon_price: "8.3",
+        dch_price: "7.5",
+        jasons_price: "5.5",
+        parknshop_price: "7.8",
+        wellcome_price: "7"
     },
     
 // Staples4
     {
-        name: "金象牌頂上茉莉香米",
-        category_id: "4",
-        goods_picture: "https://api.parknshop.com/medias/PREMIUM-JASMINE-RICE-BP-115992.jpg?context=bWFzdGVyfHBuc2hrL2ltYWdlc3w1MzMyN3xpbWFnZS9qcGVnfGg5My9oZDcvOTMzNjUxOTkxNzU5OC9QUkVNSVVNIEpBU01JTkUgUklDRS1CUF8xMTU5OTIuanBnfDkyMGNjZmIxMWE1ODJhMjk3MzVmODljOTE2MmNkZjE4YTQ1MWQ5Mzg0YTdhYjhlZGUxNTU5ZWJlZmFkNjFjNjA"
-    },
-    {
         name: "金鳳牌純正泰國頂級香米",
         category_id: "4",
-        goods_picture: "https://api.parknshop.com/medias/THAI-HOM-MALI-FRAGRANT-RICE-BP-116362.jpg?context=bWFzdGVyfHBuc2hrL2ltYWdlc3w1MTc0NHxpbWFnZS9qcGVnfGgxMS9oN2QvOTMzNjQ2MzQyNTU2Ni9USEFJIEhPTSBNQUxJIEZSQUdSQU5UIFJJQ0UtQlBfMTE2MzYyLmpwZ3xhYjQ5NmNjOGI4NjMwN2UxY2FmMjNmZjliMzEwNGY1YWQ0NTJiYTIwMWZhZDc4NTExMmRkOWJhYzNiM2UxZTVm"
+        goods_picture: "https://api.parknshop.com/medias/THAI-HOM-MALI-FRAGRANT-RICE-BP-116362.jpg?context=bWFzdGVyfHBuc2hrL2ltYWdlc3w1MTc0NHxpbWFnZS9qcGVnfGgxMS9oN2QvOTMzNjQ2MzQyNTU2Ni9USEFJIEhPTSBNQUxJIEZSQUdSQU5UIFJJQ0UtQlBfMTE2MzYyLmpwZ3xhYjQ5NmNjOGI4NjMwN2UxY2FmMjNmZjliMzEwNGY1YWQ0NTJiYTIwMWZhZDc4NTExMmRkOWJhYzNiM2UxZTVm",
+        aeon_price: "8.3",
+        dch_price: "7.5",
+        jasons_price: "5.5",
+        parknshop_price: "7.8",
+        wellcome_price: "7"
     },
     {
         name: "金象牌頂上茉莉香米",
         category_id: "4",
-        goods_picture: "https://api.parknshop.com/medias/PREMIUM-JASMINE-RICE-BP-150007.jpg?context=bWFzdGVyfHBuc2hrL2ltYWdlc3w1NzI4OXxpbWFnZS9qcGVnfGg2MC9oZWIvOTMzNjk1NDU1MjM1MC9QUkVNSVVNIEpBU01JTkUgUklDRS1CUF8xNTAwMDcuanBnfDlmMTg3ZDBjMjZiYTE1MGY5YzVkYmZhMGU1ZGFkZWI4N2VhOTU5YzQzMzFjNTA5ODZmZTIxZDhlZDI3MzE0MWY"
+        goods_picture: "https://api.parknshop.com/medias/PREMIUM-JASMINE-RICE-BP-150007.jpg?context=bWFzdGVyfHBuc2hrL2ltYWdlc3w1NzI4OXxpbWFnZS9qcGVnfGg2MC9oZWIvOTMzNjk1NDU1MjM1MC9QUkVNSVVNIEpBU01JTkUgUklDRS1CUF8xNTAwMDcuanBnfDlmMTg3ZDBjMjZiYTE1MGY5YzVkYmZhMGU1ZGFkZWI4N2VhOTU5YzQzMzFjNTA5ODZmZTIxZDhlZDI3MzE0MWY",
+        aeon_price: "8.3",
+        dch_price: "7.5",
+        jasons_price: "5.5",
+        parknshop_price: "7.8",
+        wellcome_price: "7"
+
     },
     
     {
         name: "刀嘜純正芥花籽油",
         category_id: "4",
-        goods_picture: "https://api.parknshop.com/medias/PURE-CANOLA-OIL-BP-128520.jpg?context=bWFzdGVyfHBuc2hrL2ltYWdlc3w1Mzg2MnxpbWFnZS9qcGVnfGgwZi9oYjEvOTMzNjc3NTkzMzk4Mi9QVVJFIENBTk9MQSBPSUwtQlBfMTI4NTIwLmpwZ3w3MmEwMDllZGRhYjk1M2I4MGI4OTFhMThjNTk2NDk5ZjEwOGQxMmE1ZjYwYTZiYTc3NTYzMGMyNWIxYTk0N2Mx"
+        goods_picture: "https://api.parknshop.com/medias/PURE-CANOLA-OIL-BP-128520.jpg?context=bWFzdGVyfHBuc2hrL2ltYWdlc3w1Mzg2MnxpbWFnZS9qcGVnfGgwZi9oYjEvOTMzNjc3NTkzMzk4Mi9QVVJFIENBTk9MQSBPSUwtQlBfMTI4NTIwLmpwZ3w3MmEwMDllZGRhYjk1M2I4MGI4OTFhMThjNTk2NDk5ZjEwOGQxMmE1ZjYwYTZiYTc3NTYzMGMyNWIxYTk0N2Mx",
+        aeon_price: "8.3",
+        dch_price: "7.5",
+        jasons_price: "5.5",
+        parknshop_price: "7.8",
+        wellcome_price: "7"
+        
     },
 
     {
         name: "獅球嘜初搾橄欖芥籽油",
         category_id: "4",
-        goods_picture: "https://api.parknshop.com/medias/cat-front-BP-135196.jpg?context=bWFzdGVyfHBuc2hrL2ltYWdlc3w0ODYxMzl8aW1hZ2UvanBlZ3xoZDQvaGM2Lzk1MzQ2MTEyOTIxOTAvUE5TSEstQlBfMTM1MTk2LWZyb250LmpwZ3wwZmUwYWI4YjU5MmI3ZDRlYWE0NjJlNTQxMjY2ZmU5ZTAyYTVlNTlkZTZjZjMxMzMwNGQ3NzM1NjU3MWY3NjA1"
+        goods_picture: "https://api.parknshop.com/medias/cat-front-BP-135196.jpg?context=bWFzdGVyfHBuc2hrL2ltYWdlc3w0ODYxMzl8aW1hZ2UvanBlZ3xoZDQvaGM2Lzk1MzQ2MTEyOTIxOTAvUE5TSEstQlBfMTM1MTk2LWZyb250LmpwZ3wwZmUwYWI4YjU5MmI3ZDRlYWE0NjJlNTQxMjY2ZmU5ZTAyYTVlNTlkZTZjZjMxMzMwNGQ3NzM1NjU3MWY3NjA1",
+        aeon_price: "8.3",
+        dch_price: "7.5",
+        jasons_price: "5.5",
+        parknshop_price: "7.8",
+        wellcome_price: "7"
     },
     
     {
         name: "刀嘜金裝濃香花生油",
         category_id: "4",
-        goods_picture: "https://api.parknshop.com/medias/SUPREME-PEANUT-OIL-BP-437663.jpg?context=bWFzdGVyfHBuc2hrL2ltYWdlc3w1OTEzNXxpbWFnZS9qcGVnfGgyNy9oODkvOTMzNjkzNzU0NTc1OC9TVVBSRU1FIFBFQU5VVCBPSUwtQlBfNDM3NjYzLmpwZ3wzYzRhNGQzOWRmNDIwMzBjYjZhNmIwNGViZTdhMTQ4OGZhYmY0YzY2NzRiODIwM2IxNjdiNTViY2E3N2Y1ZmJm"
+        goods_picture: "https://api.parknshop.com/medias/SUPREME-PEANUT-OIL-BP-437663.jpg?context=bWFzdGVyfHBuc2hrL2ltYWdlc3w1OTEzNXxpbWFnZS9qcGVnfGgyNy9oODkvOTMzNjkzNzU0NTc1OC9TVVBSRU1FIFBFQU5VVCBPSUwtQlBfNDM3NjYzLmpwZ3wzYzRhNGQzOWRmNDIwMzBjYjZhNmIwNGViZTdhMTQ4OGZhYmY0YzY2NzRiODIwM2IxNjdiNTViY2E3N2Y1ZmJm",
+        aeon_price: "8.3",
+        dch_price: "7.5",
+        jasons_price: "5.5",
+        parknshop_price: "7.8",
+        wellcome_price: "7"
     },
     
     {
 
-        name: "ROBERTSONS啫喱粉80克(雜味) (隨機一款)",
+        name: "ROBERTSONS啫喱粉80克(雜味)",
         category_id: "4",
-        goods_picture: "https://api.parknshop.com/medias/JELLY-POWDER-ASSORTED-FLAVOUR-BP-102241.jpg?context=bWFzdGVyfHBuc2hrL2ltYWdlc3w3MTgyOHxpbWFnZS9qcGVnfGgyZi9oY2MvOTMzNjQ3NTgxMTg3MC9KRUxMWSBQT1dERVIgQVNTT1JURUQgRkxBVk9VUi1CUF8xMDIyNDEuanBnfGMwZmRiYjRlOTZhNTZiM2Y3ZTY2MjU3ZjYzN2QwZjZhZTNkMjI1MGIzZjI4OWE1OTM5M2U2Y2JiMTBjZGI5Y2Q"
+        goods_picture: "https://api.parknshop.com/medias/JELLY-POWDER-ASSORTED-FLAVOUR-BP-102241.jpg?context=bWFzdGVyfHBuc2hrL2ltYWdlc3w3MTgyOHxpbWFnZS9qcGVnfGgyZi9oY2MvOTMzNjQ3NTgxMTg3MC9KRUxMWSBQT1dERVIgQVNTT1JURUQgRkxBVk9VUi1CUF8xMDIyNDEuanBnfGMwZmRiYjRlOTZhNTZiM2Y3ZTY2MjU3ZjYzN2QwZjZhZTNkMjI1MGIzZjI4OWE1OTM5M2U2Y2JiMTBjZGI5Y2Q",
+        aeon_price: "8.3",
+        dch_price: "7.5",
+        jasons_price: "5.5",
+        parknshop_price: "7.8",
+        wellcome_price: "7"
     },
     
     {
         name: "金御膳火腿豬肉",
         category_id: "4",
-        goods_picture: "https://api.parknshop.com/medias/CHOPPED-HAM-AND-PORK-BP-437380.jpg?context=bWFzdGVyfHBuc2hrL2ltYWdlc3w1NTE5NnxpbWFnZS9qcGVnfGgzMC9oMzUvOTMzNjgyNTkzNzk1MC9DSE9QUEVEIEhBTSBBTkQgUE9SSy1CUF80MzczODAuanBnfGUzNzg2NDIxMThiNDgyMWE3MThmOWZjMzRkYTQzMjQzN2NmNTlhMjI5ZGM0ODQxNDBiZDY1ZWE4Mjk3OGU0ZmM"
+        goods_picture: "https://api.parknshop.com/medias/CHOPPED-HAM-AND-PORK-BP-437380.jpg?context=bWFzdGVyfHBuc2hrL2ltYWdlc3w1NTE5NnxpbWFnZS9qcGVnfGgzMC9oMzUvOTMzNjgyNTkzNzk1MC9DSE9QUEVEIEhBTSBBTkQgUE9SSy1CUF80MzczODAuanBnfGUzNzg2NDIxMThiNDgyMWE3MThmOWZjMzRkYTQzMjQzN2NmNTlhMjI5ZGM0ODQxNDBiZDY1ZWE4Mjk3OGU0ZmM",
+        aeon_price: "8.3",
+        dch_price: "7.5",
+        jasons_price: "5.5",
+        parknshop_price: "7.8",
+        wellcome_price: "7"
     },
    
     {
         name: "李錦記紅燒臻選鮑魚６隻裝",
         category_id: "4",
-        goods_picture: "https://api.parknshop.com/medias/SUP-ABA-IN-RED-BRAISING-SAUCE-6S-BP-465620.jpg?context=bWFzdGVyfHBuc2hrL2ltYWdlc3wzNjU0OHxpbWFnZS9qcGVnfGhkNy9oOTYvOTM0MTYyNDIyMTcyNi9TVVAgQUJBIElOIFJFRCBCUkFJU0lORyBTQVVDRSA2Uy1CUF80NjU2MjAuanBnfDM2MGZmNDE5MWY3OWQ0ODMwODIzOWRjY2QzOTFmMzNjYmJkYjVmOGUxYTRiMTE4ZGViYmM1OTQ2ZTU1NGVhYjc"
+        goods_picture: "https://api.parknshop.com/medias/SUP-ABA-IN-RED-BRAISING-SAUCE-6S-BP-465620.jpg?context=bWFzdGVyfHBuc2hrL2ltYWdlc3wzNjU0OHxpbWFnZS9qcGVnfGhkNy9oOTYvOTM0MTYyNDIyMTcyNi9TVVAgQUJBIElOIFJFRCBCUkFJU0lORyBTQVVDRSA2Uy1CUF80NjU2MjAuanBnfDM2MGZmNDE5MWY3OWQ0ODMwODIzOWRjY2QzOTFmMzNjYmJkYjVmOGUxYTRiMTE4ZGViYmM1OTQ2ZTU1NGVhYjc",
+        aeon_price: "8.3",
+        dch_price: "7.5",
+        jasons_price: "5.5",
+        parknshop_price: "7.8",
+        wellcome_price: "7"
     },
     
     {
 
         name: "淘大頭遍生抽",
         category_id: "4",
-        goods_picture: "https://api.parknshop.com/medias/FIRST-EXTRACT-LIGHT-SOY-SAUCE-BP-183058.jpg?context=bWFzdGVyfHBuc2hrL2ltYWdlc3w0MzEzNHxpbWFnZS9qcGVnfGg3Yy9oZTQvOTMzNjc2ODg1NjA5NC9GSVJTVCBFWFRSQUNUIExJR0hUIFNPWSBTQVVDRS1CUF8xODMwNTguanBnfDcyZjg1ZjUxZDE5ZWNlNzAyOTFmNzcwZmI4Y2YyMGNkZTYxZGE4ZDQ4YWFkOTg1YzUxNzk4ZDYwZDRkNDRiMjA"
+        goods_picture: "https://api.parknshop.com/medias/FIRST-EXTRACT-LIGHT-SOY-SAUCE-BP-183058.jpg?context=bWFzdGVyfHBuc2hrL2ltYWdlc3w0MzEzNHxpbWFnZS9qcGVnfGg3Yy9oZTQvOTMzNjc2ODg1NjA5NC9GSVJTVCBFWFRSQUNUIExJR0hUIFNPWSBTQVVDRS1CUF8xODMwNTguanBnfDcyZjg1ZjUxZDE5ZWNlNzAyOTFmNzcwZmI4Y2YyMGNkZTYxZGE4ZDQ4YWFkOTg1YzUxNzk4ZDYwZDRkNDRiMjA",
+        aeon_price: "8.3",
+        dch_price: "7.5",
+        jasons_price: "5.5",
+        parknshop_price: "7.8",
+        wellcome_price: "7"
     },
     {
 
         name: "李錦記叉燒醬",
         category_id: "4",
-        goods_picture: "https://api.parknshop.com/medias/CHAR-SIU-SAUCE-BP-113052.jpg?context=bWFzdGVyfHBuc2hrL2ltYWdlc3w2NDU4M3xpbWFnZS9qcGVnfGhkMC9oOTQvOTMzNjgyOTczOTAzOC9DSEFSIFNJVSBTQVVDRS1CUF8xMTMwNTIuanBnfDYzY2FjZmJhYzU3MGZiNjNkYWYyOTljMTE3ODY4ZGUwODBiMmE5NGRhNDVkODUwNjZmZGQ4NzRiNGY0MzIzNTA"
+        goods_picture: "https://api.parknshop.com/medias/CHAR-SIU-SAUCE-BP-113052.jpg?context=bWFzdGVyfHBuc2hrL2ltYWdlc3w2NDU4M3xpbWFnZS9qcGVnfGhkMC9oOTQvOTMzNjgyOTczOTAzOC9DSEFSIFNJVSBTQVVDRS1CUF8xMTMwNTIuanBnfDYzY2FjZmJhYzU3MGZiNjNkYWYyOTljMTE3ODY4ZGUwODBiMmE5NGRhNDVkODUwNjZmZGQ4NzRiNGY0MzIzNTA",
+        aeon_price: "8.3",
+        dch_price: "7.5",
+        jasons_price: "5.5",
+        parknshop_price: "7.8",
+        wellcome_price: "7"
     },
     {
 
         name: "家樂牌雞湯粒",
         category_id: "4",
-        goods_picture: "https://api.parknshop.com/medias/cat-front-BP-305085.jpg?context=bWFzdGVyfHBuc2hrL2ltYWdlc3wxMjU5NzN8aW1hZ2UvanBlZ3xoMDIvaGUxLzk0MTY2NzAzNDcyOTQvUE5TSEstQlBfMzA1MDg1LWZyb250LmpwZ3xmMDg5YTFmNmNjNWEzZGNiMGVjYzJiM2YwYjc4ZmRhNDJkMjk5ZjE4Y2JlMDBmMzUwODk3MGI3MzIzODU0Njgx"
+        goods_picture: "https://api.parknshop.com/medias/cat-front-BP-305085.jpg?context=bWFzdGVyfHBuc2hrL2ltYWdlc3wxMjU5NzN8aW1hZ2UvanBlZ3xoMDIvaGUxLzk0MTY2NzAzNDcyOTQvUE5TSEstQlBfMzA1MDg1LWZyb250LmpwZ3xmMDg5YTFmNmNjNWEzZGNiMGVjYzJiM2YwYjc4ZmRhNDJkMjk5ZjE4Y2JlMDBmMzUwODk3MGI3MzIzODU0Njgx",
+        aeon_price: "8.3",
+        dch_price: "7.5",
+        jasons_price: "5.5",
+        parknshop_price: "7.8",
+        wellcome_price: "7"
     },
     
     {
 
         name: "李錦記潮洲辣椒油",
         category_id: "4",
-        goods_picture: "https://api.parknshop.com/medias/CHIU-CHOW-CHILI-OIL-BP-119639.jpg?context=bWFzdGVyfHBuc2hrL2ltYWdlc3w2Nzk5NXxpbWFnZS9qcGVnfGg2Mi9oZjkvOTMzNjYwMzkzNDc1MC9DSElVIENIT1cgQ0hJTEkgT0lMLUJQXzExOTYzOS5qcGd8N2IxYzVmZTcyNTY1ZWZmOTU4NDVhMzA0ODYxNTlhYjM2NTgzMmIxY2NiZGYwNTU5Mzg0YjE4MDRiMmZhMzgzMw"
+        goods_picture: "https://api.parknshop.com/medias/CHIU-CHOW-CHILI-OIL-BP-119639.jpg?context=bWFzdGVyfHBuc2hrL2ltYWdlc3w2Nzk5NXxpbWFnZS9qcGVnfGg2Mi9oZjkvOTMzNjYwMzkzNDc1MC9DSElVIENIT1cgQ0hJTEkgT0lMLUJQXzExOTYzOS5qcGd8N2IxYzVmZTcyNTY1ZWZmOTU4NDVhMzA0ODYxNTlhYjM2NTgzMmIxY2NiZGYwNTU5Mzg0YjE4MDRiMmZhMzgzMw",
+        aeon_price: "8.3",
+        dch_price: "7.5",
+        jasons_price: "5.5",
+        parknshop_price: "7.8",
+        wellcome_price: "7"
     },
 
     
@@ -1739,148 +1910,253 @@ export async function seed(knex: Knex): Promise<void> {
     {
         name: "人頭馬XO特優香檳干邑70cl",
         category_id: "7",
-        goods_picture: "https://api.parknshop.com/medias/-XO-COGNAC-BP-124047.jpg?context=bWFzdGVyfHBuc2hrL2ltYWdlc3w2OTM0OXxpbWFnZS9qcGVnfGg3Yi9oNGQvOTMzNjg4OTg2ODMxOC8gWE8gQ09HTkFDLUJQXzEyNDA0Ny5qcGd8OTkxMTc1YjFiNmVkOWUwYTQyYTYyYTM4ODczZGYyNGUyYzBlMmVjNDRiYjc3NzZiNWNlMGUzMTk1MWM1OGI3OA"
+        goods_picture: "https://api.parknshop.com/medias/-XO-COGNAC-BP-124047.jpg?context=bWFzdGVyfHBuc2hrL2ltYWdlc3w2OTM0OXxpbWFnZS9qcGVnfGg3Yi9oNGQvOTMzNjg4OTg2ODMxOC8gWE8gQ09HTkFDLUJQXzEyNDA0Ny5qcGd8OTkxMTc1YjFiNmVkOWUwYTQyYTYyYTM4ODczZGYyNGUyYzBlMmVjNDRiYjc3NzZiNWNlMGUzMTk1MWM1OGI3OA",
+        aeon_price: "4.5",
+        dch_price: "6.9",
+        jasons_price: "8",
+        parknshop_price: "7.8",
+        wellcome_price: "9"
     },
     {
         name: "日本盛清酒（大）",
         category_id: "7",
-        goods_picture: "https://api.parknshop.com/medias/SAKE-L-BP-124420.jpg?context=bWFzdGVyfHBuc2hrL2ltYWdlc3wyODc4MXxpbWFnZS9qcGVnfGhmNi9oZDUvOTMzNjk3MDE0OTkxOC9TQUtFIEwtQlBfMTI0NDIwLmpwZ3xjZmYzNDQ0MGExMDIwYjgwZWRhN2I5MTk5OGRiNzU2N2NlMTA0YTI2NDY1Zjg5MTNiYzU0NjIxNzI4ZGE2ZmQy"
+        goods_picture: "https://api.parknshop.com/medias/SAKE-L-BP-124420.jpg?context=bWFzdGVyfHBuc2hrL2ltYWdlc3wyODc4MXxpbWFnZS9qcGVnfGhmNi9oZDUvOTMzNjk3MDE0OTkxOC9TQUtFIEwtQlBfMTI0NDIwLmpwZ3xjZmYzNDQ0MGExMDIwYjgwZWRhN2I5MTk5OGRiNzU2N2NlMTA0YTI2NDY1Zjg5MTNiYzU0NjIxNzI4ZGE2ZmQy",
+        aeon_price: "4.5",
+        dch_price: "6.9",
+        jasons_price: "8",
+        parknshop_price: "7.8",
+        wellcome_price: "9"
     },
     {
         name: "青島啤酒十二罐裝",
         category_id: "7",
-        goods_picture: "https://api.parknshop.com/medias/BEER-12-CAN-BP-163144.jpg?context=bWFzdGVyfHBuc2hrL2ltYWdlc3w1MjU0NHxpbWFnZS9qcGVnfGhiNS9oMWIvOTMzNjg1NTA2ODcwMi9CRUVSIDEyIENBTi1CUF8xNjMxNDQuanBnfGM5MDVhNDc0Y2Q2NzJkMzg2YjRhNTZmOTdhYjhmMzZjOTM1YmI3OWYzOWExNDRmMjZlMDU4NGYzOTU3YmM5N2U"
+        goods_picture: "https://api.parknshop.com/medias/BEER-12-CAN-BP-163144.jpg?context=bWFzdGVyfHBuc2hrL2ltYWdlc3w1MjU0NHxpbWFnZS9qcGVnfGhiNS9oMWIvOTMzNjg1NTA2ODcwMi9CRUVSIDEyIENBTi1CUF8xNjMxNDQuanBnfGM5MDVhNDc0Y2Q2NzJkMzg2YjRhNTZmOTdhYjhmMzZjOTM1YmI3OWYzOWExNDRmMjZlMDU4NGYzOTU3YmM5N2U",
+        aeon_price: "4.5",
+        dch_price: "6.9",
+        jasons_price: "8",
+        parknshop_price: "7.8",
+        wellcome_price: "9"
     },
     {
         name: "白鶴上撰清酒",
         category_id: "7",
-        goods_picture: "https://api.parknshop.com/medias/JYOSEN-BP-486114.jpg?context=bWFzdGVyfHBuc2hrL2ltYWdlc3wzMjU4OXxpbWFnZS9qcGVnfGhmYi9oYjQvOTMzOTUzMDMxMzc1OC9KWU9TRU4tQlBfNDg2MTE0LmpwZ3wyOTljZjA3YzcwOTU1ZmU2MmQwMGNmNjY4MzY3MzYzNzZjOWNkZmNlNzIzNTJjYTNmOWNjYTJhMDE0MTRiYzhm"
+        goods_picture: "https://api.parknshop.com/medias/JYOSEN-BP-486114.jpg?context=bWFzdGVyfHBuc2hrL2ltYWdlc3wzMjU4OXxpbWFnZS9qcGVnfGhmYi9oYjQvOTMzOTUzMDMxMzc1OC9KWU9TRU4tQlBfNDg2MTE0LmpwZ3wyOTljZjA3YzcwOTU1ZmU2MmQwMGNmNjY4MzY3MzYzNzZjOWNkZmNlNzIzNTJjYTNmOWNjYTJhMDE0MTRiYzhm",
+        aeon_price: "4.5",
+        dch_price: "6.9",
+        jasons_price: "8",
+        parknshop_price: "7.8",
+        wellcome_price: "9"
     },
     {
         name: "獅威十二罐裝啤酒",
         category_id: "7",
-        goods_picture: "https://api.parknshop.com/medias/cat-front-BP-139904.jpg?context=bWFzdGVyfHBuc2hrL2ltYWdlc3wyNTgxNDd8aW1hZ2UvanBlZ3xoMzMvaDk0Lzk0NDE4NDQxOTk0NTQvUE5TSEstQlBfMTM5OTA0LWZyb250LmpwZ3wxMmQwY2UzODExZTYzYzhiZTNhNjNmNDVmNjY1M2FiOWZlZTAzOWY2ODdiN2YyNjU2ZjQ4NjI2YTQxOTQ0NGU2"
+        goods_picture: "https://api.parknshop.com/medias/cat-front-BP-139904.jpg?context=bWFzdGVyfHBuc2hrL2ltYWdlc3wyNTgxNDd8aW1hZ2UvanBlZ3xoMzMvaDk0Lzk0NDE4NDQxOTk0NTQvUE5TSEstQlBfMTM5OTA0LWZyb250LmpwZ3wxMmQwY2UzODExZTYzYzhiZTNhNjNmNDVmNjY1M2FiOWZlZTAzOWY2ODdiN2YyNjU2ZjQ4NjI2YTQxOTQ0NGU2",
+        aeon_price: "4.5",
+        dch_price: "6.9",
+        jasons_price: "8",
+        parknshop_price: "7.8",
+        wellcome_price: "9"
     },
     {
         name: "白雪特級清酒",
         category_id: "7",
-        goods_picture: "https://api.parknshop.com/medias/JYOSEN-BLUE-PACK-SAKE-2L-BP-198392.jpg?context=bWFzdGVyfHBuc2hrL2ltYWdlc3wzODQ4NXxpbWFnZS9qcGVnfGg1Yi9oM2EvOTMzNjUwNDU0OTQwNi9KWU9TRU4gQkxVRSBQQUNLIFNBS0UgMkwtQlBfMTk4MzkyLmpwZ3xlN2I5YjZiNDM5YzE4M2QyY2E0NTM5NWYxZWYyY2I2NGQ2NzcxYjY1Mjk5MTZiMzFjODNlOTBmNjcyOWFkYjRk"
+        goods_picture: "https://api.parknshop.com/medias/JYOSEN-BLUE-PACK-SAKE-2L-BP-198392.jpg?context=bWFzdGVyfHBuc2hrL2ltYWdlc3wzODQ4NXxpbWFnZS9qcGVnfGg1Yi9oM2EvOTMzNjUwNDU0OTQwNi9KWU9TRU4gQkxVRSBQQUNLIFNBS0UgMkwtQlBfMTk4MzkyLmpwZ3xlN2I5YjZiNDM5YzE4M2QyY2E0NTM5NWYxZWYyY2I2NGQ2NzcxYjY1Mjk5MTZiMzFjODNlOTBmNjcyOWFkYjRk",
+        aeon_price: "4.5",
+        dch_price: "6.9",
+        jasons_price: "8",
+        parknshop_price: "7.8",
+        wellcome_price: "9"
     },
     {
         name: "藍冰啤酒十二罐裝",
         category_id: "7",
-        goods_picture: "https://api.parknshop.com/medias/BEER-12S-CAN-BP-148405.jpg?context=bWFzdGVyfHBuc2hrL2ltYWdlc3wzODI5MTcxfGltYWdlL2pwZWd8aDM0L2hiZC85MzM2OTE4MDgxNTY2L0JFRVIgMTJTIENBTi1CUF8xNDg0MDUuanBnfGVmYjNjN2Q0NzkwNjJhMDdkODY4MDNiZTc0Y2NmYTFhMDJhZmRlYjZlZGJhNzQwOTA4OWRkOGY3ZGNmODY5NGQ"
+        goods_picture: "https://api.parknshop.com/medias/BEER-12S-CAN-BP-148405.jpg?context=bWFzdGVyfHBuc2hrL2ltYWdlc3wzODI5MTcxfGltYWdlL2pwZWd8aDM0L2hiZC85MzM2OTE4MDgxNTY2L0JFRVIgMTJTIENBTi1CUF8xNDg0MDUuanBnfGVmYjNjN2Q0NzkwNjJhMDdkODY4MDNiZTc0Y2NmYTFhMDJhZmRlYjZlZGJhNzQwOTA4OWRkOGY3ZGNmODY5NGQ",
+        aeon_price: "4.5",
+        dch_price: "6.9",
+        jasons_price: "8",
+        parknshop_price: "7.8",
+        wellcome_price: "9"
     },
     {
         name: "朝日啤酒十二罐裝",
         category_id: "7",
-        goods_picture: "https://api.parknshop.com/medias/BEER-CAN-BP-388705.jpg?context=bWFzdGVyfHBuc2hrL2ltYWdlc3w2MzE3NXxpbWFnZS9qcGVnfGhkYi9oNzcvOTMzNjk0MDY1ODcxOC9CRUVSIENBTi1CUF8zODg3MDUuanBnfGQ5N2E0OTg3NzZlYTFmNTViZDE2NTg5YWFmMGUyNzI1NWUyZmEzMzBjNjAwNDg1ODJmMmQ5ZmVmYzUyMmUyYTU"
+        goods_picture: "https://api.parknshop.com/medias/BEER-CAN-BP-388705.jpg?context=bWFzdGVyfHBuc2hrL2ltYWdlc3w2MzE3NXxpbWFnZS9qcGVnfGhkYi9oNzcvOTMzNjk0MDY1ODcxOC9CRUVSIENBTi1CUF8zODg3MDUuanBnfGQ5N2E0OTg3NzZlYTFmNTViZDE2NTg5YWFmMGUyNzI1NWUyZmEzMzBjNjAwNDg1ODJmMmQ5ZmVmYzUyMmUyYTU",
+        aeon_price: "4.5",
+        dch_price: "6.9",
+        jasons_price: "8",
+        parknshop_price: "7.8",
+        wellcome_price: "9"
     },
     {
         name: "人頭馬CLUB特優香檳干邑 70cl",
         category_id: "7",
-        goods_picture: "https://api.parknshop.com/medias/CLUB-DE-REMY-BP-126457.jpg?context=bWFzdGVyfHBuc2hrL2ltYWdlc3wyMDM3NXxpbWFnZS9qcGVnfGhmNi9oMjgvOTMzNjYxMzk5NDUyNi9DTFVCIERFIFJFTVktQlBfMTI2NDU3LmpwZ3w2MmU4ZmM5MDdhYzQ5NmJjOGVhODI0MmMyM2ZkYWE0NzdhMTRmNDI2MzdlYzliMDVlMTc5MzZhMTgxOWM3OTgy"
+        goods_picture: "https://api.parknshop.com/medias/CLUB-DE-REMY-BP-126457.jpg?context=bWFzdGVyfHBuc2hrL2ltYWdlc3wyMDM3NXxpbWFnZS9qcGVnfGhmNi9oMjgvOTMzNjYxMzk5NDUyNi9DTFVCIERFIFJFTVktQlBfMTI2NDU3LmpwZ3w2MmU4ZmM5MDdhYzQ5NmJjOGVhODI0MmMyM2ZkYWE0NzdhMTRmNDI2MzdlYzliMDVlMTc5MzZhMTgxOWM3OTgy",
+        aeon_price: "4.5",
+        dch_price: "6.9",
+        jasons_price: "8",
+        parknshop_price: "7.8",
+        wellcome_price: "9"
     },
     {
         name: "軒尼詩X.O.干邑 ",
         category_id: "7",
-        goods_picture: "https://api.parknshop.com/medias/cat-front-BP-129411.jpg?context=bWFzdGVyfHBuc2hrL2ltYWdlc3wzMTQ3NTF8aW1hZ2UvanBlZ3xoNmMvaDMwLzk1MzQ2MDk5ODE0NzAvUE5TSEstQlBfMTI5NDExLWZyb250LmpwZ3xlYzg1YzAxOTljYzNmMjc3NGQyZDMzNzRjNjFlNzNlNGFiZjljOGQwMmUxMWZkNDIxMzcxYjY2ODE2YmZkZjE0"
+        goods_picture: "https://api.parknshop.com/medias/cat-front-BP-129411.jpg?context=bWFzdGVyfHBuc2hrL2ltYWdlc3wzMTQ3NTF8aW1hZ2UvanBlZ3xoNmMvaDMwLzk1MzQ2MDk5ODE0NzAvUE5TSEstQlBfMTI5NDExLWZyb250LmpwZ3xlYzg1YzAxOTljYzNmMjc3NGQyZDMzNzRjNjFlNzNlNGFiZjljOGQwMmUxMWZkNDIxMzcxYjY2ODE2YmZkZjE0",
+        aeon_price: "4.5",
+        dch_price: "6.9",
+        jasons_price: "8",
+        parknshop_price: "7.8",
+        wellcome_price: "9"
     },
     
     {
         name: "HIGHLAND PARK 12YO SINGLE MALT SCOTCH WHISKY",
         category_id: "7",
-        goods_picture: "https://api.parknshop.com/medias/12YO-SINGLE-MALT-SCOTCH-WHISKY-BP-372912.jpg?context=bWFzdGVyfHBuc2hrL2ltYWdlc3wzOTQwOXxpbWFnZS9qcGVnfGhkOS9oMWMvOTMzNzM4MzQ4NTQ3MC8xMllPIFNJTkdMRSBNQUxUIFNDT1RDSCBXSElTS1ktQlBfMzcyOTEyLmpwZ3w4ZmFkZmY3YTNlNjIzMDA3ZDY1YzgyNDZkY2RkZmNlZTQwYzBmNzZlNzlhMWI2Yzg4YmI0NmYzODlhMDhmNDA0"
+        goods_picture: "https://api.parknshop.com/medias/12YO-SINGLE-MALT-SCOTCH-WHISKY-BP-372912.jpg?context=bWFzdGVyfHBuc2hrL2ltYWdlc3wzOTQwOXxpbWFnZS9qcGVnfGhkOS9oMWMvOTMzNzM4MzQ4NTQ3MC8xMllPIFNJTkdMRSBNQUxUIFNDT1RDSCBXSElTS1ktQlBfMzcyOTEyLmpwZ3w4ZmFkZmY3YTNlNjIzMDA3ZDY1YzgyNDZkY2RkZmNlZTQwYzBmNzZlNzlhMWI2Yzg4YmI0NmYzODlhMDhmNDA0",
+        aeon_price: "4.5",
+        dch_price: "6.9",
+        jasons_price: "8",
+        parknshop_price: "7.8",
+        wellcome_price: "9"
     },
     
     {
         name: "鬼佬ＩＰＡ",
         category_id: "7",
-        goods_picture: "https://api.parknshop.com/medias/GWEILO-IPA-BP-454058.jpg?context=bWFzdGVyfHBuc2hrL2ltYWdlc3w3OTg5NnxpbWFnZS9qcGVnfGhiOS9oOGIvOTMzNzQzOTM4NzY3OC9HV0VJTE8gSVBBLUJQXzQ1NDA1OC5qcGd8NTJlMmRiYTE3YWVkMzg0MGM4YTExMDA4NWNhYTlmM2VjN2ZkZjNlZTZkYTVmODQ5MGJkYjUxY2MxYjg2MjQxOA"
+        goods_picture: "https://api.parknshop.com/medias/GWEILO-IPA-BP-454058.jpg?context=bWFzdGVyfHBuc2hrL2ltYWdlc3w3OTg5NnxpbWFnZS9qcGVnfGhiOS9oOGIvOTMzNzQzOTM4NzY3OC9HV0VJTE8gSVBBLUJQXzQ1NDA1OC5qcGd8NTJlMmRiYTE3YWVkMzg0MGM4YTExMDA4NWNhYTlmM2VjN2ZkZjNlZTZkYTVmODQ5MGJkYjUxY2MxYjg2MjQxOA",
+        aeon_price: "4.5",
+        dch_price: "6.9",
+        jasons_price: "8",
+        parknshop_price: "7.8",
+        wellcome_price: "9"
     },
     {
      
         name: "澳洲奔富 BIN2SHIRAZ MOURVEDRE/ MATARO",
         category_id: "7",
-        goods_picture: "https://api.parknshop.com/medias/BIN-2-SHIRAZ-MATARO-BP-354377.jpg?context=bWFzdGVyfHBuc2hrL2ltYWdlc3wyMzA5NnxpbWFnZS9qcGVnfGg2NS9oYWEvOTMzNjYwNzgzNDE0Mi9CSU4gMiBTSElSQVogTUFUQVJPLUJQXzM1NDM3Ny5qcGd8YzcwZTIwMWE4NjczOTQ2MjI4MTMxNTc1YjNmNGNhZWY2MDQxNTE3YTk4MjM3N2ZmNjdmZDUzMWE1ZGU5ZDczMA"
+        goods_picture: "https://api.parknshop.com/medias/BIN-2-SHIRAZ-MATARO-BP-354377.jpg?context=bWFzdGVyfHBuc2hrL2ltYWdlc3wyMzA5NnxpbWFnZS9qcGVnfGg2NS9oYWEvOTMzNjYwNzgzNDE0Mi9CSU4gMiBTSElSQVogTUFUQVJPLUJQXzM1NDM3Ny5qcGd8YzcwZTIwMWE4NjczOTQ2MjI4MTMxNTc1YjNmNGNhZWY2MDQxNTE3YTk4MjM3N2ZmNjdmZDUzMWE1ZGU5ZDczMA",
+        aeon_price: "9.5",
+        parknshop_price: "7.8",
+        wellcome_price: "9"
     },
     
 // Household8
     {
         name: "祝君早安白毛巾13X30吋孖裝",
         category_id: "8",
-        goods_picture: "https://api.parknshop.com/medias/WHITE-FACE-TOWEL-13X30INCH-BP-182480.jpg?context=bWFzdGVyfHBuc2hrL2ltYWdlc3wxNjc2M3xpbWFnZS9qcGVnfGg4OC9oNGIvOTMzNjMyNjA2MjExMC9XSElURSBGQUNFIFRPV0VMIDEzWDMwSU5DSC1CUF8xODI0ODAuanBnfDRjODI2MjJmNDA4ZTRkOGM1YmQ1ZDQ3ZjE0NmY2MDI2ZDhmZjAzNTVmZTcyOTE5MmFkMTE2M2Q3YTk3YTA3YTc"
+        goods_picture: "https://api.parknshop.com/medias/WHITE-FACE-TOWEL-13X30INCH-BP-182480.jpg?context=bWFzdGVyfHBuc2hrL2ltYWdlc3wxNjc2M3xpbWFnZS9qcGVnfGg4OC9oNGIvOTMzNjMyNjA2MjExMC9XSElURSBGQUNFIFRPV0VMIDEzWDMwSU5DSC1CUF8xODI0ODAuanBnfDRjODI2MjJmNDA4ZTRkOGM1YmQ1ZDQ3ZjE0NmY2MDI2ZDhmZjAzNTVmZTcyOTE5MmFkMTE2M2Q3YTk3YTA3YTc",
+        aeon_price: "9.5",
+        parknshop_price: "7.8",
+        wellcome_price: "9"
     },
    
     {
         name: "維達 卷裝廚房紙巾6卷裝",
         category_id: "8",
-        goods_picture: "https://api.parknshop.com/medias/KITCHEN-TOWEL-Random-Pick-for-Cartoon-Normal-Pack-BP-426508.jpg?context=bWFzdGVyfHBuc2hrL2ltYWdlc3w1Mjg5NXxpbWFnZS9qcGVnfGhmYS9oMTgvOTMzNjUzNzU0Njc4Mi9LSVRDSEVOICBUT1dFTCBSYW5kb20gUGljayBmb3IgQ2FydG9vbiBOb3JtYWwgUGFjay1CUF80MjY1MDguanBnfDc2Nzg3YTcxYjc3MzA1ZmQyNjA3NmYzYTliOGMwNTRlZmY0NjBmMDQ5NjFmZDBhNzk2ODc5ODA1MTQ1NzU0YTM"
+        goods_picture: "https://api.parknshop.com/medias/KITCHEN-TOWEL-Random-Pick-for-Cartoon-Normal-Pack-BP-426508.jpg?context=bWFzdGVyfHBuc2hrL2ltYWdlc3w1Mjg5NXxpbWFnZS9qcGVnfGhmYS9oMTgvOTMzNjUzNzU0Njc4Mi9LSVRDSEVOICBUT1dFTCBSYW5kb20gUGljayBmb3IgQ2FydG9vbiBOb3JtYWwgUGFjay1CUF80MjY1MDguanBnfDc2Nzg3YTcxYjc3MzA1ZmQyNjA3NmYzYTliOGMwNTRlZmY0NjBmMDQ5NjFmZDBhNzk2ODc5ODA1MTQ1NzU0YTM",
+        aeon_price: "9.5",
+        parknshop_price: "7.8",
+        wellcome_price: "9"
     },
     {
         name: "皇冠３層棉柔舒適衛生紙１０卷裝",
         category_id: "8",
-        goods_picture: "https://api.parknshop.com/medias/Comfort-Soft-Bath-Tissue-3ply-10R-BP-397139.jpg?context=bWFzdGVyfHBuc2hrL2ltYWdlc3w1OTg1N3xpbWFnZS9qcGVnfGg2Ny9oMzMvOTMzNjg2NzQ1NTAwNi9Db21mb3J0IFNvZnQgQmF0aCBUaXNzdWUgM3BseSAxMFItQlBfMzk3MTM5LmpwZ3w2ZTYxOWEzM2JlOTVkNTVkODkwYTQ5NjQ5Y2IzNDEzNzg1YmNiNTE1NzlmNmFkODNlZjljOTE1NDMwZTgwNmRl"
+        goods_picture: "https://api.parknshop.com/medias/Comfort-Soft-Bath-Tissue-3ply-10R-BP-397139.jpg?context=bWFzdGVyfHBuc2hrL2ltYWdlc3w1OTg1N3xpbWFnZS9qcGVnfGg2Ny9oMzMvOTMzNjg2NzQ1NTAwNi9Db21mb3J0IFNvZnQgQmF0aCBUaXNzdWUgM3BseSAxMFItQlBfMzk3MTM5LmpwZ3w2ZTYxOWEzM2JlOTVkNTVkODkwYTQ5NjQ5Y2IzNDEzNzg1YmNiNTE1NzlmNmFkODNlZjljOTE1NDMwZTgwNmRl",
+        aeon_price: "9.5",
+        parknshop_price: "7.8",
+        wellcome_price: "9"
     },
     {
         name: "殺菌消毒噴霧－柔香",
         category_id: "8",
-        goods_picture: "https://api.parknshop.com/medias/cat-front-BP-153442.jpg?context=bWFzdGVyfHBuc2hrL2ltYWdlc3wxOTcyNTV8aW1hZ2UvanBlZ3xoNzQvaDMxLzk0ODU1MjA3NjQ5NTgvUE5TSEstQlBfMTUzNDQyLWZyb250LmpwZ3xhOWM4ZDM0ZWQyNTUwMjYzYWZkYjEyNzUyYTcxMTYxMWIwZDcwYTVjZTNhZGRiMTQ0YTYyNjZmZDY3ZDI4NTJj"
+        goods_picture: "https://api.parknshop.com/medias/cat-front-BP-153442.jpg?context=bWFzdGVyfHBuc2hrL2ltYWdlc3wxOTcyNTV8aW1hZ2UvanBlZ3xoNzQvaDMxLzk0ODU1MjA3NjQ5NTgvUE5TSEstQlBfMTUzNDQyLWZyb250LmpwZ3xhOWM4ZDM0ZWQyNTUwMjYzYWZkYjEyNzUyYTcxMTYxMWIwZDcwYTVjZTNhZGRiMTQ0YTYyNjZmZDY3ZDI4NTJj",
+        aeon_price: "9.5",
+        parknshop_price: "7.8",
+        wellcome_price: "9"
     },
     {
         name: "盒裝面紙 超柔版",
         category_id: "8",
-        goods_picture: "https://api.parknshop.com/medias/SOFTEST-FACIAL-TISSUE-Random-Pick-for-Cartoon-Normal-Pack-BP-184040.jpg?context=bWFzdGVyfHBuc2hrL2ltYWdlc3wzODEzNXxpbWFnZS9qcGVnfGgwMi9oYTMvOTMzNjY2MjA2NTE4Mi9TT0ZURVNUIEZBQ0lBTCBUSVNTVUUgUmFuZG9tIFBpY2sgZm9yIENhcnRvb24gTm9ybWFsIFBhY2stQlBfMTg0MDQwLmpwZ3xiMmYxOTMxNjQwMjNhNWY1OWQxY2RmY2VkNjFmZTc5NGU2ZjkyY2ZiODAyYTk2ZDQ4ZWZiMDM0NWQxNjc2MDNm"
+        goods_picture: "https://api.parknshop.com/medias/SOFTEST-FACIAL-TISSUE-Random-Pick-for-Cartoon-Normal-Pack-BP-184040.jpg?context=bWFzdGVyfHBuc2hrL2ltYWdlc3wzODEzNXxpbWFnZS9qcGVnfGgwMi9oYTMvOTMzNjY2MjA2NTE4Mi9TT0ZURVNUIEZBQ0lBTCBUSVNTVUUgUmFuZG9tIFBpY2sgZm9yIENhcnRvb24gTm9ybWFsIFBhY2stQlBfMTg0MDQwLmpwZ3xiMmYxOTMxNjQwMjNhNWY1OWQxY2RmY2VkNjFmZTc5NGU2ZjkyY2ZiODAyYTk2ZDQ4ZWZiMDM0NWQxNjc2MDNm",
+        aeon_price: "9.5",
+        parknshop_price: "7.8",
+        wellcome_price: "9"
     },
     {
         name: "斧頭牌 檸檬 維他命E 護膚  洗潔精 泵裝 1300克",
         category_id: "8",
-        goods_picture: "https://api.parknshop.com/medias/cat-front-BP-195449.jpg?context=bWFzdGVyfHBuc2hrL2ltYWdlc3w4NzI0OXxpbWFnZS9qcGVnfGgwYy9oMDYvOTM2Njk4MjIzMDA0Ni9QTlNISy1CUF8xOTU0NDktZnJvbnQuanBnfGUwZDEzY2Q1NTZmOTY0MWY4NzYwMGMxOWM4YTJlYzZmMGY5NWIwNWQzYzhjZDYxOWNjOTQwNzBkY2IyMTlmOTk"
+        goods_picture: "https://api.parknshop.com/medias/cat-front-BP-195449.jpg?context=bWFzdGVyfHBuc2hrL2ltYWdlc3w4NzI0OXxpbWFnZS9qcGVnfGgwYy9oMDYvOTM2Njk4MjIzMDA0Ni9QTlNISy1CUF8xOTU0NDktZnJvbnQuanBnfGUwZDEzY2Q1NTZmOTY0MWY4NzYwMGMxOWM4YTJlYzZmMGY5NWIwNWQzYzhjZDYxOWNjOTQwNzBkY2IyMTlmOTk",
+        aeon_price: "9.5",
+        parknshop_price: "7.8",
+        wellcome_price: "9"
     },
     {
         name: "潔柔 高級衛生紙",
         category_id: "8",
-        goods_picture: "https://api.parknshop.com/medias/ULTRA-TOILET-ROLL-BP-128669.jpg?context=bWFzdGVyfHBuc2hrL2ltYWdlc3wxNTM1MHxpbWFnZS9qcGVnfGg1YS9oOTAvOTMzNjUzMTY0ODU0Mi9VTFRSQSBUT0lMRVQgUk9MTC1CUF8xMjg2NjkuanBnfDlkM2ZmNDcxNTk2ZjY4NWU4OWZjOWY0OTlhNmFkMDAzYjY2YjY0ZDMyY2I2OGY4ZWQzNzUxZmU4MGQ2YWNkNTg"
+        goods_picture: "https://api.parknshop.com/medias/ULTRA-TOILET-ROLL-BP-128669.jpg?context=bWFzdGVyfHBuc2hrL2ltYWdlc3wxNTM1MHxpbWFnZS9qcGVnfGg1YS9oOTAvOTMzNjUzMTY0ODU0Mi9VTFRSQSBUT0lMRVQgUk9MTC1CUF8xMjg2NjkuanBnfDlkM2ZmNDcxNTk2ZjY4NWU4OWZjOWY0OTlhNmFkMDAzYjY2YjY0ZDMyY2I2OGY4ZWQzNzUxZmU4MGQ2YWNkNTg",
+        aeon_price: "9.5",
+        parknshop_price: "7.8",
+        wellcome_price: "9"
     },
     
     {
         name: "佳能食物保鮮袋(大袋)",
         category_id: "8",
-        goods_picture: "https://api.parknshop.com/medias/FOOD-BAG-LARGE-BP-382452.jpg?context=bWFzdGVyfHBuc2hrL2ltYWdlc3wzMTc0NnxpbWFnZS9qcGVnfGhiMy9oZmQvOTMzNjk5NjUyODE1OC9GT09EIEJBRyBMQVJHRS1CUF8zODI0NTIuanBnfDUzMGIwNjMwYzQ1YTJjNDc3MTRlZDdlMDkwZTgxZTQwZWFhNjc5NTA3ZWQ5Y2Q3MzA2ZDUwZjM4NmE4NDU5MDI"
+        goods_picture: "https://api.parknshop.com/medias/FOOD-BAG-LARGE-BP-382452.jpg?context=bWFzdGVyfHBuc2hrL2ltYWdlc3wzMTc0NnxpbWFnZS9qcGVnfGhiMy9oZmQvOTMzNjk5NjUyODE1OC9GT09EIEJBRyBMQVJHRS1CUF8zODI0NTIuanBnfDUzMGIwNjMwYzQ1YTJjNDc3MTRlZDdlMDkwZTgxZTQwZWFhNjc5NTA3ZWQ5Y2Q3MzA2ZDUwZjM4NmE4NDU5MDI",
+        aeon_price: "9.5",
+        parknshop_price: "7.8",
+        wellcome_price: "9"
     },
    
     {
         name: "維達４Ｄ立體壓花４層盒裝面紙４盒",
         category_id: "8",
-        goods_picture: "https://api.parknshop.com/medias/4D-DELUXE-4PLY-NEUTRAL-FT-4S-BP-345655.jpg?context=bWFzdGVyfHBuc2hrL2ltYWdlc3wzODg3MnxpbWFnZS9qcGVnfGg5MS9oZmIvOTMzOTgwMzU5ODg3OC80RCBERUxVWEUgNFBMWSBORVVUUkFMIEZUIDRTLUJQXzM0NTY1NS5qcGd8OGI0MTBjZmU4MjI2ZjE4N2UwNWVlNzA1ZDQ4OTYzOTE1OWM2YjBlOGM3MTkzMzliZGE0ZWI2MTQ4ZjhhZjJiYQ"
+        goods_picture: "https://api.parknshop.com/medias/4D-DELUXE-4PLY-NEUTRAL-FT-4S-BP-345655.jpg?context=bWFzdGVyfHBuc2hrL2ltYWdlc3wzODg3MnxpbWFnZS9qcGVnfGg5MS9oZmIvOTMzOTgwMzU5ODg3OC80RCBERUxVWEUgNFBMWSBORVVUUkFMIEZUIDRTLUJQXzM0NTY1NS5qcGd8OGI0MTBjZmU4MjI2ZjE4N2UwNWVlNzA1ZDQ4OTYzOTE1OWM2YjBlOGM3MTkzMzliZGE0ZWI2MTQ4ZjhhZjJiYQ",
+        aeon_price: "9.5",
+        parknshop_price: "7.8",
+        wellcome_price: "9"
     },
     {
         name: "勞工牌 檸檬洗潔精 2L (補充裝)",
         category_id: "8",
-        goods_picture: "https://api.parknshop.com/medias/LEMON-LIQUID-DETERGENT-BP-113155.jpg?context=bWFzdGVyfHBuc2hrL2ltYWdlc3w0ODQzMnxpbWFnZS9qcGVnfGg4Ni9oMWIvOTMzNjUyOTM4NzU1MC9MRU1PTiBMSVFVSUQgREVURVJHRU5ULUJQXzExMzE1NS5qcGd8ZjVjOWQ2ZTBjZmQ5YjVmM2VhZGE1OWE2MDVkZTE2OWMyMmM0NGM3ODQ3MTA2ZWU1YzAzYWI0ODY2YWE2MDY5Mw"
+        goods_picture: "https://api.parknshop.com/medias/LEMON-LIQUID-DETERGENT-BP-113155.jpg?context=bWFzdGVyfHBuc2hrL2ltYWdlc3w0ODQzMnxpbWFnZS9qcGVnfGg4Ni9oMWIvOTMzNjUyOTM4NzU1MC9MRU1PTiBMSVFVSUQgREVURVJHRU5ULUJQXzExMzE1NS5qcGd8ZjVjOWQ2ZTBjZmQ5YjVmM2VhZGE1OWE2MDVkZTE2OWMyMmM0NGM3ODQ3MTA2ZWU1YzAzYWI0ODY2YWE2MDY5Mw",
+        aeon_price: "9.5",
+        parknshop_price: "7.8",
+        wellcome_price: "9"
     },
     
     {
         name: "威露士多用途消毒濕巾綠茶84片",
         category_id: "8",
-        goods_picture: "https://api.parknshop.com/medias/DISINFECTANT-WIPES-84S-GREEN-TEA-BP-410755.jpg?context=bWFzdGVyfHBuc2hrL2ltYWdlc3wxMjY4OTR8aW1hZ2UvanBlZ3xoNGQvaGM3LzkzNDEyNTUwNTc0MzgvRElTSU5GRUNUQU5UIFdJUEVTIDg0UyBHUkVFTiBURUEtQlBfNDEwNzU1LmpwZ3w3MmUzNzQxZjI0MWY4YjU1MjM2YjEwOTExY2FkNTAyMTdjODlhNDMyOWU1OTk3YjNlODRlNzliODk0MmFkYWY0"
+        goods_picture: "https://api.parknshop.com/medias/DISINFECTANT-WIPES-84S-GREEN-TEA-BP-410755.jpg?context=bWFzdGVyfHBuc2hrL2ltYWdlc3wxMjY4OTR8aW1hZ2UvanBlZ3xoNGQvaGM3LzkzNDEyNTUwNTc0MzgvRElTSU5GRUNUQU5UIFdJUEVTIDg0UyBHUkVFTiBURUEtQlBfNDEwNzU1LmpwZ3w3MmUzNzQxZjI0MWY4YjU1MjM2YjEwOTExY2FkNTAyMTdjODlhNDMyOWU1OTk3YjNlODRlNzliODk0MmFkYWY0",
+        aeon_price: "9.5",
+        parknshop_price: "7.8",
+        wellcome_price: "9"
     },
     
     {
         name: "威潔33超濃縮洗衣粉",
         category_id: "8",
-        goods_picture: "https://api.parknshop.com/medias/SUPER-CON-LAUNDRY-DETERGENT-BP-145907.jpg?context=bWFzdGVyfHBuc2hrL2ltYWdlc3w4Nzc4MnxpbWFnZS9qcGVnfGg2YS9oMmQvOTMzNjYyNjQ0NjM2Ni9TVVBFUiBDT04gTEFVTkRSWSBERVRFUkdFTlQtQlBfMTQ1OTA3LmpwZ3wzMzNkZTJjNzVhZTViZTFjMDhjZGI3OGFjYzczNzdhN2JkNDVlN2RmYTVmNDAwNWI1ZDQwNDk5M2EwNzBjYzEy"
+        goods_picture: "https://api.parknshop.com/medias/SUPER-CON-LAUNDRY-DETERGENT-BP-145907.jpg?context=bWFzdGVyfHBuc2hrL2ltYWdlc3w4Nzc4MnxpbWFnZS9qcGVnfGg2YS9oMmQvOTMzNjYyNjQ0NjM2Ni9TVVBFUiBDT04gTEFVTkRSWSBERVRFUkdFTlQtQlBfMTQ1OTA3LmpwZ3wzMzNkZTJjNzVhZTViZTFjMDhjZGI3OGFjYzczNzdhN2JkNDVlN2RmYTVmNDAwNWI1ZDQwNDk5M2EwNzBjYzEy",
+        aeon_price: "9.5",
+        parknshop_price: "7.8",
+        wellcome_price: "9"
     },
     
     {
         name: "威猛先生通渠泡沫",
         category_id: "8",
-        goods_picture: "https://api.parknshop.com/medias/SINK-DRAIN-FOAMER-BP-334711.jpg?context=bWFzdGVyfHBuc2hrL2ltYWdlc3wyNTgyNjYxfGltYWdlL2pwZWd8aDkwL2hmYy85MzM2NDEyMDEyNTc0L1NJTksgIERSQUlOIEZPQU1FUi1CUF8zMzQ3MTEuanBnfGIwYTAwNzc4MjQ2NWI3OWMwMTdlYTEwZTcxZjg5ZWEzZTUyM2QxZTQ3ZjNkMDIwZmE2MjljY2VkMDQwNzgwMzc"
+        goods_picture: "https://api.parknshop.com/medias/SINK-DRAIN-FOAMER-BP-334711.jpg?context=bWFzdGVyfHBuc2hrL2ltYWdlc3wyNTgyNjYxfGltYWdlL2pwZWd8aDkwL2hmYy85MzM2NDEyMDEyNTc0L1NJTksgIERSQUlOIEZPQU1FUi1CUF8zMzQ3MTEuanBnfGIwYTAwNzc4MjQ2NWI3OWMwMTdlYTEwZTcxZjg5ZWEzZTUyM2QxZTQ3ZjNkMDIwZmE2MjljY2VkMDQwNzgwMzc",
+        aeon_price: "9.5",
+        parknshop_price: "7.8",
+        wellcome_price: "9"
     },
     {
         name: "WEBER環保燒烤炭",
         category_id: "8",
-        goods_picture: "https://api.parknshop.com/medias/CHARCOAL-BRIQUETTES-BP-401904.jpg?context=bWFzdGVyfHBuc2hrL2ltYWdlc3wzNTgyNnxpbWFnZS9qcGVnfGhjNi9oOWEvOTM0MDA2MzU0NzQyMi9DSEFSQ09BTCBCUklRVUVUVEVTLUJQXzQwMTkwNC5qcGd8MGQ5NjAxODk3YzUyNmU4NTdkODQwMzQ1ZDdjNTA0M2Y1NGMyZmMxMWFkMjBmYjM5MTY3ZmJhZTkzNDFhNzQzZg"
+        goods_picture: "https://api.parknshop.com/medias/CHARCOAL-BRIQUETTES-BP-401904.jpg?context=bWFzdGVyfHBuc2hrL2ltYWdlc3wzNTgyNnxpbWFnZS9qcGVnfGhjNi9oOWEvOTM0MDA2MzU0NzQyMi9DSEFSQ09BTCBCUklRVUVUVEVTLUJQXzQwMTkwNC5qcGd8MGQ5NjAxODk3YzUyNmU4NTdkODQwMzQ1ZDdjNTA0M2Y1NGMyZmMxMWFkMjBmYjM5MTY3ZmJhZTkzNDFhNzQzZg",
+        aeon_price: "9.5",
+        parknshop_price: "7.8",
+        wellcome_price: "9"
     },
 
 // Personal Care9
@@ -2139,82 +2415,766 @@ export async function seed(knex: Knex): Promise<void> {
 
 
     await knex.insert([
-        // 桂格 Quaker - 即食燕麥片 - 袋裝 800克
         {
             user_id: "1",
             goods_id: "5",
-            category_id: 8
+            category_id: 10
         },
         {
-            user_id: "1",
+            user_id: "2",
             goods_id: "5",
-            category_id: 8
+            category_id: 10
         }, 
         {
-            user_id: "1",
+            user_id: "3",
             goods_id: "5",
-            category_id: 8
+            category_id: 10
         }, 
         {
-            user_id: "1",
+            user_id: "4",
             goods_id: "5",
-            category_id: 8
+            category_id: 10
         }, 
         {
-            user_id: "1",
+            user_id: "5",
             goods_id: "5",
-            category_id: 8
+            category_id: 10
         },
         {
-            user_id: "1",
+            user_id: "6",
             goods_id: "4",
-            category_id: 9
+            category_id: 10
         },
         {
-            user_id: "1",
+            user_id: "7",
             goods_id: "4",
-            category_id: 9
+            category_id: 10
         },
         {
-            user_id: "1",
+            user_id: "8",
             goods_id: "4",
-            category_id: 9
+            category_id: 10
         },
         {
-            user_id: "1",
+            user_id: "9",
             goods_id: "4",
-            category_id: 7
+            category_id: 10
         },
         {
             user_id: "1",
             goods_id: "3",
-            category_id: 7
+            category_id: 10
         },
         {
-            user_id: "1",
+            user_id: "2",
             goods_id: "3",
-            category_id: 7
+            category_id: 10
         },
         {
-            user_id: "1",
+            user_id: "3",
             goods_id: "3",
-            category_id: 7
+            category_id: 10
         },
         {
-            user_id: "1",
+            user_id: "4",
             goods_id: "2",
-            category_id: 7
+            category_id: 10
         },
         {
-            user_id: "1",
+            user_id: "5",
             goods_id: "2",
-            category_id: 7
+            category_id: 10
         },
         {
-            user_id: "1",
+            user_id: "6",
             goods_id: "1",
-            category_id: 7
+            category_id: 10
         },
+// Cat 9
+{
+    user_id: "1",
+    goods_id: "5",
+    category_id: 9
+},
+{
+    user_id: "2",
+    goods_id: "5",
+    category_id: 9
+}, 
+{
+    user_id: "3",
+    goods_id: "5",
+    category_id: 9
+}, 
+{
+    user_id: "4",
+    goods_id: "5",
+    category_id: 9
+}, 
+{
+    user_id: "5",
+    goods_id: "5",
+    category_id: 9
+},
+{
+    user_id: "6",
+    goods_id: "4",
+    category_id: 9
+},
+{
+    user_id: "7",
+    goods_id: "4",
+    category_id: 9
+},
+{
+    user_id: "8",
+    goods_id: "4",
+    category_id: 9
+},
+{
+    user_id: "9",
+    goods_id: "4",
+    category_id: 9
+},
+{
+    user_id: "1",
+    goods_id: "3",
+    category_id: 9
+},
+{
+    user_id: "2",
+    goods_id: "3",
+    category_id: 9
+},
+{
+    user_id: "3",
+    goods_id: "3",
+    category_id: 9
+},
+{
+    user_id: "4",
+    goods_id: "2",
+    category_id: 9
+},
+{
+    user_id: "5",
+    goods_id: "2",
+    category_id: 9
+},
+{
+    user_id: "6",
+    goods_id: "1",
+    category_id: 9
+},
+
+// Cat 8
+{
+    user_id: "1",
+    goods_id: "5",
+    category_id: 8
+},
+{
+    user_id: "2",
+    goods_id: "5",
+    category_id: 8
+}, 
+{
+    user_id: "3",
+    goods_id: "5",
+    category_id: 8
+}, 
+{
+    user_id: "4",
+    goods_id: "5",
+    category_id: 8
+}, 
+{
+    user_id: "5",
+    goods_id: "5",
+    category_id: 8
+},
+{
+    user_id: "6",
+    goods_id: "4",
+    category_id: 8
+},
+{
+    user_id: "7",
+    goods_id: "4",
+    category_id: 8
+},
+{
+    user_id: "8",
+    goods_id: "4",
+    category_id: 8
+},
+{
+    user_id: "9",
+    goods_id: "4",
+    category_id: 8
+},
+{
+    user_id: "1",
+    goods_id: "3",
+    category_id: 8
+},
+{
+    user_id: "2",
+    goods_id: "3",
+    category_id: 8
+},
+{
+    user_id: "3",
+    goods_id: "3",
+    category_id: 8
+},
+{
+    user_id: "4",
+    goods_id: "2",
+    category_id: 8
+},
+{
+    user_id: "5",
+    goods_id: "2",
+    category_id: 8
+},
+{
+    user_id: "6",
+    goods_id: "1",
+    category_id: 8
+},
+// Cat 7
+{
+    user_id: "1",
+    goods_id: "5",
+    category_id: 7
+},
+{
+    user_id: "2",
+    goods_id: "5",
+    category_id: 7
+}, 
+{
+    user_id: "3",
+    goods_id: "5",
+    category_id: 7
+}, 
+{
+    user_id: "4",
+    goods_id: "5",
+    category_id: 7
+}, 
+{
+    user_id: "5",
+    goods_id: "5",
+    category_id: 7
+},
+{
+    user_id: "6",
+    goods_id: "4",
+    category_id: 7
+},
+{
+    user_id: "7",
+    goods_id: "4",
+    category_id: 7
+},
+{
+    user_id: "8",
+    goods_id: "4",
+    category_id: 7
+},
+{
+    user_id: "9",
+    goods_id: "4",
+    category_id: 7
+},
+{
+    user_id: "1",
+    goods_id: "3",
+    category_id: 7
+},
+{
+    user_id: "2",
+    goods_id: "3",
+    category_id: 7
+},
+{
+    user_id: "3",
+    goods_id: "3",
+    category_id: 7
+},
+{
+    user_id: "4",
+    goods_id: "2",
+    category_id: 7
+},
+{
+    user_id: "5",
+    goods_id: "2",
+    category_id: 7
+},
+{
+    user_id: "6",
+    goods_id: "1",
+    category_id: 7
+},
+// Cat 6
+{
+    user_id: "1",
+    goods_id: "5",
+    category_id: 6
+},
+{
+    user_id: "2",
+    goods_id: "5",
+    category_id: 6
+}, 
+{
+    user_id: "3",
+    goods_id: "5",
+    category_id: 6
+}, 
+{
+    user_id: "4",
+    goods_id: "5",
+    category_id: 6
+}, 
+{
+    user_id: "5",
+    goods_id: "5",
+    category_id: 6
+},
+{
+    user_id: "6",
+    goods_id: "4",
+    category_id: 6
+},
+{
+    user_id: "7",
+    goods_id: "4",
+    category_id: 6
+},
+{
+    user_id: "8",
+    goods_id: "4",
+    category_id: 6
+},
+{
+    user_id: "9",
+    goods_id: "4",
+    category_id: 6
+},
+{
+    user_id: "1",
+    goods_id: "3",
+    category_id: 6
+},
+{
+    user_id: "2",
+    goods_id: "3",
+    category_id: 6
+},
+{
+    user_id: "3",
+    goods_id: "3",
+    category_id: 6
+},
+{
+    user_id: "4",
+    goods_id: "2",
+    category_id: 6
+},
+{
+    user_id: "5",
+    goods_id: "2",
+    category_id: 6
+},
+{
+    user_id: "6",
+    goods_id: "1",
+    category_id: 6
+},
+// Cat 5
+{
+    user_id: "1",
+    goods_id: "5",
+    category_id: 5
+},
+{
+    user_id: "2",
+    goods_id: "5",
+    category_id: 5
+}, 
+{
+    user_id: "3",
+    goods_id: "5",
+    category_id: 5
+}, 
+{
+    user_id: "4",
+    goods_id: "5",
+    category_id: 5
+}, 
+{
+    user_id: "5",
+    goods_id: "5",
+    category_id: 5
+},
+{
+    user_id: "6",
+    goods_id: "4",
+    category_id: 5
+},
+{
+    user_id: "7",
+    goods_id: "4",
+    category_id: 5
+},
+{
+    user_id: "8",
+    goods_id: "4",
+    category_id: 5
+},
+{
+    user_id: "9",
+    goods_id: "4",
+    category_id: 5
+},
+{
+    user_id: "1",
+    goods_id: "3",
+    category_id: 5
+},
+{
+    user_id: "2",
+    goods_id: "3",
+    category_id: 5
+},
+{
+    user_id: "3",
+    goods_id: "3",
+    category_id: 5
+},
+{
+    user_id: "4",
+    goods_id: "2",
+    category_id: 5
+},
+{
+    user_id: "5",
+    goods_id: "2",
+    category_id: 5
+},
+{
+    user_id: "6",
+    goods_id: "1",
+    category_id: 5
+},
+// Cat 4
+{
+    user_id: "1",
+    goods_id: "5",
+    category_id: 4
+},
+{
+    user_id: "2",
+    goods_id: "5",
+    category_id: 4
+}, 
+{
+    user_id: "3",
+    goods_id: "5",
+    category_id: 4
+}, 
+{
+    user_id: "4",
+    goods_id: "5",
+    category_id: 4
+}, 
+{
+    user_id: "5",
+    goods_id: "5",
+    category_id: 4
+},
+{
+    user_id: "6",
+    goods_id: "4",
+    category_id: 4
+},
+{
+    user_id: "7",
+    goods_id: "4",
+    category_id: 4
+},
+{
+    user_id: "8",
+    goods_id: "4",
+    category_id: 4
+},
+{
+    user_id: "9",
+    goods_id: "4",
+    category_id: 4
+},
+{
+    user_id: "1",
+    goods_id: "3",
+    category_id: 4
+},
+{
+    user_id: "2",
+    goods_id: "3",
+    category_id: 4
+},
+{
+    user_id: "3",
+    goods_id: "3",
+    category_id: 4
+},
+{
+    user_id: "4",
+    goods_id: "2",
+    category_id: 4
+},
+{
+    user_id: "5",
+    goods_id: "2",
+    category_id: 4
+},
+{
+    user_id: "6",
+    goods_id: "1",
+    category_id: 4
+},
+// Cat 3
+{
+    user_id: "1",
+    goods_id: "5",
+    category_id: 3
+},
+{
+    user_id: "2",
+    goods_id: "5",
+    category_id: 3
+}, 
+{
+    user_id: "3",
+    goods_id: "5",
+    category_id: 3
+}, 
+{
+    user_id: "4",
+    goods_id: "5",
+    category_id: 3
+}, 
+{
+    user_id: "5",
+    goods_id: "5",
+    category_id: 3
+},
+{
+    user_id: "6",
+    goods_id: "4",
+    category_id: 3
+},
+{
+    user_id: "7",
+    goods_id: "4",
+    category_id: 3
+},
+{
+    user_id: "8",
+    goods_id: "4",
+    category_id: 3
+},
+{
+    user_id: "9",
+    goods_id: "4",
+    category_id: 3
+},
+{
+    user_id: "1",
+    goods_id: "3",
+    category_id: 3
+},
+{
+    user_id: "2",
+    goods_id: "3",
+    category_id: 3
+},
+{
+    user_id: "3",
+    goods_id: "3",
+    category_id: 3
+},
+{
+    user_id: "4",
+    goods_id: "2",
+    category_id: 3
+},
+{
+    user_id: "5",
+    goods_id: "2",
+    category_id: 3
+},
+{
+    user_id: "6",
+    goods_id: "1",
+    category_id: 3
+},
+// Cat 2
+{
+    user_id: "1",
+    goods_id: "5",
+    category_id: 2
+},
+{
+    user_id: "2",
+    goods_id: "5",
+    category_id: 2
+}, 
+{
+    user_id: "3",
+    goods_id: "5",
+    category_id: 2
+}, 
+{
+    user_id: "4",
+    goods_id: "5",
+    category_id: 2
+}, 
+{
+    user_id: "5",
+    goods_id: "5",
+    category_id: 2
+},
+{
+    user_id: "6",
+    goods_id: "4",
+    category_id: 2
+},
+{
+    user_id: "7",
+    goods_id: "4",
+    category_id: 2
+},
+{
+    user_id: "8",
+    goods_id: "4",
+    category_id: 2
+},
+{
+    user_id: "9",
+    goods_id: "4",
+    category_id: 2
+},
+{
+    user_id: "1",
+    goods_id: "3",
+    category_id: 2
+},
+{
+    user_id: "2",
+    goods_id: "3",
+    category_id: 2
+},
+{
+    user_id: "3",
+    goods_id: "3",
+    category_id: 2
+},
+{
+    user_id: "4",
+    goods_id: "2",
+    category_id: 2
+},
+{
+    user_id: "5",
+    goods_id: "2",
+    category_id: 2
+},
+{
+    user_id: "6",
+    goods_id: "1",
+    category_id: 2
+},
+// Cat 1
+{
+    user_id: "1",
+    goods_id: "5",
+    category_id: 1
+},
+{
+    user_id: "2",
+    goods_id: "5",
+    category_id: 1
+}, 
+{
+    user_id: "3",
+    goods_id: "5",
+    category_id: 1
+}, 
+{
+    user_id: "4",
+    goods_id: "5",
+    category_id: 1
+}, 
+{
+    user_id: "5",
+    goods_id: "5",
+    category_id: 1
+},
+{
+    user_id: "6",
+    goods_id: "4",
+    category_id: 1
+},
+{
+    user_id: "7",
+    goods_id: "4",
+    category_id: 1
+},
+{
+    user_id: "8",
+    goods_id: "4",
+    category_id: 1
+},
+{
+    user_id: "9",
+    goods_id: "4",
+    category_id: 1
+},
+{
+    user_id: "1",
+    goods_id: "3",
+    category_id: 1
+},
+{
+    user_id: "2",
+    goods_id: "3",
+    category_id: 1
+},
+{
+    user_id: "3",
+    goods_id: "3",
+    category_id: 1
+},
+{
+    user_id: "4",
+    goods_id: "2",
+    category_id: 1
+},
+{
+    user_id: "5",
+    goods_id: "2",
+    category_id: 1
+},
+{
+    user_id: "6",
+    goods_id: "1",
+    category_id: 1
+},
 
     ]).into('user_liked');
 
