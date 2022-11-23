@@ -137,20 +137,41 @@ export class GoodsService {
             console.log("DB explore results :", exploreResults);
 
             const top5Results = await this.knex
-                .select("goods.id", "goods.name as goods_name", "barcode", "category_id", "goods_categories.name as category_name", "goods_picture",)
+                .select("goods.id", "goods.name as goods_name", "barcode", "goods.category_id", "goods_categories.name as category_name", "goods_picture")
+                .count("goods.id")
                 .from("goods")
                 .innerJoin('goods_categories', 'goods.category_id', 'goods_categories.id')
-                .whereIn("category_id", catIds)
-                .limit(qtyInOneBatch, { skipBinding: true })
+                .innerJoin('user_liked', "goods.id", "user_liked.goods_id")
+                .whereIn("goods.category_id", catIds)
+                .groupBy("goods.id", "goods_categories.name")
+                .orderBy("count", "desc")
+                .limit(5, { skipBinding: true })
                 .offset(ItemsToBeSkipped)
                 .returning("*")
 
-            console.log("DB explore results :", top5Results);
+            console.log("DB top5Results results :", top5Results);
 
-
-
-            const results = { exploreResults, top5Results }
+            const results = {
+                exploreResults,
+                top5Results
+            }
             return results;
+        }
+        catch (e) {
+            console.log(e);
+        }
+
+    }
+
+    async insertUserLiked(user_id: number, goods_id: number, category_id: number): Promise<any> {
+        try {
+            console.log("DATABASE: insertUserLiked");
+            await this.knex.raw(/*sql*/
+                `INSERT INTO user_liked
+                (user_id, goods_id, category_id)
+                VALUES(?, ?, ?);`,
+                [user_id, goods_id, category_id]
+            );
         }
         catch (e) {
             console.log(e);
