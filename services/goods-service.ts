@@ -136,20 +136,23 @@ export class GoodsService {
 
             console.log("DB explore results :", exploreResults);
 
-            const top5Results = await this.knex
-                .select("goods.id", "goods.name as goods_name", "barcode", "category_id", "goods_categories.name as category_name", "goods_picture",)
-                .from("goods")
-                .innerJoin('goods_categories', 'goods.category_id', 'goods_categories.id')
-                .whereIn("category_id", catIds)
-                .limit(qtyInOneBatch, { skipBinding: true })
-                .offset(ItemsToBeSkipped)
-                .returning("*")
+            // const top5Results = await this.knex
+            //     .select("goods.id", "goods.name as goods_name", "barcode", "category_id", "goods_categories.name as category_name", "goods_picture",)
+            //     .from("goods")
+            //     .innerJoin('goods_categories', 'goods.category_id', 'goods_categories.id')
+            //     .whereIn("category_id", catIds)
+            //     .limit(qtyInOneBatch, { skipBinding: true })
+            //     .offset(ItemsToBeSkipped)
+            //     .returning("*")
 
-            console.log("DB explore results :", top5Results);
+            // console.log("DB explore results :", top5Results);
 
 
 
-            const results = { exploreResults, top5Results }
+            const results = {
+                exploreResults,
+                // top5Results
+            }
             return results;
         }
         catch (e) {
