@@ -214,4 +214,25 @@ export class GoodsService {
         }
 
     }
+
+    async getInitNum(user_id: number, goods_id: number): Promise<any> {
+        try {
+            console.log("DATABASE: insertUserLiked");
+            const quantity = await this.knex.raw(
+                `select * from carts where is_assigned = false AND users_id = ? and goods_id = ?`,
+                [user_id, goods_id]
+            );
+            // console.log(quantity.rows[0].quantity)
+            if (quantity.rows.length == 0) {
+                console.log(0)
+                return 0
+            }
+            console.log(quantity.rows[0].quantity)
+            return quantity.rows[0].quantity
+        }
+        catch (e) {
+            console.log(e);
+        }
+
+    }
 }

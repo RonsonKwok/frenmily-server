@@ -15,3 +15,4 @@ goodsRoute.post("/productByBatch", goodsController.getProductByBatch);
 goodsRoute.post("/productByBatchAndCatId", goodsController.getProductByBatchAndCatId);
 goodsRoute.post("/userLiked", goodsController.userLiked);
 goodsRoute.post("/addToCart", goodsController.addToCart);
+goodsRoute.post("/getInitNum", goodsController.getInitNum);
