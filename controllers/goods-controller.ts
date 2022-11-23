@@ -117,7 +117,6 @@ export class GoodsController {
         try {
             console.log("userLiked API");
             const { user_id, goods_id, category_id } = req.body
-            console.log(user_id, goods_id, category_id);
             
             await this.goodsService.insertUserLiked(user_id, goods_id, category_id);
 
@@ -131,6 +130,28 @@ export class GoodsController {
         } catch (e) {
             console.log(e);
             res.status(400).send("userLiked API Fail");
+            return;
+        }
+    };
+
+    addToCart = async (req: Request, res: Response) => {
+        try {
+            console.log("addToCart API");
+            const { user_id, goods_id, quantity } = req.body
+            console.log(user_id, goods_id, quantity )
+            
+            await this.goodsService.addToCart(user_id, goods_id, quantity);
+
+
+            res.status(200).json({
+                message: `User ${user_id} successfully add goods_id(${goods_id}) amount: ${quantity} to cart`,
+            });
+
+            return;
+
+        } catch (e) {
+            console.log(e);
+            res.status(400).send("addToCart API Fail");
             return;
         }
     };

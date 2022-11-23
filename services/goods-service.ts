@@ -178,4 +178,40 @@ export class GoodsService {
         }
 
     }
+
+    async addToCart(user_id: number, goods_id: number, quantity: number): Promise<any> {
+        try {
+            if (quantity == 0) {
+                // Delete the result
+                console.log("Delete the result")
+                await this.knex.raw(
+                    `DELETE FROM carts WHERE is_assigned = false and users_id = ? and goods_id = ?`, [user_id, goods_id]);
+                
+            } else {
+                // Check if the record exist or not
+                const result = await this.knex.raw(
+                    `select * from carts where is_assigned = false and users_id = ? and goods_id = ?`, [user_id, goods_id]);
+
+                if (result.rows.length == 0 ) {
+                    // If no, add the record
+                    console.log("add the record")
+                    await this.knex.raw(
+                    `INSERT INTO carts(users_id, goods_id, quantity, is_assigned)VALUES(?, ?, ?, ?)`, [user_id, goods_id, quantity, false]);
+
+                } else {
+                    // If yes, change the quantity
+                    console.log("change the quantity")
+                    await this.knex.raw(
+                        `UPDATE carts
+                        SET quantity=?
+                        where is_assigned = false and users_id = ? and goods_id = ?;`
+                        , [quantity, user_id, goods_id]);
+                }
+            }      
+        }
+        catch (e) {
+            console.log(e);
+        }
+
+    }
 }
