@@ -113,6 +113,33 @@ export class GoodsController {
         }
     };
 
+    userLiked = async (req: Request, res: Response) => {
+        try {
+            console.log("userLiked API");
+            // const { user_id, goods_id, category_id } = req.body
+            let user_id = 1
+            let goods_id = 5
+            let category_id = 1
+            console.log(user_id, goods_id, category_id);
+            
+            await this.goodsService.insertUserLiked(user_id, goods_id, category_id);
+
+
+            res.status(200).json({
+                message: `successfully insert product (goods_id:${goods_id}) from DB`,
+            });
+
+            return;
+
+        } catch (e) {
+            console.log(e);
+            res.status(400).send("userLiked API Fail");
+            return;
+        }
+    };
+
+
+
     // addFriend = async (req: Request, res: Response) => {
     //     try {
     //         console.log("addFriend API");

@@ -157,4 +157,20 @@ export class GoodsService {
         }
 
     }
+
+    async insertUserLiked(user_id: number, goods_id: number, category_id: number): Promise<any> {
+        try {
+            console.log("DATABASE: insertUserLiked");
+            await this.knex.raw(/*sql*/
+                `INSERT INTO user_liked
+                (user_id, goods_id, category_id)
+                VALUES(?, ?, ?);`,
+                [user_id, goods_id, category_id]
+            );
+        }
+        catch (e) {
+            console.log(e);
+        }
+
+    }
 }
