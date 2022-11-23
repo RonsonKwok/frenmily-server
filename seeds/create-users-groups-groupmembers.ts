@@ -7,15 +7,8 @@ export async function seed(knex: Knex): Promise<void> {
     await knex.raw(`TRUNCATE  group_member  RESTART IDENTITY CASCADE`)
     await knex.raw(`TRUNCATE  user_friends  RESTART IDENTITY CASCADE`)
     await knex.raw(`TRUNCATE  goods_categories  RESTART IDENTITY CASCADE`)
-    await knex.raw(`TRUNCATE  supermarkets  RESTART IDENTITY CASCADE`)
-    await knex.raw(`TRUNCATE  carts  RESTART IDENTITY CASCADE`)
     await knex.raw(`TRUNCATE  goods  RESTART IDENTITY CASCADE`)
-    await knex.raw(`TRUNCATE  supermarket_goods  RESTART IDENTITY CASCADE`)
     await knex.raw(`TRUNCATE  user_liked  RESTART IDENTITY CASCADE`)
-    // await knex.raw(`TRUNCATE  user_friends  RESTART IDENTITY CASCADE`)
-    // await knex.raw(`TRUNCATE  user_friends  RESTART IDENTITY CASCADE`)
-    // await knex.raw(`TRUNCATE  user_friends  RESTART IDENTITY CASCADE`)
-    // await knex.raw(`TRUNCATE  user_friends  RESTART IDENTITY CASCADE`)
 
 
     // Inserts seed entries
