@@ -126,7 +126,7 @@ export class GoodsService {
         try {
             console.log("DATABASE: getProductByBatchAndCatId");
             const exploreResults = await this.knex
-                .select("goods.id", "goods.name as goods_name", "barcode", "category_id", "goods_categories.name as category_name", "goods_picture",)
+                .select("goods.id", "goods.name as goods_name", "barcode", "category_id", "goods_categories.name as category_name", "goods_picture", "aeon_price", "dch_price", "jasons_price", "parknshop_price", "wellcome_price", "mannings_price", "watsons_price", "ztore_price")
                 .from("goods")
                 .innerJoin('goods_categories', 'goods.category_id', 'goods_categories.id')
                 .whereIn("category_id", catIds)
@@ -137,7 +137,7 @@ export class GoodsService {
             console.log("DB explore results :", exploreResults);
 
             const top5Results = await this.knex
-                .select("goods.id", "goods.name as goods_name", "barcode", "goods.category_id", "goods_categories.name as category_name", "goods_picture")
+                .select("goods.id", "goods.name as goods_name", "barcode", "goods.category_id", "goods_categories.name as category_name", "goods_picture", "aeon_price", "dch_price", "jasons_price", "parknshop_price", "wellcome_price", "mannings_price", "watsons_price", "ztore_price")
                 .count("goods.id")
                 .from("goods")
                 .innerJoin('goods_categories', 'goods.category_id', 'goods_categories.id')

@@ -116,10 +116,7 @@ export class GoodsController {
     userLiked = async (req: Request, res: Response) => {
         try {
             console.log("userLiked API");
-            // const { user_id, goods_id, category_id } = req.body
-            let user_id = 1
-            let goods_id = 5
-            let category_id = 1
+            const { user_id, goods_id, category_id } = req.body
             console.log(user_id, goods_id, category_id);
             
             await this.goodsService.insertUserLiked(user_id, goods_id, category_id);
