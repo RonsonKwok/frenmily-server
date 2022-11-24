@@ -184,7 +184,7 @@ async searchKeyword(name: string): Promise<any> {
     try {
         console.log("DATABASE: Searching Keywords");
         const results = await this.knex.raw(
-            `select name from goods
+            `select * from goods
             where name ILIKE '%${name}%';
             
         `
