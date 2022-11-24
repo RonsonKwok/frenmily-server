@@ -286,4 +286,27 @@ async getShoppingListItems(user_id: number): Promise<any> {
 
 }
 
+async assignToGroup(user_id: number, groupId: number): Promise<any> {
+    try {
+        console.log("DATABASE: assignToGroup");
+        const items = await this.knex.raw(
+            `select * from carts where is_assigned = false and users_id = ?`,
+            [user_id]
+        );
+        console.log(items.rows)
+        for (let item of items.rows) {
+            await this.knex.raw(
+                `INSERT into shopping_lists(group_id, cart_id)VALUES(?,?)`,[groupId, item.id])
+            await this.knex.raw(
+                `UPDATE carts SET is_assigned=true WHERE id = ?`,[item.id])
+
+                
+        }
+    }
+    catch (e) {
+        console.log(e);
+    }
+
+}
+
 }

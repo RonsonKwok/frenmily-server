@@ -19,3 +19,4 @@ goodsRoute.post("/addToCart", goodsController.addToCart);
 goodsRoute.post("/getInitNum", goodsController.getInitNum);
 goodsRoute.post("/getShoppingCartInitNum", goodsController.getShoppingCartInitNum);
 goodsRoute.post("/getShoppingListItems", goodsController.getShoppingListItems);
+goodsRoute.post("/assignToGroup", goodsController.assignToGroup);
