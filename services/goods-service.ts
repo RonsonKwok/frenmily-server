@@ -178,4 +178,23 @@ export class GoodsService {
         }
 
     }
+
+    async searchKeyword(name: string): Promise<any> {
+        try {
+            console.log("DATABASE: Searching Keywords");
+            const results = await this.knex.raw(
+                `select name from goods
+                where name ILIKE '%${name}%';
+                
+            `
+            );
+            console.log("results :", results.rows);
+
+            return results.rows;
+        }
+        catch (e) {
+            console.log(e);
+        }
+
+    }
 }

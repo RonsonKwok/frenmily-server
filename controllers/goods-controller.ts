@@ -30,6 +30,28 @@ export class GoodsController {
         }
     };
 
+    searchKeyword = async (req: Request, res: Response) => {
+        try {
+            console.log("Searching goods...");
+            const name = req.body.name
+            console.log(name);
+            
+
+            const searchResult = await this.goodsService.searchKeyword(name);
+
+            res.json({
+                    searchResult: searchResult
+            });
+
+            return;
+        } catch (e) {
+            console.log(e);
+
+            res.status(400).send("Search Keyword Fail");
+            return;
+        }
+    };
+
     getGoodsByCat = async (req: Request, res: Response) => {
         try {
             console.log("getGoodsByCat...");
