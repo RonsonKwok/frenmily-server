@@ -264,6 +264,46 @@ export class GoodsController {
         }
     };
 
+    getAssignedItems = async (req: Request, res: Response) => {
+        try {
+            console.log("getAssignedItems API");
+            const groupId = req.body.groupId
+            console.log("groupId :", groupId)
+
+            const results = await this.goodsService.getAssignedItems(groupId);
+
+
+            res.status(200).json(results);
+
+            return;
+
+        } catch (e) {
+            console.log(e);
+            res.status(400).send("getAssignedItems API Fail");
+            return;
+        }
+    };
+
+    changeIsCompleted = async (req: Request, res: Response) => {
+        try {
+            console.log("changeIsCompleted API");
+            const cart_id = req.body.cart_id
+            console.log("cart_id :", cart_id)
+
+            const results = await this.goodsService.changeIsCompleted(cart_id);
+
+
+            res.status(200).json(results);
+
+            return;
+
+        } catch (e) {
+            console.log(e);
+            res.status(400).send("changeIsCompleted API Fail");
+            return;
+        }
+    };
+
 
 
 
