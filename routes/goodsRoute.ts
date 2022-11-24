@@ -15,14 +15,7 @@ goodsRoute.post("/productByBatch", goodsController.getProductByBatch);
 goodsRoute.post("/productByBatchAndCatId", goodsController.getProductByBatchAndCatId);
 goodsRoute.post("/userLiked", goodsController.userLiked);
 goodsRoute.post("/searchKeyword", goodsController.searchKeyword);
-// goodsRoute.post(
-//     "/addFriend",
-//     // isLoggedIn,
-//     goodsController.addFriend
-// );
-
-// from BAD project
-
-// friendsRoute.post('/me', albumController.me);
-// friendsRoute.get('/', albumController.getAlbum);
-// friendsRoute.delete('/', isLoggedIn, albumController.deletePhotoFromAlbum);
+goodsRoute.post("/addToCart", goodsController.addToCart);
+goodsRoute.post("/getInitNum", goodsController.getInitNum);
+goodsRoute.post("/getShoppingCartInitNum", goodsController.getShoppingCartInitNum);
+goodsRoute.post("/getShoppingListItems", goodsController.getShoppingListItems);

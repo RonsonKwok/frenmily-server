@@ -139,7 +139,6 @@ export class GoodsController {
         try {
             console.log("userLiked API");
             const { user_id, goods_id, category_id } = req.body
-            console.log(user_id, goods_id, category_id);
             
             await this.goodsService.insertUserLiked(user_id, goods_id, category_id);
 
@@ -157,85 +156,93 @@ export class GoodsController {
         }
     };
 
+    addToCart = async (req: Request, res: Response) => {
+        try {
+            console.log("addToCart API");
+            const { user_id, goods_id, quantity } = req.body
+            console.log(user_id, goods_id, quantity )
+            
+            await this.goodsService.addToCart(user_id, goods_id, quantity);
 
 
-    // addFriend = async (req: Request, res: Response) => {
-    //     try {
-    //         console.log("addFriend API");
-    //         let targetID = req.body.targetID;
-    //         let userID = req.body.userID;
-    //         console.log(targetID);
-    //         console.log(userID);
+            res.status(200).json({
+                message: `User ${user_id} successfully add goods_id(${goods_id}) amount: ${quantity} to cart`,
+            });
 
-    //         // add friend each other
-    //         await this.friendsService.addFriend(targetID, userID);
+            return;
 
-    //         res.json({ message: "add success" });
-    //         return;
-    //     } catch (e) {
-    //         console.log(e);
+        } catch (e) {
+            console.log(e);
+            res.status(400).send("addToCart API Fail");
+            return;
+        }
+    };
 
-    //         res.status(400).send("add friend Fail");
-    //         return;
-    //     }
-    // };
+    getInitNum = async (req: Request, res: Response) => {
+        try {
+            console.log("getInitNum API");
+            const { user_id, goods_id} = req.body
+            console.log(user_id, goods_id)
+            
+            const quantity = await this.goodsService.getInitNum(user_id, goods_id);
 
-    //////////////////////////////////////// from BAD project
 
-    // me = async (req: Request, res: Response) => {
-    //     res.json({
-    //         message: 'Success retrieve user',
-    //         data: {
-    //             user: req.session['user'] ? req.session['user'] : null
-    //         }
-    //     })
-    // }
+            res.status(200).json({
+                quantity: quantity
+            });
 
-    // //uploadToAlbum + pass photo to model
-    // uploadToAlbum = async (req: Request, res: Response) => {
-    //     try {
-    //         let currentUser = req.session['user']
-    //         let { files } = await formParse(req)
-    //         for (let fieldName in files) {
-    //             await this.albumService.uploadToAlbum((files[fieldName] as any).newFilename, currentUser.id)
-    //         }
-    //         const albumResult = await this.albumService.getAlbum(currentUser.id);
+            return;
 
-    //         res.json(albumResult)
+        } catch (e) {
+            console.log(e);
+            res.status(400).send("getInitNum API Fail");
+            return;
+        }
+    };
 
-    //         return
-    //     } catch (e) {
-    //         console.log(e);
+    getShoppingCartInitNum = async (req: Request, res: Response) => {
+        try {
+            console.log("getShoppingCartInitNum API");
+            const user_id = req.body.user_id
+            console.log(user_id)
+            
+            const quantity = await this.goodsService.getShoppingCartInitNum(user_id);
 
-    //         res.status(400).send("Upload Fail")
-    //         return
-    //     }
-    // }
 
-    // getAlbum = async (req: Request, res: Response) => {
-    //     let currentUser = req.session['user']
-    //     const albumResult = await this.albumService.getAlbum(currentUser.id);
+            res.status(200).json({
+                shoppingCartInit: quantity
+            });
 
-    //     res.json([albumResult, currentUser])
+            return;
 
-    //     return
-    // }
+        } catch (e) {
+            console.log(e);
+            res.status(400).send("getShoppingCartInitNum API Fail");
+            return;
+        }
+    };
 
-    // deletePhotoFromAlbum = async (req: Request, res: Response) => {
-    //     try {
-    //         const photoName = req.body.index
-    //         console.log(photoName)
+    getShoppingListItems = async (req: Request, res: Response) => {
+        try {
+            console.log("getShoppingListItems API");
+            const user_id = req.body.user_id
+            console.log(user_id)
+            
+            const items = await this.goodsService.getShoppingListItems(user_id);
 
-    //         await this.albumService.deletePhoto(photoName)
 
-    //         res.json({
-    //             message: 'del success'
-    //         })
-    //     } catch (e) {
-    //         console.log('error : ' + e)
-    //         res.status(500).json({
-    //             message: 'del fail'
-    //         })
-    //     }
-    // }
+            res.status(200).json({shoppingList: items});
+
+            return;
+
+        } catch (e) {
+            console.log(e);
+            res.status(400).send("getShoppingListItems API Fail");
+            return;
+        }
+    };
+
+
+
+    
 }
