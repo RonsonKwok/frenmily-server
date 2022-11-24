@@ -235,4 +235,19 @@ export class GoodsService {
         }
 
     }
+
+    async getShoppingCartInitNum(user_id: number): Promise<any> {
+        try {
+            console.log("DATABASE: getShoppingCartInitNum");
+            const quantity = await this.knex.raw(
+                `select sum(quantity) from carts where is_assigned = false and users_id = ?`,
+                [user_id]
+            );
+            return quantity.rows[0].sum
+        }
+        catch (e) {
+            console.log(e);
+        }
+
+    }
 }

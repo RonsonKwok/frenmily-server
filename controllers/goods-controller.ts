@@ -178,6 +178,28 @@ export class GoodsController {
         }
     };
 
+    getShoppingCartInitNum = async (req: Request, res: Response) => {
+        try {
+            console.log("getShoppingCartInitNum API");
+            const user_id = req.body.user_id
+            console.log(user_id)
+            
+            const quantity = await this.goodsService.getShoppingCartInitNum(user_id);
+
+
+            res.status(200).json({
+                shoppingCartInit: quantity
+            });
+
+            return;
+
+        } catch (e) {
+            console.log(e);
+            res.status(400).send("getShoppingCartInitNum API Fail");
+            return;
+        }
+    };
+
 
 
     
