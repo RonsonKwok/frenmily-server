@@ -8,9 +8,6 @@ export async function up(knex: Knex): Promise<void> {
         table.foreign("group_id").references("groups.id");
         table.integer("cart_id").notNullable();
         table.foreign("cart_id").references("carts.id");
-        table.integer("estimated_amount").notNullable();
-        table.integer("paid_records_id").notNullable();
-        // table.foreign("paid_records_id").references("paid_records.id");
       });
 }
 
