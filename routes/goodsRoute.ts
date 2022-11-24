@@ -17,3 +17,4 @@ goodsRoute.post("/userLiked", goodsController.userLiked);
 goodsRoute.post("/addToCart", goodsController.addToCart);
 goodsRoute.post("/getInitNum", goodsController.getInitNum);
 goodsRoute.post("/getShoppingCartInitNum", goodsController.getShoppingCartInitNum);
+goodsRoute.post("/getShoppingListItems", goodsController.getShoppingListItems);

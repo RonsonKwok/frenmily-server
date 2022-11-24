@@ -200,6 +200,26 @@ export class GoodsController {
         }
     };
 
+    getShoppingListItems = async (req: Request, res: Response) => {
+        try {
+            console.log("getShoppingListItems API");
+            const user_id = req.body.user_id
+            console.log(user_id)
+            
+            const items = await this.goodsService.getShoppingListItems(user_id);
+
+
+            res.status(200).json({shoppingList: items});
+
+            return;
+
+        } catch (e) {
+            console.log(e);
+            res.status(400).send("getShoppingListItems API Fail");
+            return;
+        }
+    };
+
 
 
     

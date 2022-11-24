@@ -134,7 +134,7 @@ export class GoodsService {
                 .offset(ItemsToBeSkipped)
                 .returning("*")
 
-            console.log("DB explore results :", exploreResults);
+            // console.log("DB explore results :", exploreResults);
 
             const top5Results = await this.knex
                 .select("goods.id", "goods.name as goods_name", "barcode", "goods.category_id", "goods_categories.name as category_name", "goods_picture", "aeon_price", "dch_price", "jasons_price", "parknshop_price", "wellcome_price", "mannings_price", "watsons_price", "ztore_price")
@@ -149,7 +149,7 @@ export class GoodsService {
                 .offset(ItemsToBeSkipped)
                 .returning("*")
 
-            console.log("DB top5Results results :", top5Results);
+            // console.log("DB top5Results results :", top5Results);
 
             const results = {
                 exploreResults,
@@ -244,6 +244,21 @@ export class GoodsService {
                 [user_id]
             );
             return quantity.rows[0].sum
+        }
+        catch (e) {
+            console.log(e);
+        }
+
+    }
+
+    async getShoppingListItems(user_id: number): Promise<any> {
+        try {
+            console.log("DATABASE: getShoppingCartInitNum");
+            const items = await this.knex.raw(
+                `select * from carts inner join goods on carts.goods_id = goods.id where carts.is_assigned = false and carts.users_id = ?`,
+                [user_id]
+            );
+            return items.rows
         }
         catch (e) {
             console.log(e);
