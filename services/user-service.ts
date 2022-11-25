@@ -131,7 +131,7 @@ export class UserService {
     }
 
 
-    async createUser(username: string, password: string, mobile: string): Promise<any> {
+    async createUser(username: string, password: string, mobile: string, randomPic: string): Promise<any> {
         try {
             let hashedPassword = await hashPassword(password)
 
@@ -139,7 +139,8 @@ export class UserService {
             let result = await this.knex.insert({
                 username: username,
                 password: hashedPassword,
-                mobile: mobile
+                mobile: mobile,
+                profile_picture: randomPic
             }).into("users").returning('*');
 
             return result;

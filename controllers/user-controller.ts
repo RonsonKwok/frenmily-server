@@ -1,8 +1,8 @@
 import express from "express";
 import { UserService } from "../services/user-service";
 import { checkPassword } from "../utils/hash";
-import fetch from "cross-fetch";
-import crypto from "crypto";
+// import fetch from "cross-fetch";
+// import crypto from "crypto";
 import { User } from "../model/User";
 // import { formParse } from "../utils/upload";
 // import fs from "fs";
@@ -130,42 +130,42 @@ export class UserController {
     //     res.json(districtName.rows[0].name)
     // }
 
-    loginGoogle = async (req: express.Request, res: express.Response) => {
-        try {
-            const accessToken = req.session?.["grant"].response.access_token;
-            console.log("accessToken: ", accessToken);
-            const fetchRes = await fetch(
-                "https://www.googleapis.com/oauth2/v2/userinfo",
-                {
-                    method: "get",
-                    headers: {
-                        Authorization: `Bearer ${accessToken}`,
-                    },
-                }
-            );
-            const result = await fetchRes.json();
-            console.log("google result:", result);
+    // loginGoogle = async (req: express.Request, res: express.Response) => {
+    //     try {
+    //         const accessToken = req.session?.["grant"].response.access_token;
+    //         console.log("accessToken: ", accessToken);
+    //         const fetchRes = await fetch(
+    //             "https://www.googleapis.com/oauth2/v2/userinfo",
+    //             {
+    //                 method: "get",
+    //                 headers: {
+    //                     Authorization: `Bearer ${accessToken}`,
+    //                 },
+    //             }
+    //         );
+    //         const result = await fetchRes.json();
+    //         console.log("google result:", result);
 
-            // Create a random password for Google users
-            const randomString = crypto.randomBytes(32).toString("hex");
+    //         // Create a random password for Google users
+    //         const randomString = crypto.randomBytes(32).toString("hex");
 
-            const username = result.email;
-            const password = randomString;
-            const email = result.email;
+    //         const username = result.email;
+    //         const password = randomString;
+    //         const email = result.email;
 
-            let userResult = await this.userService.getUserByUsername(username);
-            let dbUser: User = userResult.rows[0];
-            req.session["user"] = dbUser;
-            if (dbUser) {
-                res.redirect("/homepage.html");
-                return;
-            }
-            await this.userService.createUser(username, password, email);
-            res.redirect("/homepage.html");
-        } catch (e) {
-            console.log(e);
-        }
-    };
+    //         let userResult = await this.userService.getUserByUsername(username);
+    //         let dbUser: User = userResult.rows[0];
+    //         req.session["user"] = dbUser;
+    //         if (dbUser) {
+    //             res.redirect("/homepage.html");
+    //             return;
+    //         }
+    //         await this.userService.createUser(username, password, email);
+    //         res.redirect("/homepage.html");
+    //     } catch (e) {
+    //         console.log(e);
+    //     }
+    // };
 
     register = async (req: express.Request, res: express.Response) => {
         try {
@@ -220,11 +220,22 @@ export class UserController {
                 });
                 return;
             }
+            const dummyPicArray = [
+                "https://iconandreceipt.s3.ap-southeast-1.amazonaws.com/gorilla.png",
+                "https://iconandreceipt.s3.ap-southeast-1.amazonaws.com/bear+(1).png",
+                "https://iconandreceipt.s3.ap-southeast-1.amazonaws.com/bear.png",
+                "https://iconandreceipt.s3.ap-southeast-1.amazonaws.com/squid.png",
+                "https://iconandreceipt.s3.ap-southeast-1.amazonaws.com/donatello.png",
+                "https://iconandreceipt.s3.ap-southeast-1.amazonaws.com/fox.png"
+            ]
+
+            const randomPic = dummyPicArray[Math.floor(Math.random() * dummyPicArray.length)];
 
             let result = await this.userService.createUser(
                 username,
                 password,
-                mobile
+                mobile,
+                randomPic
             );
             let newDBuser: User = result[0];
 
