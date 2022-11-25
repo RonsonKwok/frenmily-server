@@ -30,6 +30,28 @@ export class GoodsController {
         }
     };
 
+    searchKeyword = async (req: Request, res: Response) => {
+        try {
+            console.log("Searching goods...");
+            const name = req.body.name
+            console.log(name);
+            
+
+            const searchResult = await this.goodsService.searchKeyword(name);
+
+            res.json({
+                    searchResult: searchResult
+            });
+
+            return;
+        } catch (e) {
+            console.log(e);
+
+            res.status(400).send("Search Keyword Fail");
+            return;
+        }
+    };
+
     getGoodsByCat = async (req: Request, res: Response) => {
         try {
             console.log("getGoodsByCat...");
@@ -182,6 +204,111 @@ export class GoodsController {
             return;
         }
     };
+
+    getShoppingCartInitNum = async (req: Request, res: Response) => {
+        try {
+            console.log("getShoppingCartInitNum API");
+            const user_id = req.body.user_id
+            console.log(user_id)
+            
+            const quantity = await this.goodsService.getShoppingCartInitNum(user_id);
+
+
+            res.status(200).json({
+                shoppingCartInit: quantity
+            });
+
+            return;
+
+        } catch (e) {
+            console.log(e);
+            res.status(400).send("getShoppingCartInitNum API Fail");
+            return;
+        }
+    };
+
+    getShoppingListItems = async (req: Request, res: Response) => {
+        try {
+            console.log("getShoppingListItems API");
+            const user_id = req.body.user_id
+            console.log(user_id)
+            
+            const items = await this.goodsService.getShoppingListItems(user_id);
+
+
+            res.status(200).json({shoppingList: items});
+
+            return;
+
+        } catch (e) {
+            console.log(e);
+            res.status(400).send("getShoppingListItems API Fail");
+            return;
+        }
+    };
+
+    assignToGroup = async (req: Request, res: Response) => {
+        try {
+            console.log("assignToGroup API");
+            const user_id = req.body.userId
+            const groupId = req.body.groupId
+            console.log("user_id :", user_id)
+            console.log("groupId :", groupId)
+
+            const items = await this.goodsService.assignToGroup(user_id, groupId);
+
+
+            res.status(200).json({shoppingList: items});
+
+            return;
+
+        } catch (e) {
+            console.log(e);
+            res.status(400).send("assignToGroup API Fail");
+            return;
+        }
+    };
+
+    getAssignedItems = async (req: Request, res: Response) => {
+        try {
+            console.log("getAssignedItems API");
+            const groupId = req.body.groupId
+            console.log("groupId :", groupId)
+
+            const results = await this.goodsService.getAssignedItems(groupId);
+
+
+            res.status(200).json(results);
+
+            return;
+
+        } catch (e) {
+            console.log(e);
+            res.status(400).send("getAssignedItems API Fail");
+            return;
+        }
+    };
+
+    changeIsCompleted = async (req: Request, res: Response) => {
+        try {
+            console.log("changeIsCompleted API");
+            const cart_id = req.body.cart_id
+            console.log("cart_id :", cart_id)
+
+            const results = await this.goodsService.changeIsCompleted(cart_id);
+
+
+            res.status(200).json(results);
+
+            return;
+
+        } catch (e) {
+            console.log(e);
+            res.status(400).send("changeIsCompleted API Fail");
+            return;
+        }
+    };
+
 
 
 
