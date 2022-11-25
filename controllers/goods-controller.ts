@@ -88,7 +88,12 @@ export class GoodsController {
 
     getProductByBatchAndCatId = async (req: Request, res: Response) => {
         try {
+
+            const id = req.body.catIds
+            console.log(id);
+
             console.log("Receipt Request of getProductByBatch");
+            console.log("req.body=", req.body)
             const { catIds, qtyInOneBatch, ItemsToBeSkipped } = req.body
             // FIXME: Frontend 要比三個param
             // carIds 是number array，例如 [1,2,3]
@@ -117,7 +122,7 @@ export class GoodsController {
         try {
             console.log("userLiked API");
             const { user_id, goods_id, category_id } = req.body
-            
+
             await this.goodsService.insertUserLiked(user_id, goods_id, category_id);
 
 
@@ -138,8 +143,8 @@ export class GoodsController {
         try {
             console.log("addToCart API");
             const { user_id, goods_id, quantity } = req.body
-            console.log(user_id, goods_id, quantity )
-            
+            console.log(user_id, goods_id, quantity)
+
             await this.goodsService.addToCart(user_id, goods_id, quantity);
 
 
@@ -159,9 +164,9 @@ export class GoodsController {
     getInitNum = async (req: Request, res: Response) => {
         try {
             console.log("getInitNum API");
-            const { user_id, goods_id} = req.body
+            const { user_id, goods_id } = req.body
             console.log(user_id, goods_id)
-            
+
             const quantity = await this.goodsService.getInitNum(user_id, goods_id);
 
 
@@ -180,5 +185,5 @@ export class GoodsController {
 
 
 
-    
+
 }
