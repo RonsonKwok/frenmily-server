@@ -19,6 +19,7 @@ userRoutes.post("/updateGender", userController.updateGender);
 userRoutes.post("/updateMobileNumber", userController.updateMobileNumber);
 userRoutes.post("/updateEmail", userController.updateEmail);
 userRoutes.post("/updateProfilePicture", userController.updateProfilePicture);
+userRoutes.post("/getUserName", userController.getUserName);
 // userRoutes.post("/logout", userController.logout)
 
 // userRoutes.get('/location', userController.getDistrict);

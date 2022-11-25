@@ -296,7 +296,7 @@ export class GoodsService {
             console.log(items.rows)
             for (let item of items.rows) {
                 await this.knex.raw(
-                    `INSERT into shopping_lists(group_id, cart_id, is_completed)VALUES(?,?, false)`, [groupId, item.id])
+                    `INSERT into shopping_lists(group_id, cart_id, is_completed, assignee_id)VALUES(?,?, false, ?)`, [groupId, item.id, user_id])
                 await this.knex.raw(
                     `UPDATE carts SET is_assigned=true WHERE id = ?`, [item.id])
 
@@ -311,43 +311,51 @@ export class GoodsService {
 
     async getAssignedItems(groupId: number): Promise<any> {
         try {
-            console.log("DATABASE: assignToGroup");
+            console.log("DATABASE: getAssignedItems");
             const result = await this.knex.raw(
-                `select goods_id, quantity, cart_id, is_completed from shopping_lists inner join carts on shopping_lists.cart_id  = carts.id where shopping_lists.group_id = ?`,
+                `select users_id, quantity, cart_id, is_completed, goods_id from shopping_lists inner join carts on shopping_lists.cart_id  = carts.id where shopping_lists.group_id = ?`,
                 [groupId]
             );
             console.log("CP!:", result.rows);
 
-            let temp = {};
-            let obj = null;
-            for (let i = 0; i < result.rows.length; i++) {
-                obj = result.rows[i];
+            // let temp = {};
+            // let obj = null;
+            // for (let i = 0; i < result.rows.length; i++) {
+            //     obj = result.rows[i];
 
-                if (!temp[obj.goods_id]) {
-                    temp[obj.goods_id] = obj;
-                } else {
-                    temp[obj.goods_id].quantity += obj.quantity;
-                }
-            }
-            var combined = [];
-            for (let prop in temp)
-                combined.push(temp[prop]);
-            console.log("combined:", combined)
+            //     if (!temp[obj.goods_id]) {
+            //         temp[obj.goods_id] = obj;
+            //     } else {
+            //         temp[obj.goods_id].quantity += obj.quantity;
+            //     }
+            // }
+            // var combined = [];
+            // for (let prop in temp)
+            //     combined.push(temp[prop]);
+            // console.log("combined:", combined)
             let goodsDetailsArray = []
-            for (let item of combined) {
+            for (let item of result.rows) {
                 const goodsDetails = await this.knex.raw(
                     `SELECT * FROM goods WHERE id = ?`, [item.goods_id]);
+
+                goodsDetails.rows[0].quantity = item.quantity
+                goodsDetails.rows[0].cart_id = item.cart_id
+                goodsDetails.rows[0].is_completed = item.is_completed
+                goodsDetails.rows[0].assignee_id = item.users_id
+
                 goodsDetailsArray.push(goodsDetails.rows[0]);
+
             }
-            for (let item of goodsDetailsArray) {
-                for (let item2 of combined) {
-                    if (item.id == item2.goods_id) {
-                        item.quantity = item2.quantity
-                        item.cart_id = item2.cart_id
-                        item.is_completed = item2.is_completed
-                    }
-                }
-            }
+            // for (let item of goodsDetailsArray) {
+            //     for (let item2 of result.rows) {
+            //         if (item.id == item2.goods_id) {
+            //             item.quantity = item2.quantity
+            //             item.cart_id = item2.cart_id
+            //             item.is_completed = item2.is_completed
+            //         }
+            //     }
+            // }
+            console.log("goodsDetailsArray :", goodsDetailsArray)
 
             return goodsDetailsArray
         }

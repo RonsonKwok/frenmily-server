@@ -9,7 +9,9 @@ export async function up(knex: Knex): Promise<void> {
         table.integer("cart_id").notNullable();
         table.foreign("cart_id").references("carts.id");
         table.boolean("is_completed").notNullable();
-      });
+        table.integer("assignee_id").notNullable();
+        table.foreign("assignee_id").references("users.id");
+    });
 }
 
 

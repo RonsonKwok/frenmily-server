@@ -174,6 +174,22 @@ export class UserService {
         }
     }
 
+    async getUserName(userID: number) {
+        try {
+            console.log("DATABASE: getUserName");
+
+            let userResult = (
+                await this.knex.raw(`select username from users where id = ?`, [userID])
+            )
+            console.log("userResult:", userResult.rows[0])
+            return userResult.rows[0]
+
+        }
+        catch (e) {
+            console.log(e)
+        }
+    }
+
 
 
 

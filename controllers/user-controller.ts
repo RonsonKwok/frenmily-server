@@ -410,6 +410,21 @@ export class UserController {
         }
     };
 
+    getUserName = async (req: express.Request, res: express.Response) => {
+        try {
+            console.log("HERERE");
+
+            const user_id = req.body.user_id
+            let userResult = await this.userService.getUserName(user_id);
+            console.log(userResult);
+            res.json(userResult)
+
+
+        } catch (e) {
+            console.log(e);
+        }
+    };
+
 
     // Update profile picture
     //     changeProfilePicture = async (
