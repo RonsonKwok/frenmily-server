@@ -29,6 +29,7 @@ export class ReceiptsController {
                     : files.image;
                 let fileName = file ? file.newFilename : undefined;
 
+
                 // Upload file to AWS S3
                 const accessPath = await uploadToS3({
                     Bucket: "iconandreceipt",
