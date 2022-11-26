@@ -35,12 +35,12 @@ export class GoodsController {
             console.log("Searching goods...");
             const name = req.body.name
             console.log(name);
-            
+
 
             const searchResult = await this.goodsService.searchKeyword(name);
 
             res.json({
-                    searchResult: searchResult
+                searchResult: searchResult
             });
 
             return;
@@ -210,7 +210,7 @@ export class GoodsController {
             console.log("getShoppingCartInitNum API");
             const user_id = req.body.user_id
             console.log(user_id)
-            
+
             const quantity = await this.goodsService.getShoppingCartInitNum(user_id);
 
 
@@ -232,11 +232,11 @@ export class GoodsController {
             console.log("getShoppingListItems API");
             const user_id = req.body.user_id
             console.log(user_id)
-            
+
             const items = await this.goodsService.getShoppingListItems(user_id);
 
 
-            res.status(200).json({shoppingList: items});
+            res.status(200).json({ shoppingList: items });
 
             return;
 
@@ -258,7 +258,7 @@ export class GoodsController {
             const items = await this.goodsService.assignToGroup(user_id, groupId);
 
 
-            res.status(200).json({shoppingList: items});
+            res.status(200).json({ shoppingList: items });
 
             return;
 
@@ -293,9 +293,11 @@ export class GoodsController {
         try {
             console.log("changeIsCompleted API");
             const cart_id = req.body.cart_id
+            const user_id = req.body.user_id
             console.log("cart_id :", cart_id)
+            console.log("user_id :", user_id)
 
-            const results = await this.goodsService.changeIsCompleted(cart_id);
+            const results = await this.goodsService.changeIsCompleted(cart_id, user_id);
 
 
             res.status(200).json(results);

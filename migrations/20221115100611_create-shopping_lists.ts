@@ -11,6 +11,8 @@ export async function up(knex: Knex): Promise<void> {
         table.boolean("is_completed").notNullable();
         table.integer("assignee_id").notNullable();
         table.foreign("assignee_id").references("users.id");
+        table.integer("buyer_id");
+        table.foreign("buyer_id").references("users.id");
     });
 }
 
