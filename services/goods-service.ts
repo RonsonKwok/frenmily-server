@@ -315,7 +315,7 @@ export class GoodsService {
         try {
             console.log("DATABASE: getAssignedItems");
             const result = await this.knex.raw(
-                `select users_id, quantity, cart_id, is_completed, goods_id, buyer_id from shopping_lists inner join carts on shopping_lists.cart_id  = carts.id where shopping_lists.group_id = ?`,
+                `select users_id, quantity, cart_id, is_completed, goods_id, buyer_id from shopping_lists inner join carts on shopping_lists.cart_id  = carts.id where shopping_lists.group_id = ? order by is_completed asc`,
                 [groupId]
             );
             console.log("CP!:", result.rows);
