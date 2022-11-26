@@ -299,9 +299,11 @@ export class GoodsService {
                     `INSERT into shopping_lists(group_id, cart_id, is_completed, assignee_id, buyer_id)VALUES(?,?, false, ?, null)`, [groupId, item.id, user_id])
                 await this.knex.raw(
                     `UPDATE carts SET is_assigned=true WHERE id = ?`, [item.id])
-
-
             }
+            await this.knex.raw(
+                `UPDATE groups SET updated_at=CURRENT_TIMESTAMP WHERE id=?`,
+                [groupId]
+            );
         }
         catch (e) {
             console.log(e);

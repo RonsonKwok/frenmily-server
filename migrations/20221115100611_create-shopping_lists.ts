@@ -13,6 +13,7 @@ export async function up(knex: Knex): Promise<void> {
         table.foreign("assignee_id").references("users.id");
         table.integer("buyer_id");
         table.foreign("buyer_id").references("users.id");
+        table.timestamps(false, true);
     });
 }
 
