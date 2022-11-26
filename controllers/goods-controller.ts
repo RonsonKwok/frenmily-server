@@ -35,12 +35,12 @@ export class GoodsController {
             console.log("Searching goods...");
             const name = req.body.name
             console.log(name);
-            
+
 
             const searchResult = await this.goodsService.searchKeyword(name);
 
             res.json({
-                    searchResult: searchResult
+                searchResult: searchResult
             });
 
             return;
@@ -114,7 +114,7 @@ export class GoodsController {
             const id = req.body.catIds
             console.log(id);
 
-            console.log("Receipt Request of getProductByBatch");
+            console.log("@@@@@@ Receipt Request of getProductByBatch");
             console.log("req.body=", req.body)
             const { catIds, qtyInOneBatch, ItemsToBeSkipped } = req.body
             // FIXME: Frontend 要比三個param
@@ -130,6 +130,8 @@ export class GoodsController {
                 message: `successfully get ${qtyInOneBatch} products from DB`,
                 result: result
             });
+
+            console.log("#### result of getProductByBatchAndCatId: ", result)
 
             return;
 
@@ -210,7 +212,7 @@ export class GoodsController {
             console.log("getShoppingCartInitNum API");
             const user_id = req.body.user_id
             console.log(user_id)
-            
+
             const quantity = await this.goodsService.getShoppingCartInitNum(user_id);
 
 
@@ -232,11 +234,11 @@ export class GoodsController {
             console.log("getShoppingListItems API");
             const user_id = req.body.user_id
             console.log(user_id)
-            
+
             const items = await this.goodsService.getShoppingListItems(user_id);
 
 
-            res.status(200).json({shoppingList: items});
+            res.status(200).json({ shoppingList: items });
 
             return;
 
@@ -258,7 +260,7 @@ export class GoodsController {
             const items = await this.goodsService.assignToGroup(user_id, groupId);
 
 
-            res.status(200).json({shoppingList: items});
+            res.status(200).json({ shoppingList: items });
 
             return;
 
