@@ -1,39 +1,67 @@
 import express from "express";
+import IncomingForm from "formidable/Formidable";
 import { GroupsService } from "../services/groups-service";
+import initFormidable from "../utils/upload";
+import { File } from "formidable";
+import fs from "fs";
+import { uploadToS3 } from "../utils/aws-s3-upload";
 
 export class GroupsController {
-    constructor(private groupsService: GroupsService) {}
+    constructor(private groupsService: GroupsService) { }
 
     createGroup = async (req: express.Request, res: express.Response) => {
         try {
             console.log("group-controller");
-            const groupName = req.body.groupName;
-            const is_family_group = req.body.is_family_group;
-            const profile_picture = req.body.profile_picture;
-            const groupMemberId = req.body.groupMemberId;
-            const user_id = req.body.userID;
-            console.log(groupName);
-            console.log(is_family_group);
-            console.log(profile_picture);
-            console.log(groupMemberId);
-            console.log(user_id);
+            const form: IncomingForm = initFormidable();
 
-            // insert to table groups
-            let rowID = await this.groupsService.createGroup(
-                groupName,
-                is_family_group,
-                profile_picture
-            );
+            form.parse(req, async (err, fields, files) => {
+                req.body = fields;
+                let groupName = req.body.groupName;
+                let is_family_group = req.body.is_family_group;
+                let groupMemberId = req.body.groupMemberId;
+                let userID = req.body.userID;
+                console.log("groupName :", groupName)
+                console.log(is_family_group)
+                console.log(groupMemberId)
+                console.log([groupMemberId])
+                let tempArray = groupMemberId.split(',').map(function (item: any) {
+                    return parseInt(item, 10);
+                });
+                console.log("tempArray :", tempArray);
 
-            // insert to table group_member
-            await this.groupsService.insertGroupMember(
-                rowID,
-                groupMemberId,
-                user_id
-            );
+                console.log(userID)
 
-            // all members add friends together
-            await this.groupsService.addFriendsTogether(groupMemberId);
+
+                let file: File = Array.isArray(files.image)
+                    ? files.image[0]
+                    : files.image;
+                let fileName = file ? file.newFilename : undefined;
+
+
+                // Upload file to AWS S3
+                const accessPath = await uploadToS3({
+                    Bucket: "iconandreceipt",
+                    Key: `${fileName}`,
+                    Body: fs.readFileSync(file.filepath!),
+                });
+
+                // insert to table groups
+                let rowID = await this.groupsService.createGroup(
+                    groupName,
+                    is_family_group,
+                    accessPath
+                );
+
+                // insert to table group_member
+                await this.groupsService.insertGroupMember(
+                    rowID,
+                    tempArray,
+                    parseInt(userID)
+                );
+
+                // all members add friends together
+                await this.groupsService.addFriendsTogether(tempArray);
+            });
 
             res.json({
                 message: "Create group successfully",

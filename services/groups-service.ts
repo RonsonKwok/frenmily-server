@@ -1,7 +1,7 @@
 import { Knex } from "knex";
 
 export class GroupsService {
-    constructor(private knex: Knex) {}
+    constructor(private knex: Knex) { }
 
     async createGroup(
         groupName: string,
@@ -25,8 +25,10 @@ export class GroupsService {
         groupMemberIdArray: number[],
         user_id: number
     ): Promise<any> {
+        console.log("groupMemberIdArray :", groupMemberIdArray);
+        console.log("user_id :", user_id)
         groupMemberIdArray.push(user_id);
-        console.log(groupMemberIdArray);
+        console.log("groupMemberIdArray :", groupMemberIdArray);
 
         for (let i = 0; i < groupMemberIdArray.length; i++) {
             console.log(groupMemberIdArray[i]);
@@ -112,7 +114,7 @@ export class GroupsService {
             );
             tempUserInfo['paid'] = result.rows[0].sum
         }
-        
+
         return tempUserInfoArray;
     }
 
@@ -123,7 +125,7 @@ export class GroupsService {
         `,
             [groupID]
         );
-        
+
         return result.rows[0].group_name;
     }
 
