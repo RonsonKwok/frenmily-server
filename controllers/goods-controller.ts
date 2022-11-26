@@ -311,6 +311,26 @@ export class GoodsController {
         }
     };
 
+    clearCart = async (req: Request, res: Response) => {
+        try {
+            console.log("clearCart API");
+            const user_id = req.body.user_id
+            console.log("user_id :", user_id)
+
+            await this.goodsService.clearCart(user_id);
+
+
+            res.status(200)
+
+            return;
+
+        } catch (e) {
+            console.log(e);
+            res.status(400).send("clearCart API Fail");
+            return;
+        }
+    };
+
 
 
 

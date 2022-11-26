@@ -387,5 +387,19 @@ export class GoodsService {
             console.log(e);
         }
     }
+    async clearCart(user_id: number): Promise<any> {
+        try {
+            console.log("DATABASE: clearCart");
+            await this.knex.raw(
+                `delete from carts where is_assigned = false and users_id = ?`,
+                [user_id]
+            );
+
+        }
+        catch (e) {
+            console.log(e);
+        }
+
+    }
 
 }
