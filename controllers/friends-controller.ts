@@ -174,4 +174,25 @@ export class FriendsController {
             return;
         }
     };
+
+    getAllTxnRecord = async (req: Request, res: Response) => {
+        try {
+            console.log("getAllTxnRecord API");
+            let user_id = req.body.user_id;
+            let user_friend_id = req.body.user_friend_id;
+            console.log(user_id);
+            console.log(user_friend_id);
+
+            // add friend each other
+            const results = await this.friendsService.getAllTxnRecord(user_id, user_friend_id);
+
+            res.json(results);
+            return;
+        } catch (e) {
+            console.log(e);
+
+            res.status(400).send("getAllTxnRecord Fail");
+            return;
+        }
+    };
 }

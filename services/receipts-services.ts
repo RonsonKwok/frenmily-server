@@ -1,7 +1,7 @@
 import { Knex } from "knex";
 
 export class ReceiptsService {
-    constructor(private knex: Knex) {}
+    constructor(private knex: Knex) { }
 
     async uploadReceipt(
         userID: number,
@@ -50,10 +50,10 @@ export class ReceiptsService {
             await this.knex.raw(
                 `
                 INSERT INTO transcations
-                (debitor_id, creditor_id, transcations_amount, is_settled, is_paid)
-                VALUES (?,?,?,?,?)
+                (debitor_id, creditor_id, transcations_amount, is_settled, is_paid, group_id)
+                VALUES (?,?,?,?,?,?)
             `,
-                [otherMember, userID, eachPersonShouldPay, false, false]
+                [otherMember, userID, eachPersonShouldPay, false, false, groupID]
             );
         }
         console.log(
