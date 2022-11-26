@@ -72,11 +72,21 @@ export class GroupsService {
     }
 
     async getGroups(user_id: number): Promise<any> {
+        console.log("testing")
+        // let result = await this.knex.raw(
+        //     `
+        //     select * from groups inner join group_member 
+        //     on group_member.group_id = groups.id 
+        //     where group_member.user_id = ?
+        // `,
+        //     [user_id]
+        // );
         let result = await this.knex.raw(
             `
-            select * from groups inner join group_member 
+            select groups.id, group_name, profile_picture, is_family_group, group_id ,groups.updated_at from groups inner join group_member 
             on group_member.group_id = groups.id 
             where group_member.user_id = ?
+            order by updated_at desc
         `,
             [user_id]
         );

@@ -10,6 +10,7 @@ export async function up(knex: Knex): Promise<void> {
         table.float("transcations_amount").notNullable();
         table.boolean("is_paid");
         table.boolean("is_settled");
+        table.integer("group_id").notNullable();
         table.timestamps(false, true);
     });
 }

@@ -1,7 +1,7 @@
 import { Knex } from "knex";
 
 export class FriendsService {
-    constructor(private knex: Knex) {}
+    constructor(private knex: Knex) { }
 
     async getUserFriends(user_id: number): Promise<any> {
         const results = await this.knex.raw(
@@ -83,6 +83,19 @@ export class FriendsService {
             AND debitor_id = ?
             AND creditor_id = ?`,
             [user_id, user_friend_id]
+        );
+        console.log("HERERERER: ", result.rows);
+        return result.rows;
+    }
+
+    async getAllTxnRecord(
+        user_id: number,
+        user_friend_id: number
+    ): Promise<any> {
+
+        const result = await this.knex.raw(
+            `select * from transcations inner join groups on transcations.group_id = groups.id where debitor_id = ? and creditor_id = ? or debitor_id = ? and creditor_id = ?`,
+            [user_id, user_friend_id, user_friend_id, user_id]
         );
         console.log("HERERERER: ", result.rows);
         return result.rows;

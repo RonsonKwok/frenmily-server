@@ -25,6 +25,7 @@ friendsRoute.post(
     friendsController.addFriend
 );
 friendsRoute.post("/calculateMoney", friendsController.calculateMoney);
+friendsRoute.post("/getAllTxnRecord", friendsController.getAllTxnRecord);
 
 // from BAD project
 
