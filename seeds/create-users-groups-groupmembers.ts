@@ -176,33 +176,43 @@ export async function seed(knex: Knex): Promise<void> {
     await knex.insert([
         {
             name: "Bakery and Breakfast1",
+            goods_categories_picture: "bakery.png"
         },
         {
             name: "Diary Products2",
+            goods_categories_picture: "dairy.png"
         },
         {
             name: "Snacks And Dessert3",
+            goods_categories_picture: "snacks.png"
         },
         {
             name: "Staples4",
+            goods_categories_picture: "staples.png"
         },
         {
             name: "Noodles5",
+            goods_categories_picture: "noodles.png"
         },
         {
             name: "Beverages6",
+            goods_categories_picture: "beverage.png"
         },
         {
             name: "Alcohol7",
+            goods_categories_picture: "alcohol.png"
         },
         {
             name: "Household8",
+            goods_categories_picture: "household.png"
         },
         {
             name: "Personal Care9",
+            goods_categories_picture: "personalcare.png"
         },
         {
             name: "Frozen Food10",
+            goods_categories_picture: "fronzen.png"
         },
 
     ]).into('goods_categories');

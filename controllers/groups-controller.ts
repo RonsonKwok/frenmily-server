@@ -150,9 +150,48 @@ export class GroupsController {
             console.log("groupId: ", groupId, "month :", month, "year: ", year);
 
             // get group members with paid amount
-            let result = await this.groupsService.getBuyingRecord(groupId, month, year);
+            const NUMBER_OF_CATEGORY = 10
+            const CATEGORIES_NAME = [
+                "Bakery and Breakfast",
+                "Diary Products",
+                "Snacks And Dessert",
+                "Staples",
+                "Noodles",
+                "Beverages",
+                "Alcohol",
+                "Household",
+                "Personal Care",
+                "Frozen Food"
+            ]
+            const CATEGORY_ICON = [
+                "bakery.png",
+                "dairy.png",
+                "snacks.png",
+                "staples.png",
+                "noodles.png",
+                "beverage.png",
+                "alcohol.png",
+                "household.png",
+                "personalcare.png",
+                "fronzen.png"
+            ]
 
-            res.json(result);
+
+
+            let categorizedResult: any[] = []
+
+            for (let catId = 1; catId <= NUMBER_OF_CATEGORY; catId++) {
+                let result = await this.groupsService.getBuyingRecord(groupId, catId, month, year);
+
+                categorizedResult.push({
+                    categoryId: catId,
+                    categoryName: CATEGORIES_NAME[catId - 1],
+                    categoryIcon: CATEGORY_ICON[catId - 1],
+                    result: result
+                })
+            }
+            console.log("The categorized result: ", categorizedResult)
+            res.json(categorizedResult);
             return;
 
         } catch (e) {
