@@ -139,5 +139,50 @@ export class GroupsService {
         return result.rows[0].group_name;
     }
 
+    async getBuyingRecord(month: number, year: number): Promise<any> {
+        try {
+            console.log("DATABASE: getBuyingRecord");
+            let result = await this.knex.raw(/*sql*/
+                `
+                select 
+                extract (month from shopping_lists.updated_at) as month,
+                extract (year from shopping_lists.updated_at) as year,
+                groups.id as group_id, 
+                group_name, 
+                carts.goods_id , 
+                goods.name as goods_name, 
+                goods.category_id, 
+                goods.goods_picture, 
+                aeon_price, 
+                dch_price, 
+                jasons_price, 
+                parknshop_price, 
+                wellcome_price, 
+                mannings_price, 
+                watsons_price, 
+                ztore_price, 
+                report_lower_price
+                from groups
+                inner join shopping_lists
+                on shopping_lists.group_id = groups.id
+                inner join carts
+                on carts.id = shopping_lists.cart_id 
+                inner join goods
+                on goods.id = carts.goods_id 
+                where is_completed = true and 
+                is_family_group =true and 
+                extract(month from shopping_lists.updated_at)=? and 
+                extract(year from shopping_lists.updated_at)=?
+                `,
+                [month, year]
+            );
+
+            return result.rows[0];
+        }
+        catch (e) {
+            console.log(e);
+        }
+
+    }
 
 }

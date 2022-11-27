@@ -140,4 +140,25 @@ export class GroupsController {
     //     let finalResult = cardResults.rows
     //     res.json( [finalResult] )
     // }
+
+
+    getGroupBuyingRecord = async (req: express.Request, res: express.Response) => {
+        try {
+            console.log("received request on getGroupBuyingRecord");
+
+            let { month, year } = req.body
+            console.log("month :", month, "year: ", year);
+
+            // get group members with paid amount
+            let result = await this.groupsService.getBuyingRecord(month, year);
+
+            res.json(result);
+            return;
+
+        } catch (e) {
+            console.log(e);
+            res.status(400).send("getGroupBuyingRecord failed");
+            return;
+        }
+    };
 }
