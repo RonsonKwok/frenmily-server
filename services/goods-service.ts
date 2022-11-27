@@ -364,8 +364,12 @@ export class GoodsService {
             if (isCompleted.rows[0].buyer_id == null) {
                 console.log("THIS IS NULL");
                 // can change
-                await this.knex.raw(
-                    `UPDATE shopping_lists  SET is_completed = NOT is_completed, buyer_id = ? where cart_id = ?`,
+                await this.knex.raw(/*sql*/
+                    `UPDATE shopping_lists  
+                    SET is_completed = NOT is_completed, 
+                    updated_at = NOW(), 
+                    buyer_id = ? 
+                    where cart_id = ?`,
                     [user_id, cart_id]
                 );
                 return { isChanged: true, userID: user_id }
