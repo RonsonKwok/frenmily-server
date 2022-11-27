@@ -146,11 +146,11 @@ export class GroupsController {
         try {
             console.log("received request on getGroupBuyingRecord");
 
-            let { month, year } = req.body
-            console.log("month :", month, "year: ", year);
+            let { groupId, month, year } = req.body
+            console.log("groupId: ", groupId, "month :", month, "year: ", year);
 
             // get group members with paid amount
-            let result = await this.groupsService.getBuyingRecord(month, year);
+            let result = await this.groupsService.getBuyingRecord(groupId, month, year);
 
             res.json(result);
             return;

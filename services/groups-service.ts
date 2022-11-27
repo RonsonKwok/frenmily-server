@@ -139,7 +139,7 @@ export class GroupsService {
         return result.rows[0].group_name;
     }
 
-    async getBuyingRecord(month: number, year: number): Promise<any> {
+    async getBuyingRecord(groupId: number, month: number, year: number): Promise<any> {
         try {
             console.log("DATABASE: getBuyingRecord");
             let result = await this.knex.raw(/*sql*/
@@ -169,15 +169,16 @@ export class GroupsService {
                 on carts.id = shopping_lists.cart_id 
                 inner join goods
                 on goods.id = carts.goods_id 
-                where is_completed = true and 
+                where group_id = ? and
+                is_completed = true and 
                 is_family_group =true and 
                 extract(month from shopping_lists.updated_at)=? and 
                 extract(year from shopping_lists.updated_at)=?
                 `,
-                [month, year]
+                [groupId, month, year]
             );
 
-            return result.rows[0];
+            return result.rows;
         }
         catch (e) {
             console.log(e);
