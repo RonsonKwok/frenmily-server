@@ -295,9 +295,11 @@ export class GoodsController {
         try {
             console.log("changeIsCompleted API");
             const cart_id = req.body.cart_id
+            const user_id = req.body.user_id
             console.log("cart_id :", cart_id)
+            console.log("user_id :", user_id)
 
-            const results = await this.goodsService.changeIsCompleted(cart_id);
+            const results = await this.goodsService.changeIsCompleted(cart_id, user_id);
 
 
             res.status(200).json(results);
@@ -307,6 +309,26 @@ export class GoodsController {
         } catch (e) {
             console.log(e);
             res.status(400).send("changeIsCompleted API Fail");
+            return;
+        }
+    };
+
+    clearCart = async (req: Request, res: Response) => {
+        try {
+            console.log("clearCart API");
+            const user_id = req.body.user_id
+            console.log("user_id :", user_id)
+
+            await this.goodsService.clearCart(user_id);
+
+
+            res.status(200)
+
+            return;
+
+        } catch (e) {
+            console.log(e);
+            res.status(400).send("clearCart API Fail");
             return;
         }
     };

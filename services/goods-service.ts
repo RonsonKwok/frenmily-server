@@ -296,12 +296,14 @@ export class GoodsService {
             console.log(items.rows)
             for (let item of items.rows) {
                 await this.knex.raw(
-                    `INSERT into shopping_lists(group_id, cart_id, is_completed, assignee_id)VALUES(?,?, false, ?)`, [groupId, item.id, user_id])
+                    `INSERT into shopping_lists(group_id, cart_id, is_completed, assignee_id, buyer_id)VALUES(?,?, false, ?, null)`, [groupId, item.id, user_id])
                 await this.knex.raw(
                     `UPDATE carts SET is_assigned=true WHERE id = ?`, [item.id])
-
-
             }
+            await this.knex.raw(
+                `UPDATE groups SET updated_at=CURRENT_TIMESTAMP WHERE id=?`,
+                [groupId]
+            );
         }
         catch (e) {
             console.log(e);
@@ -313,26 +315,11 @@ export class GoodsService {
         try {
             console.log("DATABASE: getAssignedItems");
             const result = await this.knex.raw(
-                `select users_id, quantity, cart_id, is_completed, goods_id from shopping_lists inner join carts on shopping_lists.cart_id  = carts.id where shopping_lists.group_id = ?`,
+                `select users_id, quantity, cart_id, is_completed, goods_id, buyer_id from shopping_lists inner join carts on shopping_lists.cart_id  = carts.id where shopping_lists.group_id = ? order by is_completed asc`,
                 [groupId]
             );
             console.log("CP!:", result.rows);
 
-            // let temp = {};
-            // let obj = null;
-            // for (let i = 0; i < result.rows.length; i++) {
-            //     obj = result.rows[i];
-
-            //     if (!temp[obj.goods_id]) {
-            //         temp[obj.goods_id] = obj;
-            //     } else {
-            //         temp[obj.goods_id].quantity += obj.quantity;
-            //     }
-            // }
-            // var combined = [];
-            // for (let prop in temp)
-            //     combined.push(temp[prop]);
-            // console.log("combined:", combined)
             let goodsDetailsArray = []
             for (let item of result.rows) {
                 const goodsDetails = await this.knex.raw(
@@ -342,6 +329,7 @@ export class GoodsService {
                 goodsDetails.rows[0].cart_id = item.cart_id
                 goodsDetails.rows[0].is_completed = item.is_completed
                 goodsDetails.rows[0].assignee_id = item.users_id
+                goodsDetails.rows[0].buyer_id = item.buyer_id
 
                 goodsDetailsArray.push(goodsDetails.rows[0]);
 
@@ -364,17 +352,54 @@ export class GoodsService {
         }
 
     }
-    async changeIsCompleted(cart_id: number): Promise<any> {
+    async changeIsCompleted(cart_id: number, user_id: number): Promise<any> {
         try {
-            console.log("DATABASE: assignToGroup");
-            await this.knex.raw(
-                `UPDATE shopping_lists  SET is_completed = NOT is_completed where cart_id = ?`,
+            // check if cart is completed
+            let isCompleted = await this.knex.raw(
+                `select buyer_id from shopping_lists where cart_id = ?`,
                 [cart_id]
             );
+            console.log("isCompleted :", isCompleted.rows[0].buyer_id)
+
+            if (isCompleted.rows[0].buyer_id == null) {
+                console.log("THIS IS NULL");
+                // can change
+                await this.knex.raw(
+                    `UPDATE shopping_lists  SET is_completed = NOT is_completed, buyer_id = ? where cart_id = ?`,
+                    [user_id, cart_id]
+                );
+                return { isChanged: true, userID: user_id }
+
+            } else if (isCompleted.rows[0].buyer_id == user_id) {
+                // change back to null
+                await this.knex.raw(
+                    `UPDATE shopping_lists  SET is_completed = NOT is_completed, buyer_id = null where cart_id = ?`,
+                    [cart_id]
+                );
+                return { isChanged: true, userID: null }
+            } else if (isCompleted.rows[0].buyer_id != user_id) {
+                // you cannot change
+                return { isChanged: false }
+            }
+
         }
         catch (e) {
             console.log(e);
         }
+    }
+    async clearCart(user_id: number): Promise<any> {
+        try {
+            console.log("DATABASE: clearCart");
+            await this.knex.raw(
+                `delete from carts where is_assigned = false and users_id = ?`,
+                [user_id]
+            );
+
+        }
+        catch (e) {
+            console.log(e);
+        }
+
     }
 
 }
