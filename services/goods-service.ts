@@ -125,7 +125,7 @@ export class GoodsService {
     async getProductByBatchAndCatId(catIds: number[], qtyInOneBatch: number, ItemsToBeSkipped: number): Promise<any> {
         try {
             console.log("DATABASE: getProductByBatchAndCatId");
-            const exploreResults = await this.knex
+            const initExploreResults = await this.knex
                 .select("goods.id", "goods.name as goods_name", "barcode", "category_id", "goods_categories.name as category_name", "goods_picture", "aeon_price", "dch_price", "jasons_price", "parknshop_price", "wellcome_price", "mannings_price", "watsons_price", "ztore_price")
                 .from("goods")
                 .innerJoin('goods_categories', 'goods.category_id', 'goods_categories.id')
@@ -134,9 +134,17 @@ export class GoodsService {
                 .offset(ItemsToBeSkipped)
                 .returning("*")
 
-            // console.log("DB explore results :", exploreResults);
+            // console.log("DB explore results :", initExploreResults);
 
-            const top5Results = await this.knex
+            let exploreResults = initExploreResults.filter(function (e:any ) {
+                if (e.aeon_price == null && e.dch_price  == null && e.jasons_price  == null && e.parknshop_price  == null && e.wellcome_price  == null && e.mannings_price  == null && e.watsons_price  == null && e.ztore_price == null ) {
+                    return false
+                }
+                return true
+            });
+
+
+            const initTop5Results = await this.knex
                 .select("goods.id", "goods.name as goods_name", "barcode", "goods.category_id", "goods_categories.name as category_name", "goods_picture", "aeon_price", "dch_price", "jasons_price", "parknshop_price", "wellcome_price", "mannings_price", "watsons_price", "ztore_price")
                 .count("goods.id")
                 .from("goods")
@@ -145,11 +153,20 @@ export class GoodsService {
                 .whereIn("goods.category_id", catIds)
                 .groupBy("goods.id", "goods_categories.name")
                 .orderBy("count", "desc")
-                .limit(5, { skipBinding: true })
+                .limit(10, { skipBinding: true })
                 .offset(ItemsToBeSkipped)
                 .returning("*")
 
             // console.log("DB top5Results results :", top5Results);
+
+            let init2Top5Results = initTop5Results.filter(function (e:any ) {
+                if (e.aeon_price == null && e.dch_price  == null && e.jasons_price  == null && e.parknshop_price  == null && e.wellcome_price  == null && e.mannings_price  == null && e.watsons_price  == null && e.ztore_price == null ) {
+                    return false
+                }
+                return true
+            });
+
+            let top5Results = init2Top5Results.slice(0, 5)
 
             const results = {
                 exploreResults,

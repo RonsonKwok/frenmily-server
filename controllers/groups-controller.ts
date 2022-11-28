@@ -153,7 +153,7 @@ export class GroupsController {
             const NUMBER_OF_CATEGORY = 10
             const CATEGORIES_NAME = [
                 "Bakery and Breakfast",
-                "Diary Products",
+                "Dairy Products",
                 "Snacks And Dessert",
                 "Staples",
                 "Noodles",
