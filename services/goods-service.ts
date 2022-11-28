@@ -159,12 +159,14 @@ export class GoodsService {
 
             // console.log("DB top5Results results :", top5Results);
 
-            let top5Results = initTop5Results.filter(function (e:any ) {
+            let init2Top5Results = initTop5Results.filter(function (e:any ) {
                 if (e.aeon_price == null && e.dch_price  == null && e.jasons_price  == null && e.parknshop_price  == null && e.wellcome_price  == null && e.mannings_price  == null && e.watsons_price  == null && e.ztore_price == null ) {
                     return false
                 }
                 return true
             });
+
+            let top5Results = init2Top5Results.slice(0, 5)
 
             const results = {
                 exploreResults,
