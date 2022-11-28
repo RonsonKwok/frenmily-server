@@ -176,43 +176,43 @@ export async function seed(knex: Knex): Promise<void> {
     await knex.insert([
         {
             name: "Bakery and Breakfast1",
-            goods_categories_picture: "bakery.png"
+            goods_categories_picture: "https://iconandreceipt.s3.ap-southeast-1.amazonaws.com/bakery.png"
         },
         {
             name: "Diary Products2",
-            goods_categories_picture: "dairy.png"
+            goods_categories_picture: "https://iconandreceipt.s3.ap-southeast-1.amazonaws.com/dairy.png"
         },
         {
             name: "Snacks And Dessert3",
-            goods_categories_picture: "snacks.png"
+            goods_categories_picture: "https://iconandreceipt.s3.ap-southeast-1.amazonaws.com/snacks.png"
         },
         {
             name: "Staples4",
-            goods_categories_picture: "staples.png"
+            goods_categories_picture: "https://iconandreceipt.s3.ap-southeast-1.amazonaws.com/staples.png"
         },
         {
             name: "Noodles5",
-            goods_categories_picture: "noodles.png"
+            goods_categories_picture: "https://iconandreceipt.s3.ap-southeast-1.amazonaws.com/noodles.png"
         },
         {
             name: "Beverages6",
-            goods_categories_picture: "beverage.png"
+            goods_categories_picture: "https://iconandreceipt.s3.ap-southeast-1.amazonaws.com/beverage.png"
         },
         {
             name: "Alcohol7",
-            goods_categories_picture: "alcohol.png"
+            goods_categories_picture: "https://iconandreceipt.s3.ap-southeast-1.amazonaws.com/alcohol.png"
         },
         {
             name: "Household8",
-            goods_categories_picture: "household.png"
+            goods_categories_picture: "https://iconandreceipt.s3.ap-southeast-1.amazonaws.com/household.png"
         },
         {
             name: "Personal Care9",
-            goods_categories_picture: "personalcare.png"
+            goods_categories_picture: "https://iconandreceipt.s3.ap-southeast-1.amazonaws.com/personalcare.png"
         },
         {
             name: "Frozen Food10",
-            goods_categories_picture: "fronzen.png"
+            goods_categories_picture: "https://iconandreceipt.s3.ap-southeast-1.amazonaws.com/fronzen.png"
         },
 
     ]).into('goods_categories');
