@@ -200,4 +200,24 @@ export class GroupsController {
             return;
         }
     };
+
+    deleteItemInShoppingList = async (req: express.Request, res: express.Response) => {
+        try {
+            console.log("deleteItemInShoppingList API");
+
+            let cart_id = req.body.cart_id;
+            console.log("cart_id :", cart_id);
+
+            // delete item from shopping list
+            await this.groupsService.deleteItemInShoppingList(cart_id);
+
+            res.json({ status: "ok" })
+            return;
+        } catch (e) {
+            console.log(e);
+
+            res.status(400).send("deleteItemInShoppingList failed");
+            return;
+        }
+    };
 }

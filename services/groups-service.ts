@@ -190,4 +190,13 @@ export class GroupsService {
 
     }
 
+    async deleteItemInShoppingList(cart_id: number): Promise<any> {
+        await this.knex.raw(
+            `
+            delete from shopping_lists where cart_id = ?
+        `,
+            [cart_id]
+        );
+    }
+
 }
