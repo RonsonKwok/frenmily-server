@@ -16,3 +16,5 @@ groupsRoute.post("/groupBuyingRecord", groupsController.getGroupBuyingRecord);
 // groupsRoute.post("/familyMoneySaved", groupsController.getFamilyMoneySaved);
 // groceriesRoute.get('/category', groceriesController.getByCategory);
 // groceriesRoute.get('/location', groceriesController.getByLocation);
+groupsRoute.post("/deleteItemInShoppingList", groupsController.deleteItemInShoppingList);
+
