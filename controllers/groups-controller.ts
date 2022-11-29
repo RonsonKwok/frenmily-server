@@ -164,16 +164,16 @@ export class GroupsController {
                 "Frozen Food"
             ]
             const CATEGORY_ICON = [
-                "bakery.png",
-                "dairy.png",
-                "snacks.png",
-                "staples.png",
-                "noodles.png",
-                "beverage.png",
-                "alcohol.png",
-                "household.png",
-                "personalcare.png",
-                "fronzen.png"
+                "https://iconandreceipt.s3.ap-southeast-1.amazonaws.com/bakery.png",
+                "https://iconandreceipt.s3.ap-southeast-1.amazonaws.com/dairy.png",
+                "https://iconandreceipt.s3.ap-southeast-1.amazonaws.com/snacks.png",
+                "https://iconandreceipt.s3.ap-southeast-1.amazonaws.com/staples.png",
+                "https://iconandreceipt.s3.ap-southeast-1.amazonaws.com/noodles.png",
+                "https://iconandreceipt.s3.ap-southeast-1.amazonaws.com/beverage.png",
+                "https://iconandreceipt.s3.ap-southeast-1.amazonaws.com/alcohol.png",
+                "https://iconandreceipt.s3.ap-southeast-1.amazonaws.com/household.png",
+                "https://iconandreceipt.s3.ap-southeast-1.amazonaws.com/personalcare.png",
+                "https://iconandreceipt.s3.ap-southeast-1.amazonaws.com/fronzen.png"
             ]
 
 
