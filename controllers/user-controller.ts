@@ -172,9 +172,9 @@ export class UserController {
             const normalMobileNumberLength = 8;
             console.log("server side receives signal");
             console.log("request body: ", req.body);
-            const { username, password, mobile } = req.body;
+            const { username, password, mobile, email } = req.body;
 
-            console.log(username, password, mobile);
+            console.log(username, password, mobile, email);
 
             if (
                 !username ||
@@ -194,7 +194,12 @@ export class UserController {
                 });
                 return;
             }
-
+            if (!email || !email.includes('@') || !email.includes('.')) {
+                res.status(400).json({
+                    message: "Invalid email address format.",
+                });
+                return;
+            }
             let usernameResult = await this.userService.getUserByUsername(
                 username
             );
@@ -220,6 +225,19 @@ export class UserController {
                 });
                 return;
             }
+
+            let emailResult = await this.userService.getUserByEmail(
+                email
+            );
+            let dbUserByEmail: User = emailResult.rows[0];
+            if (dbUserByEmail) {
+                console.log("user found in DB");
+                console.log(dbUserByEmail);
+                res.status(400).json({
+                    message: "This email address is already in use.",
+                });
+                return;
+            }
             const dummyPicArray = [
                 "https://iconandreceipt.s3.ap-southeast-1.amazonaws.com/gorilla.png",
                 "https://iconandreceipt.s3.ap-southeast-1.amazonaws.com/bear+(1).png",
@@ -235,6 +253,7 @@ export class UserController {
                 username,
                 password,
                 mobile,
+                email,
                 randomPic
             );
             let newDBuser: User = result[0];

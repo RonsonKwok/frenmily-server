@@ -78,6 +78,23 @@ export class UserService {
         }
     }
 
+    async getUserByEmail(email: string): Promise<any> {
+        try {
+            let userResult = (
+                await this.knex.raw(/*sql*/`
+                SELECT * 
+                FROM users 
+                WHERE email = ?
+            `,
+                    [email])
+            )
+            return userResult
+
+        } catch (error) {
+            console.log(error)
+        }
+    }
+
     async updateGender(username: string, gender: string) {
         try {
             let userResult = (
@@ -131,7 +148,7 @@ export class UserService {
     }
 
 
-    async createUser(username: string, password: string, mobile: string, randomPic: string): Promise<any> {
+    async createUser(username: string, password: string, mobile: string, email: string, randomPic: string): Promise<any> {
         try {
             let hashedPassword = await hashPassword(password)
 
@@ -140,6 +157,7 @@ export class UserService {
                 username: username,
                 password: hashedPassword,
                 mobile: mobile,
+                email: email,
                 profile_picture: randomPic
             }).into("users").returning('*');
 
