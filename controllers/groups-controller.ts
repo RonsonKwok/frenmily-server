@@ -200,4 +200,23 @@ export class GroupsController {
             return;
         }
     };
+
+    // to get each family's money saved
+    // to get the quantity of family group 
+    // getFamilyMoneySaved = async (req: express.Request, res: express.Response) => {
+    //     try {
+
+    //         res.json({
+    //             message: "fetch family data successfully"
+    //         });
+    //         return;
+
+    //     } catch (e) {
+    //         console.log(e);
+    //         res.status(400).send("getFamilyMoneySaved failed");
+    //         return;
+    //     }
+    // };
+
+
 }
