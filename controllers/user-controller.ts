@@ -244,7 +244,13 @@ export class UserController {
                 "https://iconandreceipt.s3.ap-southeast-1.amazonaws.com/bear.png",
                 "https://iconandreceipt.s3.ap-southeast-1.amazonaws.com/squid.png",
                 "https://iconandreceipt.s3.ap-southeast-1.amazonaws.com/donatello.png",
-                "https://iconandreceipt.s3.ap-southeast-1.amazonaws.com/fox.png"
+                "https://iconandreceipt.s3.ap-southeast-1.amazonaws.com/fox.png",
+                "https://iconandreceipt.s3.ap-southeast-1.amazonaws.com/dog.png",
+                "https://iconandreceipt.s3.ap-southeast-1.amazonaws.com/elephant.png",
+                "https://iconandreceipt.s3.ap-southeast-1.amazonaws.com/goat.png",
+                "https://iconandreceipt.s3.ap-southeast-1.amazonaws.com/hungry.png",
+                "https://iconandreceipt.s3.ap-southeast-1.amazonaws.com/owl-cartoon.png",
+                "https://iconandreceipt.s3.ap-southeast-1.amazonaws.com/rabbit.png"
             ]
 
             const randomPic = dummyPicArray[Math.floor(Math.random() * dummyPicArray.length)];

@@ -29,12 +29,7 @@ export class GroupsController {
                 });
 
                 const dummyPicArray = [
-                    "https://iconandreceipt.s3.ap-southeast-1.amazonaws.com/gorilla.png",
-                    "https://iconandreceipt.s3.ap-southeast-1.amazonaws.com/bear+(1).png",
-                    "https://iconandreceipt.s3.ap-southeast-1.amazonaws.com/bear.png",
-                    "https://iconandreceipt.s3.ap-southeast-1.amazonaws.com/squid.png",
-                    "https://iconandreceipt.s3.ap-southeast-1.amazonaws.com/donatello.png",
-                    "https://iconandreceipt.s3.ap-southeast-1.amazonaws.com/fox.png"
+                    "https://iconandreceipt.s3.ap-southeast-1.amazonaws.com/groupPic.jpeg"
                 ]
 
                 const randomPic = dummyPicArray[Math.floor(Math.random() * dummyPicArray.length)];
