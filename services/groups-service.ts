@@ -6,7 +6,7 @@ export class GroupsService {
     async createGroup(
         groupName: string,
         is_family_group: boolean,
-        profile_picture: string
+        randomPic: string
     ): Promise<any> {
         let id = await this.knex.raw(
             `
@@ -14,7 +14,7 @@ export class GroupsService {
             (group_name, profile_picture, is_family_group) 
             VALUES (?,?,?) RETURNING id
         `,
-            [groupName, profile_picture, is_family_group]
+            [groupName, randomPic, is_family_group]
         );
 
         return id.rows[0].id;

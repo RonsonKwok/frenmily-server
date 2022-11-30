@@ -27,29 +27,23 @@ export class GroupsController {
                 let tempArray = groupMemberId.split(',').map(function (item: any) {
                     return parseInt(item, 10);
                 });
-                console.log("tempArray :", tempArray);
 
-                console.log(userID)
+                const dummyPicArray = [
+                    "https://iconandreceipt.s3.ap-southeast-1.amazonaws.com/gorilla.png",
+                    "https://iconandreceipt.s3.ap-southeast-1.amazonaws.com/bear+(1).png",
+                    "https://iconandreceipt.s3.ap-southeast-1.amazonaws.com/bear.png",
+                    "https://iconandreceipt.s3.ap-southeast-1.amazonaws.com/squid.png",
+                    "https://iconandreceipt.s3.ap-southeast-1.amazonaws.com/donatello.png",
+                    "https://iconandreceipt.s3.ap-southeast-1.amazonaws.com/fox.png"
+                ]
 
-
-                let file: File = Array.isArray(files.image)
-                    ? files.image[0]
-                    : files.image;
-                let fileName = file ? file.newFilename : undefined;
-
-
-                // Upload file to AWS S3
-                const accessPath = await uploadToS3({
-                    Bucket: "iconandreceipt",
-                    Key: `${fileName}`,
-                    Body: fs.readFileSync(file.filepath!),
-                });
+                const randomPic = dummyPicArray[Math.floor(Math.random() * dummyPicArray.length)];
 
                 // insert to table groups
                 let rowID = await this.groupsService.createGroup(
                     groupName,
                     is_family_group,
-                    accessPath
+                    randomPic
                 );
 
                 // insert to table group_member
