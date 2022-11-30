@@ -245,4 +245,46 @@ export class GroupsController {
             return;
         }
     };
+
+    editGroupIcon = async (req: express.Request, res: express.Response) => {
+        try {
+            console.log("editGroupIcon API");
+            const form: IncomingForm = initFormidable();
+
+            form.parse(req, async (err, fields, files) => {
+                req.body = fields;
+                let group_id = req.body.group_id;
+
+                let file: File = Array.isArray(files.image)
+                    ? files.image[0]
+                    : files.image;
+                let fileName = file ? file.newFilename : undefined;
+
+
+                // Upload file to AWS S3
+                const accessPath = await uploadToS3({
+                    Bucket: "iconandreceipt",
+                    Key: `${fileName}`,
+                    Body: fs.readFileSync(file.filepath!),
+                });
+
+                // edit to table groups
+                console.log("group_id :", group_id)
+                console.log("accessPath :", accessPath)
+                await this.groupsService.editGroupIcon(
+                    group_id,
+                    accessPath
+                );
+
+            });
+
+            res.json({
+                message: "Create group successfully",
+            });
+        } catch (e) {
+            console.log(e);
+            res.status(400).send("Create group failed");
+            return;
+        }
+    };
 }

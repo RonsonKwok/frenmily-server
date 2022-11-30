@@ -131,12 +131,13 @@ export class GroupsService {
     async getGroupName(groupID: number): Promise<any> {
         let result = await this.knex.raw(
             `
-            select group_name from "groups" where id = ?
+            select group_name,profile_picture  from "groups" where id = ?
         `,
             [groupID]
         );
+        console.log(result.rows[0])
 
-        return result.rows[0].group_name;
+        return result.rows[0];
     }
 
     async getBuyingRecord(groupId: number, catId: number, month: number, year: number): Promise<any> {
@@ -197,6 +198,20 @@ export class GroupsService {
             delete from shopping_lists where cart_id = ?
         `,
             [cart_id]
+        );
+    }
+
+    async editGroupIcon(
+        group_id: number,
+        profile_picture: string
+    ): Promise<any> {
+        await this.knex.raw(
+            `
+            UPDATE "groups"
+            SET profile_picture=?
+            WHERE id= ?
+        `,
+            [profile_picture, group_id]
         );
     }
 
