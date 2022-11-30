@@ -95,7 +95,7 @@ export async function seed(knex: Knex): Promise<void> {
             password: "$2a$10$KGTupGXAxNDFcNuQr1stzOoTrkA7Dsiokgd0linOBVh2gSS/8hLU6",
             profile_picture: "https://iconandreceipt.s3.ap-southeast-1.amazonaws.com/owl-cartoon.png"
         },
-        
+
         {
             username: "Louie",
             gender: "Male",
@@ -104,7 +104,7 @@ export async function seed(knex: Knex): Promise<void> {
             password: "$2a$10$KGTupGXAxNDFcNuQr1stzOoTrkA7Dsiokgd0linOBVh2gSS/8hLU6",
             profile_picture: "https://iconandreceipt.s3.ap-southeast-1.amazonaws.com/gorilla.png"
         },
-        
+
         {
             username: "Mick",
             gender: "Male",
@@ -120,7 +120,7 @@ export async function seed(knex: Knex): Promise<void> {
             mobile: 90909013,
             password: "$2a$10$KGTupGXAxNDFcNuQr1stzOoTrkA7Dsiokgd0linOBVh2gSS/8hLU6",
             profile_picture: "https://iconandreceipt.s3.ap-southeast-1.amazonaws.com/donatello.png"
-        },        
+        },
         {
             username: "Wayne",
             gender: "Male",
@@ -229,7 +229,7 @@ export async function seed(knex: Knex): Promise<void> {
             group_id: "2",
             user_id: "10",
         },
-        
+
     ]).into('group_member');
 
     await knex.insert([
@@ -38684,15 +38684,15 @@ export async function seed(knex: Knex): Promise<void> {
             user_id: "1",
             goods_id: "1111",
             category_id: 9
-        },        {
+        }, {
             user_id: "1",
             goods_id: "1111",
             category_id: 9
-        },        {
+        }, {
             user_id: "1",
             goods_id: "1111",
             category_id: 9
-        },        {
+        }, {
             user_id: "1",
             goods_id: "1111",
             category_id: 9
@@ -38706,11 +38706,11 @@ export async function seed(knex: Knex): Promise<void> {
             user_id: "1",
             goods_id: "1112",
             category_id: 9
-        },{
+        }, {
             user_id: "1",
             goods_id: "1112",
             category_id: 9
-        },{
+        }, {
             user_id: "1",
             goods_id: "1112",
             category_id: 9
@@ -38719,27 +38719,27 @@ export async function seed(knex: Knex): Promise<void> {
             user_id: "1",
             goods_id: "1113",
             category_id: 9
-        },,
+        },
         {
             user_id: "1",
             goods_id: "1113",
             category_id: 9
-        },,
+        },
         {
             user_id: "1",
             goods_id: "1113",
             category_id: 9
-        },,
+        },
         {
             user_id: "1",
             goods_id: "1112",
             category_id: 9
-        },,
+        },
         {
             user_id: "1",
             goods_id: "1112",
             category_id: 9
-        },,
+        },
         {
             user_id: "1",
             goods_id: "1111",
@@ -38751,24 +38751,24 @@ export async function seed(knex: Knex): Promise<void> {
             category_id: 9
         },
         // Cat 8
-        
+
         {
             user_id: "1",
             goods_id: "1000",
             category_id: 8
-        },        {
+        }, {
             user_id: "1",
             goods_id: "1000",
             category_id: 8
-        },        {
+        }, {
             user_id: "1",
             goods_id: "1000",
             category_id: 8
-        },        {
+        }, {
             user_id: "1",
             goods_id: "1000",
             category_id: 8
-        },        {
+        }, {
             user_id: "1",
             goods_id: "1000",
             category_id: 8
@@ -38990,15 +38990,15 @@ export async function seed(knex: Knex): Promise<void> {
             user_id: "1",
             goods_id: "661",
             category_id: 5
-        },        {
+        }, {
             user_id: "1",
             goods_id: "661",
             category_id: 5
-        },        {
+        }, {
             user_id: "1",
             goods_id: "661",
             category_id: 5
-        },        {
+        }, {
             user_id: "1",
             goods_id: "661",
             category_id: 5
@@ -39134,19 +39134,19 @@ export async function seed(knex: Knex): Promise<void> {
             user_id: "1",
             goods_id: "259",
             category_id: 3
-        },        {
+        }, {
             user_id: "1",
             goods_id: "259",
             category_id: 3
-        },        {
+        }, {
             user_id: "1",
             goods_id: "259",
             category_id: 3
-        },        {
+        }, {
             user_id: "1",
             goods_id: "259",
             category_id: 3
-        },        {
+        }, {
             user_id: "1",
             goods_id: "259",
             category_id: 3
