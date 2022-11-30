@@ -181,8 +181,15 @@ export class GroupsController {
             let categorizedResult: any[] = []
 
             for (let catId = 1; catId <= NUMBER_OF_CATEGORY; catId++) {
-                let result = await this.groupsService.getBuyingRecord(groupId, catId, month, year);
+                let resultBefore = await this.groupsService.getBuyingRecord(groupId, catId, month, year);
 
+
+                let result = resultBefore.filter(function (e: any) {
+                    if (e.aeon_price == null && e.dch_price == null && e.jasons_price == null && e.parknshop_price == null && e.wellcome_price == null && e.mannings_price == null && e.watsons_price == null && e.ztore_price == null) {
+                        return false
+                    }
+                    return true
+                });
                 categorizedResult.push({
                     categoryId: catId,
                     categoryName: CATEGORIES_NAME[catId - 1],
