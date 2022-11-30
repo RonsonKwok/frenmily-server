@@ -1,0 +1,34 @@
+version: '3'
+
+services:
+    frienmily-node-server:
+        # environment: 
+        #     POSTGRES_USER: postgres
+        #     POSTGRES_PASSWORD: postgres
+        #     POSTGRES_DB: frienmily
+        #     POSTGRES_HOST: postgres
+        #     NODE_ENV: production
+        #     PORT: 8080
+        depends_on: 
+            - db
+        # build:
+        #     context: ./
+        #     dockerfile: ./Dockerfile
+        # image: "rk6866/frienmily:server" .   <--- use this in ubuntu
+        image: "rk6866/frienmily:latest"
+        ports:
+            - "8080:8080"
+    db:
+        image: "postgres:13"
+        environment:
+            POSTGRES_USER: postgres
+            POSTGRES_PASSWORD: postgres
+            POSTGRES_DB: frienmily
+        ports:
+            - "5432:5432"
+        volumes:
+            - db-data:/var/lib/postgresql/data
+volumes:
+    db-data:
+        external: true
+        name: frienmily-db-data
