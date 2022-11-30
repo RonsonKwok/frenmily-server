@@ -102,7 +102,9 @@ const grantExpress = grant.express({
 app.use(grantExpress as express.RequestHandler);
 
 fs.mkdirSync(uploadDir, { recursive: true });
-
+app.get('/ping',(_,res)=>{
+    res.json('Server started')
+})
 app.use("/user", userRoutes);
 app.use("/groups", groupsRoute);
 app.use("/friends", friendsRoute);
