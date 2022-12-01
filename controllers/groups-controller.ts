@@ -276,4 +276,33 @@ export class GroupsController {
             return;
         }
     };
+
+    deleteEmptyGroup = async (req: express.Request, res: express.Response) => {
+        try {
+            console.log("deleteGroup API");
+            let groupId = req.body.groupID;
+            console.log("groupId:", groupId)
+            let getGroupResult = await this.groupsService.getDeletableGroups(groupId);
+            console.log(">>>>>>>>> find deletable groups result: ", getGroupResult)
+
+            if (getGroupResult.length > 0) {
+                res.status(400).json({
+                    message: "This group cannot be deleted"
+                })
+                return
+            }
+
+            let deleteGroupResult = await this.groupsService.deleteGroup(groupId)
+            console.log("deleteGroupResult: ", deleteGroupResult)
+            res.status(200).json({
+                message: "This group is deleted"
+            });
+
+
+        } catch (e) {
+            console.log(e);
+            res.status(400).send("Delete group failed");
+            return;
+        }
+    };
 }

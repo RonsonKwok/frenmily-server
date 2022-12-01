@@ -205,14 +205,99 @@ export class GroupsService {
         group_id: number,
         profile_picture: string
     ): Promise<any> {
-        await this.knex.raw(
-            `
-            UPDATE "groups"
-            SET profile_picture=?
-            WHERE id= ?
-        `,
-            [profile_picture, group_id]
-        );
+        try {
+            await this.knex.raw(
+                `
+                UPDATE "groups"
+                SET profile_picture=?
+                WHERE id= ?
+            `,
+                [profile_picture, group_id]
+            );
+
+        } catch (err) {
+            console.log(err)
+        }
+
     }
 
+
+    async getDeletableGroups(groupId: number): Promise<any> {
+        try {
+            let result = await this.knex.raw(/*sql*/
+                `
+                select * 
+                from groups
+                inner join shopping_lists
+                on groups.id = shopping_lists.group_id 
+                inner join paid_records
+                on paid_records.group_id = groups.id
+                where groups.id = ?
+                
+            `,
+                [groupId]
+
+            )
+            return result.rows
+
+
+        } catch (err) {
+            console.log(err);
+        }
+
+    }
+
+
+    async deleteGroup(groupId: number): Promise<any> {
+        try {
+            let result1 = await this.knex.raw(/*sql*/
+                `
+                delete from shopping_lists 
+                where group_id = ?
+                `,
+                [groupId]
+            )
+
+            let result2 = await this.knex.raw(/*sql*/
+                `
+                delete from paid_records  
+                where group_id = ?
+                `,
+                [groupId]
+            )
+            let result3 = await this.knex.raw(/*sql*/
+                `
+                delete from group_member 
+                where group_id = ?
+                `,
+                [groupId]
+            )
+            let result4 = await this.knex.raw(/*sql*/
+                `
+                delete from groups 
+                where id = ?
+                `,
+                [groupId]
+            )
+
+
+            return {
+                result1,
+                result2,
+                result3,
+                result4,
+            }
+
+
+
+
+
+
+
+
+        } catch (err) {
+            console.log(err);
+        }
+
+    }
 }
