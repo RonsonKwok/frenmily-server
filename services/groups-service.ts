@@ -224,21 +224,37 @@ export class GroupsService {
 
     async getDeletableGroups(groupId: number): Promise<any> {
         try {
-            let result = await this.knex.raw(/*sql*/
+            let result1 = await this.knex.raw(/*sql*/
                 `
                 select * 
                 from groups
                 inner join shopping_lists
                 on groups.id = shopping_lists.group_id 
-                inner join paid_records
-                on paid_records.group_id = groups.id
                 where groups.id = ?
-                
             `,
                 [groupId]
 
             )
-            return result.rows
+
+            let result2 = await this.knex.raw(/*sql*/
+                `
+                select * 
+                from groups
+                inner join paid_records
+                on paid_records.group_id = groups.id
+                where groups.id = ?
+            `,
+                [groupId]
+
+            )
+
+            let shoppingListResult = result1.rows
+            let receiptResult = result2.rows
+
+            return {
+                shoppingListResult,
+                receiptResult
+            }
 
 
         } catch (err) {
