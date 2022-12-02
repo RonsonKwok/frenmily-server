@@ -112,7 +112,7 @@ export class GoodsController {
         try {
 
             const id = req.body.catIds
-            // console.log(id);
+            console.log(id);
 
             // console.log("@@@@@@ Receipt Request of getProductByBatch");
             // console.log("req.body=", req.body)
