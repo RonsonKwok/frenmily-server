@@ -7,6 +7,7 @@ export const uploadDir = "uploads";
 import IncomingForm from "formidable/Formidable";
 
 const initFormidable = (): IncomingForm => {
+    console.log("upload.ts CP1")
     let param: Partial<Options> = {
         keepExtensions: true,
         maxFiles: 1,
@@ -16,7 +17,9 @@ const initFormidable = (): IncomingForm => {
             return part.mimetype?.startsWith("image/") || false;
         },
     };
+    console.log("upload.ts CP2")
     const form = new formidable.IncomingForm(param);
+    console.log("upload.ts CP3")
     return form;
 };
 
