@@ -153,7 +153,7 @@ export class GoodsService {
                 .whereIn("goods.category_id", catIds)
                 .groupBy("goods.id", "goods_categories.name")
                 .orderBy("count", "desc")
-                .limit(10, { skipBinding: true })
+                .limit(20, { skipBinding: true })
                 // .offset(ItemsToBeSkipped)
                 .returning("*")
 
@@ -166,7 +166,7 @@ export class GoodsService {
                 return true
             });
 
-            let top5Results = init2Top5Results.slice(0, 5)
+            let top5Results = init2Top5Results.slice(0, 9)
 
             const results = {
                 exploreResults,

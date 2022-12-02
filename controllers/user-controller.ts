@@ -275,7 +275,7 @@ export class UserController {
     updateGender = async (req: express.Request, res: express.Response) => {
         try {
             const { username, gender } = req.body;
-            console.log(username, gender);
+            console.log("info received at server: ", username, gender);
 
             await this.userService.updateGender(username, gender);
 
