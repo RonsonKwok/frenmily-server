@@ -14,8 +14,9 @@ services:
         # build:
         #     context: ./
         #     dockerfile: ./Dockerfile
-        # image: "rk6866/frienmily:server" .   <--- use this in ubuntu
-        image: "rk6866/frienmily:latest"
+        image: "rk6866/frienmily:latest" 
+        #   <--- use this in ubuntu
+        # image: "rk6866/frienmily:latest"
         ports:
             - "8080:8080"
     db:

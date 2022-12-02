@@ -1,4 +1,6 @@
 import { S3 } from 'aws-sdk'
+import dotenv from 'dotenv'
+dotenv.config()
 
 export const uploadToS3 = async (params: {
 	Bucket: string
