@@ -8,10 +8,10 @@
         "jasons_price": null,
         "mannings_price": "23",
         "watsons_price": "23",
-        "parknshop_price": 0,
+        "parknshop_price": null,
         "wellcome_price": null,
         "ztore_price": null,
-        "goods_picture": "https://online-price-watch.consumer.org.hk/opw/photoRedirect/P000000175/WELLCOME/?url=https%3A%2F%2Fwww.wellcome.com.hk%2Fwd2%2Fuserfile%2Fwd%2Fpdt%2Fall%2FPL104723.jpg"
+        "goods_picture": "https://api.watsons.com.hk/medias/COLGATE-ADVANCED-WHITENING-160G-156871.jpg?context=bWFzdGVyfHd0Y2hrL2ltYWdlc3w5NjEyNnxpbWFnZS9qcGVnfGhjMy9oZmYvMTA1NTEzODkwMjgzODIvQ09MR0FURSBBRFZBTkNFRCBXSElURU5JTkcgMTYwRy0xNTY4NzEuanBnfGNlMzFkMWI0NjBkODgyZmEyNTliZWVmNzZjZTdiYWFmODgxOTlhMWZhYzFiOTdmNGRmMjJiNDRhNTEzZjI5YzE"
     },
     {
         "category_id": 9,
@@ -22,10 +22,10 @@
         "jasons_price": 0,
         "mannings_price": null,
         "watsons_price": "23.9",
-        "parknshop_price": 0,
+        "parknshop_price": null,
         "wellcome_price": "24",
         "ztore_price": null,
-        "goods_picture": "https://online-price-watch.consumer.org.hk/opw/photoRedirect/P000000221/AEON/?url=https%3A%2F%2Fwww.aeoncity.com.hk%2Fmedia%2Fcatalog%2Fproduct%2Fplaceholder%2Fdefault%2Faeon_place.jpeg"
+        "goods_picture": "https://api.watsons.com.hk/medias/Colgate-Dental-Cream-250G-Great-Regular-Flavor-109413.jpg?context=bWFzdGVyfHd0Y2hrL2ltYWdlc3wyNDQ5MzV8aW1hZ2UvanBlZ3xoOGQvaDk1LzEwNTU2MDQxNTYwMDk0L0NvbGdhdGUgRGVudGFsIENyZWFtIDI1MEcgR3JlYXQgUmVndWxhciBGbGF2b3ItMTA5NDEzLmpwZ3xkYjA0MmI0MmFiY2RhZjBkYjc0YmRjMDU5Yjk3YzgzY2FlMjVkNmI1YmNkMzNlZTg2YTM3OWRjNmVkMjE3N2Rk"
     },
     {
         "category_id": 9,
@@ -64,10 +64,10 @@
         "jasons_price": null,
         "mannings_price": null,
         "watsons_price": "23.9",
-        "parknshop_price": 0,
+        "parknshop_price": null,
         "wellcome_price": null,
         "ztore_price": null,
-        "goods_picture": "https://online-price-watch.consumer.org.hk/opw/photoRedirect/P000002124/AEON/?url=https%3A%2F%2Fwww.aeoncity.com.hk%2Fmedia%2Fcatalog%2Fproduct%2Fplaceholder%2Fdefault%2Faeon_place.jpeg"
+        "goods_picture": "https://api.watsons.com.hk/medias/Colgate-Dental-Cream-250G-Icy-Cool-Mint-110192.jpg?context=bWFzdGVyfHd0Y2hrL2ltYWdlc3wyMzY5OTR8aW1hZ2UvanBlZ3xoMTMvaDhmLzEwNTU2MDQxMzk2MjU0L0NvbGdhdGUgRGVudGFsIENyZWFtICAyNTBHIEljeSBDb29sIE1pbnQtMTEwMTkyLmpwZ3w0Njc0OGI0YzhiZDIzM2E3MmYyMzg2NzA4MGU2MmM2ZTg4MWE4NzJjYzVhN2ZkNjI4ZDU5OTExYTFmZDAwZDc5"
     },
     {
         "category_id": 9,
@@ -78,10 +78,10 @@
         "jasons_price": "42",
         "mannings_price": null,
         "watsons_price": null,
-        "parknshop_price": 0,
+        "parknshop_price": null,
         "wellcome_price": "42",
         "ztore_price": null,
-        "goods_picture": "https://online-price-watch.consumer.org.hk/opw/photoRedirect/P000000916/AEON/?url=https%3A%2F%2Fwww.aeoncity.com.hk%2Fmedia%2Fcatalog%2Fproduct%2Fplaceholder%2Fdefault%2Faeon_place.jpeg"
+        "goods_picture": "https://img.dmallcdn.com/20210518/7f74e7ff-797b-4ca0-bfcb-233851d872cc_800x800H.webp"
     },
     {
         "category_id": 9,
@@ -120,7 +120,7 @@
         "jasons_price": null,
         "mannings_price": 0,
         "watsons_price": "23",
-        "parknshop_price": 0,
+        "parknshop_price": null,
         "wellcome_price": null,
         "ztore_price": null,
         "goods_picture": "https://online-price-watch.consumer.org.hk/opw/photoRedirect/P000000953/WATSONS/?url=https%3A%2F%2Fapi.watsons.com.hk%2Fmedias%2FColgate-Triple-Action-Toothpaste-200g-127324.jpg%3Fcontext%3DbWFzdGVyfHd0Y2hrL2ltYWdlc3w1NjM1OXxpbWFnZS9qcGVnfGg1Yy9oYTMvMTA1NTQ2OTA1NjgyMjIvQ29sZ2F0ZSBUcmlwbGUgQWN0aW9uIFRvb3RocGFzdGUgMjAwZy0xMjczMjQuanBnfDU0NjU5MDg1NzNiMzk4MjRlMDBiZWUxNzdjODhkN2JkYTc2YTU1OWIxOTBhMjVhOThlMmIzZGNiYjgxMDU5N2Y"
@@ -204,7 +204,7 @@
         "jasons_price": "21",
         "mannings_price": null,
         "watsons_price": "20.5",
-        "parknshop_price": 0,
+        "parknshop_price": null,
         "wellcome_price": "21",
         "ztore_price": null,
         "goods_picture": "https://online-price-watch.consumer.org.hk/opw/photoRedirect/P000000226/WELLCOME/?url=https%3A%2F%2Fimg.dmallcdn.com%2F20210518%2Fc419095e-785d-4921-932f-96bdd5e2c302_800x800H.webp"
@@ -274,7 +274,7 @@
         "jasons_price": null,
         "mannings_price": "33.9",
         "watsons_price": "33.9",
-        "parknshop_price": 0,
+        "parknshop_price": null,
         "wellcome_price": null,
         "ztore_price": null,
         "goods_picture": "https://online-price-watch.consumer.org.hk/opw/photoRedirect/P000002687/PARKNSHOP/?url=https%3A%2F%2Fapi.parknshop.com%2Fmedias%2FGUM-PROTECTION-TP-EXTRA-FRESH-266098.jpg%3Fcontext%3DbWFzdGVyfHBuc2hrL2ltYWdlc3wxMjI1NTV8aW1hZ2UvanBlZ3xoOGQvaDMzLzkzMjAzNDc2OTcxODIvR1VNIFBST1RFQ1RJT04gVFAgRVhUUkEgRlJFU0gtMjY2MDk4LmpwZ3w4ODM5MzNlZjdkZWRiOGQ3ODUyMTNlNDQwMDdjNWFhMmNlY2M3OTk2OTQ1YmNiZDhiMGZkNmFkNzAwYzkyYzRk"
@@ -400,7 +400,7 @@
         "jasons_price": null,
         "mannings_price": "79",
         "watsons_price": "89",
-        "parknshop_price": 0,
+        "parknshop_price": null,
         "wellcome_price": null,
         "ztore_price": null,
         "goods_picture": "https://online-price-watch.consumer.org.hk/opw/photoRedirect/P000002714/PARKNSHOP/?url=https%3A%2F%2Fapi.parknshop.com%2Fmedias%2FBetadine-Antiseptic-Gargle-Mouthwash-250ml-294145.jpg%3Fcontext%3DbWFzdGVyfHBuc2hrL2ltYWdlc3wzODAzNjZ8aW1hZ2UvanBlZ3xoNTUvaDBjLzkzMTg5MDM2NDQxOTAvQmV0YWRpbmUgQW50aXNlcHRpYyBHYXJnbGUgTW91dGh3YXNoIDI1MG1sLTI5NDE0NS5qcGd8NTZhNjZhN2QyYTIzYzNjZWE0NmRjMTA0N2QwZGE0YmYyNGE1NzZmYmI2NThhZTM1ZTE5YjA1YzQzZmVmNWMxMg"
@@ -414,7 +414,7 @@
         "jasons_price": 0,
         "mannings_price": null,
         "watsons_price": "42",
-        "parknshop_price": 0,
+        "parknshop_price": null,
         "wellcome_price": "57",
         "ztore_price": null,
         "goods_picture": "https://online-price-watch.consumer.org.hk/opw/photoRedirect/P000000979/PARKNSHOP/?url=https%3A%2F%2Fapi.parknshop.com%2Fmedias%2FListerine-Original-1L-169261.jpg%3Fcontext%3DbWFzdGVyfHBuc2hrL2ltYWdlc3w5MzIwNXxpbWFnZS9qcGVnfGgxNi9oZjMvOTMxODY0NjU0NjQ2Mi9MaXN0ZXJpbmUgT3JpZ2luYWwgIDFMLTE2OTI2MS5qcGd8YmU4ZDAxNzAxYTA0ODkzOWRkMTJmNmRhYmUyM2Y5MjBkZDkyMWY0NDcwYzcyYWVlNmJjZjk1NjBmNDM0NjA4Mw"
@@ -473,7 +473,7 @@
         "parknshop_price": "32.9",
         "wellcome_price": null,
         "ztore_price": null,
-        "goods_picture": "https://online-price-watch.consumer.org.hk/opw/photoRedirect/P000002782/WELLCOME/?url=https%3A%2F%2Fwww.wellcome.com.hk%2Fwd2%2Fuserfile%2Fwd%2Fpdt%2Fall%2FPL362141.jpg"
+        "goods_picture": "https://api.watsons.com.hk/medias/zoom-front-267135.jpg?context=bWFzdGVyfGltYWdlc3wyMjQ3MjJ8aW1hZ2UvanBlZ3xoZGYvaDliLzEwNjMxNjUzNzg1NjMwL1dUQ0hLLTI2NzEzNS1mcm9udC5qcGd8ZjQzNTIwODg4YzVmNjVhMTVjMzA4OWRhNDBjZTc2NWZiZWJkODg4Y2MyMWViOTdhNWMzNjI2M2Q0Njk0NDA5ZQ"
     },
     {
         "category_id": 9,
@@ -568,7 +568,7 @@
         "jasons_price": "119",
         "mannings_price": "119",
         "watsons_price": "119",
-        "parknshop_price": 0,
+        "parknshop_price": null,
         "wellcome_price": 0,
         "ztore_price": null,
         "goods_picture": "https://online-price-watch.consumer.org.hk/opw/photoRedirect/P000002822/WELLCOME/?url=https%3A%2F%2Fimg.dmallcdn.com%2F20210608%2F7c161a20-3af0-4d3b-89dd-25ef760fd5aa_800x800H.webp"
@@ -820,10 +820,10 @@
         "jasons_price": null,
         "mannings_price": "28.9",
         "watsons_price": "28.9",
-        "parknshop_price": 0,
+        "parknshop_price": null,
         "wellcome_price": null,
         "ztore_price": null,
-        "goods_picture": "https://online-price-watch.consumer.org.hk/opw/photoRedirect/P000003140/WELLCOME/?url=https%3A%2F%2Fwww.wellcome.com.hk%2Fwd2%2Fuserfile%2Fwd%2Fpdt%2Fall%2FPL373780.jpg"
+        "goods_picture": "https://api.watsons.com.hk/medias/Kotex-Comfort-Soft-Air-24cm-16s-299693.jpg?context=bWFzdGVyfHd0Y2hrL2ltYWdlc3w1MjQwMjF8aW1hZ2UvanBlZ3xoY2UvaDQ1LzEwNTYxMzY3MTEzNzU4L0tvdGV4IENvbWZvcnQgU29mdCBBaXIgMjRjbSAxNnMtMjk5NjkzLmpwZ3w4MWM1MjQ3NzA0ZWNmZTE4NmQ2NDEzMjMxZmIxNDIxOTBjMmI5MTU1Mjk5ZDg3ZDU3NWNkNTZlM2Q0MGQ0MTQz"
     },
     {
         "category_id": 9,
@@ -876,7 +876,7 @@
         "jasons_price": "24",
         "mannings_price": 0,
         "watsons_price": "0",
-        "parknshop_price": 0,
+        "parknshop_price": null,
         "wellcome_price": "23",
         "ztore_price": null,
         "goods_picture": "https://online-price-watch.consumer.org.hk/opw/photoRedirect/P000003339/WELLCOME/?url=https%3A%2F%2Fimg.dmallcdn.com%2F20210318%2F7befd369-1db1-4537-8275-61486501c6b2_800x800H.webp"
@@ -974,10 +974,10 @@
         "jasons_price": null,
         "mannings_price": null,
         "watsons_price": "28.9",
-        "parknshop_price": 0,
+        "parknshop_price": null,
         "wellcome_price": null,
         "ztore_price": null,
-        "goods_picture": "https://online-price-watch.consumer.org.hk/opw/photoRedirect/P000003144/WELLCOME/?url=https%3A%2F%2Fwww.wellcome.com.hk%2Fwd2%2Fuserfile%2Fwd%2Fpdt%2Fall%2FPL132813.jpg"
+        "goods_picture": "https://api.watsons.com.hk/medias/White-Ultrathin-Wing-Long-28cm-16s-126187.jpg?context=bWFzdGVyfHd0Y2hrL2ltYWdlc3w1MzkzNzh8aW1hZ2UvanBlZ3xoZjkvaGEwLzEwNTU0NjkzNzc5NDg2L1doaXRlIFVsdHJhdGhpbiBXaW5nIExvbmcgMjhjbSAxNnMtMTI2MTg3LmpwZ3xiMjk1NThlM2NjM2Q3ZjVjMGUwMWIxMzc4MjM2NmQ0NTVmZTU1ZDA0YWZjYWE0MDU5NzhkM2QzNzE5NTA2NTkx"
     },
     {
         "category_id": 9,
@@ -1002,7 +1002,7 @@
         "jasons_price": null,
         "mannings_price": "39.9",
         "watsons_price": "39.9",
-        "parknshop_price": 0,
+        "parknshop_price": null,
         "wellcome_price": null,
         "ztore_price": null,
         "goods_picture": "https://online-price-watch.consumer.org.hk/opw/photoRedirect/P000002972/PARKNSHOP/?url=https%3A%2F%2Fapi.parknshop.com%2Fmedias%2FWhisepr-Radiant-27cm-9s-287458.jpg%3Fcontext%3DbWFzdGVyfHBuc2hrL2ltYWdlc3wxMzg0Nzd8aW1hZ2UvanBlZ3xoNTAvaGI2LzkzMjA4MTY0MTA2NTQvV2hpc2VwciBSYWRpYW50IDI3Y20gOXMtMjg3NDU4LmpwZ3w2YzJmNDNjNzEyZjE3ZTE5ZGQ0NTYzOTQzMGIwNTE0NmIwMDdiOTQ2NzNlOTg0NzFjODU5NmE3MTYyNzUzMWU5"
@@ -1030,7 +1030,7 @@
         "jasons_price": "16",
         "mannings_price": 0,
         "watsons_price": "14.9",
-        "parknshop_price": 0,
+        "parknshop_price": null,
         "wellcome_price": "15",
         "ztore_price": null,
         "goods_picture": "https://online-price-watch.consumer.org.hk/opw/photoRedirect/P000001842/WELLCOME/?url=https%3A%2F%2Fimg.dmallcdn.com%2F20210428%2F5f63b9ae-6b48-471a-b2c0-f243bed1483b_800x800H.webp"
@@ -1072,7 +1072,7 @@
         "jasons_price": null,
         "mannings_price": null,
         "watsons_price": "0",
-        "parknshop_price": 0,
+        "parknshop_price": null,
         "wellcome_price": null,
         "ztore_price": null,
         "goods_picture": "https://online-price-watch.consumer.org.hk/opw/photoRedirect/P000000054/AEON/?url=https%3A%2F%2Fwww.aeoncity.com.hk%2Fmedia%2Fcatalog%2Fproduct%2Fcache%2F5fb3231cdf628c976ea6d09fdebd8f77%2F0%2F0%2F0026358031654938412.jpg"
@@ -1296,7 +1296,7 @@
         "jasons_price": 0,
         "mannings_price": null,
         "watsons_price": "79",
-        "parknshop_price": 0,
+        "parknshop_price": null,
         "wellcome_price": "69",
         "ztore_price": null,
         "goods_picture": "https://online-price-watch.consumer.org.hk/opw/photoRedirect/P000002983/WELLCOME/?url=https%3A%2F%2Fimg.dmallcdn.com%2F20200930%2Fbf00a7ad-0f80-4813-a146-c08221205fbd_800x800H.webp"
@@ -1380,7 +1380,7 @@
         "jasons_price": null,
         "mannings_price": "55",
         "watsons_price": "64.9",
-        "parknshop_price": 0,
+        "parknshop_price": null,
         "wellcome_price": null,
         "ztore_price": null,
         "goods_picture": "https://online-price-watch.consumer.org.hk/opw/photoRedirect/P000001757/PARKNSHOP/?url=https%3A%2F%2Fapi.parknshop.com%2Fmedias%2FCLEANSING-ANIT-DANDRUFF-SHAMPOO-201940.jpg%3Fcontext%3DbWFzdGVyfHBuc2hrL2ltYWdlc3wxMzI4ODl8aW1hZ2UvanBlZ3xoNjMvaDFmLzkzMTkwMDQ4OTczMTAvQ0xFQU5TSU5HIEFOSVQgREFORFJVRkYgU0hBTVBPTy0yMDE5NDAuanBnfGQ2YWZkNzRmM2Q0ZjZiNmQyMDJhZmQ2OTk2OTFlNzVlZWM2M2QwMzk1YjRhNWMxMzEzYzY2NDViMjIyOTJlNzY"
@@ -1464,7 +1464,7 @@
         "jasons_price": null,
         "mannings_price": null,
         "watsons_price": "49.9",
-        "parknshop_price": 0,
+        "parknshop_price": null,
         "wellcome_price": null,
         "ztore_price": null,
         "goods_picture": "https://online-price-watch.consumer.org.hk/opw/photoRedirect/P000002977/WATSONS/?url=https%3A%2F%2Fapi.watsons.com.hk%2Fmedias%2FTOTAL-REPAIR-5-SHAMPOO-450ML-389502.jpg%3Fcontext%3DbWFzdGVyfHd0Y2hrL2ltYWdlc3wyNDY2NDV8aW1hZ2UvanBlZ3xoNDYvaGYxLzEwNTUyMDcwMzA3ODcwL1RPVEFMIFJFUEFJUiA1IFNIQU1QT08gNDUwTUwtMzg5NTAyLmpwZ3xmMjFlM2YwOTc5NDg4Y2Y2YTUzYTQwZDUxZTIyNTRiMDgxZTVkNmE5Y2M4MWI0OGI0Njk4NmYwNTBkNzg4MzE5"
@@ -1520,7 +1520,7 @@
         "jasons_price": 0,
         "mannings_price": 0,
         "watsons_price": "62.9",
-        "parknshop_price": 0,
+        "parknshop_price": null,
         "wellcome_price": "48",
         "ztore_price": null,
         "goods_picture": "https://online-price-watch.consumer.org.hk/opw/photoRedirect/P000002986/WELLCOME/?url=https%3A%2F%2Fimg.dmallcdn.com%2F20200430%2F2f5309e6-dbb1-46ed-a328-ead8cb7aaa7d_800x800H.webp"
@@ -1534,7 +1534,7 @@
         "jasons_price": 0,
         "mannings_price": 0,
         "watsons_price": "0",
-        "parknshop_price": 0,
+        "parknshop_price": null,
         "wellcome_price": 0,
         "ztore_price": null,
         "goods_picture": "https://online-price-watch.consumer.org.hk/opw/photoRedirect/P000003241/WELLCOME/?url=https%3A%2F%2Fimg.dmallcdn.com%2F20200413%2F3cd27872-bbeb-4ad1-a0e5-1bb729da06f8_800x800H.webp"
@@ -1590,7 +1590,7 @@
         "jasons_price": null,
         "mannings_price": null,
         "watsons_price": "79.9",
-        "parknshop_price": 0,
+        "parknshop_price": null,
         "wellcome_price": null,
         "ztore_price": null,
         "goods_picture": "https://online-price-watch.consumer.org.hk/opw/photoRedirect/P000002982/AEON/?url=https%3A%2F%2Fwww.aeoncity.com.hk%2Fmedia%2Fcatalog%2Fproduct%2Fcache%2F5fb3231cdf628c976ea6d09fdebd8f77%2F0%2F0%2F0015141991654711059.jpg"
@@ -1758,7 +1758,7 @@
         "jasons_price": "77",
         "mannings_price": 0,
         "watsons_price": "0",
-        "parknshop_price": 0,
+        "parknshop_price": null,
         "wellcome_price": "75",
         "ztore_price": null,
         "goods_picture": "https://online-price-watch.consumer.org.hk/opw/photoRedirect/P000004112/PARKNSHOP/?url=https%3A%2F%2Fapi.parknshop.com%2Fmedias%2FQuench-Intensive-Shot-Mask-for-Normal-Hair-801160.jpg%3Fcontext%3DbWFzdGVyfHBuc2hrL2ltYWdlc3wxMTIwNTV8aW1hZ2UvanBlZ3xoMzQvaGMxLzkzMjIzMDg0Njg3NjYvUXVlbmNoIEludGVuc2l2ZSBTaG90IE1hc2sgZm9yIE5vcm1hbCBIYWlyLTgwMTE2MC5qcGd8YzYwOTYyMWZjNjI2NmYwZWM5MTA3YTgzNDljNTE0MGJhYWUyMmU3YWVlNDk0YTg4YWY4NWJiZjRjYTEyNmNlZg"
@@ -1828,7 +1828,7 @@
         "jasons_price": "34",
         "mannings_price": "32.9",
         "watsons_price": null,
-        "parknshop_price": 0,
+        "parknshop_price": null,
         "wellcome_price": "32.9",
         "ztore_price": null,
         "goods_picture": "https://online-price-watch.consumer.org.hk/opw/photoRedirect/P000002600/PARKNSHOP/?url=https%3A%2F%2Fapi.parknshop.com%2Fmedias%2FLONG-KEEP-GEL-SH-189921.jpg%3Fcontext%3DbWFzdGVyfHBuc2hrL2ltYWdlc3wxNjQzNzd8aW1hZ2UvanBlZ3xoMjUvaGZkLzkzMTg1NTI4Mjk5ODIvTE9ORyBLRUVQIEdFTCBTSC0xODk5MjEuanBnfDRmODNiNjE2ZjhjZWRhYjljNzllOGYzNDUwN2I0MjhmYzkwZjAxNzgyMmZjMmFkYmI4ZmFiZjJkODJiMjNlZjU"
@@ -1842,7 +1842,7 @@
         "jasons_price": "41",
         "mannings_price": "39.9",
         "watsons_price": null,
-        "parknshop_price": 0,
+        "parknshop_price": null,
         "wellcome_price": "40",
         "ztore_price": null,
         "goods_picture": "https://online-price-watch.consumer.org.hk/opw/photoRedirect/P000002598/JASONS/?url=https%3A%2F%2Fimg.dmallcdn.com%2F20200501%2F464a5069-f541-4b27-91bd-f7a186d4e737_800x800H.webp"
@@ -1954,7 +1954,7 @@
         "jasons_price": null,
         "mannings_price": null,
         "watsons_price": "42.9",
-        "parknshop_price": 0,
+        "parknshop_price": null,
         "wellcome_price": null,
         "ztore_price": null,
         "goods_picture": "https://online-price-watch.consumer.org.hk/opw/photoRedirect/P000002805/AEON/?url=https%3A%2F%2Fwww.aeoncity.com.hk%2Fmedia%2Fcatalog%2Fproduct%2Fcache%2F5fb3231cdf628c976ea6d09fdebd8f77%2F0%2F0%2F0033260481654940371.jpg"
@@ -1982,7 +1982,7 @@
         "jasons_price": null,
         "mannings_price": "40.9",
         "watsons_price": "40.9",
-        "parknshop_price": 0,
+        "parknshop_price": null,
         "wellcome_price": null,
         "ztore_price": null,
         "goods_picture": "https://online-price-watch.consumer.org.hk/opw/photoRedirect/P000003360/WELLCOME/?url=https%3A%2F%2Fwww.wellcome.com.hk%2Fwd2%2Fuserfile%2Fwd%2Fpdt%2Fall%2FPL382620.jpg"
@@ -2066,7 +2066,7 @@
         "jasons_price": 0,
         "mannings_price": null,
         "watsons_price": null,
-        "parknshop_price": 0,
+        "parknshop_price": null,
         "wellcome_price": "24",
         "ztore_price": null,
         "goods_picture": "https://online-price-watch.consumer.org.hk/opw/photoRedirect/P000002793/JASONS/?url=https%3A%2F%2Fimg.dmallcdn.com%2F20200501%2F3bccf22f-ed61-408e-a8ac-02b527bbabcd_800x800H.webp"
@@ -2080,7 +2080,7 @@
         "jasons_price": "30",
         "mannings_price": null,
         "watsons_price": null,
-        "parknshop_price": 0,
+        "parknshop_price": null,
         "wellcome_price": "30",
         "ztore_price": null,
         "goods_picture": "https://online-price-watch.consumer.org.hk/opw/photoRedirect/P000001595/WELLCOME/?url=https%3A%2F%2Fimg.dmallcdn.com%2F20201019%2F5d1eca35-d693-4ecf-864d-651864b1f055_800x800H.webp"
@@ -2332,7 +2332,7 @@
         "jasons_price": null,
         "mannings_price": null,
         "watsons_price": "18",
-        "parknshop_price": 0,
+        "parknshop_price": null,
         "wellcome_price": null,
         "ztore_price": null,
         "goods_picture": "https://online-price-watch.consumer.org.hk/opw/photoRedirect/P000002327/AEON/?url=https%3A%2F%2Fwww.aeoncity.com.hk%2Fmedia%2Fcatalog%2Fproduct%2Fcache%2F5fb3231cdf628c976ea6d09fdebd8f77%2F0%2F0%2F0026033301654938255.jpg"
@@ -2374,7 +2374,7 @@
         "jasons_price": "18",
         "mannings_price": null,
         "watsons_price": "17",
-        "parknshop_price": 0,
+        "parknshop_price": null,
         "wellcome_price": "17",
         "ztore_price": null,
         "goods_picture": "https://online-price-watch.consumer.org.hk/opw/photoRedirect/P000002326/PARKNSHOP/?url=https%3A%2F%2Fapi.parknshop.com%2Fmedias%2FAndrex-Moist-Bath-Tissue-40s-Refill-420760.jpg%3Fcontext%3DbWFzdGVyfHBuc2hrL2ltYWdlc3wxMTY5NjB8aW1hZ2UvanBlZ3xoOWUvaDMzLzkzMTkyMzM3ODE3OTAvQW5kcmV4IE1vaXN0IEJhdGggVGlzc3VlIDQwcyBSZWZpbGwtNDIwNzYwLmpwZ3wwMGU2N2ZmYTMxOGIxMzFjMmU2YWZkY2E0YzljNWNlMWY5NDM1YmViODlkZTYzOGViNjEzNTFiZGFjNGEwODgw"
@@ -2472,7 +2472,7 @@
         "jasons_price": "34",
         "mannings_price": 0,
         "watsons_price": "29.9",
-        "parknshop_price": 0,
+        "parknshop_price": null,
         "wellcome_price": 0,
         "ztore_price": null,
         "goods_picture": "https://online-price-watch.consumer.org.hk/opw/photoRedirect/P000002601/WELLCOME/?url=https%3A%2F%2Fimg.dmallcdn.com%2F20210521%2F1b719795-cab8-4f23-ac9f-df3efacea33c_800x800H.webp"
@@ -2542,7 +2542,7 @@
         "jasons_price": "159",
         "mannings_price": 0,
         "watsons_price": "0",
-        "parknshop_price": 0,
+        "parknshop_price": null,
         "wellcome_price": "159",
         "ztore_price": null,
         "goods_picture": "https://online-price-watch.consumer.org.hk/opw/photoRedirect/P000002909/PARKNSHOP/?url=https%3A%2F%2Fapi.parknshop.com%2Fmedias%2FSkin-Relief-Moisturizing-Lotion-354ml-287609.jpg%3Fcontext%3DbWFzdGVyfHBuc2hrL2ltYWdlc3w4NDg0MHxpbWFnZS9qcGVnfGhhNC9oNmYvOTMyMjEzMDQwNzQ1NC9Ta2luIFJlbGllZiBNb2lzdHVyaXppbmcgTG90aW9uIDM1NG1sLTI4NzYwOS5qcGd8M2Q4MWIwOGRjNGY3MDVhODdiZDYzYTE5ZmJlOGRlMTkxYjE0MzNlMTQzMGQ4NTdlYzNlYzBhNzQ1Yjk5YTdiNQ"
@@ -2612,7 +2612,7 @@
         "jasons_price": "18",
         "mannings_price": null,
         "watsons_price": "16.9",
-        "parknshop_price": 0,
+        "parknshop_price": null,
         "wellcome_price": "17",
         "ztore_price": null,
         "goods_picture": "https://online-price-watch.consumer.org.hk/opw/photoRedirect/P000001653/WELLCOME/?url=https%3A%2F%2Fimg.dmallcdn.com%2F20200413%2F5f309d00-f47b-41d7-b838-cc63c604ef5b_800x800H.webp"
@@ -2668,7 +2668,7 @@
         "jasons_price": null,
         "mannings_price": "299",
         "watsons_price": "224",
-        "parknshop_price": 0,
+        "parknshop_price": null,
         "wellcome_price": null,
         "ztore_price": null,
         "goods_picture": "https://online-price-watch.consumer.org.hk/opw/photoRedirect/P000002874/WATSONS/?url=https%3A%2F%2Fapi.watsons.com.hk%2Fmedias%2FPhysiogel-AI-cream-100mL-266386.jpg%3Fcontext%3DbWFzdGVyfHd0Y2hrL2ltYWdlc3wzNjM0OTl8aW1hZ2UvanBlZ3xoNzgvaDY5LzEwNTUyNDA0NjA3MDA2L1BoeXNpb2dlbCBBSSBjcmVhbSAxMDBtTC0yNjYzODYuanBnfGE3OTQwYmVjMTkwMmQyYjhlNTFmODExYTZhZmEyYTEwYmEwNzUwODY2NzNhZDFjODI2YzU2MTAwYjc0MDM1ZTY"
@@ -2836,7 +2836,7 @@
         "jasons_price": null,
         "mannings_price": "84.9",
         "watsons_price": "84.9",
-        "parknshop_price": 0,
+        "parknshop_price": null,
         "wellcome_price": null,
         "ztore_price": null,
         "goods_picture": "https://online-price-watch.consumer.org.hk/opw/photoRedirect/P000003454/PARKNSHOP/?url=https%3A%2F%2Fapi.parknshop.com%2Fmedias%2FBiore-Aqua-Rich-Watery-Essence-50g-325826.jpg%3Fcontext%3DbWFzdGVyfHBuc2hrL2ltYWdlc3w0MTI4NDh8aW1hZ2UvanBlZ3xoMTgvaGVmLzkzMjE4NzUzNzQxMTAvQmlvcmUgQXF1YSBSaWNoIFdhdGVyeSBFc3NlbmNlIDUwZy0zMjU4MjYuanBnfGUyODkzMTJmNjc3YjA3ODViM2FhMTgwZjYwZTI1OTJjN2VhYjcxZTAyNjQzNjYxNDRhYmMyYzYzNGE5MDVjYmU"
@@ -2864,7 +2864,7 @@
         "jasons_price": null,
         "mannings_price": null,
         "watsons_price": "193.5",
-        "parknshop_price": 0,
+        "parknshop_price": null,
         "wellcome_price": null,
         "ztore_price": null,
         "goods_picture": "https://online-price-watch.consumer.org.hk/opw/photoRedirect/P000003452/WATSONS/?url=https%3A%2F%2Fapi.watsons.com.hk%2Fmedias%2FMULTI-PROTRCT-SUN-LOTION-SPF50-201682.jpg%3Fcontext%3DbWFzdGVyfHd0Y2hrL2ltYWdlc3wxNDM2NTB8aW1hZ2UvanBlZ3xoZDcvaDBjLzEwNTYzOTExODExMTAyL01VTFRJIFBST1RSQ1QgU1VOIExPVElPTiBTUEY1MC0yMDE2ODIuanBnfDYwODlhOWYwZDJmZjU5YTViZDhiMzc3NzVjNzI2OTg0YzA0YTUyMTFiNGQwMGI4YzEzYTRkZTczM2I0MWI3MzE"
@@ -2934,7 +2934,7 @@
         "jasons_price": null,
         "mannings_price": "41.3",
         "watsons_price": "38.5",
-        "parknshop_price": 0,
+        "parknshop_price": null,
         "wellcome_price": null,
         "ztore_price": null,
         "goods_picture": "https://online-price-watch.consumer.org.hk/opw/photoRedirect/P000003025/WATSONS/?url=https%3A%2F%2Fapi.watsons.com.hk%2Fmedias%2FLip-Pure-Honey-262959.jpg%3Fcontext%3DbWFzdGVyfHd0Y2hrL2ltYWdlc3wzODA1Mzh8aW1hZ2UvanBlZ3xoN2IvaDBmLzEwNTYzNDA3OTA0Nzk4L0xpcCBQdXJlIEhvbmV5LTI2Mjk1OS5qcGd8NDk3ZjhmZDBkYjJlYTkwNGY0YzYxMGQ1MDM3YjIzN2I1M2MzNjk3NTUwMmMyZTY0OTMxYjk0MjIzZWVkOThkMw"
@@ -2962,7 +2962,7 @@
         "jasons_price": null,
         "mannings_price": null,
         "watsons_price": "43.5",
-        "parknshop_price": 0,
+        "parknshop_price": null,
         "wellcome_price": null,
         "ztore_price": null,
         "goods_picture": "https://online-price-watch.consumer.org.hk/opw/photoRedirect/P000003299/WELLCOME/?url=https%3A%2F%2Fwww.wellcome.com.hk%2Fwd2%2Fuserfile%2Fwd%2Fpdt%2Fall%2FPL356150.jpg"
@@ -2976,7 +2976,7 @@
         "jasons_price": null,
         "mannings_price": null,
         "watsons_price": "27.9",
-        "parknshop_price": 0,
+        "parknshop_price": null,
         "wellcome_price": null,
         "ztore_price": null,
         "goods_picture": "https://online-price-watch.consumer.org.hk/opw/photoRedirect/P000001581/WELLCOME/?url=https%3A%2F%2Fwww.wellcome.com.hk%2Fwd2%2Fuserfile%2Fwd%2Fpdt%2Fall%2FPL100954.jpg"
@@ -2990,7 +2990,7 @@
         "jasons_price": null,
         "mannings_price": "27.8",
         "watsons_price": "0",
-        "parknshop_price": 0,
+        "parknshop_price": null,
         "wellcome_price": null,
         "ztore_price": null,
         "goods_picture": "https://online-price-watch.consumer.org.hk/opw/photoRedirect/P000001582/WELLCOME/?url=https%3A%2F%2Fwww.wellcome.com.hk%2Fwd2%2Fuserfile%2Fwd%2Fpdt%2Fall%2FPL100647.jpg"
@@ -3032,7 +3032,7 @@
         "jasons_price": null,
         "mannings_price": null,
         "watsons_price": "20.5",
-        "parknshop_price": 0,
+        "parknshop_price": null,
         "wellcome_price": null,
         "ztore_price": null,
         "goods_picture": "https://online-price-watch.consumer.org.hk/opw/photoRedirect/P000003298/WELLCOME/?url=https%3A%2F%2Fwww.wellcome.com.hk%2Fwd2%2Fuserfile%2Fwd%2Fpdt%2Fall%2FPL389719.jpg"
@@ -3046,7 +3046,7 @@
         "jasons_price": null,
         "mannings_price": null,
         "watsons_price": "16.5",
-        "parknshop_price": 0,
+        "parknshop_price": null,
         "wellcome_price": null,
         "ztore_price": null,
         "goods_picture": "https://online-price-watch.consumer.org.hk/opw/photoRedirect/P000001583/WATSONS/?url=https%3A%2F%2Fapi.watsons.com.hk%2Fmedias%2FNIVEA-Essential-Lips48g-250629.jpg%3Fcontext%3DbWFzdGVyfHd0Y2hrL2ltYWdlc3wyNTQyOTd8aW1hZ2UvanBlZ3xoMzIvaGFmLzEwNTUxMjg2NjYxMTUwL05JVkVBIEVzc2VudGlhbCBMaXBzNDhnLTI1MDYyOS5qcGd8YTI2YTNjYTlmNTUzNDQzNWUxNTA4NDIxZDY2OTc0M2MyNjRhYzc0OTg0N2NiNjcyMWM2YTU0YzVlZGIzNzFlNg"
@@ -3060,7 +3060,7 @@
         "jasons_price": null,
         "mannings_price": null,
         "watsons_price": "46.8",
-        "parknshop_price": 0,
+        "parknshop_price": null,
         "wellcome_price": null,
         "ztore_price": null,
         "goods_picture": "https://online-price-watch.consumer.org.hk/opw/photoRedirect/P000003017/WELLCOME/?url=https%3A%2F%2Fwww.wellcome.com.hk%2Fwd2%2Fuserfile%2Fwd%2Fpdt%2Fall%2FPL384399.jpg"
@@ -3074,7 +3074,7 @@
         "jasons_price": null,
         "mannings_price": "16.9",
         "watsons_price": "16.9",
-        "parknshop_price": 0,
+        "parknshop_price": null,
         "wellcome_price": null,
         "ztore_price": null,
         "goods_picture": "https://online-price-watch.consumer.org.hk/opw/photoRedirect/P000003014/WATSONS/?url=https%3A%2F%2Fapi.watsons.com.hk%2Fmedias%2FLip-Essence-advanced-196825.jpg%3Fcontext%3DbWFzdGVyfGZyb250L3pvb218NzgxMDN8aW1hZ2UvanBlZ3xmcm9udC96b29tLzg3OTkyMDg1MzgxNDIuanBnfDlmMGM2YmZmOWJjYTEyMzZlNmZiYmEyMzFjMGI3MGZlNjkyNTU3MzFiNzZlYThlYjM5MDdjMWIwNTIwNThiOGE"
@@ -3228,7 +3228,7 @@
         "jasons_price": null,
         "mannings_price": null,
         "watsons_price": null,
-        "parknshop_price": 0,
+        "parknshop_price": null,
         "wellcome_price": null,
         "ztore_price": null,
         "goods_picture": "https://online-price-watch.consumer.org.hk/opw/photoRedirect/P000002713/PARKNSHOP/?url=https%3A%2F%2Fapi.parknshop.com%2Fmedias%2FCOTTON-WOOL-PADS-65S-111480.jpg%3Fcontext%3DbWFzdGVyfHBuc2hrL2ltYWdlc3wyMzgzNDB8aW1hZ2UvanBlZ3xoMjIvaDVhLzkzMTg5NzAzMjcwNzAvQ09UVE9OIFdPT0wgUEFEUyA2NVMtMTExNDgwLmpwZ3xlZDkxODJkYjE1M2Q5MTk0ZTEwMDk4MDg3NTkxYTJjZmYyNDU1MzE4NzUwOGU1NWNlODAzMmZmYTEzYTZlZWUz"
@@ -3284,7 +3284,7 @@
         "jasons_price": null,
         "mannings_price": "59.9",
         "watsons_price": "59.9",
-        "parknshop_price": 0,
+        "parknshop_price": null,
         "wellcome_price": null,
         "ztore_price": null,
         "goods_picture": "https://online-price-watch.consumer.org.hk/opw/photoRedirect/P000002913/WELLCOME/?url=https%3A%2F%2Fwww.wellcome.com.hk%2Fwd2%2Fuserfile%2Fwd%2Fpdt%2Fall%2FPL375906.jpg"
@@ -3298,7 +3298,7 @@
         "jasons_price": null,
         "mannings_price": "78",
         "watsons_price": "0",
-        "parknshop_price": 0,
+        "parknshop_price": null,
         "wellcome_price": null,
         "ztore_price": null,
         "goods_picture": "https://online-price-watch.consumer.org.hk/opw/photoRedirect/P000003191/WELLCOME/?url=https%3A%2F%2Fwww.wellcome.com.hk%2Fwd2%2Fuserfile%2Fwd%2Fpdt%2Fall%2FPL141187.jpg"
@@ -3312,7 +3312,7 @@
         "jasons_price": "68",
         "mannings_price": 0,
         "watsons_price": "65.9",
-        "parknshop_price": 0,
+        "parknshop_price": null,
         "wellcome_price": 0,
         "ztore_price": null,
         "goods_picture": "https://online-price-watch.consumer.org.hk/opw/photoRedirect/P000001768/WELLCOME/?url=https%3A%2F%2Fimg.dmallcdn.com%2F20200414%2Fb60af753-6ccc-4d84-8ad7-116637122628_800x800H.webp"
@@ -3340,7 +3340,7 @@
         "jasons_price": "11.5",
         "mannings_price": null,
         "watsons_price": null,
-        "parknshop_price": 0,
+        "parknshop_price": null,
         "wellcome_price": 0,
         "ztore_price": null,
         "goods_picture": "https://online-price-watch.consumer.org.hk/opw/photoRedirect/P000001734/WELLCOME/?url=https%3A%2F%2Fimg.dmallcdn.com%2F20200414%2F8a6e6e42-91a4-46b2-9e09-a78e88249e27_800x800H.webp"
@@ -3354,7 +3354,7 @@
         "jasons_price": "51.5",
         "mannings_price": null,
         "watsons_price": null,
-        "parknshop_price": 0,
+        "parknshop_price": null,
         "wellcome_price": 0,
         "ztore_price": null,
         "goods_picture": "https://online-price-watch.consumer.org.hk/opw/photoRedirect/P000001132/WELLCOME/?url=https%3A%2F%2Fimg.dmallcdn.com%2F20210423%2Fd923df9c-34e3-4439-a77b-853c6683c9b8_800x800H.webp"
@@ -3368,7 +3368,7 @@
         "jasons_price": "109",
         "mannings_price": null,
         "watsons_price": "139.9",
-        "parknshop_price": 0,
+        "parknshop_price": null,
         "wellcome_price": 0,
         "ztore_price": null,
         "goods_picture": "https://online-price-watch.consumer.org.hk/opw/photoRedirect/P000002647/WELLCOME/?url=https%3A%2F%2Fimg.dmallcdn.com%2F20200430%2Fd4e53477-b3a7-41c1-ac89-a3fa05bc2146_800x800H.webp"
@@ -3382,7 +3382,7 @@
         "jasons_price": "55.9",
         "mannings_price": null,
         "watsons_price": "57.5",
-        "parknshop_price": 0,
+        "parknshop_price": null,
         "wellcome_price": "55.9",
         "ztore_price": null,
         "goods_picture": "https://online-price-watch.consumer.org.hk/opw/photoRedirect/P000002919/WELLCOME/?url=https%3A%2F%2Fimg.dmallcdn.com%2F20200501%2F357303e1-e170-40ae-a0b7-87cc5bca243e_800x800H.webp"
@@ -3396,7 +3396,7 @@
         "jasons_price": "58.9",
         "mannings_price": null,
         "watsons_price": "60.9",
-        "parknshop_price": 0,
+        "parknshop_price": null,
         "wellcome_price": "58.9",
         "ztore_price": null,
         "goods_picture": "https://online-price-watch.consumer.org.hk/opw/photoRedirect/P000002920/WELLCOME/?url=https%3A%2F%2Fimg.dmallcdn.com%2F20200414%2Fe272a9c8-66cf-48ef-99f6-5646288d5e2a_800x800H.webp"
@@ -3410,7 +3410,7 @@
         "jasons_price": "160.8",
         "mannings_price": null,
         "watsons_price": null,
-        "parknshop_price": 0,
+        "parknshop_price": null,
         "wellcome_price": null,
         "ztore_price": null,
         "goods_picture": "https://online-price-watch.consumer.org.hk/opw/photoRedirect/P000001556/PARKNSHOP/?url=https%3A%2F%2Fapi.parknshop.com%2Fmedias%2FGillette-ProGlide-Power-Blade-4B-242477.jpg%3Fcontext%3DbWFzdGVyfHBuc2hrL2ltYWdlc3wxMDQ1OTN8aW1hZ2UvanBlZ3xoODUvaGQyLzkzMTg4MDM4OTgzOTgvR2lsbGV0dGUgUHJvR2xpZGUgUG93ZXIgQmxhZGUgNEItMjQyNDc3LmpwZ3xkYjNhNzhkOWM1NzU4NTIzNzA1Y2ViYTY5ZTA4OWRhY2M3NGVjNGUyMGVmYTQ2NjExNmE1MTdmODUyYTU4Zjli"
@@ -3424,7 +3424,7 @@
         "jasons_price": "196",
         "mannings_price": "189.9",
         "watsons_price": null,
-        "parknshop_price": 0,
+        "parknshop_price": null,
         "wellcome_price": "190",
         "ztore_price": null,
         "goods_picture": "https://online-price-watch.consumer.org.hk/opw/photoRedirect/P000001025/WELLCOME/?url=https%3A%2F%2Fimg.dmallcdn.com%2F20201026%2F3d74c5af-f4f1-42d4-8a90-901d851f8079_800x800H.webp"
@@ -3452,7 +3452,7 @@
         "jasons_price": "117",
         "mannings_price": null,
         "watsons_price": null,
-        "parknshop_price": 0,
+        "parknshop_price": null,
         "wellcome_price": 0,
         "ztore_price": null,
         "goods_picture": "https://online-price-watch.consumer.org.hk/opw/photoRedirect/P000002950/WELLCOME/?url=https%3A%2F%2Fimg.dmallcdn.com%2F20200430%2F1f2a00f7-d706-46df-a082-75ff73e2b58f_800x800H.webp"
@@ -3480,7 +3480,7 @@
         "jasons_price": "85.9",
         "mannings_price": null,
         "watsons_price": "88.9",
-        "parknshop_price": 0,
+        "parknshop_price": null,
         "wellcome_price": 0,
         "ztore_price": null,
         "goods_picture": "https://online-price-watch.consumer.org.hk/opw/photoRedirect/P000002918/WELLCOME/?url=https%3A%2F%2Fimg.dmallcdn.com%2F20200501%2F3acb2770-e47d-42a3-9ff8-b1297f8af825_800x800H.webp"
@@ -3494,7 +3494,7 @@
         "jasons_price": null,
         "mannings_price": null,
         "watsons_price": "143.9",
-        "parknshop_price": 0,
+        "parknshop_price": null,
         "wellcome_price": null,
         "ztore_price": null,
         "goods_picture": "https://online-price-watch.consumer.org.hk/opw/photoRedirect/P000000973/WATSONS/?url=https%3A%2F%2Fapi.watsons.com.hk%2Fmedias%2FTitanium-Refill-8s-161138.jpg%3Fcontext%3DbWFzdGVyfHd0Y2hrL2ltYWdlc3wxMTg1MTh8aW1hZ2UvanBlZ3xoYTAvaGRkLzEwNTUyMjQwNjM1OTM0L1RpdGFuaXVtIFJlZmlsbCA4cy0xNjExMzguanBnfDNjOWViMzI3ZDQyNmIzMmI4NDY1NjVkNGExOGIwYjk2NTdlMzU1MDdiYjdjZjA4NDAxNWIyOWQzZDY2YTY2OTQ"
@@ -3522,7 +3522,7 @@
         "jasons_price": "11.5",
         "mannings_price": "11.5",
         "watsons_price": "13.2",
-        "parknshop_price": 0,
+        "parknshop_price": null,
         "wellcome_price": 0,
         "ztore_price": null,
         "goods_picture": "https://online-price-watch.consumer.org.hk/opw/photoRedirect/P000001771/WELLCOME/?url=https%3A%2F%2Fimg.dmallcdn.com%2F20200501%2Fe6e54bc9-37ff-4585-bf47-f4017ceacc3c_800x800H.webp"
@@ -3536,7 +3536,7 @@
         "jasons_price": "16.9",
         "mannings_price": null,
         "watsons_price": "19.4",
-        "parknshop_price": 0,
+        "parknshop_price": null,
         "wellcome_price": 0,
         "ztore_price": null,
         "goods_picture": "https://online-price-watch.consumer.org.hk/opw/photoRedirect/P000001103/WELLCOME/?url=https%3A%2F%2Fimg.dmallcdn.com%2F20200414%2F4bf2ce5b-0364-401d-be04-3ff9138a0c87_800x800H.webp"
@@ -3592,7 +3592,7 @@
         "jasons_price": "32",
         "mannings_price": 0,
         "watsons_price": "42",
-        "parknshop_price": 0,
+        "parknshop_price": null,
         "wellcome_price": 0,
         "ztore_price": null,
         "goods_picture": "https://online-price-watch.consumer.org.hk/opw/photoRedirect/P000001578/PARKNSHOP/?url=https%3A%2F%2Fapi.parknshop.com%2Fmedias%2FHydro-Sensitive-Gel-238g-242689.jpg%3Fcontext%3DbWFzdGVyfHBuc2hrL2ltYWdlc3wxMDAxNzZ8aW1hZ2UvanBlZ3xoMzAvaGY2LzkzMTk0MTg3ODk5MTgvSHlkcm8gU2Vuc2l0aXZlIEdlbCAyMzhnLTI0MjY4OS5qcGd8OGI2NDFjODUzZjMzZWJlMWQ4YmJiZjkxNzZlODEzNmU5NWQyYjk0MzllYjM5NmIyNzM1MmQ3NDMxNDU1OTAxZQ"
@@ -3858,7 +3858,7 @@
         "jasons_price": 0,
         "mannings_price": "51.3",
         "watsons_price": "51.9",
-        "parknshop_price": 0,
+        "parknshop_price": null,
         "wellcome_price": 0,
         "ztore_price": null,
         "goods_picture": "https://online-price-watch.consumer.org.hk/opw/photoRedirect/P000000941/WELLCOME/?url=https%3A%2F%2Fimg.dmallcdn.com%2F20210521%2F6c303772-657a-4c90-b2e5-94e560c76406_800x800H.webp"
@@ -3872,7 +3872,7 @@
         "jasons_price": 0,
         "mannings_price": "75",
         "watsons_price": "75",
-        "parknshop_price": 0,
+        "parknshop_price": null,
         "wellcome_price": "88.1",
         "ztore_price": null,
         "goods_picture": "https://online-price-watch.consumer.org.hk/opw/photoRedirect/P000003384/WELLCOME/?url=https%3A%2F%2Fimg.dmallcdn.com%2F20220217%2F92594b73-8368-43ba-b408-279c1a788fa5_800x800H.webp"
@@ -3886,7 +3886,7 @@
         "jasons_price": null,
         "mannings_price": "41.9",
         "watsons_price": "41.9",
-        "parknshop_price": 0,
+        "parknshop_price": null,
         "wellcome_price": null,
         "ztore_price": null,
         "goods_picture": "https://online-price-watch.consumer.org.hk/opw/photoRedirect/P000003385/WELLCOME/?url=https%3A%2F%2Fwww.wellcome.com.hk%2Fwd2%2Fuserfile%2Fwd%2Fpdt%2Fall%2FPL101157.jpg"
@@ -3900,7 +3900,7 @@
         "jasons_price": 0,
         "mannings_price": 0,
         "watsons_price": "36",
-        "parknshop_price": 0,
+        "parknshop_price": null,
         "wellcome_price": 0,
         "ztore_price": null,
         "goods_picture": "https://online-price-watch.consumer.org.hk/opw/photoRedirect/P000000940/PARKNSHOP/?url=https%3A%2F%2Fapi.parknshop.com%2Fmedias%2Fzoom-front-136069.jpg%3Fcontext%3DbWFzdGVyfHBuc2hrL2ltYWdlc3w4Njg4MDZ8aW1hZ2UvanBlZ3xoMmQvaDVlLzk1Mjc0NTg0MzEwMDYvUE5TSEstMTM2MDY5LWZyb250LmpwZ3w4MjgyZDM3YjJlNzUzOTVkMWU0ODZmYjg5YjQ3Y2Y1OTM4OWIxMmI2Y2FkZGYxZjcwYTYyZTA3YWFmZTY2ZGMw"
@@ -3914,7 +3914,7 @@
         "jasons_price": "43.5",
         "mannings_price": "37",
         "watsons_price": "39",
-        "parknshop_price": 0,
+        "parknshop_price": null,
         "wellcome_price": "43.5",
         "ztore_price": null,
         "goods_picture": "https://online-price-watch.consumer.org.hk/opw/photoRedirect/P000001638/PARKNSHOP/?url=https%3A%2F%2Fapi.parknshop.com%2Fmedias%2FPANADOL-HOT-REM-LEMON-147223.jpg%3Fcontext%3DbWFzdGVyfHBuc2hrL2ltYWdlc3w1MzEyOTZ8aW1hZ2UvanBlZ3xoOWMvaGQwLzkzMTg4MjQ1MDk0NzAvUEFOQURPTCBIT1QgUkVNIExFTU9OLTE0NzIyMy5qcGd8ODFmMzI5ZWI1MWZkODlmZjU1MjRmMjk3NmJlNjZiOTU3MWJhNzc4MzczYTQ3MDBhNjViNDJlYzk2MjU5ZWJhOA"
@@ -3928,7 +3928,7 @@
         "jasons_price": 0,
         "mannings_price": "60",
         "watsons_price": "62",
-        "parknshop_price": 0,
+        "parknshop_price": null,
         "wellcome_price": 0,
         "ztore_price": null,
         "goods_picture": "https://online-price-watch.consumer.org.hk/opw/photoRedirect/P000001557/PARKNSHOP/?url=https%3A%2F%2Fapi.parknshop.com%2Fmedias%2FPanadol-Extra-20s-198106.jpg%3Fcontext%3DbWFzdGVyfHBuc2hrL2ltYWdlc3wxMDM5MDZ8aW1hZ2UvanBlZ3xoODIvaDFmLzkzMTg1OTY3NzE4NzAvUGFuYWRvbCBFeHRyYSAyMHMtMTk4MTA2LmpwZ3w5ZDIxYTkyMTFjYmNkYzgyMGNhNjE5OGE3ODI0NDBkYTVjYjBkYWUxZTVmMzkxZmEyZmE3NGFiMDc5OTZlYzA5"
@@ -3942,7 +3942,7 @@
         "jasons_price": null,
         "mannings_price": "40",
         "watsons_price": "39.9",
-        "parknshop_price": 0,
+        "parknshop_price": null,
         "wellcome_price": "69",
         "ztore_price": null,
         "goods_picture": "https://online-price-watch.consumer.org.hk/opw/photoRedirect/P000001703/WATSONS/?url=https%3A%2F%2Fapi.watsons.com.hk%2Fmedias%2Fzoom-front-153239.jpg%3Fcontext%3DbWFzdGVyfHd0Y2hrL2ltYWdlc3wxOTc2NTJ8aW1hZ2UvanBlZ3xoYmQvaDFiLzEwOTg0NTI0NDQ3Nzc0L1dUQ0hLLTE1MzIzOS1mcm9udC5qcGd8MzA3ODA1MTQxYjRkZmU2NmY5MGJhZGRkMWQ3NGNiYjYxMDU5NzZmMzZiM2NjZGM1ZGIwOTdhZGI4MTZiZTZjNA"
@@ -3956,7 +3956,7 @@
         "jasons_price": "59.5",
         "mannings_price": "48",
         "watsons_price": "48",
-        "parknshop_price": 0,
+        "parknshop_price": null,
         "wellcome_price": 0,
         "ztore_price": null,
         "goods_picture": "https://online-price-watch.consumer.org.hk/opw/photoRedirect/P000003386/WELLCOME/?url=https%3A%2F%2Fwww.wellcome.com.hk%2Fwd2%2Fuserfile%2Fwd%2Fpdt%2Fall%2FPL391461.jpg"
@@ -3970,7 +3970,7 @@
         "jasons_price": "59",
         "mannings_price": "38",
         "watsons_price": "0",
-        "parknshop_price": 0,
+        "parknshop_price": null,
         "wellcome_price": "59",
         "ztore_price": null,
         "goods_picture": "https://online-price-watch.consumer.org.hk/opw/photoRedirect/P000001702/WELLCOME/?url=https%3A%2F%2Fimg.dmallcdn.com%2F20220331%2F6534b721-8dbd-4fb3-9773-4769bf7d4481_800x800H.webp"
@@ -4068,7 +4068,7 @@
         "jasons_price": null,
         "mannings_price": "32",
         "watsons_price": "32",
-        "parknshop_price": 0,
+        "parknshop_price": null,
         "wellcome_price": null,
         "ztore_price": null,
         "goods_picture": "https://online-price-watch.consumer.org.hk/opw/photoRedirect/P000002260/WATSONS/?url=https%3A%2F%2Fapi.watsons.com.hk%2Fmedias%2FAxe-Brand-158945.jpg%3Fcontext%3DbWFzdGVyfGZyb250L3pvb218Nzc3OTN8aW1hZ2UvanBlZ3xmcm9udC96b29tLzg4MjU0ODEwMDMwMzguanBnfGFkOWViYWFiNTNkMWQzNDM3ZWMzNjVjMjIxMTJmMGRlMTA3MTAwNjRiYTljMTk2Y2ZjMzM0ZmRiNzlkNTA5NjM"
@@ -4110,7 +4110,7 @@
         "jasons_price": null,
         "mannings_price": "43",
         "watsons_price": "0",
-        "parknshop_price": 0,
+        "parknshop_price": null,
         "wellcome_price": null,
         "ztore_price": null,
         "goods_picture": "https://online-price-watch.consumer.org.hk/opw/photoRedirect/P000002139/WATSONS/?url=https%3A%2F%2Fwww.watsons.com.hk%2Fmedias%2Fsys_master%2Ffront%2Fzoom%2F8837017993246.jpg"
@@ -4124,7 +4124,7 @@
         "jasons_price": 0,
         "mannings_price": "56",
         "watsons_price": "56",
-        "parknshop_price": 0,
+        "parknshop_price": null,
         "wellcome_price": 0,
         "ztore_price": null,
         "goods_picture": "https://online-price-watch.consumer.org.hk/opw/photoRedirect/P000002262/JASONS/?url=https%3A%2F%2Fimg.dmallcdn.com%2F20200414%2F1dfbbf70-013d-44a8-88ee-45b19feb8218_800x800H.webp"
@@ -4138,7 +4138,7 @@
         "jasons_price": 0,
         "mannings_price": 0,
         "watsons_price": "46",
-        "parknshop_price": 0,
+        "parknshop_price": null,
         "wellcome_price": "53",
         "ztore_price": null,
         "goods_picture": "https://online-price-watch.consumer.org.hk/opw/photoRedirect/P000003388/WELLCOME/?url=https%3A%2F%2Fimg.dmallcdn.com%2F20210521%2F64b93f3e-7a72-4030-917c-c0ac45fb0191_800x800H.webp"
@@ -4180,7 +4180,7 @@
         "jasons_price": null,
         "mannings_price": null,
         "watsons_price": "16.9",
-        "parknshop_price": 0,
+        "parknshop_price": null,
         "wellcome_price": null,
         "ztore_price": null,
         "goods_picture": "https://online-price-watch.consumer.org.hk/opw/photoRedirect/P000003390/WELLCOME/?url=https%3A%2F%2Fwww.wellcome.com.hk%2Fwd2%2Fuserfile%2Fwd%2Fpdt%2Fall%2FPL361984.jpg"
@@ -4278,7 +4278,7 @@
         "jasons_price": 0,
         "mannings_price": 0,
         "watsons_price": "98.9",
-        "parknshop_price": 0,
+        "parknshop_price": null,
         "wellcome_price": "98.9",
         "ztore_price": null,
         "goods_picture": "https://online-price-watch.consumer.org.hk/opw/photoRedirect/P000003377/PARKNSHOP/?url=https%3A%2F%2Fapi.parknshop.com%2Fmedias%2FMentholatum-Insect-Repellent-Ultra-Strength-Spray-125ml-234822.jpg%3Fcontext%3DbWFzdGVyfHBuc2hrL2ltYWdlc3w1Nzc0MnxpbWFnZS9qcGVnfGhiMi9oZjkvOTMyMjc3MzI1MDA3OC9NZW50aG9sYXR1bSBJbnNlY3QgUmVwZWxsZW50IFVsdHJhIFN0cmVuZ3RoIFNwcmF5IDEyNW1sLTIzNDgyMi5qcGd8YjQ2ZTc1ZGRhMzI1YjAxNDg0MWQ0ZGE0ZWM1NTcyZjQwZWRhMWUzNTI5ZmIyY2RlN2RlMjI0NzNhMDRjYTcwNg"
@@ -4334,7 +4334,7 @@
         "jasons_price": "75",
         "mannings_price": "71.9",
         "watsons_price": "71.9",
-        "parknshop_price": 0,
+        "parknshop_price": null,
         "wellcome_price": "72.9",
         "ztore_price": null,
         "goods_picture": "https://online-price-watch.consumer.org.hk/opw/photoRedirect/P000003379/PARKNSHOP/?url=https%3A%2F%2Fapi.parknshop.com%2Fmedias%2FMosquitOut-Spray100ml-213030.jpg%3Fcontext%3DbWFzdGVyfHBuc2hrL2ltYWdlc3w3Mjc2OXxpbWFnZS9qcGVnfGg5NC9oM2MvOTMxOTgwMjI3MzgyMi9Nb3NxdWl0T3V0IFNwcmF5MTAwbWwtMjEzMDMwLmpwZ3w3YTE0MmNiMmQ5MTljOWQwZGQwNzViYTIxOTU2MjBiNGFjNDkwZjlhZGUwZTJlZTYxMWY3MTgwZDkzMDY1NGQz"
@@ -4376,7 +4376,7 @@
         "jasons_price": "22",
         "mannings_price": null,
         "watsons_price": "19",
-        "parknshop_price": 0,
+        "parknshop_price": null,
         "wellcome_price": "21",
         "ztore_price": null,
         "goods_picture": "https://online-price-watch.consumer.org.hk/opw/photoRedirect/P000002741/WELLCOME/?url=https%3A%2F%2Fimg.dmallcdn.com%2F20200413%2F91a3eb64-02b3-44fd-a8c6-2c1d062179b6_800x800H.webp"
@@ -4390,7 +4390,7 @@
         "jasons_price": 0,
         "mannings_price": null,
         "watsons_price": "59.9",
-        "parknshop_price": 0,
+        "parknshop_price": null,
         "wellcome_price": "59.9",
         "ztore_price": null,
         "goods_picture": "https://online-price-watch.consumer.org.hk/opw/photoRedirect/P000001558/PARKNSHOP/?url=https%3A%2F%2Fapi.parknshop.com%2Fmedias%2FPANADOL-PAINPATCH10S-202640.jpg%3Fcontext%3DbWFzdGVyfHBuc2hrL2ltYWdlc3wzODYxMjR8aW1hZ2UvanBlZ3xoZGYvaGMzLzkzMTg3ODExNTc0MDYvUEFOQURPTCBQQUlOUEFUQ0gxMFMtMjAyNjQwLmpwZ3xhNDhlM2I3MDUyNTEwZmI5NmNjNjg5M2NlN2Q5MmEzN2VjMzQwMTliMzg3YzlhZTU5ZmMxZTYzMjdkY2NiYTY3"
@@ -4474,7 +4474,7 @@
         "jasons_price": null,
         "mannings_price": "19.9",
         "watsons_price": "19.9",
-        "parknshop_price": 0,
+        "parknshop_price": null,
         "wellcome_price": null,
         "ztore_price": null,
         "goods_picture": "https://online-price-watch.consumer.org.hk/opw/photoRedirect/P000003260/AEON/?url=https%3A%2F%2Fwww.aeoncity.com.hk%2Fmedia%2Fcatalog%2Fproduct%2Fplaceholder%2Fdefault%2Faeon_place.jpeg"
@@ -4488,7 +4488,7 @@
         "jasons_price": null,
         "mannings_price": "8",
         "watsons_price": "9.9",
-        "parknshop_price": 0,
+        "parknshop_price": null,
         "wellcome_price": null,
         "ztore_price": null,
         "goods_picture": "https://online-price-watch.consumer.org.hk/opw/photoRedirect/P000003264/WELLCOME/?url=https%3A%2F%2Fwww.wellcome.com.hk%2Fwd2%2Fuserfile%2Fwd%2Fpdt%2Fall%2FPL130796.jpg"
@@ -4502,7 +4502,7 @@
         "jasons_price": "21",
         "mannings_price": 0,
         "watsons_price": "19",
-        "parknshop_price": 0,
+        "parknshop_price": null,
         "wellcome_price": "19.5",
         "ztore_price": null,
         "goods_picture": "https://online-price-watch.consumer.org.hk/opw/photoRedirect/P000003262/WELLCOME/?url=https%3A%2F%2Fwww.wellcome.com.hk%2Fwd2%2Fuserfile%2Fwd%2Fpdt%2Fall%2FPL129270.jpg"
@@ -4516,7 +4516,7 @@
         "jasons_price": null,
         "mannings_price": null,
         "watsons_price": "8.5",
-        "parknshop_price": 0,
+        "parknshop_price": null,
         "wellcome_price": null,
         "ztore_price": null,
         "goods_picture": "https://online-price-watch.consumer.org.hk/opw/photoRedirect/P000003267/AEON/?url=https%3A%2F%2Fwww.aeoncity.com.hk%2Fmedia%2Fcatalog%2Fproduct%2Fplaceholder%2Fdefault%2Faeon_place.jpeg"
@@ -4530,7 +4530,7 @@
         "jasons_price": "22",
         "mannings_price": "20.9",
         "watsons_price": "20.9",
-        "parknshop_price": 0,
+        "parknshop_price": null,
         "wellcome_price": "20.9",
         "ztore_price": null,
         "goods_picture": "https://online-price-watch.consumer.org.hk/opw/photoRedirect/P000003266/WELLCOME/?url=https%3A%2F%2Fimg.dmallcdn.com%2F20210517%2Fbd127ecc-4cc8-4c62-b6c2-c9239b88e459_800x800H.webp"
@@ -4544,7 +4544,7 @@
         "jasons_price": "10.9",
         "mannings_price": "16",
         "watsons_price": null,
-        "parknshop_price": 0,
+        "parknshop_price": null,
         "wellcome_price": "10.9",
         "ztore_price": null,
         "goods_picture": "https://online-price-watch.consumer.org.hk/opw/photoRedirect/P000003232/WELLCOME/?url=https%3A%2F%2Fimg.dmallcdn.com%2F20211220%2F4e25eb4e-45cd-4c2f-91ca-89b2104d5c6c_800x800H.webp"
@@ -4572,7 +4572,7 @@
         "jasons_price": 0,
         "mannings_price": "24",
         "watsons_price": "29",
-        "parknshop_price": 0,
+        "parknshop_price": null,
         "wellcome_price": "31",
         "ztore_price": null,
         "goods_picture": "https://online-price-watch.consumer.org.hk/opw/photoRedirect/P000001726/WELLCOME/?url=https%3A%2F%2Fimg.dmallcdn.com%2F20210517%2Fd9b8bf3e-5313-4b5e-bec0-f658baed841b_800x800H.webp"
@@ -4586,7 +4586,7 @@
         "jasons_price": "41.9",
         "mannings_price": "33",
         "watsons_price": "40",
-        "parknshop_price": 0,
+        "parknshop_price": null,
         "wellcome_price": "41.9",
         "ztore_price": null,
         "goods_picture": "https://online-price-watch.consumer.org.hk/opw/photoRedirect/P000003261/WELLCOME/?url=https%3A%2F%2Fimg.dmallcdn.com%2F20210517%2F8f7f1536-c87e-43d0-a449-20046b76020c_800x800H.webp"
@@ -4712,7 +4712,7 @@
         "jasons_price": null,
         "mannings_price": null,
         "watsons_price": "49",
-        "parknshop_price": 0,
+        "parknshop_price": null,
         "wellcome_price": null,
         "ztore_price": null,
         "goods_picture": "https://online-price-watch.consumer.org.hk/opw/photoRedirect/P000001692/WATSONS/?url=https%3A%2F%2Fapi.watsons.com.hk%2Fmedias%2FRedoxon-Triple-ActionOrange-Flavor-Effervescent-Tablets-10s-150817.jpg%3Fcontext%3DbWFzdGVyfHd0Y2hrL2ltYWdlc3wyNDc1MTB8aW1hZ2UvanBlZ3xoNjAvaDkxLzEwNTYxMzY0NzIxNjk0L1JlZG94b27CriBUcmlwbGUgQWN0aW9uT3JhbmdlIEZsYXZvciBFZmZlcnZlc2NlbnQgVGFibGV0cyAxMHMtMTUwODE3LmpwZ3xkNDQ1MzI3NjEyNzY1YzNhMDBhMzY0ZTNjNjlhMjM5YmM2ZTlhNDVkNzBlOWNmZjA4YjIyYTAyZDVkOTYxNjg5"
@@ -4726,7 +4726,7 @@
         "jasons_price": null,
         "mannings_price": "239",
         "watsons_price": "239",
-        "parknshop_price": 0,
+        "parknshop_price": null,
         "wellcome_price": 0,
         "ztore_price": null,
         "goods_picture": "https://online-price-watch.consumer.org.hk/opw/photoRedirect/P000003195/WELLCOME/?url=https%3A%2F%2Fwww.wellcome.com.hk%2Fwd2%2Fuserfile%2Fwd%2Fpdt%2Fall%2FPL373978.jpg"
@@ -4768,7 +4768,7 @@
         "jasons_price": null,
         "mannings_price": "88.4",
         "watsons_price": "103.9",
-        "parknshop_price": 0,
+        "parknshop_price": null,
         "wellcome_price": null,
         "ztore_price": null,
         "goods_picture": "https://online-price-watch.consumer.org.hk/opw/photoRedirect/P000001732/AEON/?url=https%3A%2F%2Fwww.aeoncity.com.hk%2Fmedia%2Fcatalog%2Fproduct%2Fcache%2F5fb3231cdf628c976ea6d09fdebd8f77%2F0%2F0%2F0035687301654940633.jpg"
@@ -4782,7 +4782,7 @@
         "jasons_price": null,
         "mannings_price": null,
         "watsons_price": "103.9",
-        "parknshop_price": 0,
+        "parknshop_price": null,
         "wellcome_price": null,
         "ztore_price": null,
         "goods_picture": "https://online-price-watch.consumer.org.hk/opw/photoRedirect/P000001733/AEON/?url=https%3A%2F%2Fwww.aeoncity.com.hk%2Fmedia%2Fcatalog%2Fproduct%2Fcache%2F5fb3231cdf628c976ea6d09fdebd8f77%2F0%2F0%2F0035687221654940632.jpg"
@@ -4810,7 +4810,7 @@
         "jasons_price": null,
         "mannings_price": "150",
         "watsons_price": "0",
-        "parknshop_price": 0,
+        "parknshop_price": null,
         "wellcome_price": null,
         "ztore_price": null,
         "goods_picture": "https://online-price-watch.consumer.org.hk/opw/photoRedirect/P000003196/WATSONS/?url=https%3A%2F%2Fapi.watsons.com.hk%2Fmedias%2FKanyu-Drop-M400-180s-126330.jpg%3Fcontext%3DbWFzdGVyfHd0Y2hrL2ltYWdlc3wxMTU0NzB8aW1hZ2UvanBlZ3xoZjkvaGZjLzEwNTUxNTg4ODQ3NjQ2L0thbnl1IERyb3AgTTQwMCAxODBzLTEyNjMzMC5qcGd8NjIyZWJkOWE5MGViNTUyMTMwZWNlZmE1MWJiMDdmYjhmODRhNjJkMmZjNzRlMjI1OTJjODFkMWFmOGNhMjc4NA"
@@ -4824,7 +4824,7 @@
         "jasons_price": null,
         "mannings_price": 0,
         "watsons_price": "186.8",
-        "parknshop_price": 0,
+        "parknshop_price": null,
         "wellcome_price": null,
         "ztore_price": null,
         "goods_picture": "https://online-price-watch.consumer.org.hk/opw/photoRedirect/P000001714/WATSONS/?url=https%3A%2F%2Fapi.watsons.com.hk%2Fmedias%2FKanyu-Drop-S300-126329.jpg%3Fcontext%3DbWFzdGVyfHd0Y2hrL2ltYWdlc3wxMTc0NDF8aW1hZ2UvanBlZ3xoM2EvaDM1LzEwNTUyMjc3NzYyMDc4L0thbnl1IERyb3AgUzMwMC0xMjYzMjkuanBnfDY5Y2FiNmFhMjQ1MzhhMDVkNTRlMjQyY2I5NWFhMjg5Yjc4NTNlODE4MzNmNGU1MzdkNjAxZGYyM2E5Y2E3MGY"
@@ -4950,7 +4950,7 @@
         "jasons_price": "34.9",
         "mannings_price": "20",
         "watsons_price": "20",
-        "parknshop_price": 0,
+        "parknshop_price": null,
         "wellcome_price": "34.9",
         "ztore_price": null,
         "goods_picture": "https://online-price-watch.consumer.org.hk/opw/photoRedirect/P000002585/WELLCOME/?url=https%3A%2F%2Fimg.dmallcdn.com%2F20200413%2F87020c78-1043-4871-9712-3ce73959a9f4_800x800H.webp"
@@ -5104,7 +5104,7 @@
         "jasons_price": 0,
         "mannings_price": null,
         "watsons_price": "0",
-        "parknshop_price": 0,
+        "parknshop_price": null,
         "wellcome_price": 0,
         "ztore_price": null,
         "goods_picture": "https://online-price-watch.consumer.org.hk/opw/photoRedirect/P000001950/PARKNSHOP/?url=https%3A%2F%2Fapi.parknshop.com%2Fmedias%2FDurex-Elite-12s-132006.jpg%3Fcontext%3DbWFzdGVyfHBuc2hrL2ltYWdlc3w5OTQ4MHxpbWFnZS9qcGVnfGg2Zi9oYjUvOTMxODkxMzIxMjQ0Ni9EdXJleCBFbGl0ZSAxMnMtMTMyMDA2LmpwZ3w3ZDRhZmEyY2FjMjI0NTA5NWUyNTRlMDg3NDE2YWRkYTExMTVkMDJlMzFjOGQ2OGJkYmJkNWY2NzIzMTMwMTUy"
@@ -5216,7 +5216,7 @@
         "jasons_price": null,
         "mannings_price": null,
         "watsons_price": "0",
-        "parknshop_price": 0,
+        "parknshop_price": null,
         "wellcome_price": 0,
         "ztore_price": null,
         "goods_picture": "https://online-price-watch.consumer.org.hk/opw/photoRedirect/P000001991/PARKNSHOP/?url=https%3A%2F%2Fapi.parknshop.com%2Fmedias%2FDurex-Fetherlite-Ultima-15s-225845.jpg%3Fcontext%3DbWFzdGVyfHBuc2hrL2ltYWdlc3wxNDc3OTd8aW1hZ2UvanBlZ3xoZWYvaGUxLzkzMTg1NjAxNzAwMTQvRHVyZXggRmV0aGVybGl0ZSBVbHRpbWEgMTVzLTIyNTg0NS5qcGd8OGYyNGZiNGMwMGJhZjI1YTk2YWFkNDViOGU5NTFkZDU5YjkwYjJmZWJiNWFmZTg0ZjVjM2QzOGU1N2FjYmZmZA"
@@ -5272,7 +5272,7 @@
         "jasons_price": "150.4",
         "mannings_price": "188",
         "watsons_price": "188",
-        "parknshop_price": 0,
+        "parknshop_price": null,
         "wellcome_price": "150.4",
         "ztore_price": null,
         "goods_picture": "https://online-price-watch.consumer.org.hk/opw/photoRedirect/P000001691/WELLCOME/?url=https%3A%2F%2Fimg.dmallcdn.com%2F20210129%2Fbed7430a-5339-46d9-9ed2-65f755f30248_800x800H.webp"
@@ -5286,7 +5286,7 @@
         "jasons_price": "143.2",
         "mannings_price": null,
         "watsons_price": "0",
-        "parknshop_price": 0,
+        "parknshop_price": null,
         "wellcome_price": "143.2",
         "ztore_price": null,
         "goods_picture": "https://online-price-watch.consumer.org.hk/opw/photoRedirect/P000001689/WELLCOME/?url=https%3A%2F%2Fwww.wellcome.com.hk%2Fwd2%2Fuserfile%2Fwd%2Fpdt%2Fall%2FPL132848.jpg"
@@ -5314,7 +5314,7 @@
         "jasons_price": "139",
         "mannings_price": "139",
         "watsons_price": "139",
-        "parknshop_price": 0,
+        "parknshop_price": null,
         "wellcome_price": 0,
         "ztore_price": null,
         "goods_picture": "https://online-price-watch.consumer.org.hk/opw/photoRedirect/P000001935/WELLCOME/?url=https%3A%2F%2Fwww.wellcome.com.hk%2Fwd2%2Fuserfile%2Fwd%2Fpdt%2Fall%2FPL132954.jpg"
@@ -5328,7 +5328,7 @@
         "jasons_price": "143.2",
         "mannings_price": null,
         "watsons_price": "179",
-        "parknshop_price": 0,
+        "parknshop_price": null,
         "wellcome_price": "143.2",
         "ztore_price": null,
         "goods_picture": "https://online-price-watch.consumer.org.hk/opw/photoRedirect/P000001934/WELLCOME/?url=https%3A%2F%2Fwww.wellcome.com.hk%2Fwd2%2Fuserfile%2Fwd%2Fpdt%2Fall%2FPL133146.jpg"
@@ -5342,7 +5342,7 @@
         "jasons_price": null,
         "mannings_price": null,
         "watsons_price": "69",
-        "parknshop_price": 0,
+        "parknshop_price": null,
         "wellcome_price": null,
         "ztore_price": null,
         "goods_picture": "https://online-price-watch.consumer.org.hk/opw/photoRedirect/P000001983/WELLCOME/?url=https%3A%2F%2Fwww.wellcome.com.hk%2Fwd2%2Fuserfile%2Fwd%2Fpdt%2Fall%2FPL132952.jpg"

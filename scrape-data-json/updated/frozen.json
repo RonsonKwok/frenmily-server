@@ -64,7 +64,7 @@
         "jasons_price": "37",
         "mannings_price": null,
         "watsons_price": null,
-        "parknshop_price": 0,
+        "parknshop_price": null,
         "wellcome_price": "37",
         "ztore_price": null,
         "goods_picture": "https://online-price-watch.consumer.org.hk/opw/photoRedirect/P000003224/WELLCOME/?url=https%3A%2F%2Fimg.dmallcdn.com%2F20220223%2F571764f5-2daf-4221-be24-a35a0ca3bfe5_800x800H.webp"
@@ -358,7 +358,7 @@
         "jasons_price": 0,
         "mannings_price": null,
         "watsons_price": null,
-        "parknshop_price": 0,
+        "parknshop_price": null,
         "wellcome_price": 0,
         "ztore_price": null,
         "goods_picture": "https://online-price-watch.consumer.org.hk/opw/photoRedirect/P000000760/PARKNSHOP/?url=https%3A%2F%2Fapi.parknshop.com%2Fmedias%2FWATERCRESS-PORK-DUMPLING-398924.jpg%3Fcontext%3DbWFzdGVyfHBuc2hrL2ltYWdlc3wxMDA1NjN8aW1hZ2UvanBlZ3xoN2QvaGRhLzkzMjIyNjQ3ODkwMjIvV0FURVJDUkVTUyAgUE9SSyBEVU1QTElORy0zOTg5MjQuanBnfDQ2NjQ1NDVlZDRiZGYyYzA2NTdjMTgxMzIwZjgzNDdmNWJmMWJlYWEwYTEwYjY4NjYzM2UyNTMyNzEyZmYzN2U"
@@ -372,7 +372,7 @@
         "jasons_price": null,
         "mannings_price": null,
         "watsons_price": null,
-        "parknshop_price": 0,
+        "parknshop_price": null,
         "wellcome_price": null,
         "ztore_price": null,
         "goods_picture": "https://online-price-watch.consumer.org.hk/opw/photoRedirect/P000003723/PARKNSHOP/?url=https%3A%2F%2Fapi.parknshop.com%2Fmedias%2FNATURAL-CHOICE-SMOKE-HAM-55768.jpg%3Fcontext%3DbWFzdGVyfHBuc2hrL2ltYWdlc3wxMTYyODJ8aW1hZ2UvanBlZ3xoMTcvaDMwLzkzMjI2MTU1MDQ5MjYvTkFUVVJBTCBDSE9JQ0UgU01PS0UgSEFNLTU1NzY4LmpwZ3wzN2Y5MGI1YWFiYjdkYTQ2NzkwYmExZDE2YmJjOTYyNWQyOWQyYjEzZTg2MGFhODBjOGI1MTU5YTg2ZGM0Y2Vl"
@@ -484,7 +484,7 @@
         "jasons_price": "30",
         "mannings_price": null,
         "watsons_price": null,
-        "parknshop_price": 0,
+        "parknshop_price": null,
         "wellcome_price": "28",
         "ztore_price": null,
         "goods_picture": "https://online-price-watch.consumer.org.hk/opw/photoRedirect/P000000641/WELLCOME/?url=https%3A%2F%2Fimg.dmallcdn.com%2F20220303%2F57db63bf-0537-498a-8f7b-b087383db1d7_800x800H.webp"
@@ -498,7 +498,7 @@
         "jasons_price": null,
         "mannings_price": null,
         "watsons_price": null,
-        "parknshop_price": 0,
+        "parknshop_price": null,
         "wellcome_price": null,
         "ztore_price": null,
         "goods_picture": "https://online-price-watch.consumer.org.hk/opw/photoRedirect/P000001304/PARKNSHOP/?url=https%3A%2F%2Fapi.parknshop.com%2Fmedias%2FWIENERS-SAUSAGE-23121.jpg%3Fcontext%3DbWFzdGVyfHBuc2hrL2ltYWdlc3wxNDIxNDV8aW1hZ2UvanBlZ3xoZWYvaGI2LzkzMTkyMTAzODU0MzgvV0lFTkVSUyBTQVVTQUdFLTIzMTIxLmpwZ3w1N2YyNWM1MmI3MmEzNGE4OGRlNzFkOGU2Y2EzMTk3YzcwMjMxYjUzZDg2ZjQ3ZjI4NTNmZmVmZmQ4N2Y5MGYx"
@@ -526,7 +526,7 @@
         "jasons_price": "49",
         "mannings_price": null,
         "watsons_price": null,
-        "parknshop_price": 0,
+        "parknshop_price": null,
         "wellcome_price": "46",
         "ztore_price": null,
         "goods_picture": "https://online-price-watch.consumer.org.hk/opw/photoRedirect/P000002431/WELLCOME/?url=https%3A%2F%2Fimg.dmallcdn.com%2F20220313%2F1cf2bb43-ae8b-4bed-b18c-6712211b6f12_800x800H.webp"
@@ -680,7 +680,7 @@
         "jasons_price": "50",
         "mannings_price": null,
         "watsons_price": null,
-        "parknshop_price": 0,
+        "parknshop_price": null,
         "wellcome_price": 0,
         "ztore_price": null,
         "goods_picture": "https://online-price-watch.consumer.org.hk/opw/photoRedirect/P000003499/PARKNSHOP/?url=https%3A%2F%2Fapi.parknshop.com%2Fmedias%2FMOZZARELLA-PIZZA-183132.jpg%3Fcontext%3DbWFzdGVyfHBuc2hrL2ltYWdlc3wxNTk0MDd8aW1hZ2UvanBlZ3xoZDgvaDdhLzkzMTkwNTM4NTI3MDIvTU9aWkFSRUxMQSAgUElaWkEtMTgzMTMyLmpwZ3xmM2ZkZGE3ZWM4ZDdlOTk1ZTE5ZjE0ZTdkYTE0OWE0Yjk2YjU2ZTkxNjFhNDE0ZmZjOGQxY2JiNzU5MGYwZDdk"

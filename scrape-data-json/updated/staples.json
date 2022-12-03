@@ -92,7 +92,7 @@
         "jasons_price": null,
         "mannings_price": null,
         "watsons_price": null,
-        "parknshop_price": 0,
+        "parknshop_price": null,
         "wellcome_price": null,
         "ztore_price": null,
         "goods_picture": "https://online-price-watch.consumer.org.hk/opw/photoRedirect/P000000169/WELLCOME/?url=https%3A%2F%2Fwww.wellcome.com.hk%2Fwd2%2Fuserfile%2Fwd%2Fpdt%2Fall%2FPL101321.jpg"
@@ -372,7 +372,7 @@
         "jasons_price": "85",
         "mannings_price": null,
         "watsons_price": null,
-        "parknshop_price": 0,
+        "parknshop_price": null,
         "wellcome_price": 0,
         "ztore_price": null,
         "goods_picture": "https://online-price-watch.consumer.org.hk/opw/photoRedirect/P000002077/WELLCOME/?url=https%3A%2F%2Fimg.dmallcdn.com%2F20200121%2Fce67f5b2-ccb6-4a69-a029-f9be0f0f73fe_800x800H.webp"
@@ -568,7 +568,7 @@
         "jasons_price": null,
         "mannings_price": null,
         "watsons_price": null,
-        "parknshop_price": 0,
+        "parknshop_price": null,
         "wellcome_price": null,
         "ztore_price": null,
         "goods_picture": "https://online-price-watch.consumer.org.hk/opw/photoRedirect/P000001372/AEON/?url=https%3A%2F%2Fwww.aeoncity.com.hk%2Fmedia%2Fcatalog%2Fproduct%2Fcache%2F5fb3231cdf628c976ea6d09fdebd8f77%2F0%2F0%2F0021512311654712999.jpg"
@@ -1016,7 +1016,7 @@
         "jasons_price": null,
         "mannings_price": null,
         "watsons_price": null,
-        "parknshop_price": 0,
+        "parknshop_price": null,
         "wellcome_price": null,
         "ztore_price": null,
         "goods_picture": "https://online-price-watch.consumer.org.hk/opw/photoRedirect/P000001052/AEON/?url=https%3A%2F%2Fwww.aeoncity.com.hk%2Fmedia%2Fcatalog%2Fproduct%2Fcache%2F5fb3231cdf628c976ea6d09fdebd8f77%2F0%2F0%2F0021211501654712723.jpg"
@@ -1268,7 +1268,7 @@
         "jasons_price": "92",
         "mannings_price": null,
         "watsons_price": null,
-        "parknshop_price": 0,
+        "parknshop_price": null,
         "wellcome_price": "90",
         "ztore_price": null,
         "goods_picture": "https://online-price-watch.consumer.org.hk/opw/photoRedirect/P000002232/WELLCOME/?url=https%3A%2F%2Fimg.dmallcdn.com%2F20200501%2F422c1de3-daf5-44f8-9212-62dd3df55037_800x800H.webp"
@@ -1299,7 +1299,7 @@
         "parknshop_price": "69.8",
         "wellcome_price": null,
         "ztore_price": null,
-        "goods_picture": "https://online-price-watch.consumer.org.hk/opw/photoRedirect/P000001841/PARKNSHOP/?url=https%3A%2F%2Fapi.parknshop.com%2Fmedias%2FEXTRA-VIRGIN-ITALIAN-OLIVE-OIL-112188.jpg%3Fcontext%3DbWFzdGVyfHBuc2hrL2ltYWdlc3wxNzU2NjN8aW1hZ2UvanBlZ3xoZDIvaDdiLzkzMTg5NTIwNDI1MjYvRVhUUkEgVklSR0lOIElUQUxJQU4gT0xJVkUgT0lMLTExMjE4OC5qcGd8MGVlMzljOTkyZGFmZWE0NDQ4MmRhY2I2NmZjYmU5ZTBmYjY5MDIzY2U3ZmM3NTBmODUzMjViNmM0ZDIwZGFmNQ"
+        "goods_picture": "https://api.parknshop.com/medias/zoom-front-112188.jpg?context=bWFzdGVyfHBuc2hrL2ltYWdlc3w2MzQyMnxpbWFnZS9qcGVnfGg5Yy9oNTQvOTU4NzkxNjQzOTU4Mi9QTlNISy0xMTIxODgtZnJvbnQuanBnfGIzMjMxZjg1YjBjYmVlZGZhYTU0OTQ0ZmVlYWFiODQzMzBlNTcyZjk4NDRjZWMzNWRkZGQ1YjhiOTBkYzZlODQ"
     },
     {
         "category_id": 4,
@@ -1313,7 +1313,7 @@
         "parknshop_price": "115",
         "wellcome_price": null,
         "ztore_price": null,
-        "goods_picture": "https://online-price-watch.consumer.org.hk/opw/photoRedirect/P000002252/PARKNSHOP/?url=https%3A%2F%2Fapi.parknshop.com%2Fmedias%2FEXTRA-VIRGIN-OLIVE-OIL-189713.jpg%3Fcontext%3DbWFzdGVyfHBuc2hrL2ltYWdlc3wxNTUzNzN8aW1hZ2UvanBlZ3xoZDAvaGYzLzkzMTg5ODk4ODk1NjYvRVhUUkEgVklSR0lOIE9MSVZFIE9JTC0xODk3MTMuanBnfDNiMDY0N2Y2NGEzYTU1MDNmY2YzMWMxZGIxMjllZjUzNzUwODIyZTJhYTEzMThkMjZiMmVhMzU1YTMzODUyM2Y"
+        "goods_picture": "https://api.parknshop.com/medias/zoom-front-189713.jpg?context=bWFzdGVyfHBuc2hrL2ltYWdlc3w3NDk2MHxpbWFnZS9qcGVnfGg4MS9oMjAvOTU4NzkzMTMxNjI1NC9QTlNISy0xODk3MTMtZnJvbnQuanBnfDk5Y2Y2NWVlYTg1NTFjMzg2NWNkMzliNGQ5ZWU4YjQ3MjgxNjU0MGQ0YjUzNTc2YmU5ZGZhNTkyYWRmYTEzYzQ"
     },
     {
         "category_id": 4,
@@ -1352,7 +1352,7 @@
         "jasons_price": "82",
         "mannings_price": null,
         "watsons_price": null,
-        "parknshop_price": 0,
+        "parknshop_price": null,
         "wellcome_price": "80",
         "ztore_price": null,
         "goods_picture": "https://online-price-watch.consumer.org.hk/opw/photoRedirect/P000001490/WELLCOME/?url=https%3A%2F%2Fimg.dmallcdn.com%2F20200826%2F9b7b224b-383b-4ee8-a891-7cbb8c6cc249_800x800H.webp"
@@ -1383,7 +1383,7 @@
         "parknshop_price": "59.7",
         "wellcome_price": null,
         "ztore_price": null,
-        "goods_picture": "https://online-price-watch.consumer.org.hk/opw/photoRedirect/P000002962/PARKNSHOP/?url=https%3A%2F%2Fapi.parknshop.com%2Fmedias%2FPURE-OLIVE-OIL-189715.jpg%3Fcontext%3DbWFzdGVyfHBuc2hrL2ltYWdlc3w4ODIyNXxpbWFnZS9qcGVnfGhhYy9oZWUvOTMyMTI0ODQyMzk2Ni9QVVJFIE9MSVZFIE9JTC0xODk3MTUuanBnfDU4ZmJjOTNkY2NkNzFkYWE4OTk4MGUxMzczODA2MjQyNzQ1MDY1OTA0NDc3ZWM2ODQzMjA0MjcxODljZjE4OTc"
+        "goods_picture": "https://api.parknshop.com/medias/zoom-front-189715.jpg?context=bWFzdGVyfHBuc2hrL2ltYWdlc3w3OTAzOXxpbWFnZS9qcGVnfGhkMy9oZDEvOTU4NzkzODcyMTgyMi9QTlNISy0xODk3MTUtZnJvbnQuanBnfDNhZTlhYmYxOTM1ODg2NmVmNWRhZDM4MGMyODdiZGM3NDQwY2Q5ZTFlYTQ3NmU3OGM0YjkyNDgxYjkwMjM3Mjc"
     },
     {
         "category_id": 4,
@@ -1397,7 +1397,7 @@
         "parknshop_price": "89.9",
         "wellcome_price": null,
         "ztore_price": null,
-        "goods_picture": "https://online-price-watch.consumer.org.hk/opw/photoRedirect/P000000854/PARKNSHOP/?url=https%3A%2F%2Fapi.parknshop.com%2Fmedias%2FPURE-OLIVE-OIL-185701.jpg%3Fcontext%3DbWFzdGVyfHBuc2hrL2ltYWdlc3wyNDA2MTZ8aW1hZ2UvanBlZ3xoNGYvaDFlLzkzMTg1MDU0NDc0NTQvUFVSRSBPTElWRSBPSUwtMTg1NzAxLmpwZ3xjMDk0ODBkNjMzMzJiN2YzMzFhMmRmN2NlNjI1N2E4YTc4MDJhMmNhMDE5OWIwNjI3ZGM5OTQ1YjBiNjAwYTBj"
+        "goods_picture": "https://api.parknshop.com/medias/zoom-front-185701.jpg?context=bWFzdGVyfHBuc2hrL2ltYWdlc3w2NzU4MHxpbWFnZS9qcGVnfGgxMS9oNTgvOTU4NzkyOTE4NjMzNC9QTlNISy0xODU3MDEtZnJvbnQuanBnfGZhNDQ0NmVjZDUwMDZkM2U4YjAxMTY0MzhiNjI1NWI2YWQzOGZlNDUwNjk0NjA2MDVlYmViYjE5NzJjNjE1N2Y"
     },
     {
         "category_id": 4,
@@ -1450,7 +1450,7 @@
         "jasons_price": "82",
         "mannings_price": null,
         "watsons_price": null,
-        "parknshop_price": 0,
+        "parknshop_price": null,
         "wellcome_price": "80",
         "ztore_price": null,
         "goods_picture": "https://online-price-watch.consumer.org.hk/opw/photoRedirect/P000001115/WELLCOME/?url=https%3A%2F%2Fimg.dmallcdn.com%2F20201222%2F3c1a23b6-9803-4209-80d3-aa34609a62a3_800x800H.webp"
@@ -1943,7 +1943,7 @@
         "parknshop_price": "41.9",
         "wellcome_price": "42",
         "ztore_price": null,
-        "goods_picture": "https://online-price-watch.consumer.org.hk/opw/photoRedirect/P000003502/PARKNSHOP/?url=https%3A%2F%2Fapi.parknshop.com%2Fmedias%2FLESS-SODIUM-HAM-LUNCHEON-MEAT-387235.jpg%3Fcontext%3DbWFzdGVyfHBuc2hrL2ltYWdlc3w0NjY1NTh8aW1hZ2UvanBlZ3xoOTAvaGVmLzkzMTg0ODQ2MDcwMDYvTEVTUyBTT0RJVU0gSEFNIExVTkNIRU9OIE1FQVQtMzg3MjM1LmpwZ3xjMmJlMzE5MzEwNTJhYjM5ZDkwM2Y3OWMwMTVjODE4NDUyZjk4ZWRjYTgwZGVmOGY0NTJjY2U2ZWJmNDM2OWFh"
+        "goods_picture": "https://api.parknshop.com/medias/zoom-front-387235.jpg?context=bWFzdGVyfHBuc2hrL2ltYWdlc3w3NzA3MDR8aW1hZ2UvanBlZ3xoMmQvaGE0Lzk1MTIwNDYzMjk4ODYvUE5TSEstMzg3MjM1LWZyb250LmpwZ3xhODRkMjVmZWIwN2FiNmZjYTRlMjhiNzAwNGE3YzA1YmIzYjZmMjVhODc2MmNjZjI1MGFlODYwYjVlZTNiZWI5"
     },
     {
         "category_id": 4,
@@ -2024,7 +2024,7 @@
         "jasons_price": "27",
         "mannings_price": null,
         "watsons_price": null,
-        "parknshop_price": 0,
+        "parknshop_price": null,
         "wellcome_price": "27",
         "ztore_price": null,
         "goods_picture": "https://online-price-watch.consumer.org.hk/opw/photoRedirect/P000000815/PARKNSHOP/?url=https%3A%2F%2Fapi.parknshop.com%2Fmedias%2FSPICED-PORK-CUBES-111597.jpg%3Fcontext%3DbWFzdGVyfHBuc2hrL2ltYWdlc3w2NDE4OTZ8aW1hZ2UvanBlZ3xoNmYvaDU2LzkzMTg2MDE3MTk4MzgvU1BJQ0VEIFBPUksgQ1VCRVMtMTExNTk3LmpwZ3xjNTlkYWZlYTdlZTM3OGM3M2VmZGVmNzg4MTZiZjEzYTI3MTg0ZmJmNzdhZTA5NjI1MGQwN2JlODNkOGYzN2Ez"
@@ -2080,7 +2080,7 @@
         "jasons_price": "27",
         "mannings_price": null,
         "watsons_price": null,
-        "parknshop_price": 0,
+        "parknshop_price": null,
         "wellcome_price": "26",
         "ztore_price": null,
         "goods_picture": "https://online-price-watch.consumer.org.hk/opw/photoRedirect/P000001239/JASONS/?url=https%3A%2F%2Fimg.dmallcdn.com%2F20210526%2F61f9cacf-a451-491c-bf3a-bb99316ceceb_800x800H.webp"
@@ -2178,10 +2178,10 @@
         "jasons_price": null,
         "mannings_price": null,
         "watsons_price": null,
-        "parknshop_price": 0,
+        "parknshop_price": null,
         "wellcome_price": null,
         "ztore_price": null,
-        "goods_picture": "https://online-price-watch.consumer.org.hk/opw/photoRedirect/P000003403/WELLCOME/?url=https%3A%2F%2Fwww.wellcome.com.hk%2Fwd2%2Fuserfile%2Fwd%2Fpdt%2Fall%2FPL132135.jpg"
+        "goods_picture": "http://cdn.shopify.com/s/files/1/1789/9441/products/60177837_1024x1024.jpg?v=1594894402"
     },
     {
         "category_id": 4,
@@ -2206,7 +2206,7 @@
         "jasons_price": "29",
         "mannings_price": null,
         "watsons_price": null,
-        "parknshop_price": 0,
+        "parknshop_price": null,
         "wellcome_price": "28",
         "ztore_price": null,
         "goods_picture": "https://online-price-watch.consumer.org.hk/opw/photoRedirect/P000000673/WELLCOME/?url=https%3A%2F%2Fimg.dmallcdn.com%2F20200901%2F78299daa-1acd-4930-9600-5ece84ed9a20_800x800H.webp"
@@ -2279,7 +2279,7 @@
         "parknshop_price": "19.9",
         "wellcome_price": null,
         "ztore_price": null,
-        "goods_picture": "https://online-price-watch.consumer.org.hk/opw/photoRedirect/P000003393/PARKNSHOP/?url=https%3A%2F%2Fapi.parknshop.com%2Fmedias%2FSARDINES-IN-OLIVE-OIL-CHILLI-449830.jpg%3Fcontext%3DbWFzdGVyfHBuc2hrL2ltYWdlc3wzNjY4NzN8aW1hZ2UvanBlZ3xoNzMvaDA3LzkzMTk2NjUyNzA4MTQvU0FSRElORVMgSU4gT0xJVkUgT0lMICBDSElMTEktNDQ5ODMwLmpwZ3w4NTFkMjVkYmQ5YzM1ZTk1Mjk2OWJhMWE3OTU1NWQ1OWIzMDk1YWJlODJkOWRkM2VkMjhiYzc1N2ZlNGFjOTlh"
+        "goods_picture": "https://api.parknshop.com/medias/zoom-front-449830.jpg?context=bWFzdGVyfHBuc2hrL2ltYWdlc3wxNDczMjl8aW1hZ2UvanBlZ3xoYTkvaGY1Lzk2MTcyNDcyMDc0NTQvUE5TSEstNDQ5ODMwLWZyb250LmpwZ3wyOWJkNDkwODljYWQ3N2FiMTA4ODVjYzExMDY1MWI0OGEwNTA3OTE1OGUxNzk3MzljNDQyYzhjMmVkYTUxNGMw"
     },
     {
         "category_id": 4,
@@ -2290,7 +2290,7 @@
         "jasons_price": "10",
         "mannings_price": null,
         "watsons_price": null,
-        "parknshop_price": 0,
+        "parknshop_price": null,
         "wellcome_price": "9",
         "ztore_price": null,
         "goods_picture": "https://online-price-watch.consumer.org.hk/opw/photoRedirect/P000003402/WELLCOME/?url=https%3A%2F%2Fimg.dmallcdn.com%2F20210527%2F633665c4-fc57-4825-aa22-0d1668e87a87_800x800H.webp"
@@ -2402,7 +2402,7 @@
         "jasons_price": null,
         "mannings_price": null,
         "watsons_price": null,
-        "parknshop_price": 0,
+        "parknshop_price": null,
         "wellcome_price": null,
         "ztore_price": null,
         "goods_picture": "https://online-price-watch.consumer.org.hk/opw/photoRedirect/P000001933/AEON/?url=https%3A%2F%2Fwww.aeoncity.com.hk%2Fmedia%2Fcatalog%2Fproduct%2Fcache%2F5fb3231cdf628c976ea6d09fdebd8f77%2F0%2F0%2F0025651331654938076.jpg"
@@ -2570,10 +2570,10 @@
         "jasons_price": null,
         "mannings_price": null,
         "watsons_price": null,
-        "parknshop_price": 0,
+        "parknshop_price": null,
         "wellcome_price": null,
         "ztore_price": null,
-        "goods_picture": "https://online-price-watch.consumer.org.hk/opw/photoRedirect/P000001620/WELLCOME/?url=https%3A%2F%2Fwww.wellcome.com.hk%2Fwd2%2Fuserfile%2Fwd%2Fpdt%2Fall%2FPL119722.jpg"
+        "goods_picture": "https://api.parknshop.com/medias/PINEAPPLE-TIDBITS-IN-SYRUP-195035.jpg?context=bWFzdGVyfHBuc2hrL2ltYWdlc3w0NTM2NjJ8aW1hZ2UvanBlZ3xoZjEvaDA4LzkzMTg3MjAyNDE2OTQvUElORUFQUExFIFRJREJJVFMgSU4gU1lSVVAtMTk1MDM1LmpwZ3xjNTlhMWZlMmMyMWFjN2UwNTNkMWI1MzczYzFkNzJmZjgyZmI4MWQwYmUzZjJmYmNmZGMwZjQyMzJiZDQyNGQy"
     },
     {
         "category_id": 4,
@@ -2598,7 +2598,7 @@
         "jasons_price": "24",
         "mannings_price": null,
         "watsons_price": null,
-        "parknshop_price": 0,
+        "parknshop_price": null,
         "wellcome_price": "23",
         "ztore_price": null,
         "goods_picture": "https://online-price-watch.consumer.org.hk/opw/photoRedirect/P000001901/WELLCOME/?url=https%3A%2F%2Fimg.dmallcdn.com%2F20201009%2F3b12945c-5928-4ff1-a694-5d3445a9bc8d_800x800H.webp"
@@ -2710,10 +2710,10 @@
         "jasons_price": null,
         "mannings_price": null,
         "watsons_price": null,
-        "parknshop_price": 0,
+        "parknshop_price": null,
         "wellcome_price": null,
         "ztore_price": null,
-        "goods_picture": "https://online-price-watch.consumer.org.hk/opw/photoRedirect/P000002210/WELLCOME/?url=https%3A%2F%2Fwww.wellcome.com.hk%2Fwd2%2Fuserfile%2Fwd%2Fpdt%2Fall%2FPL357508.jpg"
+        "goods_picture": "https://api.parknshop.com/medias/FIESTA-TROPICAL-FRUIT-MIX-157040.jpg?context=bWFzdGVyfHBuc2hrL2ltYWdlc3w3MDMwNDZ8aW1hZ2UvanBlZ3xoOGIvaGYyLzkzMTg3NTY3NzgwMTQvRklFU1RBIFRST1BJQ0FMIEZSVUlUIE1JWC0xNTcwNDAuanBnfDhkMTc5ZDIwNGZkNzcxZDgxZTVhOTBkMmQzOTVkMzJkYzNkZGI2YzUwMWM4MTYwNGJlZGNiNmY1OTZlNzMxMmI"
     },
     {
         "category_id": 4,
@@ -2780,7 +2780,7 @@
         "jasons_price": "12",
         "mannings_price": null,
         "watsons_price": null,
-        "parknshop_price": 0,
+        "parknshop_price": null,
         "wellcome_price": "11",
         "ztore_price": null,
         "goods_picture": "https://online-price-watch.consumer.org.hk/opw/photoRedirect/P000001214/WELLCOME/?url=https%3A%2F%2Fimg.dmallcdn.com%2F20200925%2F03eb457d-7469-4891-8899-f56afc87a987_800x800H.webp"
@@ -2892,10 +2892,10 @@
         "jasons_price": null,
         "mannings_price": null,
         "watsons_price": null,
-        "parknshop_price": 0,
+        "parknshop_price": null,
         "wellcome_price": null,
         "ztore_price": null,
-        "goods_picture": "https://online-price-watch.consumer.org.hk/opw/photoRedirect/P000000959/WELLCOME/?url=https%3A%2F%2Fwww.wellcome.com.hk%2Fwd2%2Fuserfile%2Fwd%2Fpdt%2Fall%2FPL103289.jpg"
+        "goods_picture": "https://api.parknshop.com/medias/CREAMY-CHICKEN-MUSHROOM-SOUP-422887.jpg?context=bWFzdGVyfHBuc2hrL2ltYWdlc3wxNDg4NDN8aW1hZ2UvanBlZ3xoMzQvaGIwLzkzMjM1Nzg2ODc1MTgvQ1JFQU1ZIENISUNLRU4gTVVTSFJPT00gU09VUC00MjI4ODcuanBnfGU2NzZhZjMyNTMxMGQ1MmZmNzU4NDg4ZmNkOWQyMjhjYzk5NjI2YzI1OWVlMDJkYzkwZDMzMjBkYTNhNzY1NTA"
     },
     {
         "category_id": 4,
@@ -2955,7 +2955,7 @@
     },
     {
         "category_id": 4,
-        "product_name": "青椰菜 Green Cabbage(每個) (35220)",
+        "product_name": "青椰菜 Green Cabbage(每個) ",
         "barcode": "",
         "aeon_price": null,
         "dch_price": null,
@@ -2969,7 +2969,7 @@
     },
     {
         "category_id": 4,
-        "product_name": "娃娃菜 Baby Cabbage袋裝 300克 (55353)",
+        "product_name": "娃娃菜 Baby Cabbage袋裝 300克 ",
         "barcode": "6954331900093 / 6948806520169",
         "aeon_price": null,
         "dch_price": null,
@@ -2983,7 +2983,7 @@
     },
     {
         "category_id": 4,
-        "product_name": "椰菜花 Cauliflower(每個) (938860)",
+        "product_name": "椰菜花 Cauliflower(每個) ",
         "barcode": "",
         "aeon_price": null,
         "dch_price": null,
@@ -2997,7 +2997,7 @@
     },
     {
         "category_id": 4,
-        "product_name": "西蘭花 (昆明) Broccoli (Kunming)(每個) (979815)",
+        "product_name": "西蘭花 (昆明) Broccoli (Kunming)(每個) ",
         "barcode": "",
         "aeon_price": null,
         "dch_price": null,
@@ -3011,7 +3011,7 @@
     },
     {
         "category_id": 4,
-        "product_name": "西蘭花 Broccoli(每個) (45554)",
+        "product_name": "西蘭花 Broccoli(每個) ",
         "barcode": "",
         "aeon_price": null,
         "dch_price": null,
@@ -3025,7 +3025,7 @@
     },
     {
         "category_id": 4,
-        "product_name": "西芹 (美國) Celery (US)袋裝 (1棵) (74133)",
+        "product_name": "西芹 (美國) Celery (US)袋裝 (1棵)",
         "barcode": "033383653259",
         "aeon_price": null,
         "dch_price": null,
@@ -3039,7 +3039,7 @@
     },
     {
         "category_id": 4,
-        "product_name": "西芹 Celery袋裝 (1棵) (919324)",
+        "product_name": "西芹 Celery袋裝 (1棵) ",
         "barcode": "4897000870308",
         "aeon_price": null,
         "dch_price": null,
@@ -3053,7 +3053,7 @@
     },
     {
         "category_id": 4,
-        "product_name": "粟米 Corn (on the Cob)包裝 (3枝) (56050)",
+        "product_name": "粟米 Corn (on the Cob)包裝 (3枝) ",
         "barcode": "6951525517686",
         "aeon_price": null,
         "dch_price": null,
@@ -3067,7 +3067,7 @@
     },
     {
         "category_id": 4,
-        "product_name": "粟米仔 Baby Corn包裝 150克 (55396)",
+        "product_name": "粟米仔 Baby Corn包裝 150克 ",
         "barcode": "8856321000036",
         "aeon_price": null,
         "dch_price": null,
@@ -3081,7 +3081,7 @@
     },
     {
         "category_id": 4,
-        "product_name": "甜豆 Sweet Bean包裝 150克 (55415)",
+        "product_name": "甜豆 Sweet Bean包裝 150克 ",
         "barcode": "4897001090040",
         "aeon_price": null,
         "dch_price": null,
@@ -3095,7 +3095,7 @@
     },
     {
         "category_id": 4,
-        "product_name": "彩色甜椒 (青/黃/紅) Bell Pepper (G/Y/R)包裝 (3個) 430克 (40697)",
+        "product_name": "彩色甜椒 (青/黃/紅) Bell Pepper (G/Y/R)包裝 (3個) 430克 ",
         "barcode": "6935767100042",
         "aeon_price": null,
         "dch_price": null,
@@ -3109,7 +3109,7 @@
     },
     {
         "category_id": 4,
-        "product_name": "番茄 Tomatoes包裝 1磅 (55421)",
+        "product_name": "番茄 Tomatoes包裝 1磅 ",
         "barcode": "4897057710121",
         "aeon_price": null,
         "dch_price": null,
@@ -3123,7 +3123,7 @@
     },
     {
         "category_id": 4,
-        "product_name": "長苦瓜 Long Bitter Cucumber包裝 (2個) (53340)",
+        "product_name": "長苦瓜 Long Bitter Cucumber包裝 (2個) ",
         "barcode": "4899999112926",
         "aeon_price": null,
         "dch_price": null,
@@ -3137,7 +3137,7 @@
     },
     {
         "category_id": 4,
-        "product_name": "甘筍 Carrots袋裝 1公斤 (05279)",
+        "product_name": "甘筍 Carrots袋裝 1公斤",
         "barcode": "6944546168906",
         "aeon_price": null,
         "dch_price": null,
@@ -3151,7 +3151,7 @@
     },
     {
         "category_id": 4,
-        "product_name": "去皮小甘筍 Peeled Baby Carrots袋裝 (340克 / 12安士) (55505)",
+        "product_name": "去皮小甘筍 Peeled Baby Carrots袋裝 (340克 / 12安士) ",
         "barcode": "033383666006",
         "aeon_price": null,
         "dch_price": null,
@@ -3165,7 +3165,7 @@
     },
     {
         "category_id": 4,
-        "product_name": "薯仔 Potatoes(每袋) (67262)",
+        "product_name": "薯仔 Potatoes(每袋) ",
         "barcode": "4897018470019",
         "aeon_price": null,
         "dch_price": null,
@@ -3179,7 +3179,7 @@
     },
     {
         "category_id": 4,
-        "product_name": "蒜頭 Garlics包裝 3個 (49718)",
+        "product_name": "蒜頭 Garlics包裝 3個 ",
         "barcode": "6951525516924",
         "aeon_price": null,
         "dch_price": null,
@@ -3193,7 +3193,7 @@
     },
     {
         "category_id": 4,
-        "product_name": "蒜頭 Garlics包裝 3個 (529909)",
+        "product_name": "蒜頭 Garlics包裝 3個 ",
         "barcode": "4897019589970",
         "aeon_price": null,
         "dch_price": null,
@@ -3207,7 +3207,7 @@
     },
     {
         "category_id": 4,
-        "product_name": "中國富士蘋果 China Fuji Apple(每個) (37157)",
+        "product_name": "中國富士蘋果 China Fuji Apple(每個)",
         "barcode": "",
         "aeon_price": null,
         "dch_price": null,
@@ -3221,7 +3221,7 @@
     },
     {
         "category_id": 4,
-        "product_name": "中國富士蘋果 China Fuji Apple(每個) (944785)",
+        "product_name": "中國富士蘋果 China Fuji Apple(每個)",
         "barcode": "",
         "aeon_price": null,
         "dch_price": null,
@@ -3235,7 +3235,7 @@
     },
     {
         "category_id": 4,
-        "product_name": "中國富士蘋果 China Fuji Apple珍寶 (每個) (943688)",
+        "product_name": "中國富士蘋果 China Fuji Apple珍寶 (每個) ",
         "barcode": "",
         "aeon_price": null,
         "dch_price": null,
@@ -3249,7 +3249,7 @@
     },
     {
         "category_id": 4,
-        "product_name": "紅蘋果 Red Delicious Apple(每個) (73753)",
+        "product_name": "紅蘋果 Red Delicious Apple(每個) ",
         "barcode": "",
         "aeon_price": null,
         "dch_price": null,
@@ -3263,7 +3263,7 @@
     },
     {
         "category_id": 4,
-        "product_name": "地捫 Del Monte菲律賓香蕉 (每磅) (75536)",
+        "product_name": "地捫 Del Monte菲律賓香蕉 (每磅)",
         "barcode": "",
         "aeon_price": null,
         "dch_price": null,
@@ -3273,11 +3273,11 @@
         "parknshop_price": "14.9",
         "wellcome_price": null,
         "ztore_price": null,
-        "goods_picture": "https://online-price-watch.consumer.org.hk/opw/photoRedirect/P000001631/PARKNSHOP/?url=https%3A%2F%2Fapi.parknshop.com%2Fmedias%2Fzoom-front-75536.jpg%3Fcontext%3DbWFzdGVyfHBuc2hrL2ltYWdlc3w4MTcwOHxpbWFnZS9qcGVnfGgyYy9oNGIvOTM2NjEzMTY3MTA3MC9QTlNISy03NTUzNi1mcm9udC5qcGd8OTBkODA3NTRiMjYxMjA2NDAyYTQ1Yjk2MmQwNjg3NzEzNjg2YWE4MWM5NGRlNTQ2MWI2Zjc2MDUzNTMyMWUxYw"
+        "goods_picture": "https://api.parknshop.com/medias/zoom-front-75536.jpg?context=bWFzdGVyfHBuc2hrL2ltYWdlc3w2Njg3NHxpbWFnZS9qcGVnfGg3ZS9oNGYvOTYxMTIzNjQwOTM3NC9QTlNISy03NTUzNi1mcm9udC5qcGd8OTE5OWFlZGY4Mzc5NGI2NzE4YWRkYTFiNjYyOGI3NDU0N2Q1YTgyMjk0ZmMzMjE0NjY0MTYzZDIwNTM3MTczNA"
     },
     {
         "category_id": 4,
-        "product_name": "荷蘭長啤梨 Holland Conference Pear「80裝」(每個) (984377)",
+        "product_name": "荷蘭長啤梨 Holland Conference Pear「80裝」(每個) ",
         "barcode": "",
         "aeon_price": null,
         "dch_price": null,
@@ -3291,7 +3291,7 @@
     },
     {
         "category_id": 4,
-        "product_name": "新奇士 Sunkist袋裝鮮橙 (5個裝) (75126)",
+        "product_name": "新奇士 Sunkist袋裝鮮橙 (5個裝) ",
         "barcode": "",
         "aeon_price": null,
         "dch_price": null,
@@ -3305,7 +3305,7 @@
     },
     {
         "category_id": 4,
-        "product_name": "紅肉西柚 Red Grapefruit(每個) (73763)",
+        "product_name": "紅肉西柚 Red Grapefruit(每個) ",
         "barcode": "",
         "aeon_price": null,
         "dch_price": null,
@@ -3319,7 +3319,7 @@
     },
     {
         "category_id": 4,
-        "product_name": "檸檬 Lemon(每個) (75504)",
+        "product_name": "檸檬 Lemon(每個) ",
         "barcode": "",
         "aeon_price": null,
         "dch_price": null,
@@ -3333,7 +3333,7 @@
     },
     {
         "category_id": 4,
-        "product_name": "檸檬 Lemon(每個) (910505)",
+        "product_name": "檸檬 Lemon(每個) (910505) ",
         "barcode": "",
         "aeon_price": null,
         "dch_price": null,
@@ -3347,7 +3347,7 @@
     },
     {
         "category_id": 4,
-        "product_name": "金菠蘿 Golden Pineapple(每個) (73806}",
+        "product_name": "金菠蘿 Golden Pineapple(每個) ",
         "barcode": "",
         "aeon_price": null,
         "dch_price": null,
@@ -3361,7 +3361,7 @@
     },
     {
         "category_id": 4,
-        "product_name": "菲律賓甜心菠蘿 Pineapple (Philippines) - Honey Pines(每個) (901116)",
+        "product_name": "菲律賓甜心菠蘿 Pineapple (Philippines) - Honey Pines(每個) ",
         "barcode": "4806525339016",
         "aeon_price": null,
         "dch_price": null,
@@ -3375,7 +3375,7 @@
     },
     {
         "category_id": 4,
-        "product_name": "Zespri Gold金奇異果 (58+) (每個) (956730)",
+        "product_name": "Zespri Gold金奇異果 (58+) (每個)",
         "barcode": "94008623",
         "aeon_price": null,
         "dch_price": null,
@@ -3389,7 +3389,7 @@
     },
     {
         "category_id": 4,
-        "product_name": "Zespri Green青奇異果 (奇偉果) (每個) (922286)",
+        "product_name": "Zespri Green青奇異果 (奇偉果) (每個) ",
         "barcode": "94008203",
         "aeon_price": null,
         "dch_price": null,
@@ -3403,7 +3403,7 @@
     },
     {
         "category_id": 4,
-        "product_name": "Zespri Green青奇異果 (新西蘭) (每個) (33082)",
+        "product_name": "Zespri Green青奇異果 (新西蘭) (每個) ",
         "barcode": "94008203",
         "aeon_price": null,
         "dch_price": null,
@@ -3417,7 +3417,7 @@
     },
     {
         "category_id": 4,
-        "product_name": "越南火龍果 Vietnam Dragon Fruit「24裝」(每個) (938134)",
+        "product_name": "越南火龍果 Vietnam Dragon Fruit「24裝」(每個) ",
         "barcode": "",
         "aeon_price": null,
         "dch_price": null,
@@ -3431,7 +3431,7 @@
     },
     {
         "category_id": 4,
-        "product_name": "藍莓 Blueberries盒裝 125克 (926840)",
+        "product_name": "藍莓 Blueberries盒裝 125克 ",
         "barcode": "",
         "aeon_price": null,
         "dch_price": null,
@@ -3445,7 +3445,7 @@
     },
     {
         "category_id": 4,
-        "product_name": "中國冰鮮雞 China Chilled Chicken冰鮮麻皇雞 (全雞) 1隻 (938852)",
+        "product_name": "中國冰鮮雞 China Chilled Chicken冰鮮麻皇雞 (全雞) 1隻 ",
         "barcode": "0000021496554",
         "aeon_price": null,
         "dch_price": null,
@@ -3459,7 +3459,7 @@
     },
     {
         "category_id": 4,
-        "product_name": "中國冰鮮雞 China Chilled Chicken冰鮮三黃雞 (全雞) 1隻 (072751)",
+        "product_name": "中國冰鮮雞 China Chilled Chicken冰鮮三黃雞 (全雞) 1隻 ",
         "barcode": "0000021072758",
         "aeon_price": null,
         "dch_price": null,
@@ -3473,7 +3473,7 @@
     },
     {
         "category_id": 4,
-        "product_name": "丹麥全雞 Danish Whole Chicken1隻 (經解凍處理)  (804559)",
+        "product_name": "丹麥全雞 Danish Whole Chicken1隻 (經解凍處理) ",
         "barcode": "",
         "aeon_price": null,
         "dch_price": null,
@@ -3501,7 +3501,7 @@
     },
     {
         "category_id": 4,
-        "product_name": "巴西雞翼 Brazil Chicken Wings雞中翼 908克 (2磅) (10980)",
+        "product_name": "巴西雞翼 Brazil Chicken Wings雞中翼 908克 (2磅) ",
         "barcode": "4898118909676",
         "aeon_price": null,
         "dch_price": null,
@@ -3515,7 +3515,7 @@
     },
     {
         "category_id": 4,
-        "product_name": "急凍秋刀魚 Frozen Pacific Saury包裝 (3條) (46532)",
+        "product_name": "急凍秋刀魚 Frozen Pacific Saury包裝 (3條) ",
         "barcode": "",
         "aeon_price": null,
         "dch_price": null,
@@ -3529,7 +3529,7 @@
     },
     {
         "category_id": 4,
-        "product_name": "急凍比目魚扒 Frozen Greenland Halibut Steaks400克 (63642)",
+        "product_name": "急凍比目魚扒 Frozen Greenland Halibut Steaks400克 ",
         "barcode": "6923021320343",
         "aeon_price": null,
         "dch_price": null,
@@ -3543,7 +3543,7 @@
     },
     {
         "category_id": 4,
-        "product_name": "急凍挪威三文魚扒 Frozen Norwegian Salmon Steak (Norge)包裝 (2件) (53617)",
+        "product_name": "急凍挪威三文魚扒 Frozen Norwegian Salmon Steak (Norge)包裝 (2件) ",
         "barcode": "4897010671759",
         "aeon_price": null,
         "dch_price": null,
@@ -3557,7 +3557,7 @@
     },
     {
         "category_id": 4,
-        "product_name": "急凍挪威三文魚扒 Frozen Norwegian Salmon Steak (Norge)包裝 (2件) (947184)",
+        "product_name": "急凍挪威三文魚扒 Frozen Norwegian Salmon Steak (Norge)包裝 (2件)",
         "barcode": "4897010671759",
         "aeon_price": null,
         "dch_price": null,
@@ -3571,7 +3571,7 @@
     },
     {
         "category_id": 4,
-        "product_name": "急凍黃花魚 Frozen Yellow Coraker包裝 (1條) (54288)",
+        "product_name": "急凍黃花魚 Frozen Yellow Coraker包裝 (1條) ",
         "barcode": "4897048910028",
         "aeon_price": null,
         "dch_price": null,
@@ -3585,7 +3585,7 @@
     },
     {
         "category_id": 4,
-        "product_name": "雜菜粒 Mixed Vegetables500克 (131022)",
+        "product_name": "雜菜粒 Mixed Vegetables500克 ",
         "barcode": "4898118915431",
         "aeon_price": null,
         "dch_price": null,
@@ -3599,7 +3599,7 @@
     },
     {
         "category_id": 4,
-        "product_name": "雜菜粒 Mixed Vegetables800克 (379683)",
+        "product_name": "雜菜粒 Mixed Vegetables800克 ",
         "barcode": "4898118940556",
         "aeon_price": null,
         "dch_price": null,
@@ -3613,7 +3613,7 @@
     },
     {
         "category_id": 4,
-        "product_name": "青豆 Garden Peas500克 (131021)",
+        "product_name": "青豆 Garden Peas500克 ",
         "barcode": "4898118915707",
         "aeon_price": null,
         "dch_price": null,
@@ -3627,7 +3627,7 @@
     },
     {
         "category_id": 4,
-        "product_name": "粟米粒 Sweet Corn (Kernels)500克 (314636)",
+        "product_name": "粟米粒 Sweet Corn (Kernels)500克 ",
         "barcode": "4898118922804",
         "aeon_price": null,
         "dch_price": null,

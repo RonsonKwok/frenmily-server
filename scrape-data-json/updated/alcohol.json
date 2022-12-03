@@ -8,7 +8,7 @@
         "jasons_price": null,
         "mannings_price": null,
         "watsons_price": null,
-        "parknshop_price": 0,
+        "parknshop_price": null,
         "wellcome_price": null,
         "ztore_price": null,
         "goods_picture": "https://online-price-watch.consumer.org.hk/opw/photoRedirect/P000000266/PARKNSHOP/?url=https%3A%2F%2Fapi.parknshop.com%2Fmedias%2FBeer-Can-6S-388704.jpg%3Fcontext%3DbWFzdGVyfHBuc2hrL2ltYWdlc3wyMDE4MDZ8aW1hZ2UvanBlZ3xoYzAvaDM3LzkzMTg0NjYyODk2OTQvQmVlciBDYW4gNlMtMzg4NzA0LmpwZ3w0MWI0ZDI0YzZjMzMyYjVlZGRmNzQzYzlhNzQ2YTQyNWZiYTdkMTJiMmM2MDQyY2U1ZTE4OGNmMDJkMGVjNDgx"
@@ -288,7 +288,7 @@
         "jasons_price": null,
         "mannings_price": null,
         "watsons_price": null,
-        "parknshop_price": 0,
+        "parknshop_price": null,
         "wellcome_price": null,
         "ztore_price": null,
         "goods_picture": "https://online-price-watch.consumer.org.hk/opw/photoRedirect/P000002195/PARKNSHOP/?url=https%3A%2F%2Fapi.parknshop.com%2Fmedias%2Fzoom-front-379645.jpg%3Fcontext%3DbWFzdGVyfHBuc2hrL2ltYWdlc3wxNzg4MTB8aW1hZ2UvanBlZ3xoNjYvaDc3Lzk0NjYzNTkxODU0MzgvUE5TSEstMzc5NjQ1LWZyb250LmpwZ3xiODZlNGMwYjgyZWFlYmEwM2U4YzliNmMxNjRiZmZhNWE4NTM2MzM2ZDkwMGRmNDViMjgxZjc4YWFiYzhkYzAw"
@@ -302,7 +302,7 @@
         "jasons_price": 0,
         "mannings_price": null,
         "watsons_price": null,
-        "parknshop_price": 0,
+        "parknshop_price": null,
         "wellcome_price": 0,
         "ztore_price": null,
         "goods_picture": "https://online-price-watch.consumer.org.hk/opw/photoRedirect/P000002186/PARKNSHOP/?url=https%3A%2F%2Fapi.parknshop.com%2Fmedias%2FLIGHT-BEER-6S-369681.jpg%3Fcontext%3DbWFzdGVyfHBuc2hrL2ltYWdlc3wxNTM3NDJ8aW1hZ2UvanBlZ3xoY2IvaDRlLzkzMTg1MTI0OTI1NzQvTElHSFQgQkVFUiA2Uy0zNjk2ODEuanBnfGQ4ZjQ1YmE4YzI2Yjc3NWY0YmUxNjZmMDNiOWJiYmE1NGIxNmQ2MzVkMDgxZGU4NjcyYmFkYWM0OGU5ZDAyODk"
@@ -319,7 +319,7 @@
         "parknshop_price": "30",
         "wellcome_price": "37.5",
         "ztore_price": null,
-        "goods_picture": "https://online-price-watch.consumer.org.hk/opw/photoRedirect/P000002192/PARKNSHOP/?url=https%3A%2F%2Fapi.parknshop.com%2Fmedias%2FLIGHT-BEER-KING-CAN-4S-369683.jpg%3Fcontext%3DbWFzdGVyfHBuc2hrL2ltYWdlc3wxNTYwNTV8aW1hZ2UvanBlZ3xoMTMvaDI1LzkzMTg0NzM3NjA3OTgvTElHSFQgQkVFUiBLSU5HIENBTiA0Uy0zNjk2ODMuanBnfGI5ZTg3YzM4ZTAzMDEyZGE0NmE0ZDIyNjM5NWI4NzI1M2EwMjgzNGM1YWRhNWFlODQ0MmZlMjFjZmU2MmY0YjU"
+        "goods_picture": "https://image.ztore.com/images/ztore/production/product/750px/1025492_1.jpg?1593163378"
     },
     {
         "category_id": 7,
@@ -358,7 +358,7 @@
         "jasons_price": null,
         "mannings_price": null,
         "watsons_price": null,
-        "parknshop_price": 0,
+        "parknshop_price": null,
         "wellcome_price": null,
         "ztore_price": null,
         "goods_picture": "https://online-price-watch.consumer.org.hk/opw/photoRedirect/P000001176/PARKNSHOP/?url=https%3A%2F%2Fapi.parknshop.com%2Fmedias%2F6s-Can-Beer-150762.jpg%3Fcontext%3DbWFzdGVyfHBuc2hrL2ltYWdlc3wyMjQxMzN8aW1hZ2UvanBlZ3xoNWMvaGU5LzkzMTkwMDc2NDk4MjIvNnMgQ2FuIEJlZXItMTUwNzYyLmpwZ3wwOGRmYTE3M2RkMzBlNDg5ZWYyM2JjNDYzMjlhN2ZiNzM4MjdlNjg0YWE5NmYyOWVmZTIzYWI3OWQwYzljNmQz"
@@ -484,7 +484,7 @@
         "jasons_price": null,
         "mannings_price": null,
         "watsons_price": null,
-        "parknshop_price": 0,
+        "parknshop_price": null,
         "wellcome_price": null,
         "ztore_price": null,
         "goods_picture": "https://online-price-watch.consumer.org.hk/opw/photoRedirect/P000001660/PARKNSHOP/?url=https%3A%2F%2Fapi.parknshop.com%2Fmedias%2FSupper-Dry-Beer-Bot-165531.jpg%3Fcontext%3DbWFzdGVyfHBuc2hrL2ltYWdlc3w0NzI2NHxpbWFnZS9qcGVnfGhiNi9oNWMvOTMxODg1NTM0NDE1OC9TdXBwZXIgRHJ5IEJlZXIgQm90LTE2NTUzMS5qcGd8NjA5NmYwNGFmNjYyNTYyZjNkNTg0NGZmN2FhMWQzZWNiOWI3MmViZGMyNjVmMGM1M2Y2OWVmZWY1MjZjNzYzNg"
@@ -498,7 +498,7 @@
         "jasons_price": null,
         "mannings_price": null,
         "watsons_price": null,
-        "parknshop_price": 0,
+        "parknshop_price": null,
         "wellcome_price": null,
         "ztore_price": null,
         "goods_picture": "https://online-price-watch.consumer.org.hk/opw/photoRedirect/P000001287/PARKNSHOP/?url=https%3A%2F%2Fapi.parknshop.com%2Fmedias%2FSupper-Dry-L-Bot-154951.jpg%3Fcontext%3DbWFzdGVyfHBuc2hrL2ltYWdlc3w1MDUwNXxpbWFnZS9qcGVnfGhkNi9oMjAvOTMxODc4ODE2OTc1OC9TdXBwZXIgRHJ5IEwgQm90LTE1NDk1MS5qcGd8YmIzOTE4YjFkNDczM2ZkOWMyNzMyMWMxMDk1MDg0MDlhMzIxMzI2Y2Q5NGRjMDI1NWRhMTM3ZDNiN2MyNGNjMg"
@@ -540,7 +540,7 @@
         "jasons_price": null,
         "mannings_price": null,
         "watsons_price": null,
-        "parknshop_price": 0,
+        "parknshop_price": null,
         "wellcome_price": null,
         "ztore_price": null,
         "goods_picture": "https://online-price-watch.consumer.org.hk/opw/photoRedirect/P000000265/AEON/?url=https%3A%2F%2Fwww.aeoncity.com.hk%2Fmedia%2Fcatalog%2Fproduct%2Fcache%2F5fb3231cdf628c976ea6d09fdebd8f77%2F0%2F0%2F0020265991654711936.jpg"
@@ -582,7 +582,7 @@
         "jasons_price": 0,
         "mannings_price": null,
         "watsons_price": null,
-        "parknshop_price": 0,
+        "parknshop_price": null,
         "wellcome_price": "28",
         "ztore_price": null,
         "goods_picture": "https://online-price-watch.consumer.org.hk/opw/photoRedirect/P000001288/WELLCOME/?url=https%3A%2F%2Fimg.dmallcdn.com%2F20200414%2F990c0514-b4f2-4c06-b9f7-a101d6c2e211_800x800H.webp"
@@ -596,7 +596,7 @@
         "jasons_price": 0,
         "mannings_price": null,
         "watsons_price": null,
-        "parknshop_price": 0,
+        "parknshop_price": null,
         "wellcome_price": 0,
         "ztore_price": null,
         "goods_picture": "https://online-price-watch.consumer.org.hk/opw/photoRedirect/P000000261/PARKNSHOP/?url=https%3A%2F%2Fapi.parknshop.com%2Fmedias%2FBEER-6S-S-BOT-HEINEKEN-160739.jpg%3Fcontext%3DbWFzdGVyfHBuc2hrL2ltYWdlc3wzOTM0OTZ8aW1hZ2UvanBlZ3xoN2MvaGM5LzkzMTg5MzkwNjYzOTgvQkVFUiA2UyBTIEJPVCBIRUlORUtFTi0xNjA3MzkuanBnfGY2NzcxYmY1NWZiZDk5YzRkNmQ5NWRhMzM3YTM4MDE2ZjNkZTYwMzRjNmNlYmYwZTM2ZTg0NWQ1NWNkYzE1MWU"
@@ -610,7 +610,7 @@
         "jasons_price": 0,
         "mannings_price": null,
         "watsons_price": null,
-        "parknshop_price": 0,
+        "parknshop_price": null,
         "wellcome_price": 0,
         "ztore_price": null,
         "goods_picture": "https://online-price-watch.consumer.org.hk/opw/photoRedirect/P000000032/WELLCOME/?url=https%3A%2F%2Fimg.dmallcdn.com%2F20200413%2F8c51fc9f-0728-4626-b9d7-4dda718fb586_800x800H.webp"
@@ -638,7 +638,7 @@
         "jasons_price": null,
         "mannings_price": null,
         "watsons_price": null,
-        "parknshop_price": 0,
+        "parknshop_price": null,
         "wellcome_price": null,
         "ztore_price": null,
         "goods_picture": "https://online-price-watch.consumer.org.hk/opw/photoRedirect/P000001297/PARKNSHOP/?url=https%3A%2F%2Fapi.parknshop.com%2Fmedias%2FICHIBAN-LARGE-BOTTLE-361536.jpg%3Fcontext%3DbWFzdGVyfHBuc2hrL2ltYWdlc3w3OTM2OXxpbWFnZS9qcGVnfGhlMy9oZGMvOTMxODkxNDM1OTMyNi9JQ0hJQkFOIExBUkdFIEJPVFRMRS0zNjE1MzYuanBnfGM3MjQ2MTAzMDRmYjBhOTEyNmYyNGRkYTE1MThkMzQ0NTI0MDI2YjkxMjUzYTg0ZjMzZTZhMDM2MmU0MjEyYmI"
@@ -921,7 +921,7 @@
         "parknshop_price": "39.9",
         "wellcome_price": "40",
         "ztore_price": null,
-        "goods_picture": "https://online-price-watch.consumer.org.hk/opw/photoRedirect/P000001861/PARKNSHOP/?url=https%3A%2F%2Fapi.parknshop.com%2Fmedias%2FSHAN-ZHENG-CHIEW-L-128293.jpg%3Fcontext%3DbWFzdGVyfHBuc2hrL2ltYWdlc3wxOTIwODd8aW1hZ2UvanBlZ3xoNjIvaGJmLzkzMTg4NDY0MzEyNjIvU0hBTiBaSEVORyBDSElFVyBMLTEyODI5My5qcGd8ZTBjMzliZjJlOWE4ZDIwZjA4ZmEzMTU2MDZkZTAyMTAyOTg4YTdmY2E4MTNlZWI3MzFlZDNiMWRhMDY4MTI1MQ"
+        "goods_picture": "https://api.parknshop.com/medias/zoom-front-128293.jpg?context=bWFzdGVyfHBuc2hrL2ltYWdlc3w3ODI5MnxpbWFnZS9qcGVnfGhmOC9oMTMvOTYyODQ4ODc5NDE0Mi9QTlNISy0xMjgyOTMtZnJvbnQuanBnfDMyNDE2OWIyMjk5MTExM2FmMmE3NGM0NWNmOTA2OGM5NDU1OWQ0MzdlZDIzOTE5MWU2NzI1MjhhOWU2NzU2MGU"
     },
     {
         "category_id": 7,

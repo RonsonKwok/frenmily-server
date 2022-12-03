@@ -8,7 +8,7 @@
         "jasons_price": "5.5",
         "mannings_price": null,
         "watsons_price": null,
-        "parknshop_price": 0,
+        "parknshop_price": null,
         "wellcome_price": "5.5",
         "ztore_price": null,
         "goods_picture": "https://online-price-watch.consumer.org.hk/opw/photoRedirect/P000003001/WELLCOME/?url=https%3A%2F%2Fimg.dmallcdn.com%2F20210429%2Fd4ceb33a-5f79-46e3-a194-82052017e75e_800x800H.webp"
@@ -78,7 +78,7 @@
         "jasons_price": null,
         "mannings_price": null,
         "watsons_price": null,
-        "parknshop_price": 0,
+        "parknshop_price": null,
         "wellcome_price": null,
         "ztore_price": null,
         "goods_picture": "https://online-price-watch.consumer.org.hk/opw/photoRedirect/P000000010/AEON/?url=https%3A%2F%2Fwww.aeoncity.com.hk%2Fmedia%2Fcatalog%2Fproduct%2Fcache%2F5fb3231cdf628c976ea6d09fdebd8f77%2F0%2F0%2F0020224321654711837.jpg"
@@ -400,7 +400,7 @@
         "jasons_price": 0,
         "mannings_price": null,
         "watsons_price": null,
-        "parknshop_price": 0,
+        "parknshop_price": null,
         "wellcome_price": "6.5",
         "ztore_price": null,
         "goods_picture": "https://online-price-watch.consumer.org.hk/opw/photoRedirect/P000000389/WELLCOME/?url=https%3A%2F%2Fimg.dmallcdn.com%2F20210520%2Fb1b6cba0-86f1-43ca-978d-745ec37b8653_800x800H.webp"
@@ -442,7 +442,7 @@
         "jasons_price": null,
         "mannings_price": null,
         "watsons_price": null,
-        "parknshop_price": 0,
+        "parknshop_price": null,
         "wellcome_price": null,
         "ztore_price": null,
         "goods_picture": "https://online-price-watch.consumer.org.hk/opw/photoRedirect/P000003234/PARKNSHOP/?url=https%3A%2F%2Fapi.parknshop.com%2Fmedias%2FDoll-Bowl-Instant-Mifun-Pickled-Vegetable-and-Pork-Flavour-176161.jpg%3Fcontext%3DbWFzdGVyfHBuc2hrL2ltYWdlc3w1MTI4MzJ8aW1hZ2UvanBlZ3xoZWEvaDJhLzkzMTg0NTczNzY3OTgvRG9sbCBCb3dsIEluc3RhbnQgTWlmdW4gUGlja2xlZCBWZWdldGFibGUgYW5kIFBvcmsgRmxhdm91ci0xNzYxNjEuanBnfDFmNTkwMTc1MmY2MTk3ZDgxZGE4OThkM2MzNDZjNzAxOTM1OTQ0ODUwOWVjZDI5M2M2MDgyYTE4NmJhMjc0MmI"
@@ -568,7 +568,7 @@
         "jasons_price": null,
         "mannings_price": null,
         "watsons_price": null,
-        "parknshop_price": 0,
+        "parknshop_price": null,
         "wellcome_price": null,
         "ztore_price": null,
         "goods_picture": "https://online-price-watch.consumer.org.hk/opw/photoRedirect/P000000312/AEON/?url=https%3A%2F%2Fwww.aeoncity.com.hk%2Fmedia%2Fcatalog%2Fproduct%2Fcache%2F5fb3231cdf628c976ea6d09fdebd8f77%2F0%2F0%2F0025197591654937783.jpg"
@@ -725,21 +725,21 @@
         "parknshop_price": "8.9",
         "wellcome_price": null,
         "ztore_price": null,
-        "goods_picture": "https://online-price-watch.consumer.org.hk/opw/photoRedirect/P000001503/PARKNSHOP/?url=https%3A%2F%2Fapi.parknshop.com%2Fmedias%2FSau-Tao-Buckwheat-Noodle-163948.jpg%3Fcontext%3DbWFzdGVyfHBuc2hrL2ltYWdlc3wyODc2Mjh8aW1hZ2UvanBlZ3xoNGIvaGQ4LzkzMTg1MzEwMDY0OTQvU2F1IFRhbyBCdWNrd2hlYXQgTm9vZGxlLTE2Mzk0OC5qcGd8NTQ1MzBjY2JiZWMyZjBlZmU2YTk0ZDlmMThiZmU2MDY2YTdiN2RkNWQ0N2I1ZDMzMDllMGY1NTNhZTVmMTg0NA"
+        "goods_picture": "https://api.parknshop.com/medias/zoom-front-163948.jpg?context=bWFzdGVyfHBuc2hrL2ltYWdlc3wxMjMyNzN8aW1hZ2UvanBlZ3xoNTQvaGU0Lzk2MzQ5ODcwODE3NTgvUE5TSEstMTYzOTQ4LWZyb250LmpwZ3w0MzEzMDcxZDNiNTkxMTE2YjM0MGQ0ZGJmNjgzMjI0ZGMzMGVmYzJmZGY4MTQyZWQ3ZmE3MTIyZTI1NzljYTVm"
     },
     {
         "category_id": 5,
-        "product_name": "寿桃牌 (壽桃牌) Sau Tao鮑魚麵 (撈麵 附醬包) 禮盒 - 12個裝 684克",
+        "product_name": "寿桃牌 (壽桃牌) Sau Tao鮑魚麵 禮盒 - 12個裝 684克",
         "barcode": "087303858415",
         "aeon_price": "68",
         "dch_price": null,
         "jasons_price": null,
         "mannings_price": null,
         "watsons_price": null,
-        "parknshop_price": 0,
+        "parknshop_price": null,
         "wellcome_price": null,
         "ztore_price": null,
-        "goods_picture": "https://online-price-watch.consumer.org.hk/opw/photoRedirect/P000001484/WELLCOME/?url=https%3A%2F%2Fwww.wellcome.com.hk%2Fwd2%2Fuserfile%2Fwd%2Fpdt%2Fall%2FPL101980.jpg"
+        "goods_picture": "https://api.parknshop.com/medias/Sau-Tao-Abalone-Noodle-150960.jpg?context=bWFzdGVyfHBuc2hrL2ltYWdlc3w1NTI1MzR8aW1hZ2UvanBlZ3xoMDMvaDhmLzkzMTg0MjUyOTY5MjYvU2F1IFRhbyBBYmFsb25lIE5vb2RsZS0xNTA5NjAuanBnfDkxMmI4MzFiNzQ3OTdkMjI5MWNhYmRiZWViOWM2NWJhZDY4Y2VkMWQyYWI2NjNlOGJjN2UzZGI1MjM1MzRhY2M"
     },
     {
         "category_id": 5,
@@ -890,7 +890,7 @@
         "jasons_price": null,
         "mannings_price": null,
         "watsons_price": null,
-        "parknshop_price": 0,
+        "parknshop_price": null,
         "wellcome_price": null,
         "ztore_price": null,
         "goods_picture": "https://online-price-watch.consumer.org.hk/opw/photoRedirect/P000001135/AEON/?url=https%3A%2F%2Fwww.aeoncity.com.hk%2Fmedia%2Fcatalog%2Fproduct%2Fcache%2F5fb3231cdf628c976ea6d09fdebd8f77%2F0%2F0%2F0026265621654938365.jpg"
@@ -904,10 +904,10 @@
         "jasons_price": null,
         "mannings_price": null,
         "watsons_price": null,
-        "parknshop_price": 0,
+        "parknshop_price": null,
         "wellcome_price": null,
         "ztore_price": null,
-        "goods_picture": "https://online-price-watch.consumer.org.hk/opw/photoRedirect/P000001134/WELLCOME/?url=https%3A%2F%2Fwww.wellcome.com.hk%2Fwd2%2Fuserfile%2Fwd%2Fpdt%2Fall%2FPL354431.jpg"
+        "goods_picture": "https://m.media-amazon.com/images/I/51-Ou5N49oL._SL1000_.jpg"
     },
     {
         "category_id": 5,
@@ -988,7 +988,7 @@
         "jasons_price": null,
         "mannings_price": null,
         "watsons_price": null,
-        "parknshop_price": 0,
+        "parknshop_price": null,
         "wellcome_price": null,
         "ztore_price": null,
         "goods_picture": "https://online-price-watch.consumer.org.hk/opw/photoRedirect/P000002764/PARKNSHOP/?url=https%3A%2F%2Fapi.parknshop.com%2Fmedias%2F5-SPAGHETTI-383625.jpg%3Fcontext%3DbWFzdGVyfHBuc2hrL2ltYWdlc3wyMDQyNTl8aW1hZ2UvanBlZ3xoNWIvaDBlLzkzMTg3NDE2NzE5NjYvNSBTUEFHSEVUVEktMzgzNjI1LmpwZ3xkZTA5YTA1NDUwODBlMjIyZTg3NTI0OGZhNzRlYTNhMTQ0ZWU2NjY5NWRlYjcyYmJkNWUzNDA0ZmRlZjIyODFk"
@@ -1016,7 +1016,7 @@
         "jasons_price": "19",
         "mannings_price": null,
         "watsons_price": null,
-        "parknshop_price": 0,
+        "parknshop_price": null,
         "wellcome_price": "19",
         "ztore_price": null,
         "goods_picture": "https://online-price-watch.consumer.org.hk/opw/photoRedirect/P000000942/WELLCOME/?url=https%3A%2F%2Fimg.dmallcdn.com%2F20210222%2Fdf1bf878-a311-4e73-9e5b-c2df4fd8f0be_800x800H.webp"
@@ -1072,7 +1072,7 @@
         "jasons_price": null,
         "mannings_price": null,
         "watsons_price": null,
-        "parknshop_price": 0,
+        "parknshop_price": null,
         "wellcome_price": null,
         "ztore_price": null,
         "goods_picture": "https://online-price-watch.consumer.org.hk/opw/photoRedirect/P000001626/AEON/?url=https%3A%2F%2Fwww.aeoncity.com.hk%2Fmedia%2Fcatalog%2Fproduct%2Fcache%2F5fb3231cdf628c976ea6d09fdebd8f77%2F0%2F0%2F0025464891654937935.jpg"
@@ -1128,7 +1128,7 @@
         "jasons_price": null,
         "mannings_price": null,
         "watsons_price": null,
-        "parknshop_price": 0,
+        "parknshop_price": null,
         "wellcome_price": null,
         "ztore_price": null,
         "goods_picture": "https://online-price-watch.consumer.org.hk/opw/photoRedirect/P000003470/PARKNSHOP/?url=https%3A%2F%2Fapi.parknshop.com%2Fmedias%2FEASY-MAC-MACARONI-CHEESE-160040.jpg%3Fcontext%3DbWFzdGVyfHBuc2hrL2ltYWdlc3w0MDE1NjF8aW1hZ2UvanBlZ3xoZjIvaDQxLzkzMTg1MjU0Njg3MDIvRUFTWSBNQUMgTUFDQVJPTkkgIENIRUVTRS0xNjAwNDAuanBnfDUxMzJjZWY0MzQ1YTkzZDAyOWYzZGMzMDVkNTg4ODQ1ODBlOTdmZjEwNzQ1NGNhOTUyMGEzNTkwMWMwNDM4NDY"
