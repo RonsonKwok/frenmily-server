@@ -448,12 +448,31 @@ export class UserController {
 
     getUserName = async (req: express.Request, res: express.Response) => {
         try {
-            console.log("HERERE");
-
             const user_id = req.body.user_id
             let userResult = await this.userService.getUserName(user_id);
             console.log(userResult);
             res.json(userResult)
+
+
+        } catch (e) {
+            console.log(e);
+        }
+    };
+
+    disableAccount = async (req: express.Request, res: express.Response) => {
+        try {
+            console.log("disableAccount API");
+            const username = req.body.username
+            let randomString = "";
+            randomString += Math.random();
+            randomString += Math.random();
+            randomString += Math.random();
+            console.log(randomString);
+
+            await this.userService.changePasswordToRandom(username, randomString);
+            res.json({
+                message: "server has disabled the account"
+            })
 
 
         } catch (e) {
