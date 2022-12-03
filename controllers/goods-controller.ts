@@ -112,12 +112,12 @@ export class GoodsController {
             const id = req.body.catIds
             console.log(id);
 
-            console.log("@@@@@@ Receipt Request of getProductByBatch");
-            console.log("req.body=", req.body)
+            // console.log("@@@@@@ Receipt Request of getProductByBatch");
+            // console.log("req.body=", req.body)
             const { catIds, qtyInOneBatch, ItemsToBeSkipped } = req.body
 
 
-            console.log({ catIds, qtyInOneBatch, ItemsToBeSkipped })
+            // console.log({ catIds, qtyInOneBatch, ItemsToBeSkipped })
             const result = await this.goodsService.getProductByBatchAndCatId(catIds, qtyInOneBatch, ItemsToBeSkipped);
 
 
@@ -126,7 +126,7 @@ export class GoodsController {
                 result: result
             });
 
-            console.log("#### result of getProductByBatchAndCatId: ", result)
+            // console.log("#### result of getProductByBatchAndCatId: ", result)
 
             return;
 
@@ -162,7 +162,7 @@ export class GoodsController {
         try {
             console.log("addToCart API");
             const { user_id, goods_id, quantity } = req.body
-            console.log(user_id, goods_id, quantity)
+            // console.log(user_id, goods_id, quantity)
 
             await this.goodsService.addToCart(user_id, goods_id, quantity);
 
@@ -184,7 +184,7 @@ export class GoodsController {
         try {
             console.log("getInitNum API");
             const { user_id, goods_id } = req.body
-            console.log(user_id, goods_id)
+            // console.log(user_id, goods_id)
 
             const quantity = await this.goodsService.getInitNum(user_id, goods_id);
 
@@ -206,7 +206,7 @@ export class GoodsController {
         try {
             console.log("getShoppingCartInitNum API");
             const user_id = req.body.user_id
-            console.log(user_id)
+            // console.log(user_id)
 
             const quantity = await this.goodsService.getShoppingCartInitNum(user_id);
 
@@ -228,7 +228,7 @@ export class GoodsController {
         try {
             console.log("getShoppingListItems API");
             const user_id = req.body.user_id
-            console.log(user_id)
+            // console.log(user_id)
 
             const items = await this.goodsService.getShoppingListItems(user_id);
 
@@ -249,8 +249,8 @@ export class GoodsController {
             console.log("assignToGroup API");
             const user_id = req.body.userId
             const groupId = req.body.groupId
-            console.log("user_id :", user_id)
-            console.log("groupId :", groupId)
+            // console.log("user_id :", user_id)
+            // console.log("groupId :", groupId)
 
             const items = await this.goodsService.assignToGroup(user_id, groupId);
 
@@ -270,7 +270,7 @@ export class GoodsController {
         try {
             console.log("getAssignedItems API");
             const groupId = req.body.groupId
-            console.log("groupId :", groupId)
+            // console.log("groupId :", groupId)
 
             const results = await this.goodsService.getAssignedItems(groupId);
 
@@ -291,8 +291,8 @@ export class GoodsController {
             console.log("changeIsCompleted API");
             const cart_id = req.body.cart_id
             const user_id = req.body.user_id
-            console.log("cart_id :", cart_id)
-            console.log("user_id :", user_id)
+            // console.log("cart_id :", cart_id)
+            // console.log("user_id :", user_id)
 
             const results = await this.goodsService.changeIsCompleted(cart_id, user_id);
 
@@ -312,7 +312,7 @@ export class GoodsController {
         try {
             console.log("clearCart API");
             const user_id = req.body.user_id
-            console.log("user_id :", user_id)
+            // console.log("user_id :", user_id)
 
             await this.goodsService.clearCart(user_id);
 

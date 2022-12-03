@@ -21,7 +21,7 @@ import { receiptsRoute } from "./routes/receiptsRoute";
 // import path from 'path';
 // import fetch from 'cross-fetch';
 export const app = express();
-const PORT = 8000;
+const PORT = 8000;// To be changed to 8080 AWS server
 
 app.use(express.json());
 
