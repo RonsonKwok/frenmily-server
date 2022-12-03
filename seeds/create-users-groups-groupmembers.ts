@@ -21203,757 +21203,1828 @@ export async function seed(knex: Knex): Promise<void> {
 
 
     await knex.insert([
+        
         {
             user_id: "1",
-            goods_id: "1294",
+            goods_id: "1462",
+            category_id: 10
+        },
+        {
+            user_id: "1",
+            goods_id: "1462",
+            category_id: 10
+        },
+        {
+            user_id: "1",
+            goods_id: "1462",
+            category_id: 10
+        },
+        {
+            user_id: "1",
+            goods_id: "1462",
+            category_id: 10
+        },
+        {
+            user_id: "1",
+            goods_id: "1462",
+            category_id: 10
+        },
+        {
+            user_id: "1",
+            goods_id: "1462",
+            category_id: 10
+        },
+        {
+            user_id: "1",
+            goods_id: "1462",
+            category_id: 10
+        },
+        {
+            user_id: "1",
+            goods_id: "1462",
+            category_id: 10
+        },
+        {
+            user_id: "1",
+            goods_id: "1462",
+            category_id: 10
+        },
+        {
+            user_id: "1",
+            goods_id: "1462",
+            category_id: 10
+        },
+        {
+            user_id: "1",
+            goods_id: "1462",
+            category_id: 10
+        },
+        {
+            user_id: "1",
+            goods_id: "1462",
+            category_id: 10
+        },
+        //2
+        {
+            user_id: "2",
+            goods_id: "1474",
             category_id: 10
         },
         {
             user_id: "2",
-            goods_id: "1294",
+            goods_id: "1474",
+            category_id: 10
+        },
+        {
+            user_id: "2",
+            goods_id: "1474",
+            category_id: 10
+        },
+        {
+            user_id: "2",
+            goods_id: "1474",
+            category_id: 10
+        },
+        {
+            user_id: "2",
+            goods_id: "1474",
+            category_id: 10
+        },
+        {
+            user_id: "2",
+            goods_id: "1474",
+            category_id: 10
+        },
+        {
+            user_id: "2",
+            goods_id: "1474",
+            category_id: 10
+        },
+        {
+            user_id: "2",
+            goods_id: "1474",
+            category_id: 10
+        },
+        {
+            user_id: "2",
+            goods_id: "1474",
+            category_id: 10
+        },
+        {
+            user_id: "2",
+            goods_id: "1474",
+            category_id: 10
+        },
+        {
+            user_id: "2",
+            goods_id: "1474",
+            category_id: 10
+        },
+        //3
+        {
+            user_id: "3",
+            goods_id: "1479",
             category_id: 10
         },
         {
             user_id: "3",
-            goods_id: "1294",
+            goods_id: "1479",
+            category_id: 10
+        },
+        {
+            user_id: "3",
+            goods_id: "1479",
+            category_id: 10
+        },
+        {
+            user_id: "3",
+            goods_id: "1479",
+            category_id: 10
+        },
+        {
+            user_id: "3",
+            goods_id: "1479",
+            category_id: 10
+        },
+        {
+            user_id: "3",
+            goods_id: "1479",
+            category_id: 10
+        },
+        {
+            user_id: "3",
+            goods_id: "1479",
+            category_id: 10
+        },
+        {
+            user_id: "3",
+            goods_id: "1479",
+            category_id: 10
+        },
+        {
+            user_id: "3",
+            goods_id: "1479",
+            category_id: 10
+        },
+        {
+            user_id: "3",
+            goods_id: "1479",
+            category_id: 10
+        },
+        //4 -8
+        {
+            user_id: "4",
+            goods_id: "1477",
             category_id: 10
         },
         {
             user_id: "4",
-            goods_id: "1294",
+            goods_id: "1477",
+            category_id: 10
+        },
+        {
+            user_id: "4",
+            goods_id: "1477",
+            category_id: 10
+        },
+        {
+            user_id: "4",
+            goods_id: "1477",
+            category_id: 10
+        },
+        {
+            user_id: "4",
+            goods_id: "1477",
+            category_id: 10
+        },
+        {
+            user_id: "4",
+            goods_id: "1477",
+            category_id: 10
+        },
+        {
+            user_id: "4",
+            goods_id: "1477",
+            category_id: 10
+        },
+        {
+            user_id: "4",
+            goods_id: "1477",
+            category_id: 10
+        },
+        {
+            user_id: "4",
+            goods_id: "1477",
+            category_id: 10
+        },
+        //5 -7
+        {
+            user_id: "5",
+            goods_id: "1450",
             category_id: 10
         },
         {
             user_id: "5",
-            goods_id: "1294",
+            goods_id: "1450",
+            category_id: 10
+        },
+        {
+            user_id: "5",
+            goods_id: "1450",
+            category_id: 10
+        },
+        {
+            user_id: "5",
+            goods_id: "1450",
+            category_id: 10
+        },
+        {
+            user_id: "5",
+            goods_id: "1450",
+            category_id: 10
+        },
+        {
+            user_id: "5",
+            goods_id: "1450",
+            category_id: 10
+        },
+        {
+            user_id: "5",
+            goods_id: "1450",
+            category_id: 10
+        },
+        {
+            user_id: "5",
+            goods_id: "1450",
+            category_id: 10
+        },
+        //6-6
+        {
+            user_id: "6",
+            goods_id: "1455",
             category_id: 10
         },
         {
             user_id: "6",
-            goods_id: "1293",
+            goods_id: "1455",
+            category_id: 10
+        },
+        {
+            user_id: "6",
+            goods_id: "1455",
+            category_id: 10
+        },
+        {
+            user_id: "6",
+            goods_id: "1455",
+            category_id: 10
+        },
+        {
+            user_id: "6",
+            goods_id: "1455",
+            category_id: 10
+        },
+        {
+            user_id: "6",
+            goods_id: "1455",
+            category_id: 10
+        },
+        {
+            user_id: "6",
+            goods_id: "1455",
+            category_id: 10
+        },
+        //7-5
+        {
+            user_id: "7",
+            goods_id: "1485",
             category_id: 10
         },
         {
             user_id: "7",
-            goods_id: "1293",
+            goods_id: "1485",
+            category_id: 10
+        },
+        {
+            user_id: "7",
+            goods_id: "1485",
+            category_id: 10
+        },
+        {
+            user_id: "7",
+            goods_id: "1485",
+            category_id: 10
+        },
+        {
+            user_id: "7",
+            goods_id: "1485",
+            category_id: 10
+        },
+        {
+            user_id: "7",
+            goods_id: "1485",
+            category_id: 10
+        },
+        //8-4
+        {
+            user_id: "8",
+            goods_id: "1465",
             category_id: 10
         },
         {
             user_id: "8",
-            goods_id: "1293",
+            goods_id: "1465",
+            category_id: 10
+        },
+        {
+            user_id: "8",
+            goods_id: "1465",
+            category_id: 10
+        },
+        {
+            user_id: "8",
+            goods_id: "1465",
+            category_id: 10
+        },
+        {
+            user_id: "8",
+            goods_id: "1465",
+            category_id: 10
+        },
+        //9-3
+        {
+            user_id: "9",
+            goods_id: "1441",
             category_id: 10
         },
         {
             user_id: "9",
-            goods_id: "1293",
+            goods_id: "1441",
             category_id: 10
         },
         {
+            user_id: "9",
+            goods_id: "1441",
+            category_id: 10
+        },
+        {
+            user_id: "9",
+            goods_id: "1441",
+            category_id: 10
+        },
+        //10-3
+        {
             user_id: "1",
-            goods_id: "1292",
+            goods_id: "1486",
             category_id: 10
         },
         {
             user_id: "2",
-            goods_id: "1292",
+            goods_id: "1486",
+            category_id: 10
+        },
+        {
+            user_id: "2",
+            goods_id: "1486",
+            category_id: 10
+        },
+        //11-2
+        {
+            user_id: "3",
+            goods_id: "1487",
             category_id: 10
         },
         {
             user_id: "3",
-            goods_id: "1292",
+            goods_id: "1487",
             category_id: 10
         },
-        {
-            user_id: "4",
-            goods_id: "1291",
-            category_id: 10
-        },
+        //12-1
         {
             user_id: "5",
-            goods_id: "1291",
+            goods_id: "1438",
             category_id: 10
         },
-        {
-            user_id: "6",
-            goods_id: "1290",
-            category_id: 10
-        },
+
         // Cat 9
         {
             user_id: "1",
-            goods_id: "1111",
+            goods_id: "1349",
             category_id: 9
         },
         {
             user_id: "1",
-            goods_id: "1111",
-            category_id: 9
-        }, {
-            user_id: "1",
-            goods_id: "1111",
-            category_id: 9
-        }, {
-            user_id: "1",
-            goods_id: "1111",
-            category_id: 9
-        }, {
-            user_id: "1",
-            goods_id: "1111",
+            goods_id: "1349",
             category_id: 9
         },
         {
             user_id: "1",
-            goods_id: "1112",
+            goods_id: "1349",
             category_id: 9
         },
         {
             user_id: "1",
-            goods_id: "1112",
-            category_id: 9
-        }, {
-            user_id: "1",
-            goods_id: "1112",
-            category_id: 9
-        }, {
-            user_id: "1",
-            goods_id: "1112",
+            goods_id: "1349",
             category_id: 9
         },
         {
             user_id: "1",
-            goods_id: "1113",
+            goods_id: "1349",
             category_id: 9
         },
         {
             user_id: "1",
-            goods_id: "1113",
+            goods_id: "1349",
             category_id: 9
         },
         {
             user_id: "1",
-            goods_id: "1113",
+            goods_id: "1349",
             category_id: 9
         },
         {
             user_id: "1",
-            goods_id: "1112",
+            goods_id: "1349",
             category_id: 9
         },
         {
             user_id: "1",
-            goods_id: "1112",
+            goods_id: "1349",
             category_id: 9
         },
         {
             user_id: "1",
-            goods_id: "1111",
+            goods_id: "1349",
             category_id: 9
         },
         {
-            user_id: "4",
-            goods_id: "182",
+            user_id: "1",
+            goods_id: "1349",
+            category_id: 9
+        },
+        {
+            user_id: "1",
+            goods_id: "1349",
+            category_id: 9
+        },
+        //11
+        {
+            user_id: "1",
+            goods_id: "1356",
+            category_id: 9
+        }, 
+        {
+            user_id: "1",
+            goods_id: "1356",
+            category_id: 9
+        }, 
+        {
+            user_id: "1",
+            goods_id: "1356",
+            category_id: 9
+        }, 
+        {
+            user_id: "1",
+            goods_id: "1356",
+            category_id: 9
+        }, 
+        {
+            user_id: "1",
+            goods_id: "1356",
+            category_id: 9
+        }, 
+        {
+            user_id: "1",
+            goods_id: "1356",
+            category_id: 9
+        }, 
+        {
+            user_id: "1",
+            goods_id: "1356",
+            category_id: 9
+        }, 
+        {
+            user_id: "1",
+            goods_id: "1356",
+            category_id: 9
+        }, 
+        {
+            user_id: "1",
+            goods_id: "1356",
+            category_id: 9
+        }, 
+        {
+            user_id: "1",
+            goods_id: "1356",
+            category_id: 9
+        }, 
+        {
+            user_id: "1",
+            goods_id: "1356",
+            category_id: 9
+        }, 
+        //10
+        {
+            user_id: "1",
+            goods_id: "1360",
+            category_id: 9
+        }, 
+        {
+            user_id: "1",
+            goods_id: "1360",
+            category_id: 9
+        }, 
+        {
+            user_id: "1",
+            goods_id: "1360",
+            category_id: 9
+        }, 
+        {
+            user_id: "1",
+            goods_id: "1360",
+            category_id: 9
+        }, 
+        {
+            user_id: "1",
+            goods_id: "1360",
+            category_id: 9
+        }, 
+        {
+            user_id: "1",
+            goods_id: "1360",
+            category_id: 9
+        }, 
+        {
+            user_id: "1",
+            goods_id: "1360",
+            category_id: 9
+        }, 
+        {
+            user_id: "1",
+            goods_id: "1360",
+            category_id: 9
+        }, 
+        {
+            user_id: "1",
+            goods_id: "1360",
+            category_id: 9
+        }, 
+        {
+            user_id: "1",
+            goods_id: "1360",
+            category_id: 9
+        }, 
+        //9
+        {
+            user_id: "1",
+            goods_id: "1366",
+            category_id: 9
+        }, 
+        {
+            user_id: "1",
+            goods_id: "1366",
+            category_id: 9
+        }, 
+        {
+            user_id: "1",
+            goods_id: "1366",
+            category_id: 9
+        }, 
+        {
+            user_id: "1",
+            goods_id: "1366",
+            category_id: 9
+        }, 
+        {
+            user_id: "1",
+            goods_id: "1366",
+            category_id: 9
+        }, 
+        {
+            user_id: "1",
+            goods_id: "1366",
+            category_id: 9
+        }, 
+        {
+            user_id: "1",
+            goods_id: "1366",
+            category_id: 9
+        }, 
+        {
+            user_id: "1",
+            goods_id: "1366",
+            category_id: 9
+        }, 
+        {
+            user_id: "1",
+            goods_id: "1366",
+            category_id: 9
+        }, 
+        //8
+        {
+            user_id: "1",
+            goods_id: "1369",
+            category_id: 9
+        }, 
+        {
+            user_id: "1",
+            goods_id: "1369",
+            category_id: 9
+        }, 
+        {
+            user_id: "1",
+            goods_id: "1369",
+            category_id: 9
+        }, 
+        {
+            user_id: "1",
+            goods_id: "1369",
+            category_id: 9
+        }, 
+        {
+            user_id: "1",
+            goods_id: "1369",
+            category_id: 9
+        }, 
+        {
+            user_id: "1",
+            goods_id: "1369",
+            category_id: 9
+        }, 
+        {
+            user_id: "1",
+            goods_id: "1369",
+            category_id: 9
+        }, 
+        {
+            user_id: "1",
+            goods_id: "1369",
+            category_id: 9
+        }, 
+        //7
+        {
+            user_id: "1",
+            goods_id: "1372",
+            category_id: 9
+        }, 
+        {
+            user_id: "1",
+            goods_id: "1372",
+            category_id: 9
+        }, 
+        {
+            user_id: "1",
+            goods_id: "1372",
+            category_id: 9
+        }, 
+        {
+            user_id: "1",
+            goods_id: "1372",
+            category_id: 9
+        }, 
+        {
+            user_id: "1",
+            goods_id: "1372",
+            category_id: 9
+        }, 
+        {
+            user_id: "1",
+            goods_id: "1372",
+            category_id: 9
+        }, 
+        {
+            user_id: "1",
+            goods_id: "1372",
+            category_id: 9
+        }, 
+        //6
+        {
+            user_id: "1",
+            goods_id: "1375",
+            category_id: 9
+        }, 
+        {
+            user_id: "1",
+            goods_id: "1375",
+            category_id: 9
+        }, 
+        {
+            user_id: "1",
+            goods_id: "1375",
+            category_id: 9
+        }, 
+        {
+            user_id: "1",
+            goods_id: "1375",
+            category_id: 9
+        }, 
+        {
+            user_id: "1",
+            goods_id: "1375",
+            category_id: 9
+        }, 
+        {
+            user_id: "1",
+            goods_id: "1375",
+            category_id: 9
+        }, 
+        //7
+        {
+            user_id: "1",
+            goods_id: "1377",
+            category_id: 9
+        }, 
+        {
+            user_id: "1",
+            goods_id: "1377",
+            category_id: 9
+        }, 
+        {
+            user_id: "1",
+            goods_id: "1377",
+            category_id: 9
+        }, 
+        {
+            user_id: "1",
+            goods_id: "1377",
+            category_id: 9
+        }, 
+        {
+            user_id: "1",
+            goods_id: "1377",
+            category_id: 9
+        }, 
+        {
+            user_id: "1",
+            goods_id: "1377",
+            category_id: 9
+        }, 
+        {
+            user_id: "1",
+            goods_id: "1377",
+            category_id: 9
+        }, 
+        //6
+        {
+            user_id: "1",
+            goods_id: "1378",
+            category_id: 9
+        }, 
+        {
+            user_id: "1",
+            goods_id: "1378",
+            category_id: 9
+        }, 
+        {
+            user_id: "1",
+            goods_id: "1378",
+            category_id: 9
+        }, 
+        {
+            user_id: "1",
+            goods_id: "1378",
+            category_id: 9
+        }, 
+        {
+            user_id: "1",
+            goods_id: "1378",
+            category_id: 9
+        }, 
+        {
+            user_id: "1",
+            goods_id: "1378",
+            category_id: 9
+        }, 
+        //5
+        {
+            user_id: "1",
+            goods_id: "1412",
+            category_id: 9
+        }, 
+        {
+            user_id: "1",
+            goods_id: "1412",
+            category_id: 9
+        }, 
+        {
+            user_id: "1",
+            goods_id: "1412",
+            category_id: 9
+        }, 
+        {
+            user_id: "1",
+            goods_id: "1412",
+            category_id: 9
+        }, 
+        {
+            user_id: "1",
+            goods_id: "1412",
+            category_id: 9
+        }, 
+        //4
+        {
+            user_id: "1",
+            goods_id: "1423",
+            category_id: 9
+        }, 
+        {
+            user_id: "1",
+            goods_id: "1423",
+            category_id: 9
+        }, 
+        {
+            user_id: "1",
+            goods_id: "1423",
+            category_id: 9
+        }, 
+        {
+            user_id: "1",
+            goods_id: "1423",
+            category_id: 9
+        }, 
+        //3
+        {
+            user_id: "1",
+            goods_id: "1428",
+            category_id: 9
+        }, 
+        {
+            user_id: "1",
+            goods_id: "1428",
+            category_id: 9
+        }, 
+        {
+            user_id: "1",
+            goods_id: "1428",
+            category_id: 9
+        }, 
+        //2
+        {
+            user_id: "1",
+            goods_id: "1431",
+            category_id: 9
+        }, 
+        {
+            user_id: "1",
+            goods_id: "1431",
+            category_id: 9
+        },
+        //1
+        {
+            user_id: "1",
+            goods_id: "1433",
             category_id: 9
         },
         // Cat 8
+        {
+            user_id: "1",
+            goods_id: "1240",
+            category_id: 8
+        }, 
+        {
+            user_id: "1",
+            goods_id: "1240",
+            category_id: 8
+        }, 
+        {
+            user_id: "1",
+            goods_id: "1240",
+            category_id: 8
+        }, 
+        {
+            user_id: "1",
+            goods_id: "1240",
+            category_id: 8
+        }, 
+        {
+            user_id: "1",
+            goods_id: "1240",
+            category_id: 8
+        }, 
+        {
+            user_id: "1",
+            goods_id: "1240",
+            category_id: 8
+        }, 
+        {
+            user_id: "1",
+            goods_id: "1240",
+            category_id: 8
+        }, 
+        {
+            user_id: "1",
+            goods_id: "1240",
+            category_id: 8
+        }, 
+        {
+            user_id: "1",
+            goods_id: "1240",
+            category_id: 8
+        }, 
+        {
+            user_id: "1",
+            goods_id: "1240",
+            category_id: 8
+        }, 
+        {
+            user_id: "1",
+            goods_id: "1240",
+            category_id: 8
+        }, 
+        {
+            user_id: "1",
+            goods_id: "1240",
+            category_id: 8
+        }, 
+        //11
+        {
+            user_id: "1",
+            goods_id: "1253",
+            category_id: 8
+        }, 
+        {
+            user_id: "1",
+            goods_id: "1253",
+            category_id: 8
+        }, 
+        {
+            user_id: "1",
+            goods_id: "1253",
+            category_id: 8
+        }, 
+        {
+            user_id: "1",
+            goods_id: "1253",
+            category_id: 8
+        }, 
+        {
+            user_id: "1",
+            goods_id: "1253",
+            category_id: 8
+        }, 
+        {
+            user_id: "1",
+            goods_id: "1253",
+            category_id: 8
+        }, 
+        {
+            user_id: "1",
+            goods_id: "1253",
+            category_id: 8
+        }, 
+        {
+            user_id: "1",
+            goods_id: "1253",
+            category_id: 8
+        }, 
+        {
+            user_id: "1",
+            goods_id: "1253",
+            category_id: 8
+        }, 
+        {
+            user_id: "1",
+            goods_id: "1253",
+            category_id: 8
+        }, 
+        {
+            user_id: "1",
+            goods_id: "1253",
+            category_id: 8
+        }, 
+        
+        //10
+        {
+            user_id: "1",
+            goods_id: "1304",
+            category_id: 8
+        }, 
+        {
+            user_id: "1",
+            goods_id: "1304",
+            category_id: 8
+        }, 
+        {
+            user_id: "1",
+            goods_id: "1304",
+            category_id: 8
+        }, 
+        {
+            user_id: "1",
+            goods_id: "1304",
+            category_id: 8
+        }, 
+        {
+            user_id: "1",
+            goods_id: "1304",
+            category_id: 8
+        }, 
+        {
+            user_id: "1",
+            goods_id: "1304",
+            category_id: 8
+        }, 
+        {
+            user_id: "1",
+            goods_id: "1304",
+            category_id: 8
+        }, 
+        {
+            user_id: "1",
+            goods_id: "1304",
+            category_id: 8
+        }, 
+        {
+            user_id: "1",
+            goods_id: "1304",
+            category_id: 8
+        }, 
+        {
+            user_id: "1",
+            goods_id: "1304",
+            category_id: 8
+        }, 
+        
+        {
+            user_id: "1",
+            goods_id: "1291",
+            category_id: 8
+        }, 
+        {
+            user_id: "1",
+            goods_id: "1291",
+            category_id: 8
+        }, 
+        
+        {
+            user_id: "1",
+            goods_id: "1291",
+            category_id: 8
+        }, 
+        {
+            user_id: "1",
+            goods_id: "1291",
+            category_id: 8
+        }, 
+        {
+            user_id: "1",
+            goods_id: "1291",
+            category_id: 8
+        }, 
+        {
+            user_id: "1",
+            goods_id: "1291",
+            category_id: 8
+        }, 
+        {
+            user_id: "1",
+            goods_id: "1291",
+            category_id: 8
+        }, 
+        {
+            user_id: "1",
+            goods_id: "1291",
+            category_id: 8
+        }, 
+        {
+            user_id: "1",
+            goods_id: "1291",
+            category_id: 8
+        }, 
+        
+        //9
+        {
+            user_id: "1",
+            goods_id: "1287",
+            category_id: 8
+        },
+        {
+            user_id: "1",
+            goods_id: "1287",
+            category_id: 8
+        },
+        {
+            user_id: "1",
+            goods_id: "1287",
+            category_id: 8
+        },
+        {
+            user_id: "1",
+            goods_id: "1287",
+            category_id: 8
+        },
+        {
+            user_id: "1",
+            goods_id: "1287",
+            category_id: 8
+        },
+        {
+            user_id: "1",
+            goods_id: "1287",
+            category_id: 8
+        },
+        {
+            user_id: "1",
+            goods_id: "1287",
+            category_id: 8
+        },
+        {
+            user_id: "1",
+            goods_id: "1287",
+            category_id: 8
+        },
+        {
+            user_id: "1",
+            goods_id: "1287",
+            category_id: 8
+        },
+        //8
 
         {
             user_id: "1",
-            goods_id: "1000",
+            goods_id: "1137",
             category_id: 8
-        }, {
+        }, 
+        {
             user_id: "1",
-            goods_id: "1000",
+            goods_id: "1137",
             category_id: 8
-        }, {
+        }, 
+        {
             user_id: "1",
-            goods_id: "1000",
+            goods_id: "1137",
             category_id: 8
-        }, {
+        }, 
+        {
             user_id: "1",
-            goods_id: "1000",
+            goods_id: "1137",
             category_id: 8
-        }, {
+        }, 
+        {
             user_id: "1",
-            goods_id: "1000",
+            goods_id: "1137",
+            category_id: 8
+        }, 
+        {
+            user_id: "1",
+            goods_id: "1137",
+            category_id: 8
+        }, 
+        {
+            user_id: "1",
+            goods_id: "1137",
+            category_id: 8
+        }, 
+        {
+            user_id: "1",
+            goods_id: "1137",
+            category_id: 8
+        }, 
+        //7
+
+        {
+            user_id: "1",
+            goods_id: "1140",
             category_id: 8
         },
         {
             user_id: "1",
-            goods_id: "1001",
+            goods_id: "1140",
             category_id: 8
         },
         {
             user_id: "1",
-            goods_id: "1001",
+            goods_id: "1140",
             category_id: 8
         },
         {
             user_id: "1",
-            goods_id: "1001",
+            goods_id: "1140",
             category_id: 8
         },
         {
             user_id: "1",
-            goods_id: "1001",
+            goods_id: "1140",
             category_id: 8
         },
         {
             user_id: "1",
-            goods_id: "1002",
+            goods_id: "1140",
             category_id: 8
         },
         {
             user_id: "1",
-            goods_id: "1002",
+            goods_id: "1140",
+            category_id: 8
+        },
+        //6
+        {
+            user_id: "1",
+            goods_id: "1151",
             category_id: 8
         },
         {
             user_id: "1",
-            goods_id: "1002",
+            goods_id: "1151",
             category_id: 8
         },
         {
             user_id: "1",
-            goods_id: "1002",
+            goods_id: "1151",
             category_id: 8
         },
         {
             user_id: "1",
-            goods_id: "1003",
+            goods_id: "1151",
             category_id: 8
         },
         {
             user_id: "1",
-            goods_id: "1003",
+            goods_id: "1151",
             category_id: 8
         },
         {
             user_id: "1",
-            goods_id: "1004",
+            goods_id: "1151",
             category_id: 8
         },
+        //5
+        {
+            user_id: "1",
+            goods_id: "1168",
+            category_id: 8
+        },
+        {
+            user_id: "1",
+            goods_id: "1168",
+            category_id: 8
+        },
+        {
+            user_id: "1",
+            goods_id: "1168",
+            category_id: 8
+        },
+        {
+            user_id: "1",
+            goods_id: "1168",
+            category_id: 8
+        },
+        {
+            user_id: "1",
+            goods_id: "1168",
+            category_id: 8
+        },
+        //4
+        {
+            user_id: "1",
+            goods_id: "1178",
+            category_id: 8
+        },
+        {
+            user_id: "1",
+            goods_id: "1178",
+            category_id: 8
+        },
+        {
+            user_id: "1",
+            goods_id: "1178",
+            category_id: 8
+        },
+        {
+            user_id: "1",
+            goods_id: "1178",
+            category_id: 8
+        },
+        //3
+        {
+            user_id: "1",
+            goods_id: "1184",
+            category_id: 8
+        },
+        {
+            user_id: "1",
+            goods_id: "1184",
+            category_id: 8
+        },
+        {
+            user_id: "1",
+            goods_id: "1184",
+            category_id: 8
+        },
+        //2
+        {
+            user_id: "1",
+            goods_id: "1193",
+            category_id: 8
+        },
+        {
+            user_id: "1",
+            goods_id: "1193",
+            category_id: 8
+        },
+        //1
+        {
+            user_id: "1",
+            goods_id: "1326",
+            category_id: 8
+        },
+        
         // Cat 7
         {
             user_id: "1",
-            goods_id: "891",
+            goods_id: "1068",
             category_id: 7
         },
         {
             user_id: "1",
-            goods_id: "891",
+            goods_id: "1082",
             category_id: 7
         },
         {
             user_id: "1",
-            goods_id: "891",
+            goods_id: "1082",
+            category_id: 7
+        },        {
+            user_id: "1",
+            goods_id: "1082",
+            category_id: 7
+        },        {
+            user_id: "1",
+            goods_id: "1082",
+            category_id: 7
+        },        {
+            user_id: "1",
+            goods_id: "1082",
             category_id: 7
         },
         {
             user_id: "1",
-            goods_id: "891",
+            goods_id: "1089",
             category_id: 7
         },
         {
             user_id: "1",
-            goods_id: "891",
+            goods_id: "1114",
             category_id: 7
         },
         {
             user_id: "1",
-            goods_id: "892",
+            goods_id: "1121",
+            category_id: 7
+        },        {
+            user_id: "1",
+            goods_id: "1126",
             category_id: 7
         },
         {
             user_id: "1",
-            goods_id: "892",
+            goods_id: "1104",
             category_id: 7
         },
         {
             user_id: "1",
-            goods_id: "892",
+            goods_id: "1104",
+            category_id: 7
+        },        {
+            user_id: "1",
+            goods_id: "1104",
+            category_id: 7
+        },        {
+            user_id: "1",
+            goods_id: "1104",
             category_id: 7
         },
         {
             user_id: "1",
-            goods_id: "892",
+            goods_id: "1066",
             category_id: 7
         },
         {
             user_id: "1",
-            goods_id: "893",
+            goods_id: "1066",
+            category_id: 7
+        },        {
+            user_id: "1",
+            goods_id: "1066",
+            category_id: 7
+        },        {
+            user_id: "1",
+            goods_id: "1066",
+            category_id: 7
+        },        {
+            user_id: "1",
+            goods_id: "1066",
+            category_id: 7
+        },        {
+            user_id: "1",
+            goods_id: "1066",
             category_id: 7
         },
         {
             user_id: "1",
-            goods_id: "893",
+            goods_id: "1094",
             category_id: 7
         },
         {
             user_id: "1",
-            goods_id: "893",
+            goods_id: "1090",
             category_id: 7
         },
         {
             user_id: "1",
-            goods_id: "894",
+            goods_id: "1117",
             category_id: 7
         },
         {
             user_id: "1",
-            goods_id: "894",
+            goods_id: "1129",
             category_id: 7
         },
+        //Cat6
         {
             user_id: "1",
-            goods_id: "895",
-            category_id: 7
-        },
-        // Cat 6
-        {
-            user_id: "1",
-            goods_id: "721",
+            goods_id: "879",
             category_id: 6
         },
         {
             user_id: "1",
-            goods_id: "721",
+            goods_id: "883",
             category_id: 6
         },
+
         {
             user_id: "1",
-            goods_id: "721",
+            goods_id: "888",
             category_id: 6
         },
+
         {
             user_id: "1",
-            goods_id: "721",
+            goods_id: "885",
             category_id: 6
         },
+
         {
             user_id: "1",
-            goods_id: "721",
+            goods_id: "887",
             category_id: 6
         },
+
         {
             user_id: "1",
-            goods_id: "722",
+            goods_id: "901",
             category_id: 6
         },
+
         {
             user_id: "1",
-            goods_id: "722",
+            goods_id: "931",
             category_id: 6
         },
+
         {
             user_id: "1",
-            goods_id: "722",
+            goods_id: "946",
             category_id: 6
         },
+
         {
             user_id: "1",
-            goods_id: "722",
+            goods_id: "961",
             category_id: 6
         },
+
         {
             user_id: "1",
-            goods_id: "723",
+            goods_id: "978",
             category_id: 6
         },
+
         {
             user_id: "1",
-            goods_id: "723",
+            goods_id: "1033",
             category_id: 6
         },
+
         {
             user_id: "1",
-            goods_id: "723",
+            goods_id: "1046",
             category_id: 6
         },
+        //Cat5
         {
             user_id: "1",
-            goods_id: "724",
-            category_id: 6
-        },
-        {
-            user_id: "1",
-            goods_id: "724",
-            category_id: 6
-        },
-        {
-            user_id: "1",
-            goods_id: "725",
-            category_id: 6
-        },
-        // Cat 5
-        {
-            user_id: "1",
-            goods_id: "661",
+            goods_id: "798",
             category_id: 5
         },
         {
             user_id: "1",
-            goods_id: "661",
-            category_id: 5
-        }, {
-            user_id: "1",
-            goods_id: "661",
-            category_id: 5
-        }, {
-            user_id: "1",
-            goods_id: "661",
-            category_id: 5
-        }, {
-            user_id: "1",
-            goods_id: "661",
+            goods_id: "805",
             category_id: 5
         },
         {
             user_id: "1",
-            goods_id: "662",
+            goods_id: "808",
             category_id: 5
         },
         {
             user_id: "1",
-            goods_id: "662",
+            goods_id: "810",
             category_id: 5
         },
         {
             user_id: "1",
-            goods_id: "662",
+            goods_id: "811",
             category_id: 5
         },
         {
             user_id: "1",
-            goods_id: "662",
+            goods_id: "812",
             category_id: 5
         },
         {
             user_id: "1",
-            goods_id: "663",
+            goods_id: "820",
             category_id: 5
         },
         {
             user_id: "1",
-            goods_id: "663",
+            goods_id: "833",
             category_id: 5
         },
         {
             user_id: "1",
-            goods_id: "663",
+            goods_id: "829",
             category_id: 5
         },
         {
             user_id: "1",
-            goods_id: "664",
+            goods_id: "868",
             category_id: 5
         },
         {
             user_id: "1",
-            goods_id: "664",
+            goods_id: "838",
             category_id: 5
         },
         {
             user_id: "1",
-            goods_id: "665",
+            goods_id: "849",
             category_id: 5
         },
-        // Cat 4
+
+        //Cat4
         {
             user_id: "1",
-            goods_id: "452",
-            category_id: 4
-        },
-        {
-            user_id: "2",
-            goods_id: "452",
-            category_id: 4
-        },
-        {
-            user_id: "3",
-            goods_id: "452",
-            category_id: 4
-        },
-        {
-            user_id: "4",
-            goods_id: "452",
-            category_id: 4
-        },
-        {
-            user_id: "5",
-            goods_id: "452",
-            category_id: 4
-        },
-        {
-            user_id: "6",
-            goods_id: "502",
-            category_id: 4
-        },
-        {
-            user_id: "7",
-            goods_id: "502",
-            category_id: 4
-        },
-        {
-            user_id: "8",
-            goods_id: "502",
-            category_id: 4
-        },
-        {
-            user_id: "9",
-            goods_id: "502",
+            goods_id: "545",
             category_id: 4
         },
         {
             user_id: "1",
-            goods_id: "548",
+            goods_id: "582",
             category_id: 4
         },
         {
-            user_id: "2",
-            goods_id: "548",
+            user_id: "1",
+            goods_id: "586",
             category_id: 4
         },
         {
-            user_id: "3",
-            goods_id: "548",
+            user_id: "1",
+            goods_id: "612",
             category_id: 4
         },
         {
-            user_id: "4",
-            goods_id: "564",
+            user_id: "1",
+            goods_id: "625",
             category_id: 4
         },
         {
-            user_id: "5",
-            goods_id: "564",
+            user_id: "1",
+            goods_id: "659",
             category_id: 4
         },
         {
-            user_id: "6",
-            goods_id: "597",
+            user_id: "1",
+            goods_id: "670",
             category_id: 4
         },
-        // Cat 3
         {
             user_id: "1",
-            goods_id: "259",
-            category_id: 3
-        }, {
-            user_id: "1",
-            goods_id: "259",
-            category_id: 3
-        }, {
-            user_id: "1",
-            goods_id: "259",
-            category_id: 3
-        }, {
-            user_id: "1",
-            goods_id: "259",
-            category_id: 3
-        }, {
-            user_id: "1",
-            goods_id: "259",
-            category_id: 3
+            goods_id: "677",
+            category_id: 4
         },
         {
-            user_id: "6",
-            goods_id: "305",
-            category_id: 3
+            user_id: "1",
+            goods_id: "688",
+            category_id: 4
         },
         {
-            user_id: "7",
-            goods_id: "305",
-            category_id: 3
+            user_id: "1",
+            goods_id: "691",
+            category_id: 4
         },
         {
-            user_id: "8",
-            goods_id: "305",
-            category_id: 3
+            user_id: "1",
+            goods_id: "702",
+            category_id: 4
         },
         {
-            user_id: "9",
-            goods_id: "305",
+            user_id: "1",
+            goods_id: "775",
+            category_id: 4
+        },
+
+        //3
+        {
+            user_id: "1",
+            goods_id: "339",
             category_id: 3
         },
         {
             user_id: "1",
-            goods_id: "324",
+            goods_id: "347",
             category_id: 3
         },
         {
-            user_id: "2",
-            goods_id: "324",
+            user_id: "1",
+            goods_id: "351",
             category_id: 3
         },
         {
-            user_id: "3",
-            goods_id: "324",
+            user_id: "1",
+            goods_id: "353",
             category_id: 3
         },
         {
-            user_id: "4",
-            goods_id: "358",
+            user_id: "1",
+            goods_id: "413",
             category_id: 3
         },
         {
-            user_id: "5",
-            goods_id: "358",
+            user_id: "1",
+            goods_id: "416",
             category_id: 3
         },
         {
-            user_id: "6",
-            goods_id: "383",
+            user_id: "1",
+            goods_id: "473",
             category_id: 3
         },
-        // Cat 2
         {
             user_id: "1",
-            goods_id: "138",
-            category_id: 2
+            goods_id: "477",
+            category_id: 3
         },
         {
             user_id: "1",
-            goods_id: "138",
-            category_id: 2
-        }, {
+            goods_id: "479",
+            category_id: 3
+        },
+        {
             user_id: "1",
-            goods_id: "138",
-            category_id: 2
-        }, {
+            goods_id: "493",
+            category_id: 3
+        },
+        {
             user_id: "1",
-            goods_id: "138",
-            category_id: 2
-        }, {
+            goods_id: "497",
+            category_id: 3
+        },
+        {
             user_id: "1",
-            goods_id: "138",
-            category_id: 2
+            goods_id: "532",
+            category_id: 3
         },
+        //Cat2
         {
-            user_id: "6",
-            goods_id: "223",
-            category_id: 2
-        },
-        {
-            user_id: "7",
-            goods_id: "223",
-            category_id: 2
-        },
-        {
-            user_id: "8",
-            goods_id: "223",
-            category_id: 2
-        },
-        {
-            user_id: "9",
-            goods_id: "223",
+            user_id: "1",
+            goods_id: "129",
             category_id: 2
         },
         {
             user_id: "1",
-            goods_id: "114",
+            goods_id: "142",
             category_id: 2
         },
-        {
-            user_id: "2",
-            goods_id: "114",
-            category_id: 2
-        },
-        {
-            user_id: "3",
-            goods_id: "114",
-            category_id: 2
-        },
-        {
-            user_id: "4",
-            goods_id: "128",
-            category_id: 2
-        },
-        {
-            user_id: "5",
-            goods_id: "128",
-            category_id: 2
-        },
-        {
-            user_id: "6",
-            goods_id: "126",
-            category_id: 2
-        },
-        // Cat 1
         {
             user_id: "1",
-            goods_id: "36",
-            category_id: 1
+            goods_id: "165",
+            category_id: 2
         },
         {
-            user_id: "2",
-            goods_id: "36",
-            category_id: 1
+            user_id: "1",
+            goods_id: "204",
+            category_id: 2
         },
         {
-            user_id: "3",
-            goods_id: "36",
-            category_id: 1
+            user_id: "1",
+            goods_id: "230",
+            category_id: 2
         },
         {
-            user_id: "4",
-            goods_id: "36",
-            category_id: 1
+            user_id: "1",
+            goods_id: "245",
+            category_id: 2
         },
         {
-            user_id: "5",
-            goods_id: "36",
-            category_id: 1
+            user_id: "1",
+            goods_id: "271",
+            category_id: 2
         },
         {
-            user_id: "6",
-            goods_id: "44",
-            category_id: 1
+            user_id: "1",
+            goods_id: "268",
+            category_id: 2
         },
         {
-            user_id: "7",
-            goods_id: "44",
-            category_id: 1
+            user_id: "1",
+            goods_id: "266",
+            category_id: 2
         },
         {
-            user_id: "8",
-            goods_id: "44",
-            category_id: 1
+            user_id: "1",
+            goods_id: "301",
+            category_id: 2
         },
         {
-            user_id: "9",
-            goods_id: "44",
+            user_id: "1",
+            goods_id: "315",
+            category_id: 2
+        },
+        {
+            user_id: "1",
+            goods_id: "325",
+            category_id: 2
+        },
+        //Cat1
+        {
+            user_id: "1",
+            goods_id: "10",
             category_id: 1
         },
         {
             user_id: "1",
-            goods_id: "23",
+            goods_id: "10",
             category_id: 1
         },
         {
-            user_id: "2",
-            goods_id: "23",
+            user_id: "1",
+            goods_id: "21",
             category_id: 1
         },
         {
-            user_id: "3",
-            goods_id: "23",
+            user_id: "1",
+            goods_id: "28",
             category_id: 1
         },
         {
-            user_id: "4",
-            goods_id: "12",
+            user_id: "1",
+            goods_id: "49",
             category_id: 1
         },
         {
-            user_id: "5",
-            goods_id: "12",
+            user_id: "1",
+            goods_id: "51",
             category_id: 1
         },
         {
-            user_id: "6",
-            goods_id: "11",
+            user_id: "1",
+            goods_id: "57",
             category_id: 1
         },
+        {
+            user_id: "1",
+            goods_id: "60",
+            category_id: 1
+        },
+        {
+            user_id: "1",
+            goods_id: "62",
+            category_id: 1
+        },
+        {
+            user_id: "1",
+            goods_id: "74",
+            category_id: 1
+        },
+        {
+            user_id: "1",
+            goods_id: "87",
+            category_id: 1
+        },
+        {
+            user_id: "1",
+            goods_id: "103",
+            category_id: 1
+        },
+        {
+            user_id: "1",
+            goods_id: "83",
+            category_id: 1
+        },
+        
+
 
     ]).into('user_liked');
 
