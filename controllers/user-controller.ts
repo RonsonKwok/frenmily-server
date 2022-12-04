@@ -463,7 +463,7 @@ export class UserController {
         try {
             console.log("disableAccount API");
             console.log("req.body: ", req.body);
-            const username = req.body["username"]
+            const username = req.body
             console.log("username: ", username)
             let randomString = "";
             randomString += Math.random();
