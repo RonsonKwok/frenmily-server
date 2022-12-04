@@ -463,11 +463,12 @@ export class UserController {
         try {
             console.log("disableAccount API");
             const username = req.body.username
+            console.log("username: ", username)
             let randomString = "";
             randomString += Math.random();
             randomString += Math.random();
             randomString += Math.random();
-            console.log(randomString);
+            console.log("randomString: ", randomString);
 
             await this.userService.changePasswordToRandom(username, randomString);
             res.json({

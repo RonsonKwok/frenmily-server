@@ -222,7 +222,6 @@ export class UserService {
                     [randomPassword, username])
             )
             console.log("userResult:", userResult.rows[0])
-            return userResult.rows[0]
 
         }
         catch (e) {
