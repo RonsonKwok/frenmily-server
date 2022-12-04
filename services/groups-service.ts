@@ -146,6 +146,7 @@ export class GroupsService {
             let result = await this.knex.raw(/*sql*/
                 `
                 select 
+                extract (day from shopping_lists.updated_at) as day,
                 extract (month from shopping_lists.updated_at) as month,
                 extract (year from shopping_lists.updated_at) as year,
                 groups.id as group_id, 
