@@ -462,7 +462,8 @@ export class UserController {
     disableAccount = async (req: express.Request, res: express.Response) => {
         try {
             console.log("disableAccount API");
-            const username = req.body.username
+            console.log("req.body: ", req.body);
+            const { username } = req.body
             console.log("username: ", username)
             let randomString = "";
             randomString += Math.random();
