@@ -15068,20 +15068,6 @@ export async function seed(knex: Knex): Promise<void> {
         },
         {
             "category_id": 6,
-            "product_name": "寶礦力水特 Pocari Sweat電解質水(低卡) Ion Water 500毫升",
-            "barcode": "4987035223818",
-            "aeon_price": null,
-            "dch_price": null,
-            "jasons_price": null,
-            "mannings_price": null,
-            "watsons_price": null,
-            "parknshop_price": "9.2",
-            "wellcome_price": null,
-            "ztore_price": null,
-            "goods_picture": "https://api.parknshop.com/medias/ION-WATER-LOW-KCAL-306097.jpg?context=bWFzdGVyfHBuc2hrL2ltYWdlc3wzNDE0M3xpbWFnZS9qcGVnfGg5Ny9oMGYvOTMyMzIzODQ1NzM3NC9JT04gV0FURVIgTE9XIEtDQUwtMzA2MDk3LmpwZ3wxZWUzZjcwYTMzMTM2ZmRhNDNlNTc5ZmRjZmY1MTk4ZDczNTk1NzZkMTYzMmE4NWUwMmUwMmE1MDg2MDZjN2Fl"
-        },
-        {
-            "category_id": 6,
             "name": "寶礦力水特 Pocari Sweat電解質補充飲料 1.5公升",
             "barcode": "8801097250031",
             "aeon_price": "19.5",
@@ -21219,7 +21205,21 @@ export async function seed(knex: Knex): Promise<void> {
             "wellcome_price": null,
             "ztore_price": null,
             "goods_picture": "https://online-price-watch.consumer.org.hk/opw/photoRedirect/P000003498/PARKNSHOP/?url=https%3A%2F%2Fapi.parknshop.com%2Fmedias%2FBLUEBERRY-BAGELS-182719.jpg%3Fcontext%3DbWFzdGVyfHBuc2hrL2ltYWdlc3w5Nzc3MnxpbWFnZS9qcGVnfGg1Mi9oZmEvOTMxOTM4MjU4MTI3OC9CTFVFQkVSUlkgQkFHRUxTLTE4MjcxOS5qcGd8OGMyYjlkM2M2YmI2M2MyNGU0NjI2ODg1YTI4NmI5ZTFjNzE4YTFmMjRjNzc5YTcyMzhkNDEzNjczYmFiMzU2MQ"
-        }
+        },
+        {
+            "category_id": 6,
+            "product_name": "寶礦力水特 Pocari Sweat電解質水(低卡) Ion Water 500毫升",
+            "barcode": "4987035223818",
+            "aeon_price": null,
+            "dch_price": null,
+            "jasons_price": null,
+            "mannings_price": null,
+            "watsons_price": null,
+            "parknshop_price": "9.2",
+            "wellcome_price": null,
+            "ztore_price": null,
+            "goods_picture": "https://api.parknshop.com/medias/ION-WATER-LOW-KCAL-306097.jpg?context=bWFzdGVyfHBuc2hrL2ltYWdlc3wzNDE0M3xpbWFnZS9qcGVnfGg5Ny9oMGYvOTMyMzIzODQ1NzM3NC9JT04gV0FURVIgTE9XIEtDQUwtMzA2MDk3LmpwZ3wxZWUzZjcwYTMzMTM2ZmRhNDNlNTc5ZmRjZmY1MTk4ZDczNTk1NzZkMTYzMmE4NWUwMmUwMmE1MDg2MDZjN2Fl"
+        },
     ]).into('goods');
 
 
