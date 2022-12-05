@@ -322,17 +322,15 @@ export class GroupsService {
         try {
             console.log("DATABASE: instantAdd1");
             const id = await this.knex.raw(
-                `INSERT INTO carts (users_id, goods_id, quantity, is_assigned) VALUES(?, ?, ?, ?);`,
+                `INSERT INTO carts (users_id, goods_id, quantity, is_assigned) VALUES(?, ?, ?, ?) RETURNING id;`,
                 [user_id, goods_id, quantity, true]
             );
-            console.log("id.rows[0] :", id.rows[0])
-            return id.rows
-            // console.log("rowID :", id)
-            // console.log("rowID.rows :", id.rows)
-            // await this.knex.raw(
-            //     `INSERT INTO shopping_lists (group_id, cart_id, is_completed, assignee_id, buyer_id)VALUES(?, ?, ?, ?, ?);`,
-            //     [group_id, id.rows[0], false, user_id, null]
-            // );
+            console.log("id.rows[0] :", id.rows[0].id)
+
+            await this.knex.raw(
+                `INSERT INTO shopping_lists (group_id, cart_id, is_completed, assignee_id, buyer_id)VALUES(?, ?, ?, ?, ?);`,
+                [group_id, id.rows[0].id, false, user_id, null]
+            );
 
         }
         catch (e) {

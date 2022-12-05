@@ -324,7 +324,8 @@ export class GroupsController {
             console.log("result :", result)
 
             res.status(200).json({
-                message: "added items"
+                message: "added items",
+                result: result
             });
 
 
