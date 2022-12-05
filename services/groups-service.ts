@@ -325,7 +325,8 @@ export class GroupsService {
                 `INSERT INTO carts (users_id, goods_id, quantity, is_assigned) VALUES(?, ?, ?, ?);`,
                 [user_id, goods_id, quantity, true]
             );
-            console.log(id.rows[0])
+            console.log("rowID :", id)
+            console.log("rowID.rows :", id.rows)
             await this.knex.raw(
                 `INSERT INTO shopping_lists (group_id, cart_id, is_completed, assignee_id, buyer_id)VALUES(?, ?, ?, ?, ?);`,
                 [group_id, id.rows[0], false, user_id, null]
