@@ -326,7 +326,7 @@ export class GroupsService {
                 [user_id, goods_id, quantity, true]
             );
             console.log("id.rows[0] :", id.rows[0])
-            return id.rows[0]
+            return id.rows
             // console.log("rowID :", id)
             // console.log("rowID.rows :", id.rows)
             // await this.knex.raw(
