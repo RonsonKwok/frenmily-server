@@ -317,4 +317,24 @@ export class GroupsService {
         }
 
     }
+
+    async instantAdd(user_id: number, group_id: number, goods_id: number, quantity: number): Promise<any> {
+        try {
+            console.log("DATABASE: instantAdd1");
+            const id = await this.knex.raw(
+                `INSERT INTO carts (users_id, goods_id, quantity, is_assigned) VALUES(?, ?, ?, ?);`,
+                [user_id, goods_id, quantity, true]
+            );
+            console.log(id.rows[0])
+            await this.knex.raw(
+                `INSERT INTO shopping_lists (group_id, cart_id, is_completed, assignee_id, buyer_id)VALUES(?, ?, ?, ?, ?);`,
+                [group_id, id.rows[0], false, user_id, null]
+            );
+
+        }
+        catch (e) {
+            console.log(e);
+        }
+
+    }
 }

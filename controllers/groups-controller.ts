@@ -305,4 +305,31 @@ export class GroupsController {
             return;
         }
     };
+
+    instantAdd = async (req: express.Request, res: express.Response) => {
+        try {
+            console.log("instantAdd API");
+            let user_id = req.body.user_id
+            let group_id = req.body.group_id;
+            let goods_id = req.body.goods_id;
+            let quantity = req.body.quantity;
+
+            console.log("user_id:", user_id)
+            console.log("group_id:", group_id)
+            console.log("goods_id:", goods_id)
+            console.log("quantity:", quantity)
+
+            await this.groupsService.instantAdd(user_id, group_id, goods_id, quantity);
+
+            res.status(200).json({
+                message: "added items"
+            });
+
+
+        } catch (e) {
+            console.log(e);
+            res.status(400).send("instantAdd failed");
+            return;
+        }
+    };
 }
