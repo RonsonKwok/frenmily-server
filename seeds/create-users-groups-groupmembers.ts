@@ -1219,7 +1219,7 @@ export async function seed(knex: Knex): Promise<void> {
         },
         {
             "category_id": 1,
-            "product_name": "桂格 Quaker燕麥方脆穀類早餐 - 肉桂味 (14.5安士) 411克",
+            "name": "桂格 Quaker燕麥方脆穀類早餐 - 肉桂味 (14.5安士) 411克",
             "barcode": "038527591053",
             "aeon_price": "38.9",
             "dch_price": null,
@@ -1471,7 +1471,7 @@ export async function seed(knex: Knex): Promise<void> {
         },
         {
             "category_id": 1,
-            "product_name": "喜來 Hero果醬 - 士多啤梨 340克",
+            "name": "喜來 Hero果醬 - 士多啤梨 340克",
             "barcode": "7614200001625",
             "aeon_price": 0,
             "dch_price": null,
@@ -1625,7 +1625,7 @@ export async function seed(knex: Knex): Promise<void> {
         },
         {
             "category_id": 1,
-            "product_name": "蜂兒 Airborne百花蜂蜜 500克",
+            "name": "蜂兒 Airborne百花蜂蜜 500克",
             "barcode": "9403118000558",
             "aeon_price": 0,
             "dch_price": null,
@@ -1975,7 +1975,7 @@ export async function seed(knex: Knex): Promise<void> {
         },
         {
             "category_id": 1,
-            "product_name": "寶生園 真蜜 Po Sang Yuen Pure Honey槐花蜜 1公斤",
+            "name": "寶生園 真蜜 Po Sang Yuen Pure Honey槐花蜜 1公斤",
             "barcode": "4892309000036",
             "aeon_price": 0,
             "dch_price": null,
@@ -3081,7 +3081,7 @@ export async function seed(knex: Knex): Promise<void> {
         },
         {
             "category_id": 2,
-            "product_name": "保利 Pauls脫脂牛奶 1公升",
+            "name": "保利 Pauls脫脂牛奶 1公升",
             "barcode": "9310036017080",
             "aeon_price": null,
             "dch_price": null,
@@ -3375,7 +3375,7 @@ export async function seed(knex: Knex): Promise<void> {
         },
         {
             "category_id": 2,
-            "product_name": "滋味 Cheer乳酪 - 藍莓 125克",
+            "name": "滋味 Cheer乳酪 - 藍莓 125克",
             "barcode": "4891944004720",
             "aeon_price": null,
             "dch_price": 0,
@@ -3641,7 +3641,7 @@ export async function seed(knex: Knex): Promise<void> {
         },
         {
             "category_id": 2,
-            "product_name": "Castello丹麥必然芝士 125克",
+            "name": "Castello丹麥必然芝士 125克",
             "barcode": "5760466737654",
             "aeon_price": null,
             "dch_price": null,
@@ -4131,7 +4131,7 @@ export async function seed(knex: Knex): Promise<void> {
         },
         {
             "category_id": 2,
-            "product_name": "Haagen-Dazs雲呢拿雪糕 (473毫升) 392克",
+            "name": "Haagen-Dazs雲呢拿雪糕 (473毫升) 392克",
             "barcode": "074570334186",
             "aeon_price": null,
             "dch_price": null,
@@ -4327,7 +4327,7 @@ export async function seed(knex: Knex): Promise<void> {
         },
         {
             "category_id": 2,
-            "product_name": "百福 Pak Fook鮮豆漿 - 高鈣低糖 236毫升",
+            "name": "百福 Pak Fook鮮豆漿 - 高鈣低糖 236毫升",
             "barcode": "4891118433417",
             "aeon_price": null,
             "dch_price": null,
@@ -4523,7 +4523,7 @@ export async function seed(knex: Knex): Promise<void> {
         },
         {
             "category_id": 2,
-            "product_name": "維他 Vitasoy鈣思寶 - 高鈣大豆燕麥健康飲品 - 燕麥味 250毫升 x 6",
+            "name": "維他 Vitasoy鈣思寶 - 高鈣大豆燕麥健康飲品 - 燕麥味 250毫升 x 6",
             "barcode": "4891028670124",
             "aeon_price": "24.9",
             "dch_price": null,
@@ -4677,7 +4677,7 @@ export async function seed(knex: Knex): Promise<void> {
         },
         {
             "category_id": 2,
-            "product_name": "百福 Pak Fook煎炸滑豆腐 350毫升",
+            "name": "百福 Pak Fook煎炸滑豆腐 350毫升",
             "barcode": "4891118411156",
             "aeon_price": null,
             "dch_price": "0",
@@ -5084,7 +5084,7 @@ export async function seed(knex: Knex): Promise<void> {
         },
         {
             "category_id": 3,
-            "product_name": "好時 Hershey's牛奶朱古力 (袋裝) 146克",
+            "name": "好時 Hershey's牛奶朱古力 (袋裝) 146克",
             "barcode": "034000134106",
             "aeon_price": "25.9",
             "dch_price": null,
@@ -5406,7 +5406,7 @@ export async function seed(knex: Knex): Promise<void> {
         },
         {
             "category_id": 3,
-            "product_name": "森永 Morinaga Dars黑朱古力 42克",
+            "name": "森永 Morinaga Dars黑朱古力 42克",
             "barcode": "4902888219375",
             "aeon_price": "8.9",
             "dch_price": null,
@@ -5476,7 +5476,7 @@ export async function seed(knex: Knex): Promise<void> {
         },
         {
             "category_id": 3,
-            "product_name": "士力架 Snickers花生朱古力 51克",
+            "name": "士力架 Snickers花生朱古力 51克",
             "barcode": "6914973600362",
             "aeon_price": "9",
             "dch_price": null,
@@ -6190,7 +6190,7 @@ export async function seed(knex: Knex): Promise<void> {
         },
         {
             "category_id": 3,
-            "product_name": "奧利奧 Oreo夾心曲奇 (獨立包裝 28.5克 x 9包) 256.5克",
+            "name": "奧利奧 Oreo夾心曲奇 (獨立包裝 28.5克 x 9包) 256.5克",
             "barcode": "4893049150012",
             "aeon_price": 0,
             "dch_price": "19.9",
@@ -6232,7 +6232,7 @@ export async function seed(knex: Knex): Promise<void> {
         },
         {
             "category_id": 3,
-            "product_name": "利脆 Ritz芝士夾心餅 324克",
+            "name": "利脆 Ritz芝士夾心餅 324克",
             "barcode": "4893049120084",
             "aeon_price": null,
             "dch_price": "20.5",
@@ -6330,7 +6330,7 @@ export async function seed(knex: Knex): Promise<void> {
         },
         {
             "category_id": 3,
-            "product_name": "丹麥藍罐 KjeldsensChoco Duo 朱古力曲奇 750克",
+            "name": "丹麥藍罐 KjeldsensChoco Duo 朱古力曲奇 750克",
             "barcode": "077330012096",
             "aeon_price": "95",
             "dch_price": null,
@@ -6778,7 +6778,7 @@ export async function seed(knex: Knex): Promise<void> {
         },
         {
             "category_id": 3,
-            "product_name": "樂天 Lotte杏仁朱古力餅棒 32克",
+            "name": "樂天 Lotte杏仁朱古力餅棒 32克",
             "barcode": "8801062267712",
             "aeon_price": null,
             "dch_price": null,
@@ -7548,7 +7548,7 @@ export async function seed(knex: Knex): Promise<void> {
         },
         {
             "category_id": 3,
-            "product_name": "四洲 Four Seas紫菜蝦餅 36克",
+            "name": "四洲 Four Seas紫菜蝦餅 36克",
             "barcode": "4892616008756",
             "aeon_price": null,
             "dch_price": null,
@@ -9131,7 +9131,7 @@ export async function seed(knex: Knex): Promise<void> {
         },
         {
             "category_id": 4,
-            "product_name": "樂家 Colavita特純橄欖油 500毫升",
+            "name": "樂家 Colavita特純橄欖油 500毫升",
             "barcode": "8001876020026",
             "aeon_price": "65.9",
             "dch_price": null,
@@ -9145,7 +9145,7 @@ export async function seed(knex: Knex): Promise<void> {
         },
         {
             "category_id": 4,
-            "product_name": "樂家 Colavita特純橄欖油 1公升",
+            "name": "樂家 Colavita特純橄欖油 1公升",
             "barcode": "8001876020019",
             "aeon_price": null,
             "dch_price": null,
@@ -9215,7 +9215,7 @@ export async function seed(knex: Knex): Promise<void> {
         },
         {
             "category_id": 4,
-            "product_name": "樂家 Colavita橄欖油 500毫升",
+            "name": "樂家 Colavita橄欖油 500毫升",
             "barcode": "8001876021023",
             "aeon_price": "60.9",
             "dch_price": null,
@@ -9229,7 +9229,7 @@ export async function seed(knex: Knex): Promise<void> {
         },
         {
             "category_id": 4,
-            "product_name": "樂家 Colavita純橄欖油 1公升",
+            "name": "樂家 Colavita純橄欖油 1公升",
             "barcode": "8001876021016",
             "aeon_price": "84.5",
             "dch_price": null,
@@ -9775,7 +9775,7 @@ export async function seed(knex: Knex): Promise<void> {
         },
         {
             "category_id": 4,
-            "product_name": "皇滋味 Royal Taste減鹽火腿午餐肉 340克",
+            "name": "皇滋味 Royal Taste減鹽火腿午餐肉 340克",
             "barcode": "849978000014",
             "aeon_price": null,
             "dch_price": null,
@@ -10013,7 +10013,7 @@ export async function seed(knex: Knex): Promise<void> {
         },
         {
             "category_id": 4,
-            "product_name": "金龍牌 Golden Dragon BrandXO醬沙甸魚 215克",
+            "name": "金龍牌 Golden Dragon BrandXO醬沙甸魚 215克",
             "barcode": "4892396000162",
             "aeon_price": "15.9",
             "dch_price": null,
@@ -10111,7 +10111,7 @@ export async function seed(knex: Knex): Promise<void> {
         },
         {
             "category_id": 4,
-            "product_name": "皇滋味 Royal Taste橄欖油辣椒沙甸魚 120克",
+            "name": "皇滋味 Royal Taste橄欖油辣椒沙甸魚 120克",
             "barcode": "849978000076",
             "aeon_price": "11.9",
             "dch_price": null,
@@ -10405,7 +10405,7 @@ export async function seed(knex: Knex): Promise<void> {
         },
         {
             "category_id": 4,
-            "product_name": "特別好 S&W糖水波蘿片 567克",
+            "name": "特別好 S&W糖水波蘿片 567克",
             "barcode": "8888111012318",
             "aeon_price": "16.5",
             "dch_price": null,
@@ -10545,7 +10545,7 @@ export async function seed(knex: Knex): Promise<void> {
         },
         {
             "category_id": 4,
-            "product_name": "地捫 Del Monte熱帶雜果 439克",
+            "name": "地捫 Del Monte熱帶雜果 439克",
             "barcode": "4800024123152",
             "aeon_price": "14.5",
             "dch_price": null,
@@ -10727,7 +10727,7 @@ export async function seed(knex: Knex): Promise<void> {
         },
         {
             "category_id": 4,
-            "product_name": "金寶湯 Campbell's忌廉雞粒蘑菇湯 300克",
+            "name": "金寶湯 Campbell's忌廉雞粒蘑菇湯 300克",
             "barcode": "0051000026071",
             "aeon_price": "16.9",
             "dch_price": "0",
@@ -11105,7 +11105,7 @@ export async function seed(knex: Knex): Promise<void> {
         },
         {
             "category_id": 4,
-            "product_name": "地捫 Del Monte菲律賓香蕉 (每磅)",
+            "name": "地捫 Del Monte菲律賓香蕉 (每磅)",
             "barcode": "",
             "aeon_price": null,
             "dch_price": null,
@@ -12197,7 +12197,7 @@ export async function seed(knex: Knex): Promise<void> {
         },
         {
             "category_id": 5,
-            "product_name": "寿桃牌 (壽桃牌) Sau Tao低脂蕎麥麵 225克",
+            "name": "寿桃牌 (壽桃牌) Sau Tao低脂蕎麥麵 225克",
             "barcode": "087303858293",
             "aeon_price": "8.9",
             "dch_price": null,
@@ -12211,7 +12211,7 @@ export async function seed(knex: Knex): Promise<void> {
         },
         {
             "category_id": 5,
-            "product_name": "寿桃牌 (壽桃牌) Sau Tao鮑魚麵 禮盒 - 12個裝 684克",
+            "name": "寿桃牌 (壽桃牌) Sau Tao鮑魚麵 禮盒 - 12個裝 684克",
             "barcode": "087303858415",
             "aeon_price": "68",
             "dch_price": null,
@@ -12379,7 +12379,7 @@ export async function seed(knex: Knex): Promise<void> {
         },
         {
             "category_id": 5,
-            "product_name": "樂家 Colavita寬麵條 Fettuccine 500克",
+            "name": "樂家 Colavita寬麵條 Fettuccine 500克",
             "barcode": "8004323110158",
             "aeon_price": "13.5",
             "dch_price": null,
@@ -12870,7 +12870,7 @@ export async function seed(knex: Knex): Promise<void> {
         },
         {
             "category_id": 6,
-            "product_name": "可口可樂 Coca Cola可樂 - 罐裝 330毫升 x 8",
+            "name": "可口可樂 Coca Cola可樂 - 罐裝 330毫升 x 8",
             "barcode": "4890008100941",
             "aeon_price": "37",
             "dch_price": 0,
@@ -12898,7 +12898,7 @@ export async function seed(knex: Knex): Promise<void> {
         },
         {
             "category_id": 6,
-            "product_name": "可口可樂 Coca Cola零系可樂 Zero - 罐裝 330毫升 x 8",
+            "name": "可口可樂 Coca Cola零系可樂 Zero - 罐裝 330毫升 x 8",
             "barcode": "4890008109944",
             "aeon_price": "37",
             "dch_price": 0,
@@ -13136,7 +13136,7 @@ export async function seed(knex: Knex): Promise<void> {
         },
         {
             "category_id": 6,
-            "product_name": "車仔 Rickshaw香片茶包 x 25",
+            "name": "車仔 Rickshaw香片茶包 x 25",
             "barcode": "8888086025207",
             "aeon_price": "12.5",
             "dch_price": null,
@@ -13150,7 +13150,7 @@ export async function seed(knex: Knex): Promise<void> {
         },
         {
             "category_id": 6,
-            "product_name": "車仔 Rickshaw香片茶包 x 100",
+            "name": "車仔 Rickshaw香片茶包 x 100",
             "barcode": "8888086028208",
             "aeon_price": null,
             "dch_price": null,
@@ -13332,7 +13332,7 @@ export async function seed(knex: Knex): Promise<void> {
         },
         {
             "category_id": 6,
-            "product_name": "麥斯威爾 Maxwell House三合一速溶咖啡飲品 - 原味咖啡 14克 x 20",
+            "name": "麥斯威爾 Maxwell House三合一速溶咖啡飲品 - 原味咖啡 14克 x 20",
             "barcode": "8851753097364 / 4892642100608 / 4892642100684",
             "aeon_price": null,
             "dch_price": null,
@@ -13640,7 +13640,7 @@ export async function seed(knex: Knex): Promise<void> {
         },
         {
             "category_id": 6,
-            "product_name": "立頓 Lipton清怡奶茶 17.5克 x 10",
+            "name": "立頓 Lipton清怡奶茶 17.5克 x 10",
             "barcode": "4892218031077",
             "aeon_price": "24.5",
             "dch_price": null,
@@ -14032,7 +14032,7 @@ export async function seed(knex: Knex): Promise<void> {
         },
         {
             "category_id": 6,
-            "product_name": "清淨園 Chung Jung One紅醋 (藍莓味) 500毫升",
+            "name": "清淨園 Chung Jung One紅醋 (藍莓味) 500毫升",
             "barcode": "8801052725161",
             "aeon_price": "39.9",
             "dch_price": null,
@@ -14242,7 +14242,7 @@ export async function seed(knex: Knex): Promise<void> {
         },
         {
             "category_id": 6,
-            "product_name": "道地 Tao Ti極品烏龍茶 500毫升",
+            "name": "道地 Tao Ti極品烏龍茶 500毫升",
             "barcode": "4892214250915",
             "aeon_price": "8.9",
             "dch_price": 0,
@@ -14354,7 +14354,7 @@ export async function seed(knex: Knex): Promise<void> {
         },
         {
             "category_id": 6,
-            "product_name": "道地 Tao Ti檸檬綠茶 500毫升",
+            "name": "道地 Tao Ti檸檬綠茶 500毫升",
             "barcode": "4892214250083",
             "aeon_price": "8.9",
             "dch_price": null,
@@ -14578,7 +14578,7 @@ export async function seed(knex: Knex): Promise<void> {
         },
         {
             "category_id": 6,
-            "product_name": "屈臣氏 Watsons Water蒸餾水 4.5公升",
+            "name": "屈臣氏 Watsons Water蒸餾水 4.5公升",
             "barcode": "4891133140819",
             "aeon_price": "22.9",
             "dch_price": 0,
@@ -15054,7 +15054,7 @@ export async function seed(knex: Knex): Promise<void> {
         },
         {
             "category_id": 6,
-            "product_name": "寶礦力水特 Pocari Sweat電解質補充飲料 500毫升",
+            "name": "寶礦力水特 Pocari Sweat電解質補充飲料 500毫升",
             "barcode": "6937761805022",
             "aeon_price": "9.9",
             "dch_price": null,
@@ -15065,6 +15065,20 @@ export async function seed(knex: Knex): Promise<void> {
             "wellcome_price": "10",
             "ztore_price": null,
             "goods_picture": "https://online-price-watch.consumer.org.hk/opw/photoRedirect/P000000327/PARKNSHOP/?url=https%3A%2F%2Fapi.parknshop.com%2Fmedias%2FION-SUPPLY-DRINK-125853.jpg%3Fcontext%3DbWFzdGVyfHBuc2hrL2ltYWdlc3wxNTM3MDZ8aW1hZ2UvanBlZ3xoYTkvaDlhLzkzMTg0MzA5NjU3OTAvSU9OIFNVUFBMWSBEUklOSy0xMjU4NTMuanBnfGQ2MzI2MDdhODEyM2YxMmNlOTk1MDIzM2FlNGJlNDgyMzBkZDhhNmEyNWU1N2I3M2FjYjcxZWZlMzJkNGM0ZjM"
+        },
+        {
+            "category_id": 6,
+            "name": "寶礦力水特 Pocari Sweat電解質水(低卡) Ion Water 500毫升",
+            "barcode": "4987035223818",
+            "aeon_price": null,
+            "dch_price": null,
+            "jasons_price": null,
+            "mannings_price": null,
+            "watsons_price": null,
+            "parknshop_price": "9.2",
+            "wellcome_price": null,
+            "ztore_price": null,
+            "goods_picture": "https://api.parknshop.com/medias/ION-WATER-LOW-KCAL-306097.jpg?context=bWFzdGVyfHBuc2hrL2ltYWdlc3wzNDE0M3xpbWFnZS9qcGVnfGg5Ny9oMGYvOTMyMzIzODQ1NzM3NC9JT04gV0FURVIgTE9XIEtDQUwtMzA2MDk3LmpwZ3wxZWUzZjcwYTMzMTM2ZmRhNDNlNTc5ZmRjZmY1MTk4ZDczNTk1NzZkMTYzMmE4NWUwMmUwMmE1MDg2MDZjN2Fl"
         },
         {
             "category_id": 6,
@@ -15124,7 +15138,7 @@ export async function seed(knex: Knex): Promise<void> {
         },
         {
             "category_id": 6,
-            "product_name": "葡萄適 LucozadeXtra 能量飲料 - 夏日果味 300毫升",
+            "name": "葡萄適 LucozadeXtra 能量飲料 - 夏日果味 300毫升",
             "barcode": "8885012290098",
             "aeon_price": "7.9",
             "dch_price": null,
@@ -15587,7 +15601,7 @@ export async function seed(knex: Knex): Promise<void> {
         },
         {
             "category_id": 7,
-            "product_name": "生力 San Mig清啤 Light - 罐裝 500毫升 x 4",
+            "name": "生力 San Mig清啤 Light - 罐裝 500毫升 x 4",
             "barcode": "4891032170139",
             "aeon_price": null,
             "dch_price": null,
@@ -16189,7 +16203,7 @@ export async function seed(knex: Knex): Promise<void> {
         },
         {
             "category_id": 7,
-            "product_name": "珠江橋牌 Pearl River Bridge九江醇舊三蒸酒 500毫升",
+            "name": "珠江橋牌 Pearl River Bridge九江醇舊三蒸酒 500毫升",
             "barcode": "722337838001",
             "aeon_price": null,
             "dch_price": null,
@@ -16904,7 +16918,7 @@ export async function seed(knex: Knex): Promise<void> {
         },
         {
             "category_id": 8,
-            "product_name": "紅威寶 Swipe食具器皿濃縮洗劑 (透明樽裝) 500毫升",
+            "name": "紅威寶 Swipe食具器皿濃縮洗劑 (透明樽裝) 500毫升",
             "barcode": "4891255892382",
             "aeon_price": "22",
             "dch_price": null,
@@ -17856,7 +17870,7 @@ export async function seed(knex: Knex): Promise<void> {
         },
         {
             "category_id": 8,
-            "product_name": "維達 VindaUltra Strong 超韌 (100抽 x 3層, L加大裝:189mm, VC2225) 軟抽面巾 4包裝",
+            "name": "維達 VindaUltra Strong 超韌 (100抽 x 3層, L加大裝:189mm, VC2225) 軟抽面巾 4包裝",
             "barcode": "6901236382714",
             "aeon_price": 0,
             "dch_price": null,
@@ -18892,7 +18906,7 @@ export async function seed(knex: Knex): Promise<void> {
         },
         {
             "category_id": 8,
-            "product_name": "超霸 GP特強鹼性電池 AA (8+2) 10粒裝",
+            "name": "超霸 GP特強鹼性電池 AA (8+2) 10粒裝",
             "barcode": "",
             "aeon_price": null,
             "dch_price": null,
@@ -19257,7 +19271,7 @@ export async function seed(knex: Knex): Promise<void> {
 
         {
             "category_id": 9,
-            "product_name": "高露潔 Colgate超感白牙膏 160克",
+            "name": "高露潔 Colgate超感白牙膏 160克",
             "barcode": "8850006320662",
             "aeon_price": null,
             "dch_price": null,
@@ -19271,7 +19285,7 @@ export async function seed(knex: Knex): Promise<void> {
         },
         {
             "category_id": 9,
-            "product_name": "高露潔 ColgateMaximum Cavity Protection GRF 牙膏 250克",
+            "name": "高露潔 ColgateMaximum Cavity Protection GRF 牙膏 250克",
             "barcode": "4892368400006",
             "aeon_price": 0,
             "dch_price": null,
@@ -19313,7 +19327,7 @@ export async function seed(knex: Knex): Promise<void> {
         },
         {
             "category_id": 9,
-            "product_name": "高露潔 ColgateMaximum Cavity Protection ICM 冰涼薄荷牙膏 250克",
+            "name": "高露潔 ColgateMaximum Cavity Protection ICM 冰涼薄荷牙膏 250克",
             "barcode": "4892368440002",
             "aeon_price": 0,
             "dch_price": null,
@@ -19327,7 +19341,7 @@ export async function seed(knex: Knex): Promise<void> {
         },
         {
             "category_id": 9,
-            "product_name": "高露潔 Colgate抗敏專家牙膏 110克",
+            "name": "高露潔 Colgate抗敏專家牙膏 110克",
             "barcode": "7891024123430",
             "aeon_price": 0,
             "dch_price": null,
@@ -19719,7 +19733,7 @@ export async function seed(knex: Knex): Promise<void> {
         },
         {
             "category_id": 9,
-            "product_name": "黑人 Darlie專研護齦牙刷 (細絲軟毛) 2支裝",
+            "name": "黑人 Darlie專研護齦牙刷 (細絲軟毛) 2支裝",
             "barcode": "4891338027274",
             "aeon_price": "32.9",
             "dch_price": null,
@@ -20069,7 +20083,7 @@ export async function seed(knex: Knex): Promise<void> {
         },
         {
             "category_id": 9,
-            "product_name": "高潔絲 Kotex極緻綿柔極薄日用衛生巾 (素白) 24厘米 16片",
+            "name": "高潔絲 Kotex極緻綿柔極薄日用衛生巾 (素白) 24厘米 16片",
             "barcode": "4891043826766",
             "aeon_price": null,
             "dch_price": null,
@@ -20223,7 +20237,7 @@ export async function seed(knex: Knex): Promise<void> {
         },
         {
             "category_id": 9,
-            "product_name": "高潔絲 Kotex唯白超薄護翼特長日用/夜用衛生巾 28厘米 16片",
+            "name": "高潔絲 Kotex唯白超薄護翼特長日用/夜用衛生巾 28厘米 16片",
             "barcode": "4891043820580",
             "aeon_price": null,
             "dch_price": null,
@@ -21205,21 +21219,7 @@ export async function seed(knex: Knex): Promise<void> {
             "wellcome_price": null,
             "ztore_price": null,
             "goods_picture": "https://online-price-watch.consumer.org.hk/opw/photoRedirect/P000003498/PARKNSHOP/?url=https%3A%2F%2Fapi.parknshop.com%2Fmedias%2FBLUEBERRY-BAGELS-182719.jpg%3Fcontext%3DbWFzdGVyfHBuc2hrL2ltYWdlc3w5Nzc3MnxpbWFnZS9qcGVnfGg1Mi9oZmEvOTMxOTM4MjU4MTI3OC9CTFVFQkVSUlkgQkFHRUxTLTE4MjcxOS5qcGd8OGMyYjlkM2M2YmI2M2MyNGU0NjI2ODg1YTI4NmI5ZTFjNzE4YTFmMjRjNzc5YTcyMzhkNDEzNjczYmFiMzU2MQ"
-        },
-        {
-            "category_id": 6,
-            "product_name": "寶礦力水特 Pocari Sweat電解質水(低卡) Ion Water 500毫升",
-            "barcode": "4987035223818",
-            "aeon_price": null,
-            "dch_price": null,
-            "jasons_price": null,
-            "mannings_price": null,
-            "watsons_price": null,
-            "parknshop_price": "9.2",
-            "wellcome_price": null,
-            "ztore_price": null,
-            "goods_picture": "https://api.parknshop.com/medias/ION-WATER-LOW-KCAL-306097.jpg?context=bWFzdGVyfHBuc2hrL2ltYWdlc3wzNDE0M3xpbWFnZS9qcGVnfGg5Ny9oMGYvOTMyMzIzODQ1NzM3NC9JT04gV0FURVIgTE9XIEtDQUwtMzA2MDk3LmpwZ3wxZWUzZjcwYTMzMTM2ZmRhNDNlNTc5ZmRjZmY1MTk4ZDczNTk1NzZkMTYzMmE4NWUwMmUwMmE1MDg2MDZjN2Fl"
-        },
+        }
     ]).into('goods');
 
 
