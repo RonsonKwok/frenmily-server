@@ -145,7 +145,14 @@ export async function seed(knex: Knex): Promise<void> {
             password: "$2a$10$KGTupGXAxNDFcNuQr1stzOoTrkA7Dsiokgd0linOBVh2gSS/8hLU6",
             profile_picture: "https://iconandreceipt.s3.ap-southeast-1.amazonaws.com/goat.png"
         },
-
+        {
+            username: "Test99",
+            gender: "Male",
+            email: "test@test.com",
+            mobile: 99998887,
+            password: "$2a$10$KGTupGXAxNDFcNuQr1stzOoTrkA7Dsiokgd0linOBVh2gSS/8hLU6",
+            profile_picture: "https://iconandreceipt.s3.ap-southeast-1.amazonaws.com/goat.png"
+        },
 
 
 
