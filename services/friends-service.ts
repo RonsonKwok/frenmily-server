@@ -93,11 +93,16 @@ export class FriendsService {
         user_friend_id: number
     ): Promise<any> {
 
-        const result = await this.knex.raw(
-            `select * from transcations inner join groups on transcations.group_id = groups.id where debitor_id = ? and creditor_id = ? or debitor_id = ? and creditor_id = ?`,
+        const resultFalse = await this.knex.raw(
+            `select * from transcations inner join groups on transcations.group_id = groups.id where transcations.is_settled = false and debitor_id = ? and creditor_id = ? or debitor_id = ? and creditor_id = ?`,
             [user_id, user_friend_id, user_friend_id, user_id]
         );
-        console.log("HERERERER: ", result.rows);
-        return result.rows;
+        console.log("HERERERER(false): ", resultFalse.rows);
+        const resultTrue = await this.knex.raw(
+            `select * from transcations inner join groups on transcations.group_id = groups.id where transcations.is_settled = true and debitor_id = ? and creditor_id = ? or debitor_id = ? and creditor_id = ?`,
+            [user_id, user_friend_id, user_friend_id, user_id]
+        );
+        console.log("HERERERER(true): ", resultTrue.rows);
+        return { notYet_settled: resultFalse.rows, settled: resultTrue.rows };
     }
 }
