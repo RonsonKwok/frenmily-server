@@ -319,7 +319,9 @@ export class GroupsController {
             console.log("goods_id:", goods_id)
             console.log("quantity:", quantity)
 
-            await this.groupsService.instantAdd(user_id, group_id, goods_id, quantity);
+            const result = await this.groupsService.instantAdd(user_id, group_id, goods_id, quantity);
+
+            console.log("result :", result)
 
             res.status(200).json({
                 message: "added items"
