@@ -10,7 +10,6 @@ let userController = new UserController(userService);
 
 userRoutes.get("/me", userController.me);
 userRoutes.post("/login", userController.login);
-userRoutes.post("/location", userController.location);
 userRoutes.post("/register", userController.register);
 userRoutes.get("/username", userController.username);
 userRoutes.post("/updateGender", userController.updateGender);
