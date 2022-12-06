@@ -25,10 +25,7 @@ export class GroupsService {
         groupMemberIdArray: number[],
         user_id: number
     ): Promise<any> {
-        console.log("groupMemberIdArray :", groupMemberIdArray);
-        console.log("user_id :", user_id)
         groupMemberIdArray.push(user_id);
-        console.log("groupMemberIdArray :", groupMemberIdArray);
 
         for (let i = 0; i < groupMemberIdArray.length; i++) {
             console.log(groupMemberIdArray[i]);
@@ -48,7 +45,6 @@ export class GroupsService {
         console.log(groupMemberIdArray);
 
         for (let i = 0; i < groupMemberIdArray.length; i++) {
-            console.log(groupMemberIdArray[i]);
             for (let y = 0; y < groupMemberIdArray.length; y++) {
                 if (groupMemberIdArray[i] != groupMemberIdArray[y]) {
                     tempArray.push([
@@ -58,7 +54,6 @@ export class GroupsService {
                 }
             }
         }
-        console.log(tempArray);
         for (let i = 0; i < tempArray.length; i++) {
             await this.knex.raw(
                 `
@@ -72,15 +67,6 @@ export class GroupsService {
     }
 
     async getGroups(user_id: number): Promise<any> {
-        console.log("testing")
-        // let result = await this.knex.raw(
-        //     `
-        //     select * from groups inner join group_member 
-        //     on group_member.group_id = groups.id 
-        //     where group_member.user_id = ?
-        // `,
-        //     [user_id]
-        // );
         let result = await this.knex.raw(
             `
             select groups.id, group_name, profile_picture, is_family_group, group_id ,groups.updated_at from groups inner join group_member 
@@ -135,7 +121,6 @@ export class GroupsService {
         `,
             [groupID]
         );
-        console.log(result.rows[0])
 
         return result.rows[0];
     }
@@ -232,7 +217,6 @@ export class GroupsService {
 
     }
 
-
     async deleteItemInShoppingList(cart_id: number): Promise<any> {
         await this.knex.raw(
             `
@@ -261,7 +245,6 @@ export class GroupsService {
         }
 
     }
-
 
     async getDeletableGroups(groupId: number): Promise<any> {
         try {
@@ -304,10 +287,9 @@ export class GroupsService {
 
     }
 
-
     async deleteGroup(groupId: number): Promise<any> {
         try {
-            let result1 = await this.knex.raw(/*sql*/
+            let result1 = await this.knex.raw(
                 `
                 delete from shopping_lists 
                 where group_id = ?
@@ -315,21 +297,21 @@ export class GroupsService {
                 [groupId]
             )
 
-            let result2 = await this.knex.raw(/*sql*/
+            let result2 = await this.knex.raw(
                 `
                 delete from paid_records  
                 where group_id = ?
                 `,
                 [groupId]
             )
-            let result3 = await this.knex.raw(/*sql*/
+            let result3 = await this.knex.raw(
                 `
                 delete from group_member 
                 where group_id = ?
                 `,
                 [groupId]
             )
-            let result4 = await this.knex.raw(/*sql*/
+            let result4 = await this.knex.raw(
                 `
                 delete from groups 
                 where id = ?
@@ -337,20 +319,12 @@ export class GroupsService {
                 [groupId]
             )
 
-
             return {
                 result1,
                 result2,
                 result3,
                 result4,
             }
-
-
-
-
-
-
-
 
         } catch (err) {
             console.log(err);
@@ -365,7 +339,6 @@ export class GroupsService {
                 `INSERT INTO carts (users_id, goods_id, quantity, is_assigned) VALUES(?, ?, ?, ?) RETURNING id;`,
                 [user_id, goods_id, quantity, true]
             );
-            console.log("id.rows[0] :", id.rows[0].id)
 
             await this.knex.raw(
                 `INSERT INTO shopping_lists (group_id, cart_id, is_completed, assignee_id, buyer_id)VALUES(?, ?, ?, ?, ?);`,

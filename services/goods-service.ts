@@ -3,17 +3,6 @@ import { Knex } from "knex";
 export class GoodsService {
     constructor(private knex: Knex) { }
 
-    // async getAllGoodsCategories(): Promise<any> {
-    //     console.log("getAllGoodsCategories")
-    //     const results = await this.knex.raw(
-
-    //         "select * from goods_categories",
-    //     );
-    //     console.log("results :", results.rows);
-
-    //     return results.rows;
-    // }
-
     async getTop5(): Promise<any> {
         try {
             console.log("getTop5");
@@ -24,7 +13,6 @@ export class GoodsService {
             order by goods_count desc 
             limit 5`
             );
-            console.log("results :", results.rows);
             let tempArray = [];
 
             for (let result of results.rows) {
@@ -35,7 +23,6 @@ export class GoodsService {
                 );
                 tempArray.push(eachItem.rows[0]);
             }
-            console.log("tempArray :", tempArray);
 
             return tempArray;
         }
@@ -53,7 +40,6 @@ export class GoodsService {
             ORDER BY RANDOM()
             limit 8`
             );
-            console.log("results :", results.rows);
 
             return results.rows;
         }
@@ -70,7 +56,6 @@ export class GoodsService {
                 `select * from goods where category_id = ?`,
                 [catId]
             );
-            // console.log("results :", results.rows);
 
             return results.rows;
         }
@@ -93,8 +78,6 @@ export class GoodsService {
                 [catId]
             );
 
-            console.log("results :", results.rows);
-
             return results.rows;
         }
         catch (e) {
@@ -112,7 +95,6 @@ export class GoodsService {
                 LIMIT ? OFFSET ?`,
                 [qtyInOneBatch, ItemsToBeSkipped]
             );
-            console.log("results :", results.rows);
 
             return results.rows;
         }
@@ -157,8 +139,6 @@ export class GoodsService {
                 // .offset(ItemsToBeSkipped)
                 .returning("*")
 
-            // console.log("DB top5Results results :", top5Results);
-
             let init2Top5Results = initTop5Results.filter(function (e: any) {
                 if (e.aeon_price == null && e.dch_price == null && e.jasons_price == null && e.parknshop_price == null && e.wellcome_price == null && e.mannings_price == null && e.watsons_price == null && e.ztore_price == null) {
                     return false
@@ -196,7 +176,6 @@ export class GoodsService {
 
     }
 
-
     async searchKeyword(name: string): Promise<any> {
         try {
             console.log("DATABASE: Searching Keywords");
@@ -206,7 +185,6 @@ export class GoodsService {
             
         `
             );
-            console.log("results :", results.rows);
 
             return results.rows;
         }
@@ -220,10 +198,8 @@ export class GoodsService {
         try {
             if (quantity == 0) {
                 // Delete the result
-                console.log("Delete the result")
                 await this.knex.raw(
                     `DELETE FROM carts WHERE is_assigned = false and users_id = ? and goods_id = ?`, [user_id, goods_id]);
-
             } else {
                 // Check if the record exist or not
                 const result = await this.knex.raw(
@@ -231,13 +207,11 @@ export class GoodsService {
 
                 if (result.rows.length == 0) {
                     // If no, add the record
-                    console.log("add the record")
                     await this.knex.raw(
                         `INSERT INTO carts(users_id, goods_id, quantity, is_assigned)VALUES(?, ?, ?, ?)`, [user_id, goods_id, quantity, false]);
 
                 } else {
                     // If yes, change the quantity
-                    console.log("change the quantity")
                     await this.knex.raw(
                         `UPDATE carts
                     SET quantity=?
@@ -259,12 +233,9 @@ export class GoodsService {
                 `select * from carts where is_assigned = false AND users_id = ? and goods_id = ?`,
                 [user_id, goods_id]
             );
-            // console.log(quantity.rows[0].quantity)
             if (quantity.rows.length == 0) {
-                console.log(0)
                 return 0
             }
-            console.log(quantity.rows[0].quantity)
             return quantity.rows[0].quantity
         }
         catch (e) {
@@ -310,7 +281,6 @@ export class GoodsService {
                 `select * from carts where is_assigned = false and users_id = ?`,
                 [user_id]
             );
-            console.log(items.rows)
             for (let item of items.rows) {
                 await this.knex.raw(
                     `INSERT into shopping_lists(group_id, cart_id, is_completed, assignee_id, buyer_id)VALUES(?,?, false, ?, null)`, [groupId, item.id, user_id])
@@ -335,8 +305,6 @@ export class GoodsService {
             const itemId = await this.knex.raw(
                 `INSERT INTO carts(users_id, goods_id, quantity, is_assigned)VALUES(?, ?, 1, true) RETURNING id`, [userId, productId])
 
-            console.log("itemId :", itemId)
-            console.log("itemId.rows[0].id :", itemId.rows[0].id)
             await this.knex.raw(
                 `INSERT INTO shopping_lists(group_id, cart_id, is_completed, assignee_id, buyer_id)VALUES(?, ?, false, ?, null);`, [groupId, itemId.rows[0].id, userId])
         }
@@ -353,7 +321,6 @@ export class GoodsService {
                 `select users_id, quantity, cart_id, is_completed, goods_id, buyer_id from shopping_lists inner join carts on shopping_lists.cart_id  = carts.id where shopping_lists.group_id = ? order by is_completed asc`,
                 [groupId]
             );
-            console.log("CP!:", result.rows);
 
             let goodsDetailsArray = []
             for (let item of result.rows) {
@@ -369,16 +336,6 @@ export class GoodsService {
                 goodsDetailsArray.push(goodsDetails.rows[0]);
 
             }
-            // for (let item of goodsDetailsArray) {
-            //     for (let item2 of result.rows) {
-            //         if (item.id == item2.goods_id) {
-            //             item.quantity = item2.quantity
-            //             item.cart_id = item2.cart_id
-            //             item.is_completed = item2.is_completed
-            //         }
-            //     }
-            // }
-            console.log("goodsDetailsArray :", goodsDetailsArray)
 
             return goodsDetailsArray
         }
@@ -387,6 +344,7 @@ export class GoodsService {
         }
 
     }
+
     async changeIsCompleted(cart_id: number, user_id: number): Promise<any> {
         try {
             // check if cart is completed
@@ -394,10 +352,8 @@ export class GoodsService {
                 `select buyer_id from shopping_lists where cart_id = ?`,
                 [cart_id]
             );
-            console.log("isCompleted :", isCompleted.rows[0].buyer_id)
 
             if (isCompleted.rows[0].buyer_id == null) {
-                console.log("THIS IS NULL");
                 // can change
                 await this.knex.raw(/*sql*/
                     `UPDATE shopping_lists  
@@ -426,6 +382,7 @@ export class GoodsService {
             console.log(e);
         }
     }
+
     async clearCart(user_id: number): Promise<any> {
         try {
             console.log("DATABASE: clearCart");
@@ -433,12 +390,10 @@ export class GoodsService {
                 `delete from carts where is_assigned = false and users_id = ?`,
                 [user_id]
             );
-
         }
         catch (e) {
             console.log(e);
         }
 
     }
-
 }

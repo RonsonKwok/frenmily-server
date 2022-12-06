@@ -21,20 +21,11 @@ export class ReceiptsController {
                 let groupID = req.body.groupID;
                 let amount = req.body.amount;
                 let remarks = req.body.remarks;
-                // console.log("groupID :", groupID)
-
-                console.log("================================================================ 1")
-
-
 
                 let file: File = Array.isArray(files.image)
                     ? files.image[0]
                     : files.image;
                 let fileName = file ? file.newFilename : undefined;
-                console.log("================================================================ 2")
-                console.log('fileName :', fileName);
-
-
 
                 // Upload file to AWS S3
                 const accessPath = await uploadToS3({
@@ -42,8 +33,6 @@ export class ReceiptsController {
                     Key: `${fileName}`,
                     Body: fs.readFileSync(file.filepath!),
                 });
-                console.log("================================================================ 3")
-                console.log("accessPath :", accessPath);
 
                 // Insert accessPath to database
                 await this.receiptsService.uploadReceipt(
@@ -53,20 +42,14 @@ export class ReceiptsController {
                     amount,
                     remarks
                 );
-                console.log("================================================================ 4")
 
                 // Divide the amount to all others group members
                 await this.receiptsService.divideMoney(userID, groupID, amount);
 
-                console.log("accessPath :", accessPath);
-                console.log("userID :", userID);
-                console.log("groupID :", groupID);
-                console.log("amount :", amount);
                 res.json({ message: "Money divided!" });
             });
         } catch (e) {
             console.log(e);
-
             res.status(400).send("Upload Fail");
             return;
         }
@@ -75,11 +58,8 @@ export class ReceiptsController {
     settle = async (req: Request, res: Response) => {
         try {
             console.log("settle API");
-
             let targetID = req.body.targetID;
             let payerID = req.body.payerID;
-            console.log("targetID :", targetID);
-            console.log("payerID :", payerID);
 
             // settle payment(s)
             const result = await this.receiptsService.moneySettle(
@@ -98,16 +78,13 @@ export class ReceiptsController {
     getAllReceipts = async (req: Request, res: Response) => {
         try {
             console.log("getAllReceipts API");
-
             let groupID = req.body.groupID;
-            console.log("groupID :", groupID);
 
             // get all receipts image and info
             const result = await this.receiptsService.getAllReceipts(groupID);
             res.json(result);
         } catch (e) {
             console.log(e);
-
             res.status(400).send("getAllReceipts Fail");
             return;
         }

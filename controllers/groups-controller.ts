@@ -20,18 +20,12 @@ export class GroupsController {
                 let is_family_group = req.body.is_family_group;
                 let groupMemberId = req.body.groupMemberId;
                 let userID = req.body.userID;
-                console.log("groupName :", groupName)
-                console.log(is_family_group)
-                console.log(groupMemberId)
-                console.log([groupMemberId])
                 let tempArray = groupMemberId.split(',').map(function (item: any) {
                     return parseInt(item, 10);
                 });
-
                 const dummyPicArray = [
                     "https://iconandreceipt.s3.ap-southeast-1.amazonaws.com/groupPic.jpeg"
                 ]
-
                 const randomPic = dummyPicArray[Math.floor(Math.random() * dummyPicArray.length)];
 
                 // insert to table groups
@@ -66,10 +60,7 @@ export class GroupsController {
         try {
             console.log("getGroups API");
             const user_id = req.body.userID;
-            console.log(user_id);
-
             const result = await this.groupsService.getGroups(user_id);
-            console.log(result);
             res.json(result);
             return;
         } catch (e) {
@@ -82,9 +73,7 @@ export class GroupsController {
     getGroupMembers = async (req: express.Request, res: express.Response) => {
         try {
             console.log("getUserFriends API");
-
             let groupID = req.body.groupID;
-            console.log("groupID :", groupID);
 
             // get group members with paid amount
             let result = await this.groupsService.getGroupMembers(groupID);
@@ -102,9 +91,7 @@ export class GroupsController {
     getGroupName = async (req: express.Request, res: express.Response) => {
         try {
             console.log("getGroupName API");
-
             let groupID = req.body.groupID;
-            console.log("groupID :", groupID);
 
             // get group members with paid amount
             let result = await this.groupsService.getGroupName(groupID);
@@ -119,24 +106,10 @@ export class GroupsController {
         }
     };
 
-    // getByLocation = async (req: express.Request, res: express.Response) => {
-    //     // console.log(`getting rest by location... latitude: ${req.session['location'].x},longitude: ${req.session['location'].y}`)
-    //     let result = await this.groceriesService.getTheNearestDistrict(req.session['location'].x, req.session['location'].y)
-    //     let userDistrict = result.rows[0].district_id
-    //     console.log(`getting rest by district_id ${userDistrict}`)
-
-    //     let cardResults = await this.groceriesService.getGroceriesInfoByLocation(userDistrict)
-    //     let finalResult = cardResults.rows
-    //     res.json( [finalResult] )
-    // }
-
-
     getGroupBuyingRecord = async (req: express.Request, res: express.Response) => {
         try {
             console.log("received request on getGroupBuyingRecord");
-
             let { groupId, month, year } = req.body
-            console.log("groupId: ", groupId, "month :", month, "year: ", year);
 
             // get group members with paid amount
             const NUMBER_OF_CATEGORY = 10
@@ -165,13 +138,10 @@ export class GroupsController {
                 "https://iconandreceipt.s3.ap-southeast-1.amazonaws.com/fronzen.png"
             ]
 
-
-
             let categorizedResult: any[] = []
 
             for (let catId = 1; catId <= NUMBER_OF_CATEGORY; catId++) {
                 let resultBefore = await this.groupsService.getBuyingRecord(groupId, catId, month, year);
-
 
                 let result = resultBefore.filter(function (e: any) {
                     if (e.aeon_price == null && e.dch_price == null && e.jasons_price == null && e.parknshop_price == null && e.wellcome_price == null && e.mannings_price == null && e.watsons_price == null && e.ztore_price == null) {
@@ -186,7 +156,6 @@ export class GroupsController {
                     result: result
                 })
             }
-            console.log("The categorized result: ", categorizedResult)
             res.json(categorizedResult);
             return;
 
@@ -197,19 +166,12 @@ export class GroupsController {
         }
     };
 
-
     getAnotherGroupShoppingList = async (req: express.Request, res: express.Response) => {
         try {
             console.log("received request on getAnotherGroupShoppingList");
-
             let { groupId } = req.body
-            console.log("groupId: ", groupId);
-
             let anotherGroupShoppingList = await this.groupsService.getAnotherGroupShoppingList(groupId);
 
-
-
-            console.log("anotherGroupShoppingList result: ", anotherGroupShoppingList)
             res.json(anotherGroupShoppingList);
             return;
 
@@ -220,14 +182,10 @@ export class GroupsController {
         }
     };
 
-
-
     deleteItemInShoppingList = async (req: express.Request, res: express.Response) => {
         try {
             console.log("deleteItemInShoppingList API");
-
             let cart_id = req.body.cart_id;
-            console.log("cart_id :", cart_id);
 
             // delete item from shopping list
             await this.groupsService.deleteItemInShoppingList(cart_id);
@@ -256,7 +214,6 @@ export class GroupsController {
                     : files.image;
                 let fileName = file ? file.newFilename : undefined;
 
-
                 // Upload file to AWS S3
                 const accessPath = await uploadToS3({
                     Bucket: "iconandreceipt",
@@ -265,13 +222,10 @@ export class GroupsController {
                 });
 
                 // edit to table groups
-                console.log("group_id :", group_id)
-                console.log("accessPath :", accessPath)
                 await this.groupsService.editGroupIcon(
                     group_id,
                     accessPath
                 );
-
             });
 
             res.json({
@@ -288,9 +242,7 @@ export class GroupsController {
         try {
             console.log("deleteGroup API");
             let groupId = req.body.groupID;
-            console.log("groupId:", groupId)
             let getGroupResult = await this.groupsService.getDeletableGroups(groupId);
-            console.log(">>>>>>>>> find deletable groups result: ", getGroupResult)
 
             if (getGroupResult.shoppingListResult.length > 0 || getGroupResult.receiptResult.length > 0) {
                 res.status(400).json({
@@ -300,9 +252,9 @@ export class GroupsController {
             }
 
             let deleteGroupResult = await this.groupsService.deleteGroup(groupId)
-            console.log("deleteGroupResult: ", deleteGroupResult)
             res.status(200).json({
-                message: "This group is deleted"
+                message: "This group is deleted",
+                deleteGroupResult: deleteGroupResult
             });
 
 
@@ -321,14 +273,7 @@ export class GroupsController {
             let goods_id = req.body.goods_id;
             let quantity = req.body.quantity;
 
-            console.log("user_id:", user_id)
-            console.log("group_id:", group_id)
-            console.log("goods_id:", goods_id)
-            console.log("quantity:", quantity)
-
             const result = await this.groupsService.instantAdd(user_id, group_id, goods_id, quantity);
-
-            console.log("result :", result)
 
             res.status(200).json({
                 message: "added items",

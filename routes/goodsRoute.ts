@@ -2,7 +2,6 @@ import express from "express";
 import { GoodsController } from "../controllers/goods-controller";
 import { GoodsService } from "../services/goods-service";
 import { knex } from "../utils/db";
-// import { isLoggedIn } from '../utils/guard';
 
 export const goodsRoute = express.Router();
 
