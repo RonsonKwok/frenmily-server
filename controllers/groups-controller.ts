@@ -197,22 +197,29 @@ export class GroupsController {
         }
     };
 
-    // to get each family's money saved
-    // to get the quantity of family group 
-    // getFamilyMoneySaved = async (req: express.Request, res: express.Response) => {
-    //     try {
 
-    //         res.json({
-    //             message: "fetch family data successfully"
-    //         });
-    //         return;
+    getAnotherGroupShoppingList = async (req: express.Request, res: express.Response) => {
+        try {
+            console.log("received request on getAnotherGroupShoppingList");
 
-    //     } catch (e) {
-    //         console.log(e);
-    //         res.status(400).send("getFamilyMoneySaved failed");
-    //         return;
-    //     }
-    // };
+            let { groupId } = req.body
+            console.log("groupId: ", groupId);
+
+            let anotherGroupShoppingList = await this.groupsService.getAnotherGroupShoppingList(groupId);
+
+
+
+            console.log("The categorized result: ", anotherGroupShoppingList)
+            res.json(anotherGroupShoppingList);
+            return;
+
+        } catch (e) {
+            console.log(e);
+            res.status(400).send("getAnotherGroupShoppingList failed");
+            return;
+        }
+    };
+
 
 
     deleteItemInShoppingList = async (req: express.Request, res: express.Response) => {

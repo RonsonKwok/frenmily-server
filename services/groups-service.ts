@@ -193,6 +193,47 @@ export class GroupsService {
 
     }
 
+    async getAnotherGroupShoppingList(groupId: number): Promise<any> {
+        try {
+            console.log("DATABASE: getBuyingRecord");
+            let result = await this.knex.raw(/*sql*/
+                `
+                select 
+                extract (day from shopping_lists.updated_at) as day,
+                extract (month from shopping_lists.updated_at) as month,
+                extract (year from shopping_lists.updated_at) as year,
+                groups.id as group_id, 
+                group_name, 
+                carts.goods_id,
+                carts.quantity, 
+                goods.name as goods_name, 
+                goods.category_id,
+                goods.goods_picture
+                from groups
+                inner join shopping_lists
+                on shopping_lists.group_id = groups.id
+                inner join carts
+                on carts.id = shopping_lists.cart_id 
+                inner join goods
+                on goods.id = carts.goods_id 
+                inner join goods_categories
+                on goods_categories.id = goods.category_id 
+                where group_id = ? and
+                is_family_group =true
+                order by shopping_lists.updated_at desc
+                `,
+                [groupId]
+            );
+
+            return result.rows;
+        }
+        catch (e) {
+            console.log(e);
+        }
+
+    }
+
+
     async deleteItemInShoppingList(cart_id: number): Promise<any> {
         await this.knex.raw(
             `
