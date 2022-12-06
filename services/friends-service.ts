@@ -16,7 +16,6 @@ export class FriendsService {
             "select * from users where mobile = ?",
             [searchBar]
         );
-        console.log("results.rows :", results.rows);
 
         const emailResult = await this.knex.raw(
             "select * from users where email = ?",
@@ -25,7 +24,6 @@ export class FriendsService {
         // console.log("results.rowsEmail :", emailResult.rows);
 
         results.rows.push(emailResult.rows[0]);
-        console.log("combineResult :", results.rows);
 
         return results.rows;
     }
@@ -65,9 +63,6 @@ export class FriendsService {
             AND debitor_id = ?`,
             [user_id, user_friend_id]
         );
-        if (user_friend_id == 5) {
-            console.log("result5 :", result.rows);
-        }
 
         return result.rows;
     }
@@ -84,7 +79,6 @@ export class FriendsService {
             AND creditor_id = ?`,
             [user_id, user_friend_id]
         );
-        console.log("HERERERER: ", result.rows);
         return result.rows;
     }
 
@@ -97,7 +91,6 @@ export class FriendsService {
             `select * from transcations inner join groups on transcations.group_id = groups.id where debitor_id = ? and creditor_id = ? or debitor_id = ? and creditor_id = ?`,
             [user_id, user_friend_id, user_friend_id, user_id]
         );
-        console.log("HERERERER: ", result.rows);
         let notYetSettleArray = []
         let settledArray = []
 
@@ -109,8 +102,6 @@ export class FriendsService {
             }
 
         }
-        console.log("notYetSettled :", notYetSettleArray)
-        console.log("settled :", settledArray)
         return { notYetSettled: notYetSettleArray, settled: settledArray };
     }
 }

@@ -10,9 +10,7 @@ let userController = new UserController(userService);
 
 userRoutes.get("/me", userController.me);
 userRoutes.post("/login", userController.login);
-userRoutes.post("/location", userController.location);
 userRoutes.post("/register", userController.register);
-// userRoutes.post("/profilePicture", userController.changeProfilePicture);
 userRoutes.get("/username", userController.username);
 userRoutes.post("/updateGender", userController.updateGender);
 userRoutes.post("/updateMobileNumber", userController.updateMobileNumber);
@@ -20,8 +18,3 @@ userRoutes.post("/updateEmail", userController.updateEmail);
 userRoutes.post("/updateProfilePicture", userController.updateProfilePicture);
 userRoutes.post("/getUserName", userController.getUserName);
 userRoutes.post("/disableAccount", userController.disableAccount);
-
-// userRoutes.post("/logout", userController.logout)
-
-// userRoutes.get('/location', userController.getDistrict);
-// userRoutes.get('/favouriteCat', userController.getFavouriteCat);

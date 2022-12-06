@@ -22,7 +22,7 @@ docker tag frienmily:latest rk6866/frienmily:latest
 docker tag <your-local-image-tag>:<tagname>  <your-account-name>/<your-repo-name>:<tagname>  
 
 
-## docker
+## docker 
 ```bash
 docker build -t frienmily .\
 &&\
