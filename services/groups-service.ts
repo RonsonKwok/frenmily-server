@@ -206,7 +206,6 @@ export class GroupsService {
                 groups.id as group_id, 
                 group_name, 
                 carts.goods_id,
-                carts.quantity, 
                 goods.name as goods_name, 
                 goods.category_id,
                 goods.goods_picture
@@ -219,8 +218,7 @@ export class GroupsService {
                 on goods.id = carts.goods_id 
                 inner join goods_categories
                 on goods_categories.id = goods.category_id 
-                where group_id = ? and
-                is_family_group =true
+                where group_id = ?
                 order by shopping_lists.updated_at desc
                 `,
                 [groupId]
