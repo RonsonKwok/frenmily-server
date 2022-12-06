@@ -328,6 +328,22 @@ export class GoodsService {
 
     }
 
+    async assignToGroupFromAnother(userId: number, groupId: number, productIds: any[]): Promise<any> {
+        try {
+            console.log("DATABASE: assignToGroupFromAnother");
+
+            // const assignItems = await this.knex
+            //     .insert(productIds)
+            //     .into('shopping_lists')
+
+            //     .returning("*")
+        }
+        catch (e) {
+            console.log(e);
+        }
+
+    }
+
     async getAssignedItems(groupId: number): Promise<any> {
         try {
             console.log("DATABASE: getAssignedItems");

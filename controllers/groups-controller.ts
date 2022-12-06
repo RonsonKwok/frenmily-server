@@ -209,7 +209,7 @@ export class GroupsController {
 
 
 
-            console.log("The categorized result: ", anotherGroupShoppingList)
+            console.log("anotherGroupShoppingList result: ", anotherGroupShoppingList)
             res.json(anotherGroupShoppingList);
             return;
 

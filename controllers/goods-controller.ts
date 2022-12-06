@@ -266,6 +266,27 @@ export class GoodsController {
         }
     };
 
+    assignToGroupFromAnother = async (req: Request, res: Response) => {
+        try {
+            console.log("assignSpecificProductToGroup API");
+            const { userId, groupId, productIds } = req.body
+            let productDetails: [] = []
+            for (let productId of productIds) {
+
+            }
+
+            const items = await this.goodsService.assignToGroupFromAnother(userId, groupId, productIds);
+            res.status(200).json({ shoppingList: items });
+            return;
+
+        } catch (e) {
+            console.log(e);
+            res.status(400).send("assignSpecificProductToGroup API Fail");
+            return;
+        }
+    };
+
+
     getAssignedItems = async (req: Request, res: Response) => {
         try {
             console.log("getAssignedItems API");
