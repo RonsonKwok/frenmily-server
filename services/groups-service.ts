@@ -152,6 +152,7 @@ export class GroupsService {
                 groups.id as group_id, 
                 group_name, 
                 carts.goods_id,
+                carts.id,
                 carts.quantity, 
                 goods.name as goods_name, 
                 goods.category_id, 
