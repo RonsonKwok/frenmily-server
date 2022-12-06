@@ -335,8 +335,10 @@ export class GoodsService {
             const itemId = await this.knex.raw(
                 `INSERT INTO carts(users_id, goods_id, quantity, is_assigned)VALUES(?, ?, 1, true) RETURNING id`, [userId, productId])
 
+            console.log("itemId :", itemId)
+            console.log("itemId.rows[0].id :", itemId.rows[0].id)
             await this.knex.raw(
-                `INSERT INTO shopping_lists(group_id, cart_id, is_completed, assignee_id, buyer_id)VALUES(?, ?, false, ?, null);`, [groupId, itemId, userId])
+                `INSERT INTO shopping_lists(group_id, cart_id, is_completed, assignee_id, buyer_id)VALUES(?, ?, false, ?, null);`, [groupId, itemId.rows[0].id, userId])
         }
         catch (e) {
             console.log(e);

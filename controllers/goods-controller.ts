@@ -270,6 +270,9 @@ export class GoodsController {
         try {
             console.log("assignSpecificProductToGroup API");
             const { userId, groupId, productIds } = req.body
+            console.log("userId :", userId)
+            console.log("groupId :", groupId)
+            console.log("productIds :", productIds)
 
             for (let productId of productIds) {
                 await this.goodsService.assignToGroupFromAnother(userId, groupId, productId);
