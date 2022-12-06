@@ -98,6 +98,19 @@ export class FriendsService {
             [user_id, user_friend_id, user_friend_id, user_id]
         );
         console.log("HERERERER: ", result.rows);
-        return result.rows;
+        let notYetSettleArray = []
+        let settledArray = []
+
+        for (let item of result.rows) {
+            if (item.is_settled == true) {
+                settledArray.push(item)
+            } else {
+                notYetSettleArray.push(item)
+            }
+
+        }
+        console.log("notYetSettled :", notYetSettleArray)
+        console.log("settled :", settledArray)
+        return { notYetSettled: notYetSettleArray, settled: settledArray };
     }
 }
