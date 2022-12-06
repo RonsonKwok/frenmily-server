@@ -287,4 +287,25 @@ export class GroupsController {
             return;
         }
     };
+
+    deleteAllToBuy = async (req: express.Request, res: express.Response) => {
+        try {
+            console.log("deleteAllToBuy API");
+            let group_id = req.body.group_id;
+            console.log("group_id :", group_id)
+
+            const result = await this.groupsService.deleteAllToBuy(group_id);
+
+            res.status(200).json({
+                message: "deleted items",
+                result: result
+            });
+
+
+        } catch (e) {
+            console.log(e);
+            res.status(400).send("deleteAllToBuy failed");
+            return;
+        }
+    };
 }

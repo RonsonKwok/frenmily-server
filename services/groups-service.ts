@@ -351,4 +351,19 @@ export class GroupsService {
         }
 
     }
+
+    async deleteAllToBuy(group_id: number): Promise<any> {
+        try {
+            console.log("DATABASE: instantAdd1");
+            await this.knex.raw(
+                `DELETE FROM shopping_lists WHERE group_id = ? and is_completed = false`,
+                [group_id]
+            );
+
+        }
+        catch (e) {
+            console.log(e);
+        }
+
+    }
 }
