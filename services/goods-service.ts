@@ -302,19 +302,11 @@ export class GoodsService {
         try {
             console.log("DATABASE: assignToGroupFromAnother");
 
-<<<<<<< HEAD
-            const assignItems = await this.knex
-                .insert(productIds)
-                .into('shopping_lists')
-
-                .returning("*")
-=======
             const itemId = await this.knex.raw(
                 `INSERT INTO carts(users_id, goods_id, quantity, is_assigned)VALUES(?, ?, 1, true) RETURNING id`, [userId, productId])
 
             await this.knex.raw(
                 `INSERT INTO shopping_lists(group_id, cart_id, is_completed, assignee_id, buyer_id)VALUES(?, ?, false, ?, null);`, [groupId, itemId.rows[0].id, userId])
->>>>>>> b2c83a28c6ca2b24e16671b44417596bf42a6709
         }
         catch (e) {
             console.log(e);

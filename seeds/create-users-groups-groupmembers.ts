@@ -21219,7 +21219,6 @@ export async function seed(knex: Knex): Promise<void> {
             "wellcome_price": null,
             "ztore_price": null,
             "goods_picture": "https://online-price-watch.consumer.org.hk/opw/photoRedirect/P000003498/PARKNSHOP/?url=https%3A%2F%2Fapi.parknshop.com%2Fmedias%2FBLUEBERRY-BAGELS-182719.jpg%3Fcontext%3DbWFzdGVyfHBuc2hrL2ltYWdlc3w5Nzc3MnxpbWFnZS9qcGVnfGg1Mi9oZmEvOTMxOTM4MjU4MTI3OC9CTFVFQkVSUlkgQkFHRUxTLTE4MjcxOS5qcGd8OGMyYjlkM2M2YmI2M2MyNGU0NjI2ODg1YTI4NmI5ZTFjNzE4YTFmMjRjNzc5YTcyMzhkNDEzNjczYmFiMzU2MQ"
-<<<<<<< HEAD
         },
         {
             "category_id": 6,
@@ -21235,9 +21234,6 @@ export async function seed(knex: Knex): Promise<void> {
             "ztore_price": null,
             "goods_picture": "https://api.parknshop.com/medias/ION-WATER-LOW-KCAL-306097.jpg?context=bWFzdGVyfHBuc2hrL2ltYWdlc3wzNDE0M3xpbWFnZS9qcGVnfGg5Ny9oMGYvOTMyMzIzODQ1NzM3NC9JT04gV0FURVIgTE9XIEtDQUwtMzA2MDk3LmpwZ3wxZWUzZjcwYTMzMTM2ZmRhNDNlNTc5ZmRjZmY1MTk4ZDczNTk1NzZkMTYzMmE4NWUwMmUwMmE1MDg2MDZjN2Fl"
         },
-=======
-        }
->>>>>>> 6b7e77c69e14f63472b59984fe4b3f1c2e370295
     ]).into('goods');
 
 
