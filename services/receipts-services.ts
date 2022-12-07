@@ -17,13 +17,11 @@ export class ReceiptsService {
             const id = await this.knex.raw(
                 `
         INSERT INTO paid_records
-        (user_id, group_id, receipt_image, amount, remarks) 
-        VALUES (?,?,?,?,?) RETURNING id
+        (user_id, group_id, receipt_image, amount, remarks, is_valid) 
+        VALUES (?,?,?,?,?,?) RETURNING id
     `,
-                [userID, groupID, accessPath, amount, remarks]
+                [userID, groupID, accessPath, amount, remarks, true]
             );
-            console.log("id.rows[0] :", id.rows[0].id);
-
             return id.rows[0].id
         } catch (error) {
             console.log("error :", error);
@@ -39,8 +37,6 @@ export class ReceiptsService {
     ): Promise<any> {
         try {
             console.log("DATABASE: DIVIDE MONEY");
-            console.log("receiptId :", receiptId);
-
 
             // Find all group members
             let groupMembers = await this.knex.raw(
@@ -105,7 +101,7 @@ export class ReceiptsService {
 
         let results = await this.knex.raw(
             `
-            select * from paid_records where group_id = ?
+            select * from paid_records where group_id = ? and is_valid = true
         `,
             [groupID]
         );
@@ -128,9 +124,31 @@ export class ReceiptsService {
             console.log("DATABASE: deleteReceipt");
 
             await this.knex.raw(
-                `DELETE from paid_records WHERE id = ?`,
+                `UPDATE paid_records SET is_valid = false WHERE id=? RETURNING *`,
                 [receipt_id]
             );
+
+            const result = await this.knex.raw(
+                `select * from transcations WHERE paid_record_id = ?`,
+                [receipt_id]
+            );
+            console.log("result :", result.rows);
+            for (let item of result.rows) {
+                if (item.is_settled == false) {
+                    await this.knex.raw(
+                        `DELETE FROM transcations WHERE id=?`,
+                        [item.id]
+                    );
+                } else {
+                    await this.knex.raw(
+                        `INSERT INTO transcations (debitor_id, creditor_id, transcations_amount, is_paid, is_settled, group_id, paid_record_id) VALUES(?,?,?,?,?,?,?)`,
+                        [item.creditor_id, item.debitor_id, item.transcations_amount, false, false, item.group_id, receipt_id]
+                    );
+                }
+            }
+
+
+
 
             return true
         } catch (error) {

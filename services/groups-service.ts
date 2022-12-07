@@ -104,7 +104,7 @@ export class GroupsService {
         for (let tempUserInfo of tempUserInfoArray) {
             let result = await this.knex.raw(
                 `
-                select SUM(amount) from paid_records where group_id = ? and user_id = ?
+                select SUM(amount) from paid_records where group_id = ? and user_id = ? and is_valid = true
             `,
                 [groupID, tempUserInfo.id]
             );
