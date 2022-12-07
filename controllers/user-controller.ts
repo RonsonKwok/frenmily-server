@@ -1,12 +1,7 @@
 import express from "express";
 import { UserService } from "../services/user-service";
 import { checkPassword } from "../utils/hash";
-// import fetch from "cross-fetch";
-// import crypto from "crypto";
 import { User } from "../model/User";
-// import { formParse } from "../utils/upload";
-// import fs from "fs";
-// import path from "path";
 import jwtSimple from "jwt-simple";
 import jwt from "../token/jwt";
 import IncomingForm from "formidable/Formidable";
@@ -14,11 +9,6 @@ import initFormidable from "../utils/upload";
 import { File } from "formidable";
 import { uploadToS3 } from "../utils/aws-s3-upload";
 import fs from "fs";
-
-
-
-
-
 
 export const outdatedTokens: string[] = [];
 
@@ -64,7 +54,6 @@ export class UserController {
             // Check DB
             let userResult = await this.userService.getUserByUsername(username);
             let dbUser: User = userResult.rows[0];
-            console.log("dbUser: ", dbUser);
 
             if (!dbUser) {
                 res.status(400).json({
@@ -77,11 +66,6 @@ export class UserController {
             let isValid = await checkPassword(password, dbUser["password"]!);
 
             if (isValid) {
-                console.log("correct password");
-                console.log(username, "has logged in");
-
-                // delete dbUser['password']
-
                 // 登入成功就生成一個token
                 const payload = {
                     userId: dbUser.id,
@@ -93,8 +77,6 @@ export class UserController {
                     // time: new Date().toLocaleTimeString()
                 };
                 const token = jwtSimple.encode(payload, jwt.jwtSecret);
-                console.log("payload: ", payload);
-                console.log("token: ", token);
                 res.status(200).json({
                     message: "login successfully",
                     token: token,
@@ -109,72 +91,10 @@ export class UserController {
         }
     };
 
-    location = async (req: express.Request, res: express.Response) => {
-        const latitude = req.body.latitude;
-        const longitude = req.body.longitude;
-        console.log(latitude);
-        console.log(longitude);
-        const location = { x: latitude, y: longitude };
-        req.session["location"] = location;
-        res.json({ message: "end" });
-    };
-
-    // getDistrict = async (req: express.Request, res: express.Response) => {
-    //     if (req.session['location']?.x == undefined) {
-    //         res.json("N/A")
-    //         return
-    //     }
-    //     let result = await this.userService.getDistrict(req.session['location'].x, req.session['location'].y)
-    //     let userDistrict = result.rows[0].district_id
-    //     let districtName = await this.userService.getDistrictName(userDistrict)
-    //     res.json(districtName.rows[0].name)
-    // }
-
-    // loginGoogle = async (req: express.Request, res: express.Response) => {
-    //     try {
-    //         const accessToken = req.session?.["grant"].response.access_token;
-    //         console.log("accessToken: ", accessToken);
-    //         const fetchRes = await fetch(
-    //             "https://www.googleapis.com/oauth2/v2/userinfo",
-    //             {
-    //                 method: "get",
-    //                 headers: {
-    //                     Authorization: `Bearer ${accessToken}`,
-    //                 },
-    //             }
-    //         );
-    //         const result = await fetchRes.json();
-    //         console.log("google result:", result);
-
-    //         // Create a random password for Google users
-    //         const randomString = crypto.randomBytes(32).toString("hex");
-
-    //         const username = result.email;
-    //         const password = randomString;
-    //         const email = result.email;
-
-    //         let userResult = await this.userService.getUserByUsername(username);
-    //         let dbUser: User = userResult.rows[0];
-    //         req.session["user"] = dbUser;
-    //         if (dbUser) {
-    //             res.redirect("/homepage.html");
-    //             return;
-    //         }
-    //         await this.userService.createUser(username, password, email);
-    //         res.redirect("/homepage.html");
-    //     } catch (e) {
-    //         console.log(e);
-    //     }
-    // };
-
     register = async (req: express.Request, res: express.Response) => {
         try {
             const normalMobileNumberLength = 8;
-            console.log("server side receives signal");
-            console.log("request body: ", req.body);
             const { username, password, mobile, email } = req.body;
-
-            console.log(username, password, mobile, email);
 
             if (
                 !username || !password
@@ -211,8 +131,6 @@ export class UserController {
             );
             let dbUserByUsername: User = usernameResult.rows[0];
             if (dbUserByUsername) {
-                console.log("user found in DB");
-                console.log(dbUserByUsername);
                 res.status(400).json({
                     message: "User already exists.",
                 });
@@ -224,8 +142,6 @@ export class UserController {
             );
             let dbUserByMobile: User = mobileResult.rows[0];
             if (dbUserByMobile) {
-                console.log("user found in DB");
-                console.log(dbUserByMobile);
                 res.status(400).json({
                     message: "This mobile number is already in use.",
                 });
@@ -237,8 +153,6 @@ export class UserController {
             );
             let dbUserByEmail: User = emailResult.rows[0];
             if (dbUserByEmail) {
-                console.log("user found in DB");
-                console.log(dbUserByEmail);
                 res.status(400).json({
                     message: "This email address is already in use.",
                 });
@@ -281,18 +195,12 @@ export class UserController {
     updateGender = async (req: express.Request, res: express.Response) => {
         try {
             const { username, gender } = req.body;
-            console.log("info received at server: ", username, gender);
 
             await this.userService.updateGender(username, gender);
 
             // 改資料成功就重新生成一個token
             let userResult = await this.userService.getUserByUsername(username);
             let dbUser: User = userResult.rows[0];
-
-            console.log(
-                "dbUser get after successfully changing gender setting: ",
-                dbUser
-            );
 
             const payload = {
                 userId: dbUser.id,
@@ -303,8 +211,6 @@ export class UserController {
                 // time: new Date().toLocaleTimeString()
             };
             const token = jwtSimple.encode(payload, jwt.jwtSecret);
-            console.log("payload: ", payload);
-            console.log("token: ", token);
 
             res.status(200).json({
                 message: "Update gender successfully",
@@ -321,18 +227,12 @@ export class UserController {
     ) => {
         try {
             const { username, mobile } = req.body;
-            console.log(username, mobile);
 
             await this.userService.updateUserMobileNumber(username, mobile);
 
             // 改資料成功就重新生成一個token
             let userResult = await this.userService.getUserByUsername(username);
             let dbUser: User = userResult.rows[0];
-
-            console.log(
-                "dbUser get after successfully changing gender setting: ",
-                dbUser
-            );
 
             const payload = {
                 userId: dbUser.id,
@@ -343,8 +243,6 @@ export class UserController {
                 // time: new Date().toLocaleTimeString()
             };
             const token = jwtSimple.encode(payload, jwt.jwtSecret);
-            console.log("payload: ", payload);
-            console.log("token: ", token);
 
             res.status(200).json({
                 message: "Update mobile number successfully",
@@ -358,17 +256,12 @@ export class UserController {
     updateEmail = async (req: express.Request, res: express.Response) => {
         try {
             const { username, email } = req.body;
-            console.log(username, email);
+
             await this.userService.updateEmail(username, email);
 
             // 改資料成功就重新生成一個token
             let userResult = await this.userService.getUserByUsername(username);
             let dbUser: User = userResult.rows[0];
-            console.log("userResult: ", userResult)
-            console.log(
-                "dbUser get after successfully changing gender setting: ",
-                dbUser
-            );
 
             const payload = {
                 userId: dbUser.id,
@@ -379,8 +272,6 @@ export class UserController {
                 // time: new Date().toLocaleTimeString()
             };
             const token = jwtSimple.encode(payload, jwt.jwtSecret);
-            console.log("payload: ", payload);
-            console.log("token: ", token);
 
             res.status(200).json({
                 message: "Update email address successfully",
@@ -393,7 +284,6 @@ export class UserController {
 
     updateProfilePicture = async (req: express.Request, res: express.Response) => {
         try {
-            // TODO: complete the backend logic
             console.log("received request")
             const form: IncomingForm = initFormidable();
 
@@ -417,13 +307,7 @@ export class UserController {
                     userID,
                     accessPath,
                 );
-                console.log("userResult: ", userResult)
                 let dbUser: User = userResult.rows[0];
-
-                console.log(
-                    "dbUser get after successfully changing profile picture: ",
-                    dbUser
-                );
 
                 const payload = {
                     userId: dbUser.id,
@@ -434,8 +318,6 @@ export class UserController {
                     profilePicture: dbUser.profile_picture
                 };
                 const token = jwtSimple.encode(payload, jwt.jwtSecret);
-                console.log("payload: ", payload);
-                console.log("token: ", token);
 
                 res.status(200).json({
                     message: "Update profile picture successfully",
@@ -456,7 +338,6 @@ export class UserController {
         try {
             const user_id = req.body.user_id
             let userResult = await this.userService.getUserName(user_id);
-            console.log(userResult);
             res.json(userResult)
 
 
@@ -468,14 +349,11 @@ export class UserController {
     disableAccount = async (req: express.Request, res: express.Response) => {
         try {
             console.log("disableAccount API");
-            console.log("req.body: ", req.body);
             const username = req.body
-            console.log("username: ", username)
             let randomString = "";
             randomString += Math.random();
             randomString += Math.random();
             randomString += Math.random();
-            console.log("randomString: ", randomString);
 
             await this.userService.changePasswordToRandom(username, randomString);
             res.json({
@@ -487,42 +365,4 @@ export class UserController {
             console.log(e);
         }
     };
-
-
-    // Update profile picture
-    //     changeProfilePicture = async (
-    //         req: express.Request,
-    //         res: express.Response
-    //     ) => {
-    //         try {
-    //             let { files } = await formParse(req);
-    //             console.log("files: ", files);
-
-    //             // get username to use it as filename
-    //             const OLD_FILE_NAME = files["image"]["newFilename"];
-    //             const NEW_FILE_NAME = req.session["user"]["username"] + ".png";
-
-    //             let oldFilePath = path.join(
-    //                 __dirname,
-    //                 `../uploads/${OLD_FILE_NAME}`
-    //             );
-    //             console.log({ oldFilePath });
-    //             let newFilePath = path.join(
-    //                 __dirname,
-    //                 `../uploads/${NEW_FILE_NAME}`
-    //             );
-    //             console.log({ newFilePath });
-
-    //             fs.rename(oldFilePath, newFilePath, function (err) {
-    //                 if (err) throw err;
-    //                 console.log("File Renamed.");
-    //             });
-
-    //             res.status(200).json({
-    //                 message: "received profile picture",
-    //             });
-    //         } catch (e) {
-    //             console.log(e);
-    //         }
-    //     };
 }

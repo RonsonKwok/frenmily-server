@@ -13,12 +13,10 @@ groupsRoute.post("/getGroups", groupsController.getGroups);
 groupsRoute.post("/getGroupMembers", groupsController.getGroupMembers);
 groupsRoute.post("/getGroupName", groupsController.getGroupName);
 groupsRoute.post("/groupBuyingRecord", groupsController.getGroupBuyingRecord);
-// groupsRoute.post("/familyMoneySaved", groupsController.getFamilyMoneySaved);
-// groceriesRoute.get('/category', groceriesController.getByCategory);
-// groceriesRoute.get('/location', groceriesController.getByLocation);
 groupsRoute.post("/deleteItemInShoppingList", groupsController.deleteItemInShoppingList);
 groupsRoute.post("/editGroupIcon", groupsController.editGroupIcon);
 groupsRoute.post("/deleteEmptyGroup", groupsController.deleteEmptyGroup);
 groupsRoute.post("/instantAdd", groupsController.instantAdd);
 groupsRoute.post("/anotherGroupShoppingList", groupsController.getAnotherGroupShoppingList);
+groupsRoute.delete("/deleteAllToBuy", groupsController.deleteAllToBuy);
 
