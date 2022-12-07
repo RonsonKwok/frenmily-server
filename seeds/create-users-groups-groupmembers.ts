@@ -1299,7 +1299,7 @@ export async function seed(knex: Knex): Promise<void> {
             "parknshop_price": "36",
             "wellcome_price": null,
             "ztore_price": null,
-            "goods_picture": "https://online-price-watch.consumer.org.hk/opw/photoRedirect/P000003058/WELLCOME/?url=https%3A%2F%2Fwww.wellcome.com.hk%2Fwd2%2Fuserfile%2Fwd%2Fpdt%2Fall%2FPL374316.jpg"
+            "goods_picture": "https://api.parknshop.com/medias/zoom-front-160206.jpg?context=bWFzdGVyfHBuc2hrL2ltYWdlc3w5MDg4OXxpbWFnZS9qcGVnfGg4MS9oNWYvOTU4MDIwMDg4NjMwMi9QTlNISy0xNjAyMDYtZnJvbnQuanBnfGM2NjBmNGU1YWVlMmUwM2IxMjViNDFmNDZjYmUzMGY3MmNhZjkxMWRkYmViYTRlMGM0MjQ4MWJjMDVlNmU0ZDI"
         },
         {
             "category_id": 1,
@@ -3665,7 +3665,7 @@ export async function seed(knex: Knex): Promise<void> {
             "parknshop_price": null,
             "wellcome_price": "32",
             "ztore_price": null,
-            "goods_picture": "https://online-price-watch.consumer.org.hk/opw/photoRedirect/P000000729/WELLCOME/?url=https%3A%2F%2Fimg.dmallcdn.com%2F20200413%2F7010ec28-c1d4-4c63-9d77-d6dead4dc48a_800x800H.webp"
+            "goods_picture": "https://anchordairy.com.hk/images/product/chesdale-cheddar-250g_2020.png"
         },
         {
             "category_id": 2,
@@ -3679,7 +3679,7 @@ export async function seed(knex: Knex): Promise<void> {
             "parknshop_price": null,
             "wellcome_price": "64",
             "ztore_price": null,
-            "goods_picture": "https://online-price-watch.consumer.org.hk/opw/photoRedirect/P000002621/WELLCOME/?url=https%3A%2F%2Fimg.dmallcdn.com%2F20201124%2Fbb48beac-661a-4b4d-aa03-f08169ce876d_800x800H.webp"
+            "goods_picture": "https://images.hktvmall.com/h0888001/c0bbb8a5a8ac10eb4a280f48fc13a99ddef47bae/h0888001_10142473_210809094630_01_515.jpg"
         },
         {
             "category_id": 2,
@@ -3875,7 +3875,7 @@ export async function seed(knex: Knex): Promise<void> {
             "parknshop_price": null,
             "wellcome_price": "44",
             "ztore_price": null,
-            "goods_picture": "https://online-price-watch.consumer.org.hk/opw/photoRedirect/P000001085/WELLCOME/?url=https%3A%2F%2Fimg.dmallcdn.com%2F20200413%2F6f1f921f-53f7-4c20-bf5c-acbb8b6638c5_800x800H.webp"
+            "goods_picture": "http://img.cdn.91app.hk/webapi/imagesV3/Original/SalePage/255823/0/638017343956630000?v=1"
         },
         {
             "category_id": 2,
@@ -4309,7 +4309,7 @@ export async function seed(knex: Knex): Promise<void> {
             "parknshop_price": null,
             "wellcome_price": "5.5",
             "ztore_price": null,
-            "goods_picture": "https://online-price-watch.consumer.org.hk/opw/photoRedirect/P000000922/JASONS/?url=https%3A%2F%2Fimg.dmallcdn.com%2F20210820%2F13c253bb-3c08-42a4-afbb-803110c0463c_800x800H.webp"
+            "goods_picture": "https://res.whatsticker.online/price/img/product/P000000922.jpg?v=12"
         },
         {
             "category_id": 2,
@@ -5140,7 +5140,7 @@ export async function seed(knex: Knex): Promise<void> {
         },
         {
             "category_id": 3,
-            "name": "健達 Kinder奇趣蛋 (含新奇玩具) 男孩版 (3蛋裝) 20克 x 3",
+            "name": "健達 Kinder 奇趣蛋三蛋裝 20克 x 3",
             "barcode": "8000500126356",
             "aeon_price": "23.5",
             "dch_price": null,
@@ -5150,7 +5150,7 @@ export async function seed(knex: Knex): Promise<void> {
             "parknshop_price": "25.6",
             "wellcome_price": "25.9",
             "ztore_price": null,
-            "goods_picture": "https://online-price-watch.consumer.org.hk/opw/photoRedirect/P000002610/PARKNSHOP/?url=https%3A%2F%2Fapi.parknshop.com%2Fmedias%2Fzoom-front-438301.jpg%3Fcontext%3DbWFzdGVyfHBuc2hrL2ltYWdlc3wyMjgwMTV8aW1hZ2UvanBlZ3xoOGIvaGI2LzkzNjA1NDcyNTAyMDYvUE5TSEstNDM4MzAxLWZyb250LmpwZ3xhZmRmZDQ5ZTcwMWJlYjRmMjVmYjNmZjA4ODU0YzRiYzE5MzM4MDg5M2NkZWVmYTdiNDA1NjA5N2E5MjhlZGM0"
+            "goods_picture": "https://api.parknshop.com/medias/zoom-front-438301.jpg?context=bWFzdGVyfHBuc2hrL2ltYWdlc3wxMjY5NjN8aW1hZ2UvanBlZ3xoMzAvaDM3Lzk2MTcyNDU4NjM5NjYvUE5TSEstNDM4MzAxLWZyb250LmpwZ3w3ODMyOGQ4NGNjN2YzMjAyMDY2ZWMwMWM1NTVhMDViOWFhNWYzZDU3OTJlNDEwOGZhOTBlZmJlNjQwMzViYWFl"
         },
         {
             "category_id": 3,
@@ -5178,7 +5178,7 @@ export async function seed(knex: Knex): Promise<void> {
             "parknshop_price": "25.6",
             "wellcome_price": "25.9",
             "ztore_price": null,
-            "goods_picture": "https://online-price-watch.consumer.org.hk/opw/photoRedirect/P000002611/PARKNSHOP/?url=https%3A%2F%2Fapi.parknshop.com%2Fmedias%2Fzoom-front-433130.jpg%3Fcontext%3DbWFzdGVyfHBuc2hrL2ltYWdlc3wxNDMyODB8aW1hZ2UvanBlZ3xoNzIvaGMyLzkzNDA4ODY3MTIzNTAvUE5TSEstNDMzMTMwLWZyb250LmpwZ3xkYzVkZTBhZGIyN2UwM2RhYzRlNjdmNDA5YzExOWNjNTcwZDIyOTMxNGQzNTM5NDRmMTA5YTQzZGMwNjRlNjli"
+            "goods_picture": "https://www.kinder.com/hk/sites/kinder_hk/files/2020-10/kj_t3_hk_girls_2020_1.png?t=1663593612"
         },
         {
             "category_id": 3,
@@ -7895,7 +7895,7 @@ export async function seed(knex: Knex): Promise<void> {
             "parknshop_price": "108.9",
             "wellcome_price": null,
             "ztore_price": null,
-            "goods_picture": "https://online-price-watch.consumer.org.hk/opw/photoRedirect/P000003000/PARKNSHOP/?url=https%3A%2F%2Fapi.parknshop.com%2Fmedias%2FSUPERIOR-THAI-HOM-MALI-RICE-481004.jpg%3Fcontext%3DbWFzdGVyfHBuc2hrL2ltYWdlc3w0OTk3NzB8aW1hZ2UvanBlZ3xoZWQvaDQ5LzkzMjA5MDQ4ODQyNTQvU1VQRVJJT1IgVEhBSSBIT00gTUFMSSBSSUNFLTQ4MTAwNC5qcGd8NmYzZGYwNzZiMmNkMTljODBjODIzMWEyYjVhZjUxYWViOWQxN2I5M2QyMTdiNmZmNTdlNmFmNWU4MGQ0OGU4MA"
+            "goods_picture": "https://api.parknshop.com/medias/zoom-front-481004.jpg?context=bWFzdGVyfHBuc2hrL2ltYWdlc3wxNTgzNzV8aW1hZ2UvanBlZ3xoMDQvaGY5Lzk2MjA2NDYxNjY1NTgvUE5TSEstNDgxMDA0LWZyb250LmpwZ3w0YzJhNTdlMTNiYzVlZTAzYzkxZTExOGM4NWMxZGRhYWQ5ZWQyNDBhN2M5YjllYWM1NjI1NzhjMmY4YjU2NWVj"
         },
         {
             "category_id": 4,
@@ -7909,7 +7909,7 @@ export async function seed(knex: Knex): Promise<void> {
             "parknshop_price": "66.9",
             "wellcome_price": "69",
             "ztore_price": null,
-            "goods_picture": "https://online-price-watch.consumer.org.hk/opw/photoRedirect/P000002506/PARKNSHOP/?url=https%3A%2F%2Fapi.parknshop.com%2Fmedias%2FPREMIUM-AMERICAN-PEARL-RICE-444633.jpg%3Fcontext%3DbWFzdGVyfHBuc2hrL2ltYWdlc3wzNjI0MjR8aW1hZ2UvanBlZ3xoZTcvaGMwLzkzMTk0NDMxMDM3NzQvUFJFTUlVTSBBTUVSSUNBTiBQRUFSTCBSSUNFLTQ0NDYzMy5qcGd8OWI2MmViODc4ZDQ0YmQwYzc1OGY0MGMyZDVhODAzZTU4NWY2ZTE5ZWZiMmUyZjhmYzJjNjg4OWRkZDE4N2RkNA"
+            "goods_picture": "http://images.hktvmall.com/h0001001/b68aa24ad5263a8ecc5ef67d941e3c83ec4448a3/h0001001_h0888001_s_10002597_151013015616_01_1200.jpg"
         },
         {
             "category_id": 4,
@@ -7937,7 +7937,7 @@ export async function seed(knex: Knex): Promise<void> {
             "parknshop_price": null,
             "wellcome_price": null,
             "ztore_price": null,
-            "goods_picture": "https://online-price-watch.consumer.org.hk/opw/photoRedirect/P000000169/WELLCOME/?url=https%3A%2F%2Fwww.wellcome.com.hk%2Fwd2%2Fuserfile%2Fwd%2Fpdt%2Fall%2FPL101321.jpg"
+            "goods_picture": "http://images.hktvmall.com/h0888001/1d1bbb390412b428a0d2a151a3832beaf36192f7/h0888001_10134099_190208101134_01_1200.jpg"
         },
         {
             "category_id": 4,
@@ -8441,7 +8441,7 @@ export async function seed(knex: Knex): Promise<void> {
             "parknshop_price": null,
             "wellcome_price": "65",
             "ztore_price": null,
-            "goods_picture": "https://online-price-watch.consumer.org.hk/opw/photoRedirect/P000002073/JASONS/?url=https%3A%2F%2Fimg.dmallcdn.com%2F20210426%2F17ece9fc-ccfe-485d-8df2-b71a014ee912_800x800H.webp"
+            "goods_picture": "http://www.tritrade-tw.com/archive/image/product3/images/1566460826_thumb_630_627.jpg"
         },
         {
             "category_id": 4,
@@ -11381,7 +11381,7 @@ export async function seed(knex: Knex): Promise<void> {
             "parknshop_price": "42.9",
             "wellcome_price": null,
             "ztore_price": null,
-            "goods_picture": "https://online-price-watch.consumer.org.hk/opw/photoRedirect/P000002416/PARKNSHOP/?url=https%3A%2F%2Fapi.parknshop.com%2Fmedias%2FFROZEN-GREENLAND-HALIBUT-STEAKS-BW-63642.jpg%3Fcontext%3DbWFzdGVyfHBuc2hrL2ltYWdlc3wxMTIyMzV8aW1hZ2UvanBlZ3xoMTEvaDE3LzkzMTkxOTgyMjg1MTAvRlJPWkVOIEdSRUVOTEFORCBIQUxJQlVUIFNURUFLUyBCVy02MzY0Mi5qcGd8Y2VlZjA1MzE1YzJhYWRlNmY5MmRmZWZhODI1ZDM4NmVmYjIwYjIzZTNiYTg2ODI1YWYzOGZjZmUzNDhlYmIxNQ"
+            "goods_picture": "https://seafoodsociety.hk/wp-content/uploads/2020/07/halibut-portion.jpg"
         },
         {
             "category_id": 4,
@@ -12656,7 +12656,7 @@ export async function seed(knex: Knex): Promise<void> {
             "parknshop_price": "15.5",
             "wellcome_price": "16",
             "ztore_price": null,
-            "goods_picture": "https://online-price-watch.consumer.org.hk/opw/photoRedirect/P000003440/PARKNSHOP/?url=https%3A%2F%2Fapi.parknshop.com%2Fmedias%2FDIET-GINGER-BEER-107108.jpg%3Fcontext%3DbWFzdGVyfHBuc2hrL2ltYWdlc3wyODcyODN8aW1hZ2UvanBlZ3xoOGMvaDhmLzkzMTg0OTM0ODcxMzQvRElFVCBHSU5HRVIgQkVFUi0xMDcxMDguanBnfDM3MDg0MWJmOWFkNzNiNzc4OTMwNzAxMTBmNDdjOTYzOWRjMTcwZmY5YjJjMDM3YTJjNmVlYjdkZDgyYmY3Y2U"
+            "goods_picture": "https://api.parknshop.com/medias/zoom-front-107108.jpg?context=bWFzdGVyfHBuc2hrL2ltYWdlc3w4NzAwOHxpbWFnZS9qcGVnfGhmZi9oMWQvOTU5NTY4MTkzMTI5NC9QTlNISy0xMDcxMDgtZnJvbnQuanBnfDAyMzE4NTQ1NzFmMWEyM2Y5NDk0MzkzYTM5Yjg1ZDdhMTkwODEwZmQ1M2JkNGI0ZmFjZjdiOTRjNzI3NTE4ZTU"
         },
         {
             "category_id": 6,
@@ -15050,7 +15050,7 @@ export async function seed(knex: Knex): Promise<void> {
             "parknshop_price": "48.9",
             "wellcome_price": "47",
             "ztore_price": null,
-            "goods_picture": "https://online-price-watch.consumer.org.hk/opw/photoRedirect/P000000859/PARKNSHOP/?url=https%3A%2F%2Fapi.parknshop.com%2Fmedias%2FION-SUPPLY-DRINK-POWDER-152639.jpg%3Fcontext%3DbWFzdGVyfHBuc2hrL2ltYWdlc3w0NTA0ODR8aW1hZ2UvanBlZ3xoYTIvaDIwLzkzMTkwMDAxMTMxODIvSU9OIFNVUFBMWSBEUklOSyBQT1dERVItMTUyNjM5LmpwZ3wxOGRhNDQxMjkxMjBkY2JjOWFlMDA1ODkxYTEwZGJkNDJjYmY3MjI1MDM1ZWFlZjQ1NzYxZmY3NzVkZTcwM2Rk"
+            "goods_picture": "https://api.parknshop.com/medias/zoom-front-152639.jpg?context=bWFzdGVyfHBuc2hrL2ltYWdlc3wxMTk0NzN8aW1hZ2UvanBlZ3xoM2IvaDEzLzk1NTUyMjI0NjI0OTQvUE5TSEstMTUyNjM5LWZyb250LmpwZ3w2MjIyMzEzODhiYmE5ZDYzNmJlMTVhMWRiNWY1NjkwMGZmM2RiNGYyODNhOGFlNDRmZWZmODlhZDc4YWJmZWYy"
         },
         {
             "category_id": 6,
@@ -15905,7 +15905,7 @@ export async function seed(knex: Knex): Promise<void> {
             "parknshop_price": null,
             "wellcome_price": null,
             "ztore_price": null,
-            "goods_picture": "https://online-price-watch.consumer.org.hk/opw/photoRedirect/P000000032/WELLCOME/?url=https%3A%2F%2Fimg.dmallcdn.com%2F20200413%2F8c51fc9f-0728-4626-b9d7-4dda718fb586_800x800H.webp"
+            "goods_picture": "http://images.hktvmall.com/h0888001/817a1b77161cd051e4169d22a98bc1e6dabc2770/h0888001_10136391_190617054403_01_1200.jpg"
         },
         {
             "category_id": 7,
@@ -16592,7 +16592,7 @@ export async function seed(knex: Knex): Promise<void> {
             "parknshop_price": "39.9",
             "wellcome_price": null,
             "ztore_price": null,
-            "goods_picture": "https://online-price-watch.consumer.org.hk/opw/photoRedirect/P000001391/PARKNSHOP/?url=https%3A%2F%2Fapi.parknshop.com%2Fmedias%2F2IN1-LIQ-DETERGENT-W-SANITIZER-197972.jpg%3Fcontext%3DbWFzdGVyfHBuc2hrL2ltYWdlc3wyMzc0MTF8aW1hZ2UvanBlZ3xoZTYvaGFlLzkzMTg4Njc2NjQ5MjYvMklOMSBMSVEgREVURVJHRU5UIFcgU0FOSVRJWkVSLTE5Nzk3Mi5qcGd8MWJhZTZiY2IxZGJiODU2YjA0OGFmNDVlY2I4YmY2MzUwYmU2MjdiNzRjMzE1ZWVmZmJiNzk3ODk4NzZjMmY3ZQ"
+            "goods_picture": "http://images.hktvmall.com/h0888001/537a84bddc1a7f734423874122d3134e1acd02c8/h0888001_10007497_220921121615_01_1200.jpg"
         },
         {
             "category_id": 8,
@@ -16606,7 +16606,7 @@ export async function seed(knex: Knex): Promise<void> {
             "parknshop_price": null,
             "wellcome_price": null,
             "ztore_price": null,
-            "goods_picture": "https://online-price-watch.consumer.org.hk/opw/photoRedirect/P000003046/WELLCOME/?url=https%3A%2F%2Fwww.wellcome.com.hk%2Fwd2%2Fuserfile%2Fwd%2Fpdt%2Fall%2FPL355468.jpg"
+            "goods_picture": "https://images.hktvmall.com/h0888001/6690d2e0d99173d2dfd751e60a7d4eaa1604626f/h0888001_10007498_220921121832_01_515.jpg"
         },
         {
             "category_id": 8,
@@ -21219,7 +21219,21 @@ export async function seed(knex: Knex): Promise<void> {
             "wellcome_price": null,
             "ztore_price": null,
             "goods_picture": "https://online-price-watch.consumer.org.hk/opw/photoRedirect/P000003498/PARKNSHOP/?url=https%3A%2F%2Fapi.parknshop.com%2Fmedias%2FBLUEBERRY-BAGELS-182719.jpg%3Fcontext%3DbWFzdGVyfHBuc2hrL2ltYWdlc3w5Nzc3MnxpbWFnZS9qcGVnfGg1Mi9oZmEvOTMxOTM4MjU4MTI3OC9CTFVFQkVSUlkgQkFHRUxTLTE4MjcxOS5qcGd8OGMyYjlkM2M2YmI2M2MyNGU0NjI2ODg1YTI4NmI5ZTFjNzE4YTFmMjRjNzc5YTcyMzhkNDEzNjczYmFiMzU2MQ"
-        }
+        },
+        {
+            "category_id": 6,
+            "name": "寶礦力水特 Pocari Sweat電解質水(低卡) Ion Water 500毫升",
+            "barcode": "4987035223818",
+            "aeon_price": null,
+            "dch_price": null,
+            "jasons_price": null,
+            "mannings_price": null,
+            "watsons_price": null,
+            "parknshop_price": "9.2",
+            "wellcome_price": null,
+            "ztore_price": null,
+            "goods_picture": "https://api.parknshop.com/medias/ION-WATER-LOW-KCAL-306097.jpg?context=bWFzdGVyfHBuc2hrL2ltYWdlc3wzNDE0M3xpbWFnZS9qcGVnfGg5Ny9oMGYvOTMyMzIzODQ1NzM3NC9JT04gV0FURVIgTE9XIEtDQUwtMzA2MDk3LmpwZ3wxZWUzZjcwYTMzMTM2ZmRhNDNlNTc5ZmRjZmY1MTk4ZDczNTk1NzZkMTYzMmE4NWUwMmUwMmE1MDg2MDZjN2Fl"
+        },
     ]).into('goods');
 
 

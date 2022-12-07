@@ -97,13 +97,19 @@ export class UserController {
             const { username, password, mobile, email } = req.body;
 
             if (
-                !username ||
-                !password ||
-                username.length > 12 ||
-                password.length > 12
+                !username || !password
             ) {
                 res.status(400).json({
                     message: "Invalid username or password.",
+                });
+                return;
+            }
+            if (
+
+                username.length > 12 || password.length > 12
+            ) {
+                res.status(400).json({
+                    message: "The maximum length of username and password is 12.",
                 });
                 return;
             }
