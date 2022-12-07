@@ -335,7 +335,7 @@ export class GoodsService {
                 goodsDetails.rows[0].buyer_id = item.buyer_id
                 goodsDetailsArray.push(goodsDetails.rows[0]);
 
-                if (item.is_completed == true) {
+                if (item.is_completed == false) {
                     notYetCompleteArray.push(goodsDetails.rows[0])
                 }
 
