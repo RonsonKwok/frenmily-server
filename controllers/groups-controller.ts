@@ -308,4 +308,27 @@ export class GroupsController {
             return;
         }
     };
+
+    changeGroupName = async (req: express.Request, res: express.Response) => {
+        try {
+            console.log("changeGroupName API");
+            let groupName = req.body.groupName;
+            let groupId = req.body.groupId;
+            console.log("groupName :", groupName)
+            console.log("groupId :", groupId)
+
+            const result = await this.groupsService.changeGroupName(groupName, groupId);
+
+            res.status(200).json({
+                message: "deleted items",
+                result: result
+            });
+
+
+        } catch (e) {
+            console.log(e);
+            res.status(400).send("changeGroupName failed");
+            return;
+        }
+    };
 }
