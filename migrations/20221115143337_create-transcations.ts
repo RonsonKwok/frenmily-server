@@ -11,6 +11,8 @@ export async function up(knex: Knex): Promise<void> {
         table.boolean("is_paid");
         table.boolean("is_settled");
         table.integer("group_id").notNullable();
+        table.integer("paid_record_id").notNullable();
+        table.foreign("paid_record_id").references("paid_records.id");
         table.timestamps(false, true);
     });
 }
