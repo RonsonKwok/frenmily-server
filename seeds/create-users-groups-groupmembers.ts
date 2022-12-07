@@ -9,7 +9,7 @@ export async function seed(knex: Knex): Promise<void> {
     await knex.raw(`TRUNCATE  goods_categories  RESTART IDENTITY CASCADE`)
     await knex.raw(`TRUNCATE  goods  RESTART IDENTITY CASCADE`)
     await knex.raw(`TRUNCATE  user_liked  RESTART IDENTITY CASCADE`)
-    // await knex.raw(`TRUNCATE  carts  RESTART IDENTITY CASCADE`)
+    await knex.raw(`TRUNCATE  carts  RESTART IDENTITY CASCADE`)
 
 
     // Inserts seed entries
