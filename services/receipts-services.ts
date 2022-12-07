@@ -129,7 +129,7 @@ export class ReceiptsService {
             );
 
             const result = await this.knex.raw(
-                `select * from transcations WHERE transcations = ?`,
+                `select * from transcations WHERE paid_record_id = ?`,
                 [receipt_id]
             );
             console.log("result :", result.rows);
