@@ -11,3 +11,4 @@ let receiptsController = new ReceiptsController(receiptsService);
 receiptsRoute.post("/", receiptsController.uploadReceipt);
 receiptsRoute.post("/settle", receiptsController.settle);
 receiptsRoute.post("/getAllReceipts", receiptsController.getAllReceipts);
+receiptsRoute.delete("/deleteReceipt", receiptsController.deleteReceipt);

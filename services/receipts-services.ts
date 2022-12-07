@@ -122,4 +122,21 @@ export class ReceiptsService {
         }
         return results.rows
     }
+
+    async deleteReceipt(receipt_id: number): Promise<any> {
+        try {
+            console.log("DATABASE: deleteReceipt");
+
+            await this.knex.raw(
+                `DELETE from paid_records WHERE id = ?`,
+                [receipt_id]
+            );
+
+            return true
+        } catch (error) {
+            console.log("error :", error);
+
+        }
+
+    }
 }

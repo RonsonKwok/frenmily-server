@@ -89,4 +89,19 @@ export class ReceiptsController {
             return;
         }
     };
+
+    deleteReceipt = async (req: Request, res: Response) => {
+        try {
+            console.log("deleteReceipt API");
+            let receipt_id = req.body.receipt_id;
+
+            // get all receipts image and info
+            const result = await this.receiptsService.deleteReceipt(receipt_id);
+            res.json(result);
+        } catch (e) {
+            console.log(e);
+            res.status(400).send("deleteReceipt Fail");
+            return;
+        }
+    };
 }
