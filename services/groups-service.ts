@@ -366,4 +366,19 @@ export class GroupsService {
         }
 
     }
+
+    async changeGroupName(groupName: string, groupId: number): Promise<any> {
+        try {
+            console.log("DATABASE: changeGroupName");
+            await this.knex.raw(
+                `UPDATE groups SET group_name = ? where id = ?`,
+                [groupName, groupId]
+            );
+
+        }
+        catch (e) {
+            console.log(e);
+        }
+
+    }
 }
