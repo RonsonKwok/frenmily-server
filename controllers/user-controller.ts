@@ -176,24 +176,27 @@ export class UserController {
 
             const randomPic = dummyPicArray[Math.floor(Math.random() * dummyPicArray.length)];
 
-            await this.userService.createUser(
+            let newUserResult = await this.userService.createUser(
                 username,
                 password,
                 mobile,
                 email,
                 randomPic
             );
+            console.log("newUserResult: ", newUserResult)
+            let newUserId = newUserResult[0]["id"]
 
 
-            // let groupName = `${username}'s Personal Group`;
-            // let is_family_group = false
-            // const dummyGroupPicArray =
-            //     "https://iconandreceipt.s3.ap-southeast-1.amazonaws.com/groupPic.jpeg"
+            let groupName = `${username}'s Personal Group`;
+            let is_family_group = false
+            const dummyGroupPicArray =
+                "https://iconandreceipt.s3.ap-southeast-1.amazonaws.com/groupPic.jpeg"
 
 
-            // let rowID = await this.userService.initBeginnerGroup(groupName, is_family_group, dummyGroupPicArray)
-            // let userId = dbUserByUsername["id"]
-            // await this.userService.insertBeginnerGroupMember(rowID, userId);
+            let rowID = await this.userService.initBeginnerGroup(groupName, is_family_group, dummyGroupPicArray)
+            console.log("rowID: ", rowID)
+            console.log("newUserId: ", newUserId)
+            await this.userService.insertBeginnerGroupMember(rowID, newUserId);
 
 
 

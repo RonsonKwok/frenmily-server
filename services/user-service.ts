@@ -181,7 +181,7 @@ export class UserService {
         return id.rows[0].id;
     }
 
-    async insertBeginnerGroupMember(rowID: number, userId: number): Promise<any> {
+    async insertBeginnerGroupMember(rowID: number, newUserId: number): Promise<any> {
 
         await this.knex.raw(/*sql*/
             `
@@ -189,7 +189,7 @@ export class UserService {
             (group_id, user_id) 
             VALUES (?,?)
         `,
-            [rowID, userId]
+            [rowID, newUserId]
         );
 
     }
