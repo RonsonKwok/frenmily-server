@@ -64,7 +64,7 @@ export class ReceiptsService {
                     `
                 INSERT INTO transcations
                 (debitor_id, creditor_id, transcations_amount, is_settled, is_paid, group_id, paid_record_id)
-                VALUES (?,?,?,?,?,?)
+                VALUES (?,?,?,?,?,?,?)
             `,
                     [otherMember, userID, eachPersonShouldPay, false, false, groupID, receiptId]
                 );
