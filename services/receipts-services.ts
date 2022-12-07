@@ -12,22 +12,28 @@ export class ReceiptsService {
     ): Promise<any> {
         console.log("DATABASE: UPLOAD RECEIPT");
 
-        await this.knex.raw(
+        const id = await this.knex.raw(
             `
         INSERT INTO paid_records
         (user_id, group_id, receipt_image, amount, remarks) 
-        VALUES (?,?,?,?,?)
+        VALUES (?,?,?,?,?) RETURNING id
     `,
             [userID, groupID, accessPath, amount, remarks]
         );
+        console.log("id.rows[0] :", id.rows[0]);
+
+        return id.rows[0]
     }
 
     async divideMoney(
         userID: number,
         groupID: number,
-        amount: number
+        amount: number,
+        receiptId: number
     ): Promise<any> {
         console.log("DATABASE: DIVIDE MONEY");
+        console.log("receiptId :", receiptId);
+
 
         // Find all group members
         let groupMembers = await this.knex.raw(
@@ -50,10 +56,10 @@ export class ReceiptsService {
             await this.knex.raw(
                 `
                 INSERT INTO transcations
-                (debitor_id, creditor_id, transcations_amount, is_settled, is_paid, group_id)
+                (debitor_id, creditor_id, transcations_amount, is_settled, is_paid, group_id, paid_record_id)
                 VALUES (?,?,?,?,?,?)
             `,
-                [otherMember, userID, eachPersonShouldPay, false, false, groupID]
+                [otherMember, userID, eachPersonShouldPay, false, false, groupID, receiptId]
             );
         }
     }

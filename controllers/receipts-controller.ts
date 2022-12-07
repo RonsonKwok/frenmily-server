@@ -35,7 +35,7 @@ export class ReceiptsController {
                 });
 
                 // Insert accessPath to database
-                await this.receiptsService.uploadReceipt(
+                const receiptId = await this.receiptsService.uploadReceipt(
                     userID,
                     groupID,
                     accessPath,
@@ -44,7 +44,7 @@ export class ReceiptsController {
                 );
 
                 // Divide the amount to all others group members
-                await this.receiptsService.divideMoney(userID, groupID, amount);
+                await this.receiptsService.divideMoney(userID, groupID, amount, receiptId);
 
                 res.json({ message: "Money divided!" });
             });
