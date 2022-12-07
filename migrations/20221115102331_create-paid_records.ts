@@ -11,6 +11,7 @@ export async function up(knex: Knex): Promise<void> {
         table.string("receipt_image").notNullable();
         table.float("amount").notNullable();
         table.string("remarks");
+        table.boolean("is_valid");
         table.timestamps(false, true);
     });
 }
