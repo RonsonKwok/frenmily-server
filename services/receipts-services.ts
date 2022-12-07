@@ -123,11 +123,18 @@ export class ReceiptsService {
         try {
             console.log("DATABASE: deleteReceipt");
 
-            const result = await this.knex.raw(
+            await this.knex.raw(
                 `UPDATE paid_records SET is_valid = false WHERE id=? RETURNING *`,
                 [receipt_id]
             );
+
+            const result = await this.knex.raw(
+                `select * from transcations WHERE transcations = ?`,
+                [receipt_id]
+            );
             console.log("result :", result.rows);
+
+
 
 
             return true
