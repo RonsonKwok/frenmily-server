@@ -168,6 +168,32 @@ export class UserService {
         }
     }
 
+    async initBeginnerGroup(groupName: string, is_family_group: boolean, dummyGroupPicArray: string): Promise<any> {
+        let id = await this.knex.raw(/*sql*/
+            `
+            INSERT INTO groups
+            (group_name, profile_picture, is_family_group) 
+            VALUES (?,?,?) RETURNING id
+        `,
+            [groupName, dummyGroupPicArray, is_family_group]
+        );
+
+        return id.rows[0].id;
+    }
+
+    async insertBeginnerGroupMember(rowID: number, userId: number): Promise<any> {
+
+        await this.knex.raw(/*sql*/
+            `
+            INSERT INTO group_member
+            (group_id, user_id) 
+            VALUES (?,?)
+        `,
+            [rowID, userId]
+        );
+
+    }
+
     async changeProfilePicture(userID: number, accessPath: string) {
         try {
             console.log("DATABASE: Received new profile picture");

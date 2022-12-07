@@ -130,6 +130,7 @@ export class UserController {
                 username
             );
             let dbUserByUsername: User = usernameResult.rows[0];
+
             if (dbUserByUsername) {
                 res.status(400).json({
                     message: "User already exists.",
@@ -175,16 +176,26 @@ export class UserController {
 
             const randomPic = dummyPicArray[Math.floor(Math.random() * dummyPicArray.length)];
 
-            let result = await this.userService.createUser(
+            await this.userService.createUser(
                 username,
                 password,
                 mobile,
                 email,
                 randomPic
             );
-            let newDBuser: User = result[0];
 
-            req.session["user"] = newDBuser;
+
+            // let groupName = `${username}'s Personal Group`;
+            // let is_family_group = false
+            // const dummyGroupPicArray =
+            //     "https://iconandreceipt.s3.ap-southeast-1.amazonaws.com/groupPic.jpeg"
+
+
+            // let rowID = await this.userService.initBeginnerGroup(groupName, is_family_group, dummyGroupPicArray)
+            // let userId = dbUserByUsername["id"]
+            // await this.userService.insertBeginnerGroupMember(rowID, userId);
+
+
 
             res.status(200).json({ message: "Create successfully" });
         } catch (err) {
