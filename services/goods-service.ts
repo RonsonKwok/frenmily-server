@@ -341,7 +341,7 @@ export class GoodsService {
 
             }
 
-            return [goodsDetailsArray, notYetCompleteArray]
+            return { goodsDetailsArray, notYetCompleteArray }
         }
         catch (e) {
             console.log(e);
