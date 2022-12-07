@@ -323,6 +323,7 @@ export class GoodsService {
             );
 
             let goodsDetailsArray = []
+            let notYetCompleteArray = []
             for (let item of result.rows) {
                 const goodsDetails = await this.knex.raw(
                     `SELECT * FROM goods WHERE id = ?`, [item.goods_id]);
@@ -332,12 +333,15 @@ export class GoodsService {
                 goodsDetails.rows[0].is_completed = item.is_completed
                 goodsDetails.rows[0].assignee_id = item.users_id
                 goodsDetails.rows[0].buyer_id = item.buyer_id
-
                 goodsDetailsArray.push(goodsDetails.rows[0]);
+
+                if (item.is_completed == false) {
+                    notYetCompleteArray.push(goodsDetails.rows[0])
+                }
 
             }
 
-            return goodsDetailsArray
+            return { goodsDetailsArray, notYetCompleteArray }
         }
         catch (e) {
             console.log(e);
