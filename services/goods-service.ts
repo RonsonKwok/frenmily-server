@@ -332,11 +332,11 @@ export class GoodsService {
         try {
             console.log("DATABASE: assignToGroupFromAnother");
 
-            // const assignItems = await this.knex
-            //     .insert(productIds)
-            //     .into('shopping_lists')
+            const assignItems = await this.knex
+                .insert(productIds)
+                .into('shopping_lists')
 
-            //     .returning("*")
+                .returning("*")
         }
         catch (e) {
             console.log(e);
