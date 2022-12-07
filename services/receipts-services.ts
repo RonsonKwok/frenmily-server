@@ -22,8 +22,6 @@ export class ReceiptsService {
     `,
                 [userID, groupID, accessPath, amount, remarks, true]
             );
-            console.log("id.rows[0] :", id.rows[0].id);
-
             return id.rows[0].id
         } catch (error) {
             console.log("error :", error);
@@ -39,8 +37,6 @@ export class ReceiptsService {
     ): Promise<any> {
         try {
             console.log("DATABASE: DIVIDE MONEY");
-            console.log("receiptId :", receiptId);
-
 
             // Find all group members
             let groupMembers = await this.knex.raw(
@@ -127,10 +123,12 @@ export class ReceiptsService {
         try {
             console.log("DATABASE: deleteReceipt");
 
-            await this.knex.raw(
-                `UPDATE paid_records SET is_valid = false WHERE id=?`,
+            const result = await this.knex.raw(
+                `UPDATE paid_records SET is_valid = false WHERE id=? RETURNING *`,
                 [receipt_id]
             );
+            console.log("result :", result.rows);
+
 
             return true
         } catch (error) {
