@@ -35,7 +35,7 @@ export class ReceiptsController {
                 });
 
                 // Insert accessPath to database
-                await this.receiptsService.uploadReceipt(
+                const receiptId = await this.receiptsService.uploadReceipt(
                     userID,
                     groupID,
                     accessPath,
@@ -44,7 +44,7 @@ export class ReceiptsController {
                 );
 
                 // Divide the amount to all others group members
-                await this.receiptsService.divideMoney(userID, groupID, amount);
+                await this.receiptsService.divideMoney(userID, groupID, amount, receiptId);
 
                 res.json({ message: "Money divided!" });
             });
@@ -86,6 +86,21 @@ export class ReceiptsController {
         } catch (e) {
             console.log(e);
             res.status(400).send("getAllReceipts Fail");
+            return;
+        }
+    };
+
+    deleteReceipt = async (req: Request, res: Response) => {
+        try {
+            console.log("deleteReceipt API");
+            let receipt_id = req.body.receipt_id;
+
+            // get all receipts image and info
+            const result = await this.receiptsService.deleteReceipt(receipt_id);
+            res.json(result);
+        } catch (e) {
+            console.log(e);
+            res.status(400).send("deleteReceipt Fail");
             return;
         }
     };

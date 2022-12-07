@@ -3,6 +3,7 @@ import { Knex } from "knex";
 export class ReceiptsService {
     constructor(private knex: Knex) { }
 
+
     async uploadReceipt(
         userID: number,
         groupID: number,
@@ -10,52 +11,69 @@ export class ReceiptsService {
         amount: number,
         remarks: string
     ): Promise<any> {
-        console.log("DATABASE: UPLOAD RECEIPT");
+        try {
+            console.log("DATABASE: UPLOAD RECEIPT");
 
-        await this.knex.raw(
-            `
+            const id = await this.knex.raw(
+                `
         INSERT INTO paid_records
         (user_id, group_id, receipt_image, amount, remarks) 
-        VALUES (?,?,?,?,?)
+        VALUES (?,?,?,?,?) RETURNING id
     `,
-            [userID, groupID, accessPath, amount, remarks]
-        );
+                [userID, groupID, accessPath, amount, remarks]
+            );
+            console.log("id.rows[0] :", id.rows[0].id);
+
+            return id.rows[0].id
+        } catch (error) {
+            console.log("error :", error);
+        }
+
     }
 
     async divideMoney(
         userID: number,
         groupID: number,
-        amount: number
+        amount: number,
+        receiptId: number
     ): Promise<any> {
-        console.log("DATABASE: DIVIDE MONEY");
+        try {
+            console.log("DATABASE: DIVIDE MONEY");
+            console.log("receiptId :", receiptId);
 
-        // Find all group members
-        let groupMembers = await this.knex.raw(
-            `
+
+            // Find all group members
+            let groupMembers = await this.knex.raw(
+                `
         select user_id from group_member where group_id = ?
         `,
-            [groupID]
-        );
-
-        let totalNumberOfGroupMembers = groupMembers.rows.length;
-        let eachPersonShouldPay =
-            Math.round((amount / totalNumberOfGroupMembers) * 10) / 10;
-        let otherMembers = [];
-        for (let groupMember of groupMembers.rows) {
-            if (groupMember.user_id != userID) {
-                otherMembers.push(groupMember.user_id);
-            }
-        }
-        for (let otherMember of otherMembers) {
-            await this.knex.raw(
-                `
-                INSERT INTO transcations
-                (debitor_id, creditor_id, transcations_amount, is_settled, is_paid, group_id)
-                VALUES (?,?,?,?,?,?)
-            `,
-                [otherMember, userID, eachPersonShouldPay, false, false, groupID]
+                [groupID]
             );
+
+            let totalNumberOfGroupMembers = groupMembers.rows.length;
+            let eachPersonShouldPay =
+                Math.round((amount / totalNumberOfGroupMembers) * 10) / 10;
+            let otherMembers = [];
+            for (let groupMember of groupMembers.rows) {
+                if (groupMember.user_id != userID) {
+                    otherMembers.push(groupMember.user_id);
+                }
+            }
+            for (let otherMember of otherMembers) {
+                await this.knex.raw(
+                    `
+                INSERT INTO transcations
+                (debitor_id, creditor_id, transcations_amount, is_settled, is_paid, group_id, paid_record_id)
+                VALUES (?,?,?,?,?,?,?)
+            `,
+                    [otherMember, userID, eachPersonShouldPay, false, false, groupID, receiptId]
+                );
+            }
+        } catch (error) {
+            console.log("error :", error);
+
         }
+
     }
 
     async moneySettle(targetUserID: number, payerUserID: number): Promise<any> {
@@ -103,5 +121,22 @@ export class ReceiptsService {
             result['userName'] = name.rows[0].username
         }
         return results.rows
+    }
+
+    async deleteReceipt(receipt_id: number): Promise<any> {
+        try {
+            console.log("DATABASE: deleteReceipt");
+
+            await this.knex.raw(
+                `DELETE from paid_records WHERE id = ?`,
+                [receipt_id]
+            );
+
+            return true
+        } catch (error) {
+            console.log("error :", error);
+
+        }
+
     }
 }
