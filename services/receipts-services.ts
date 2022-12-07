@@ -133,6 +133,19 @@ export class ReceiptsService {
                 [receipt_id]
             );
             console.log("result :", result.rows);
+            for (let item of result.rows) {
+                if (item.is_settled == false) {
+                    await this.knex.raw(
+                        `DELETE FROM transcations WHERE id=?`,
+                        [item.id]
+                    );
+                } else {
+                    await this.knex.raw(
+                        `INSERT INTO transcations (debitor_id, creditor_id, transcations_amount, is_paid, is_settled, group_id, paid_record_id) VALUES(?,?,?,?,?,?,?)`,
+                        [item.creditor_id, item.debitor_id, item.transcations_amount, false, false, item.group_id, receipt_id]
+                    );
+                }
+            }
 
 
 
