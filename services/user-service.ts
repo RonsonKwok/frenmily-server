@@ -235,19 +235,18 @@ export class UserService {
         }
     }
 
-    async changePasswordToRandom(username: string, randomPassword: string) {
+    async changePasswordToRandom(username: string, randomString: string) {
         try {
             console.log("DATABASE: changePasswordToRandom");
-
-            let userResult = (
-                await this.knex.raw(/*sql*/`
+            console.log("username: ", username)
+            console.log("randomString: ", randomString)
+            await this.knex.raw(/*sql*/`
                 UPDATE users 
-                SET password = ?
+                SET password = ?, mobile = ?, email = ?
                 WHERE username = ?;
                 `,
-                    [randomPassword, username])
-            )
-            console.log("userResult:", userResult.rows[0])
+                [randomString, randomString, randomString, username])
+
 
         }
         catch (e) {
