@@ -17,10 +17,10 @@ export class ReceiptsService {
             const id = await this.knex.raw(
                 `
         INSERT INTO paid_records
-        (user_id, group_id, receipt_image, amount, remarks) 
-        VALUES (?,?,?,?,?) RETURNING id
+        (user_id, group_id, receipt_image, amount, remarks, is_valid) 
+        VALUES (?,?,?,?,?,?) RETURNING id
     `,
-                [userID, groupID, accessPath, amount, remarks]
+                [userID, groupID, accessPath, amount, remarks, true]
             );
             console.log("id.rows[0] :", id.rows[0].id);
 
@@ -105,7 +105,7 @@ export class ReceiptsService {
 
         let results = await this.knex.raw(
             `
-            select * from paid_records where group_id = ?
+            select * from paid_records where group_id = ? and is_valid = true
         `,
             [groupID]
         );
@@ -128,7 +128,7 @@ export class ReceiptsService {
             console.log("DATABASE: deleteReceipt");
 
             await this.knex.raw(
-                `DELETE from paid_records WHERE id = ?`,
+                `UPDATE paid_records SET is_valid = false WHERE id=?`,
                 [receipt_id]
             );
 
