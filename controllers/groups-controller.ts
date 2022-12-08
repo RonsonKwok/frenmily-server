@@ -255,8 +255,9 @@ export class GroupsController {
                 return
             }
 
-
+            console.log("groupId to be deleted: ", groupId)
             let deleteGroupResult = await this.groupsService.deleteGroup(groupId)
+
             res.status(200).json({
                 message: "This group is deleted",
                 deleteGroupResult: deleteGroupResult
