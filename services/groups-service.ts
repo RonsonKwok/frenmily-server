@@ -276,7 +276,7 @@ export class GroupsService {
                 `
                 select * 
                 from transcations
-                where paid_record_id = ? and is_settled = false 
+                where group_id = ? and is_settled = false 
             `,
                 [groupId]
             )
