@@ -243,6 +243,7 @@ export class GroupsController {
             console.log("deleteGroup API");
             let groupId = req.body.groupID;
             let getGroupResult = await this.groupsService.getDeletableGroups(groupId);
+            console.log("getGroupResult: ", getGroupResult)
 
             if (getGroupResult.shoppingListResult.length > 0 || getGroupResult.receiptResult.length > 0) {
                 res.status(400).json({
@@ -251,7 +252,6 @@ export class GroupsController {
                 return
             }
 
-            console.log("getGroupResult: ", getGroupResult)
 
             let deleteGroupResult = await this.groupsService.deleteGroup(groupId)
             res.status(200).json({
