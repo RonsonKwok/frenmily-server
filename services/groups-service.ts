@@ -266,7 +266,7 @@ export class GroupsService {
                 from groups
                 inner join paid_records
                 on paid_records.group_id = groups.id
-                where groups.id = ?
+                where groups.id = ? and is_valid=true 
             `,
                 [groupId]
 
