@@ -245,7 +245,10 @@ export class GroupsController {
             let getGroupResult = await this.groupsService.getDeletableGroups(groupId);
             console.log("getGroupResult: ", getGroupResult)
 
-            if (getGroupResult.shoppingListResult.length > 0 || getGroupResult.receiptResult.length > 0) {
+            if (getGroupResult.shoppingListResult.length > 0
+                || getGroupResult.receiptResult.length > 0
+                || getGroupResult.transactionResult.length > 0
+            ) {
                 res.status(400).json({
                     message: "This group cannot be deleted"
                 })

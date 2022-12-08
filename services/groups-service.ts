@@ -272,14 +272,25 @@ export class GroupsService {
 
             )
 
+            let result3 = await this.knex.raw(/*sql*/
+                `
+                select * 
+                from transcations
+                where paid_record_id = ? and is_settled = false 
+            `,
+                [groupId]
+            )
+
 
 
             let shoppingListResult = result1.rows
             let receiptResult = result2.rows
+            let transactionResult = result3.rows
 
             return {
                 shoppingListResult,
-                receiptResult
+                receiptResult,
+                transactionResult
             }
 
 
@@ -295,12 +306,22 @@ export class GroupsService {
 
     async deleteGroup(groupId: number): Promise<any> {
         try {
+
+            await this.knex.raw(/*sql*/
+                `
+            delete from 
+            transcations
+            where group_id = ? 
+            `,
+                [groupId]
+            )
+
             await this.knex.raw(/*sql*/
                 `
             delete from 
             paid_records
             where group_id = ? 
-        `,
+            `,
                 [groupId]
             )
 
