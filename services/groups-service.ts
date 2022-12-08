@@ -299,7 +299,7 @@ export class GroupsService {
                 `
             delete from 
             paid_records
-            where groups_id = ? 
+            where group_id = ? 
         `,
                 [groupId]
             )
