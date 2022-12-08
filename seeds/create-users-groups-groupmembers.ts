@@ -10,6 +10,7 @@ export async function seed(knex: Knex): Promise<void> {
     await knex.raw(`TRUNCATE  goods  RESTART IDENTITY CASCADE`)
     await knex.raw(`TRUNCATE  user_liked  RESTART IDENTITY CASCADE`)
     await knex.raw(`TRUNCATE  carts  RESTART IDENTITY CASCADE`)
+    await knex.raw(`TRUNCATE  shopping_lists  RESTART IDENTITY CASCADE`)
 
 
     // Inserts seed entries
@@ -373,8 +374,6 @@ export async function seed(knex: Knex): Promise<void> {
         },
 
     ]).into('goods_categories');
-
-
 
     await knex.insert([
         {
@@ -21236,7 +21235,6 @@ export async function seed(knex: Knex): Promise<void> {
         },
     ]).into('goods');
 
-
     await knex.insert([
 
         {
@@ -23063,4 +23061,236 @@ export async function seed(knex: Knex): Promise<void> {
 
     ]).into('user_liked');
 
+    await knex.insert([
+        {
+            users_id: 1,
+            goods_id: 14,
+            quantity: 5,
+            is_assigned: true
+        },
+        {
+            users_id: 1,
+            goods_id: 4,
+            quantity: 4,
+            is_assigned: true
+        },
+        {
+            users_id: 1,
+            goods_id: 42,
+            quantity: 3,
+            is_assigned: true
+        },
+        {
+            users_id: 1,
+            goods_id: 132,
+            quantity: 2,
+            is_assigned: true
+        },
+        {
+            users_id: 1,
+            goods_id: 154,
+            quantity: 1,
+            is_assigned: true
+        },
+        {
+            users_id: 1,
+            goods_id: 333,
+            quantity: 5,
+            is_assigned: true
+        },
+        {
+            users_id: 1,
+            goods_id: 344,
+            quantity: 4,
+            is_assigned: true
+        },
+        {
+            users_id: 1,
+            goods_id: 360,
+            quantity: 3,
+            is_assigned: true
+        },
+        {
+            users_id: 1,
+            goods_id: 562,
+            quantity: 2,
+            is_assigned: true
+        },
+        {
+            users_id: 1,
+            goods_id: 602,
+            quantity: 1,
+            is_assigned: true
+        },
+        {
+            users_id: 1,
+            goods_id: 676,
+            quantity: 5,
+            is_assigned: true
+        },
+        {
+            users_id: 1,
+            goods_id: 846,
+            quantity: 4,
+            is_assigned: true
+        },
+        {
+            users_id: 1,
+            goods_id: 857,
+            quantity: 3,
+            is_assigned: true
+        },
+        {
+            users_id: 1,
+            goods_id: 806,
+            quantity: 2,
+            is_assigned: true
+        },
+        {
+            users_id: 1,
+            goods_id: 921,
+            quantity: 1,
+            is_assigned: true
+        },
+        {
+            users_id: 1,
+            goods_id: 929,
+            quantity: 5,
+            is_assigned: true
+        },
+        {
+            users_id: 1,
+            goods_id: 947,
+            quantity: 4,
+            is_assigned: true
+        },
+        {
+            users_id: 1,
+            goods_id: 1094,
+            quantity: 3,
+            is_assigned: true
+        },
+        {
+            users_id: 1,
+            goods_id: 1129,
+            quantity: 2,
+            is_assigned: true
+        },
+        {
+            users_id: 1,
+            goods_id: 1132,
+            quantity: 1,
+            is_assigned: true
+        },
+        {
+            users_id: 1,
+            goods_id: 1139,
+            quantity: 5,
+            is_assigned: true
+        },
+        {
+            users_id: 1,
+            goods_id: 1181,
+            quantity: 4,
+            is_assigned: true
+        },
+        {
+            users_id: 1,
+            goods_id: 1228,
+            quantity: 3,
+            is_assigned: true
+        },
+        {
+            users_id: 1,
+            goods_id: 1414,
+            quantity: 2,
+            is_assigned: true
+        },
+        {
+            users_id: 1,
+            goods_id: 1419,
+            quantity: 1,
+            is_assigned: true
+        },
+        {
+            users_id: 1,
+            goods_id: 1427,
+            quantity: 5,
+            is_assigned: true
+        },
+        {
+            users_id: 1,
+            goods_id: 1465,
+            quantity: 4,
+            is_assigned: true
+        },
+        {
+            users_id: 1,
+            goods_id: 1472,
+            quantity: 3,
+            is_assigned: true
+        },
+        {
+            users_id: 1,
+            goods_id: 1439,
+            quantity: 2,
+            is_assigned: true
+        },
+    ]).into('carts');
+
+    await knex.insert([
+        {
+            group_id: 1,
+            cart_id: 1,
+            is_completed: true,
+            assignee_id: 1,
+            buyer_id: 1,
+            create_at: "2022-10-07 14:48:17.410 +0800",
+            updated_at: "2022-10-07 14:48:17.410 +0800",
+        },
+        {
+            group_id: 1,
+            cart_id: 2,
+            is_completed: true,
+            assignee_id: 1,
+            buyer_id: 1,
+            create_at: "2022-11-07 14:48:17.410 +0800",
+            updated_at: "2022-11-07 14:48:17.410 +0800",
+        },
+        {
+            group_id: 1,
+            cart_id: 3,
+            is_completed: true,
+            assignee_id: 1,
+            buyer_id: 1,
+            create_at: "2022-10-07 14:48:17.410 +0800",
+            updated_at: "2022-10-07 14:48:17.410 +0800",
+        },
+        {
+            group_id: 1,
+            cart_id: 4,
+            is_completed: true,
+            assignee_id: 1,
+            buyer_id: 1,
+            create_at: "2022-11-07 14:48:17.410 +0800",
+            updated_at: "2022-11-07 14:48:17.410 +0800",
+        }, {
+            group_id: 1,
+            cart_id: 5,
+            is_completed: true,
+            assignee_id: 1,
+            buyer_id: 1,
+            create_at: "2022-10-07 14:48:17.410 +0800",
+            updated_at: "2022-10-07 14:48:17.410 +0800",
+        },
+        {
+            group_id: 1,
+            cart_id: 6,
+            is_completed: true,
+            assignee_id: 1,
+            buyer_id: 1,
+            create_at: "2022-11-07 14:48:17.410 +0800",
+            updated_at: "2022-11-07 14:48:17.410 +0800",
+        },
+    ]).into('shopping_lists');
 };
